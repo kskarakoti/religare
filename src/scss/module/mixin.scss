@@ -1,0 +1,164 @@
+//Border Raduis
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin top-border-radius($radius , $radius) {
+	-webkit-border-radius: $radius $radius 0 0;
+       -moz-border-radius: $radius $radius 0 0;
+      	-ms-border-radius: $radius $radius 0 0;
+          	border-radius: $radius $radius 0 0;
+}
+
+@mixin top-left-border-radius($radius) {
+	-webkit-border-top-left-radius: $radius;
+       -moz-border-top-left-radius: $radius;
+      	-ms-border-top-left-radius: $radius;
+          	border-top-left-radius: $radius;
+}
+
+@mixin top-right-border-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+       -moz-border-top-right-radius: $radius;
+      	-ms-border-top-right-radius: $radius;
+          	border-top-right-radius: $radius;
+}
+
+@mixin bottom-border-radius($radius , $radius) {
+	-webkit-border-radius: 0 0 $radius $radius;
+       -moz-border-radius: 0 0 $radius $radius;
+      	-ms-border-radius: 0 0 $radius $radius;
+          	border-radius: 0 0 $radius $radius;
+}
+
+@mixin bottom-left-border-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+       -moz-border-bottom-left-radius: $radius;
+      	-ms-border-bottom-left-radius: $radius;
+          	border-bottom-left-radius: $radius;
+}
+
+@mixin bottom-right-border-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+       -moz-border-bottom-right-radius: $radius;
+      	-ms-border-bottom-right-radius: $radius;
+          	border-bottom-right-radius: $radius;
+}
+
+@mixin right-border-radius($radius , $radius) {
+	-webkit-border-radius: 0 $radius $radius 0;
+       -moz-border-radius: 0 $radius $radius 0;
+      	-ms-border-radius: 0 $radius $radius 0;
+          	border-radius: 0 $radius $radius 0;
+}
+@mixin left-border-radius($radius , $radius) {
+	-webkit-border-radius: $radius 0 0 $radius;
+       -moz-border-radius: $radius 0 0 $radius;
+      	-ms-border-radius: $radius 0 0 $radius;
+          	border-radius: $radius 0 0 $radius;
+}
+
+//Animations & Tranisitions
+@mixin animation-reverse{
+	-webkit-animation-direction: reverse;
+       -moz-animation-direction: reverse;
+        -ms-animation-direction: reverse;
+         -o-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-none($transition...) {
+    -moz-transition:    $transition !important;
+    -o-transition:      $transition !important;
+    -webkit-transition: $transition !important;
+    transition:         $transition !important;
+}
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+//Box Shadow
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+  
+
+//Box Shadow None
+@mixin box-shadow-none{
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	        box-shadow: none;
+}
+
+//Text Overflow
+@mixin text-overflow{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+//Image Cover
+@mixin imgcover {
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+
+//transition
+@mixin transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+
+@mixin transition1($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+

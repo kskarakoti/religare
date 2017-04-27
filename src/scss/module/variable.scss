@@ -1,0 +1,68 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Typography
+// -------------------------
+$font-family-georgia:   	"Georgia",sans-serif;
+$font-family-arial:   		"Arial",sans-serif;
+$font-base-size:        14px;
+
+$font-weight-thin:    	300;
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-bold:    	700;
+
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+$font-size-large:         $font-base-size + 4; // ~18px
+$font-size-medium:        $font-base-size + 2; // ~16px
+$font-size-small:         $font-base-size - 2; // ~12px
+$font-size-mini:          $font-base-size - 3; // ~11px
+
+
+// Base Radius
+// -------------------------
+$base-border-radius:      4px !default;
+$border-radius-large:     6px !default;
+$border-radius-small:     3px !default;
+
+
+// Base Spacings
+// -------------------------
+$margin-none: 			0px !default;
+$margin-base-5: 		5px !default;
+
+$padding-none: 			0px !default;
+$padding-base-5:		5px !default;
+
+
+// Base Heights & Widths
+// -------------------------
+$base-height-auto: 		auto;
+$base-height-full: 		100%;
+$base-min-height:		10px;
+$base-height: 			10px;
+
+$base-width-auto: 		auto;
+$base-width-full: 		100%;
+$base-min-width:		10px;
+$base-width: 			10px;
+
+
+//Common
+$none: 					none;
+$dis-block: 			block;
+$dis-inblock: 			inline-block;
+
+//Positions
+$relative: 				relative;
+$absolute: 				absolute;
+
+
+//** Breakpoints
+// -------------------------

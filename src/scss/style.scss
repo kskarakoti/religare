@@ -1,0 +1,222 @@
+/***************************************************************** 
+   Style Index
+------------------------------------------------------------------   	  
+   00 Import Stylesheets
+   
+   01 Body Styles
+      1.1 Main Wrapper Styles
+   
+   02 Header Section Styles
+   	  2.1  Top Header with Location Select
+	  2.2  Main Navigation & Search Section
+   	  
+   03 Main Content Section Styles
+	  3.1 Modal Window Styles
+	  3.2 Landing/Home Page Styles
+	  3.3 Story Page Styles
+	  3.4 Entertainnment Page Styles
+	  3.5 City Page Styles
+	  3.6 Lifestyle Page Styles
+	  3.7 Sports Page Styles
+	  3.8 Authors Page Styles
+
+   05 Footer Section Styles
+	  5.1 Footer List Links
+	  
+   06 Common Styles
+	  6.1 Form Styles
+	  6.2 Buttons Styles
+	  6.3 Links/Input Styles
+	  6.4 Image/Media Styles
+	  6.5 Unordered/Ordered List Styles
+	  6.6 Padding Styles
+	  6.7 Margin Styles
+	  6.8 Off Canvas Styles
+	  6.9 Back to Top Styles
+	  6.10 Owl Custom Nav Style
+	  6.11 Custom Select/Select2 Styles
+	  6.12 No Gutter Styles
+	  6.13 Custom checkbox and radio buttons
+	  6.14 Spirit images Styles
+	  6.15 Common Class Styles
+*****************************************************************/
+/************************************************************************************
+
+=========================== 00 Import Stylesheets ================================= 
+
+************************************************************************************/
+@import "module/colors";
+@import "module/variable";
+@import "module/mixin";
+
+/************************************************************************************
+
+=========================== 01 Body Style ================================= 
+
+************************************************************************************/
+/* {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+}
+
+
+body {
+  font-family: $font-family-georgia;
+  background: $white;
+  color: $mine-shaft;
+  /*padding-top: $padding-base-5 * 12;*/
+  position: static;
+  @include transition-none(none);
+
+}
+
+.h1, .h2, .h3, h1, h2, h3, .headingthree {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, .headingtwo, .headingfour, .headingthree, .headingfive {
+  font-family: $font-family-arial;
+}
+h2 {
+  line-height: 30px;
+}
+.headingtwo {
+  font-size: 30px;
+  line-height: 30px;
+}
+h3, .headingthree {
+  font-size: 24px;
+  line-height: 23px;
+}
+h4, .headingfour {
+  line-height: 23px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.headingfive {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin: 10px 0;
+}
+.para-txt {
+  margin: 0 0 10px;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/ArialMT.eot');
+  src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ArialMT.woff2') format('woff2'),
+  url('../fonts/ArialMT.woff') format('woff'),
+  url('../fonts/ArialMT.ttf') format('truetype'),
+  url('../fonts/ArialMT.svg#ArialMT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/************************************************************************************
+
+=========================== 02 Header Section Styles ================================= 
+
+************************************************************************************/
+
+/****************************************
+   2.1 Top Header
+****************************************/
+
+
+/****************************************
+   2.2 Main Navigation & Search Section
+****************************************/
+
+/************************************************************************************
+
+=========================== 03 Main Content Section Styles =========================== 
+
+************************************************************************************/
+
+/**************************************** 
+   3.1 Modal Window Styles
+****************************************/
+
+.modal-dialog {
+  width: 420px;
+}
+
+.modal {
+  text-align: center;
+  background: -moz-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.6)), color-stop(100%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* ie10+ */
+  background: linear-gradient(358deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+
+  &:before {
+    display: $dis-inblock;
+    vertical-align: middle;
+    content: " ";
+    height: $base-height-full;
+  }
+}
+
+.modal-dialog {
+  display: $dis-inblock;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+  @include border-radius(0);
+}
+
+.modal-backdrop.in {
+  opacity: 0.9;
+}
+
+
+/****************************************
+   3.2 Landing/Home Page Styles
+****************************************/
+
+/************************************************************************************
+
+=========================== 06 Common Styles ============================
+
+************************************************************************************/
+
+/****************************************
+   6.1 Form Styles
+****************************************/
+
+/********************************************************
+   6.16 Common Class Styles
+********************************************************/
