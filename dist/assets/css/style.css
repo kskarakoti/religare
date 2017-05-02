@@ -1070,7 +1070,7 @@ body {
   font-family: "ubunturegular", sans-serif;
   background: #2b2f32;
   color: #282828;
-  padding-top: 100px;
+  padding-top: 95px;
   position: static;
   -moz-transition: none !important;
   -o-transition: none !important;
@@ -1078,8 +1078,8 @@ body {
   transition: none !important; }
 
 ul {
-  margin: 0;
-  padding: 0; }
+  margin: 0px;
+  padding: 0px; }
 
 ul li {
   list-style: none; }
@@ -1108,17 +1108,17 @@ h3, .headingthree {
 h4, .headingfour {
   line-height: 23px;
   font-size: 18px;
-  margin: 10px 0; }
+  margin: 10px 0px; }
 
 .headingfive {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  margin: 10px 0; }
+  margin: 10px 0px; }
 
 .para-txt {
-  margin: 0 0 10px; }
+  margin: 0px 0px 10px; }
 
 @font-face {
   font-family: 'ubuntumedium';
@@ -1156,8 +1156,12 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  width: 1366px;
-  margin: auto; }
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2); }
   header .header-top {
     background: #e1e5e8;
     padding: 5px 15px; }
@@ -1166,7 +1170,7 @@ header {
       margin-right: 25px; }
       header .header-top .share-mkt-highlight li a {
         display: block;
-        padding: 5px;
+        padding: 5 5px;
         color: #666666;
         text-decoration: none;
         font-size: 12px; }
@@ -1177,18 +1181,14 @@ header {
           vertical-align: top;
           margin-top: 2px; }
         header .header-top .share-mkt-highlight li a .highlight-tx {
-          margin: 0 2px;
+          margin: 0px 2px;
           color: #000; }
         header .header-top .share-mkt-highlight li a .col-green {
           color: #209e3d; }
   header .header-main {
-    background: #fff;
-    -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2);
-    -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2);
-    box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.2); }
+    position: relative; }
     header .header-main .header-area {
-      padding: 15px 15px 0px 15px;
-      position: relative; }
+      padding: 15px 15px 0px 15px; }
       header .header-main .header-area .header-left {
         float: left; }
         header .header-main .header-area .header-left .header-lt-sec .logo {
@@ -1292,7 +1292,8 @@ header {
               color: #1e723f; }
             header .header-main .header-area .header-right .header-links li a {
               display: block;
-              padding: 5px 10px; }
+              padding: 5px 10px;
+              text-transform: uppercase; }
         header .header-main .header-area .header-right .account-links {
           display: inline-block;
           vertical-align: middle;

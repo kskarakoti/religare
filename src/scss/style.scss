@@ -89,16 +89,16 @@ body {
   font-family: $font-family-ubunturegular;
   background: #2b2f32;
   color: $mine-shaft;
-  padding-top: $padding-base-5 * 20;
+  padding-top: $padding-base-5 * 19;
   position: static;
   @include transition-none(none);
 }
-ul {margin: 0; padding: 0;}
+ul {margin: $margin-none; padding: $padding-none;}
 ul li {list-style: none;}
 a, a:hover {text-decoration: none;}
 .h1, .h2, .h3, h1, h2, h3, .headingthree {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: $margin-base-5 * 4;
+  margin-bottom: $margin-base-5 * 2;
 }
 
 h1, h2, h3, h4, h5, .headingtwo, .headingfour, .headingthree, .headingfive {
@@ -118,17 +118,17 @@ h3, .headingthree {
 h4, .headingfour {
   line-height: 23px;
   font-size: 18px;
-  margin: 10px 0;
+  margin: ($margin-base-5 * 2) $margin-none;
 }
 .headingfive {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  margin: 10px 0;
+  margin: ($margin-base-5 * 2) $margin-none;
 }
 .para-txt {
-  margin: 0 0 10px;
+  margin: $margin-none $margin-none ($margin-base-5 * 2);
 }
 
 
@@ -181,12 +181,14 @@ header {
   position: fixed;
   top:0;
   z-index: 999;
-  width: 1366px;
+  width: 100%;
   margin: auto;
+  background: #fff;
+  @include box-shadow(0px 2px 9px 0px rgba(50, 50, 50, 0.2));
 
   .header-top {
     background: #e1e5e8;
-    padding: 5px 15px;
+    padding: $padding-base-5 ($padding-base-5 * 3);
 
     .share-mkt-highlight {
       li {
@@ -195,7 +197,7 @@ header {
 
         a {
           display: block;
-          padding: 5px;
+          padding: 5$padding-base-5;
           color: #666666;
           text-decoration: none;
           font-size: 12px;
@@ -205,11 +207,11 @@ header {
             width: 15px;
             height: 10px;
             vertical-align: top;
-            margin-top: 2px;
+            margin-top: ($margin-base-5 - 3);
           }
 
           .highlight-tx {
-            margin: 0 2px;
+            margin: $margin-none ($margin-base-5 - 3);
             color: #000;
           }
 
@@ -222,12 +224,10 @@ header {
   }
 
   .header-main {
-    background: #fff;
-    @include box-shadow(0px 2px 9px 0px rgba(50, 50, 50, 0.2));
+    position: relative;
 
     .header-area {
       padding: 15px 15px 0px 15px;
-      position: relative;
 
       .header-left {
         float: left;
@@ -406,6 +406,7 @@ header {
             a {
               display: block;
               padding: 5px 10px;
+              text-transform: uppercase;
             }
           }
         }
