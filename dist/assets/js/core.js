@@ -2,6 +2,7 @@
 $(function () {
 	"use strict";
 
+	//accordion function
 	$('.accordionContent').hide();
 	$('.accordionButton').click(function() {
 		$('.accordionButton').removeClass('on');
@@ -14,6 +15,15 @@ $(function () {
 		}
 	});
 
-	//convert
+
+	$(".sub-item").hover(
+		function() {
+			$(".overlay-bg").addClass('active');
+		}, function() {
+			$(".overlay-bg").removeClass('active');
+		}
+	);
+
+	//select
 	$("select").msDropdown({roundedBorder:false});
 });
