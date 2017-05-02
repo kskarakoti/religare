@@ -23,7 +23,8 @@ gulp.task('sass', function(){
 // src variable
 var vendorJSFiles =
     ["./bower_components/jquery/dist/jquery.js",
-        "./bower_components/bootstrap/dist/js/bootstrap.js"]
+        "./bower_components/bootstrap/dist/js/bootstrap.js",
+        "./src/script/select/jquery.dd.js"]
 
 // Load Concat task for JS files
 gulp.task('vendorJS', function () {
@@ -75,13 +76,13 @@ gulp.task('browserSync', function(){
         }
     })
 });
-
+ 
 
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
     gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('dist/*.html', browserSync.reload);
-    gulp.watch('dist/js/*.js', browserSync.reload);
+    // gulp.watch('dist/js/*.js', browserSync.reload);
 });
 
 

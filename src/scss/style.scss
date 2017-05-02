@@ -48,6 +48,7 @@
 @import "module/colors";
 @import "module/variable";
 @import "module/mixin";
+@import "vendor-css/dd";
 
 /************************************************************************************
 
@@ -85,22 +86,23 @@ button:hover
 
 
 body {
-  font-family: $font-family-georgia;
-  background: $white;
+  font-family: $font-family-ubunturegular;
+  background: #2b2f32;
   color: $mine-shaft;
-  /*padding-top: $padding-base-5 * 12;*/
+  padding-top: $padding-base-5 * 20;
   position: static;
   @include transition-none(none);
-
 }
-
+ul {margin: 0; padding: 0;}
+ul li {list-style: none;}
+a, a:hover {text-decoration: none;}
 .h1, .h2, .h3, h1, h2, h3, .headingthree {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, .headingtwo, .headingfour, .headingthree, .headingfive {
-  font-family: $font-family-arial;
+  font-family: $font-family-ubunturegular;
 }
 h2 {
   line-height: 30px;
@@ -129,16 +131,41 @@ h4, .headingfour {
   margin: 0 0 10px;
 }
 
+
 @font-face {
-  font-family: 'Arial';
-  src: url('../fonts/ArialMT.eot');
-  src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/ArialMT.woff2') format('woff2'),
-  url('../fonts/ArialMT.woff') format('woff'),
-  url('../fonts/ArialMT.ttf') format('truetype'),
-  url('../fonts/ArialMT.svg#ArialMT') format('svg');
+  font-family: 'ubuntumedium';
+  src: url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu-m-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubunturegular';
+  src: url('../fonts/ubuntu-r-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu-r-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu-l-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubuntubold';
+  src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu-b-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 /************************************************************************************
@@ -150,7 +177,155 @@ h4, .headingfour {
 /****************************************
    2.1 Top Header
 ****************************************/
+header {
+  position: fixed;
+  top:0;
+  z-index: 999;
+  width: 1366px;
+  margin: auto;
 
+  .header-top {
+    background: #e1e5e8;
+    padding: 5px 15px;
+
+    .share-mkt-highlight {
+      li {
+        display: inline-block;
+        margin-right: $margin-base-5 * 5;
+
+        a {
+          display: block;
+          padding: 5px;
+          color: #666666;
+          text-decoration: none;
+          font-size: 12px;
+
+          i {
+            display: inline-block;
+            width: 15px;
+            height: 10px;
+            vertical-align: top;
+            margin-top: 2px;
+          }
+
+          .highlight-tx {
+            margin: 0 2px;
+            color: #000;
+          }
+
+          .col-green {
+            color: #209e3d;
+          }
+        }
+      }
+    }
+  }
+
+  .header-main {
+    background: #fff;
+    @include box-shadow(0px 2px 9px 0px rgba(50, 50, 50, 0.2));
+
+    .header-area {
+      padding: 15px;
+
+      .header-left {
+        float: left;
+
+        .header-lt-sec {
+          .logo {
+            float: left;
+            margin-bottom: 0;
+          }
+
+          .menu-lt-ar {
+            float: left;
+            margin-left: 25px;
+
+            .menu-list {
+              li {
+                display: inline-block;
+                margin-right: 10px;
+
+                a {
+                  display: block;
+                  padding: 8px 10px;
+                  font-size: 13px;
+                  color: #444444;
+                  text-transform: uppercase;
+                  font-family: $font-family-ubuntumedium;
+
+                  &:hover {
+                    color: #8dc63f;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .header-right {
+        float: right;
+
+        .header-links {
+          display: inline-block;
+          vertical-align: middle;
+
+          li {
+            display: inline-block;
+            border-right: 1px dotted #ccc;
+
+            &:last-child {
+              border-right: none;
+            }
+
+            &.build-wealth {
+              a {
+                color: #f7941e;
+              }
+            }
+
+            &.active-trade {
+              a {
+                color: #1e723f;
+              }
+            }
+
+            a {
+              display: block;
+              padding: 5px 10px;
+            }
+          }
+        }
+
+        .account-links {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 15px;
+          padding: 2px 10px;
+          background: #8ac639;
+          color: #fff;
+          border-radius: $base-border-radius;
+        }
+
+        .search-links {
+          display: inline-block;
+          vertical-align: middle;
+
+          li {
+            display: inline-block;
+
+            a {
+              display: block;
+              padding: 2px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 /****************************************
    2.2 Main Navigation & Search Section
@@ -206,7 +381,403 @@ h4, .headingfour {
 /****************************************
    3.2 Landing/Home Page Styles
 ****************************************/
+/* banner */
+.banner-area {
+  .banner-list {
+    li {
+      display: inline-block;
+      padding: 0;
+      position: relative;
 
+      &:last-child {
+        > img {
+          border-right: none;
+        }
+      }
+
+      > img {
+        width: 100%;
+        border-right: 1px solid #fff;
+      }
+
+      .banner-content {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .banner-table {
+          display: table;
+          width: 100%;
+          height: 100%;
+        }
+
+        .banner-cell {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 30px;
+
+          .banner-cate-icon {
+            margin-bottom: 0;
+            background: #e3f8e4;
+            width: 65px;
+            height: 65px;
+            @include border-radius(50px);
+            padding: 8px;
+            margin-bottom: 15px;
+          }
+
+          p {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 30px;
+
+            span {
+              display: block;
+              font-size: 36px;
+              line-height: 38px;
+              font-family: 'ubuntubold';
+            }
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mobile app */
+.mobile-lunch-app {
+  background: #ddeae7;
+
+  .mobile-ads-tx {
+    margin: 55px 0 55px 55px;
+
+    h3 {
+      font-size: 30px;
+      color: #222222;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666666;
+      margin-left: 5px;
+    }
+
+    .mobile-app-icons {
+      margin: 15px 0 15px 0;
+
+      li {
+        display: inline-block;
+        border: 1px solid #444444;
+        width: 35px;
+        height: 35px;
+        @include border-radius(50px);
+        margin-right: 15px;
+
+        a {
+          padding: 5px 4px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .mobile-ads-img {
+    margin: 9px 0 0 0;
+  }
+}
+
+/* Why Religare */
+.religare-service-ar {
+  .religare-sev-tx {
+    text-align: center;
+
+    h3 {
+      margin: 40px 0 10px 0;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666666;
+    }
+  }
+}
+
+/* Company visitor*/
+.company-visitor-count {
+  background: #5b666b;
+
+  .user-visit-ar {
+    .visit-user-cnt {
+      padding: 15px 30px;
+
+      .visit-user-icon {
+        height: 102px;
+        position: relative;
+        margin-bottom: 25px;
+
+        &:after {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 40px;
+          height: 3px;
+          background: #8dc63f;
+          content: '';
+        }
+      }
+      h3 {
+        color: #fff;
+        font-family: 'ubuntubold';
+        line-height: 42px;
+        font-size: 42px;
+        margin: 15px 0 10px 0;
+      }
+
+      p {
+        color: #fff;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Profile Number */
+.profile-number-bx {
+  background: #6c767a;
+  padding: 30px 0;
+}
+.profile-num {
+  p {
+    margin: 0;
+  }
+  .profits-tx {
+    font-size: 24px;
+    color: #fff;
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  .profile-ip-bx {
+    .flag-tx {
+      float: left;
+
+      .ddcommon {
+        width: 82px !important;
+        border-radius: 0;
+        border: none;
+
+        .divider, .ddArrow {
+          display: none;
+          border: none;
+        }
+
+        .ddTitle {
+          background: #fff;
+          border: none;
+          border-radius: 0;
+          border-top-left-radius: $base-border-radius;
+          border-bottom-left-radius: $base-border-radius;
+
+          .ddTitleText {
+            padding: 15px 10px;
+            height: 48px;
+          }
+        }
+
+        .ddChild {
+          width: 150px;
+        }
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: top;
+        margin: 4px 5px 0 0;
+      }
+    }
+    .profile-ip {
+      float: left;
+      padding: 14px 10px;
+      border: none;
+      border-left: 1px solid #ccc;
+      width: 55%;
+      height: 48px;
+    }
+    .submit-btn {
+      float: left;
+      display: block;
+      background: #8dc63f;
+      padding: 14px;
+      width: 94px;
+      height: 48px;
+      text-align: center;
+      color: #fff;
+      border-top-right-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+    }
+  }
+}
+
+
+
+/************************************************************************************
+
+=========================== 05 Footer Styles ============================
+
+************************************************************************************/
+
+/****************************************
+   5.1 Footer Page links Styles
+****************************************/
+.footer-area {
+  padding: 25px 0;
+}
+.footer-links {
+  margin-bottom: 35px;
+
+  .footer-page-link {
+    h4 {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .footer-link-list {
+      margin-left: 15px;
+
+      li {
+        list-style: disc;
+        color: #fff;
+
+        a {
+          color: #d4d4d4;
+          display: block;
+          padding: 5px 0;
+        }
+
+        .ft-sub-menu {
+          margin-left: 15px;
+          li {
+            list-style: none;
+            position: relative;
+
+            &:before {
+              content: '-';
+              position: absolute;
+              left: -15px;
+              top: 2px;
+              font-size: 19px;
+              color: #fff;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+.ft-download-app {
+  margin-bottom: 35px;
+
+  .profile-num {
+    .profits-tx {
+      float: left;
+      font-size: 14px;
+      margin: 15px 15px 0 0;
+    }
+
+    .profile-ip-bx {
+      .profile-ip {
+        width: 40%;
+      }
+    }
+  }
+
+  .android-apply-ic {
+    text-align: right;
+
+    li {
+      display: inline-block;
+      padding: 5px;
+      margin: 0 5px;
+      border-radius: 4px;
+
+      &.andriod-ic {
+        background: #212121;
+      }
+
+      &.apple-ic {
+        background: #fff;
+      }
+    }
+  }
+}
+
+.sitemap-area {
+  margin-bottom: 30px;
+
+  .sitemap-sec {
+    .site-link-list {
+      margin-top: 5px;
+
+      li {
+        float: left;
+        border-right: 1px solid #8dc63f;
+
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        a {
+          display: block;
+          padding: 0px 10px;
+          color: #8dc63f;
+        }
+      }
+    }
+
+    .ft-social-link {
+      text-align: right;
+
+      li {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.ft-logo-content {
+  padding: 30px 0;
+
+  .ft-logo {
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #848484;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 /************************************************************************************
 
 =========================== 06 Common Styles ============================
@@ -214,9 +785,153 @@ h4, .headingfour {
 ************************************************************************************/
 
 /****************************************
-   6.1 Form Styles
+   6.1 Icons Styles
 ****************************************/
+.icons {
+  background-image: url("../images/spirit-icon.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  width: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+
+  &.up-icon {
+    background-position: -7px -6px;
+  }
+
+  &.down-icon {
+    background-position: -7px -16px;
+  }
+
+  &.user-icon {
+    background-position: -3px -30px;
+  }
+
+  &.search-icon {
+    background-position: -28px -30px;
+  }
+
+  &.andriod-icon {
+    background-position: -28px -5px;
+  }
+
+  &.apple-icon {
+    background-position: -52px -5px;
+  }
+
+  &.andriod-big-icon {
+    background-position: -4px -79px;
+  }
+
+  &.apple-big-icon {
+    background-position: -40px -79px;
+  }
+
+  &.fb-icon {
+    background-position: -6px -220px;
+    width: 34px;
+    height: 34px;
+  }
+  &.tw-icon {
+    background-position: -47px -220px;
+    width: 34px;
+    height: 34px;
+  }
+  &.link-icon {
+    background-position: -89px -220px;
+    width: 34px;
+    height: 34px;
+  }
+  &.youtube-icon {
+    background-position: -131px -220px;
+    width: 34px;
+    height: 34px;
+  }
+  &.gplus-icon {
+    background-position: -173px -220px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/****************************************
+   6.1 Accordion Styles
+****************************************/
+
+.accordionButton {
+  border-top: 1px solid #545859;
+  border-bottom: 1px solid #545859;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.accordionContent {
+  //background: #95B1CE;
+  color: #fff;
+}
+
+
+
+
+
+
 
 /********************************************************
    6.16 Common Class Styles
 ********************************************************/
+
+
+.main-container {
+  width: 1366px;
+  margin: auto;
+
+  @media screen and (max-width: 1365px) {
+    width: 100%;
+  }
+}
+
+.white-bg {
+  background: #fff;
+}
+
+/* heading */
+.heading-bx {
+  position: relative;
+  text-align: center;
+  min-height: 63px;
+  margin: 0px 0 50px 0;
+
+  h2 {
+    font-size: 32px;
+    color: #222222;
+    margin: 0;
+  }
+
+  .heading-line {
+    width: 100%;
+    position: absolute;;
+    bottom: 0;
+
+    p {
+      width: 100px;
+      margin: 0 auto;
+      height: 3px;
+
+      &.green-line {
+        background: #8dc63f;
+      }
+
+      &.yellow-line {
+        background: #fff200;
+      }
+    }
+  }
+}
+
+.content-pd {
+  padding: 60px 0;
+}
