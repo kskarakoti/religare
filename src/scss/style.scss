@@ -7,38 +7,21 @@
       1.1 Main Wrapper Styles
    
    02 Header Section Styles
-   	  2.1  Top Header with Location Select
-	  2.2  Main Navigation & Search Section
+   	  2.1  Top Header with Navigation & Search Section
    	  
    03 Main Content Section Styles
 	  3.1 Modal Window Styles
 	  3.2 Landing/Home Page Styles
-	  3.3 Story Page Styles
-	  3.4 Entertainnment Page Styles
-	  3.5 City Page Styles
-	  3.6 Lifestyle Page Styles
-	  3.7 Sports Page Styles
-	  3.8 Authors Page Styles
+	  3.2 Qoutes Commodities Page Styles
 
-   05 Footer Section Styles
-	  5.1 Footer List Links
+   04 Footer Section Styles
+	  4.1 Footer List Links
 	  
-   06 Common Styles
-	  6.1 Form Styles
-	  6.2 Buttons Styles
-	  6.3 Links/Input Styles
-	  6.4 Image/Media Styles
-	  6.5 Unordered/Ordered List Styles
-	  6.6 Padding Styles
-	  6.7 Margin Styles
-	  6.8 Off Canvas Styles
-	  6.9 Back to Top Styles
-	  6.10 Owl Custom Nav Style
-	  6.11 Custom Select/Select2 Styles
-	  6.12 No Gutter Styles
-	  6.13 Custom checkbox and radio buttons
-	  6.14 Spirit images Styles
-	  6.15 Common Class Styles
+   05 Common Styles
+	  5.1 Icons Styles
+	  5.2 Accordion Styles
+	  5.3 Checkbox & Radio button Styles
+	  5.4 Common Class Styles
 *****************************************************************/
 /************************************************************************************
 
@@ -92,30 +75,30 @@ body {
   padding-top: $padding-base-5 * 19;
   position: static;
   @include transition-none(none);
+
+  &.overflownone {
+    overflow: hidden;
+  }
 }
 ul {margin: $margin-none; padding: $padding-none;}
 ul li {list-style: none;}
-a, a:hover {text-decoration: none;}
-.h1, .h2, .h3, h1, h2, h3, .headingthree {
+a, a:hover, a:focus {text-decoration: none;}
+.h1, .h2, .h3, h1, h2, h3 {
   margin-top: $margin-base-5 * 4;
   margin-bottom: $margin-base-5 * 2;
 }
 
-h1, h2, h3, h4, h5, .headingtwo, .headingfour, .headingthree, .headingfive {
+h1, h2, h3, h4, h5 {
   font-family: $font-family-ubunturegular;
 }
 h2 {
   line-height: 30px;
 }
-.headingtwo {
-  font-size: $font-size-large + 12;
-  line-height: 30px;
-}
-h3, .headingthree {
+h3 {
   font-size: $font-size-large + 6;
   line-height: 23px;
 }
-h4, .headingfour {
+h4 {
   line-height: 23px;
   font-size: $font-size-large;
   margin: ($margin-base-5 * 2) $margin-none;
@@ -175,13 +158,14 @@ h4, .headingfour {
 ************************************************************************************/
 
 /****************************************
-   2.1 Top Header
+   2.1 Top Header with Navigation & Search Section
 ****************************************/
 header {
   position: fixed;
   top:0;
   z-index: 999;
   width: 100%;
+  height: 96px;
   margin: auto;
   background: $white;
   @include box-shadow(0px 2px 9px 0px rgba(50, 50, 50, 0.2));
@@ -217,7 +201,20 @@ header {
 
           .col-green {
             color: $forest-green;
+
+            .mb-hide {
+              @media screen and (max-width: 480px) {
+                display: none;
+              }
+            }
           }
+
+          @media screen and (max-width: 480px) {
+            font-size: 11px;
+          }
+        }
+        @media screen and (max-width: 360px) {
+          margin-right: 5px;
         }
       }
     }
@@ -236,6 +233,16 @@ header {
           .logo {
             float: left;
             margin-bottom: $margin-none;
+
+            .hamburg-menu-btn {
+              display: none;
+
+              //mobile menu
+              @media screen and (max-width: 1005px) {
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
           }
 
           .menu-lt-ar {
@@ -258,11 +265,19 @@ header {
                   &:hover {
                     color: $sushi;
                   }
+
+                  @media screen and (max-width: 1170px) {
+                    padding: ($padding-base-5 + 3) ($padding-base-5 * 2);
+                  }
                 }
 
-                &:hover{
-                  .sub-menu-ar {
-                    display: block;
+                &.sub-item{
+                  &:hover{
+                    .sub-menu-ar {
+                      @media screen and (min-width: 1005px) {
+                        display: block;
+                      }
+                    }
                   }
                 }
 
@@ -274,6 +289,34 @@ header {
                   width: 100%;
                   left: 0;
                   top: 65px;
+
+                  //mobile menu
+                  @media screen and (max-width: 1005px) {
+                    position: relative;
+                    top:0;
+                    left: 0;
+
+                    &.active {
+                      display: block;
+                    }
+                  }
+
+                  .container {
+                    .row {
+                      > .col-md-3 {
+                        //mobile menu
+                        @media screen and (max-width: 1005px) {
+                          display: block;
+                          width: 100%;
+                          padding: 0;
+                        }
+                      }
+                    }
+                    //mobile menu
+                    @media screen and (max-width: 1005px) {
+                      width: 100%;
+                    }
+                  }
 
                   &:before {
                     content: '';
@@ -303,7 +346,20 @@ header {
                           display: inline-block;
                           margin-top: -7px;
                         }
+
+                        //mobile menu
+                        @media screen and (max-width: 1005px) {
+                          padding: ($padding-base-5 + 3) $padding-none;
+                        }
                       }
+                      //mobile menu
+                      @media screen and (max-width: 1005px) {
+                        display: block;
+                      }
+                    }
+                    //mobile menu
+                    @media screen and (max-width: 1005px) {
+                      text-align: left;
                     }
                   }
 
@@ -333,6 +389,11 @@ header {
                           i {
                             display: inline-block;
                             margin: -7px $margin-base-5 $margin-none $margin-none;
+                          }
+
+                          //mobile menu
+                          @media screen and (max-width: 1200px) {
+                            padding: ($padding-base-5 + 3) ($padding-base-5);
                           }
                         }
                       }
@@ -366,9 +427,37 @@ header {
                         }
                       }
                     }
+                    //mobile menu
+                    @media screen and (max-width: 1005px) {
+                      border: none;
+                      min-height: auto;
+                    }
                   }
 
                 }
+                //mobile menu
+                @media screen and (max-width: 1005px) {
+                  display: block;
+                  float: none;
+                }
+              }
+            }
+
+            //mobile menu
+            @media screen and (max-width: 1005px) {
+              display: none;
+
+              &.active {
+                display: block;
+                position: fixed;
+                background: #fff;
+                left: 0;
+                top: 96px;
+                width: 75%;
+                height: 100%;
+                margin: 0;
+                max-width: 450px;
+                overflow: auto;
 
               }
             }
@@ -409,16 +498,27 @@ header {
               text-transform: uppercase;
             }
           }
+
+          @media screen and (max-width: 1005px) {
+            display: none;
+          }
         }
 
         .account-links {
           display: inline-block;
           vertical-align: middle;
-          margin: 0 15px;
+          margin: $margin-none ($margin-base-5 * 3);
           padding: ($padding-base-5 - 3) ($padding-base-5 * 2);
           background: $atlantis-lt;
-          color: #fff;
+          color: $white;
           border-radius: $base-border-radius;
+
+          @media screen and (max-width: 1170px) {
+            margin: $margin-none ($margin-base-5 * 2);
+          }
+          @media screen and (max-width: 1005px) {
+            display: none;
+          }
         }
 
         .search-links {
@@ -430,19 +530,19 @@ header {
 
             a {
               display: block;
-              padding: 2px 8px;
+              padding: ($padding-base-5 - 3) ($padding-base-5 + 3);
+
+              @media screen and (max-width: 1366px) {
+                padding: ($padding-base-5 - 3) ($padding-base-5 - 2);
+              }
             }
           }
         }
       }
     }
   }
-
 }
 
-/****************************************
-   2.2 Main Navigation & Search Section
-****************************************/
 
 /************************************************************************************
 
@@ -499,8 +599,10 @@ header {
   .banner-list {
     li {
       display: inline-block;
-      padding: 0;
+      padding: $padding-none;
       position: relative;
+      height: 500px;
+      overflow: hidden;
 
       &:last-child {
         > img {
@@ -510,7 +612,7 @@ header {
 
       > img {
         width: 100%;
-        border-right: 1px solid #fff;
+        border-right: 1px solid $white;
       }
 
       .banner-content {
@@ -532,35 +634,39 @@ header {
           padding: 30px;
 
           .banner-cate-icon {
-            margin-bottom: 0;
-            background: #e3f8e4;
+            margin-bottom: $margin-none;
+            background: $tara;
             width: 65px;
             height: 65px;
             @include border-radius(50px);
-            padding: 8px;
-            margin-bottom: 15px;
+            padding: ($padding-base-5 + 3);
+            margin-bottom: ($margin-base-5 * 3);
           }
 
           p {
-            font-size: 24px;
-            color: #fff;
-            margin-bottom: 30px;
+            font-size: $font-size-large + 6;
+            color: $white;
+            margin-bottom: ($margin-base-5 * 6);
 
             span {
               display: block;
-              font-size: 36px;
+              font-size: $font-size-large * 2;
               line-height: 38px;
               font-family: 'ubuntubold';
+            }
+
+            @media screen and (max-width: 1170px) {
+              font-size: $font-size-large + 4;
             }
           }
 
           a {
-            color: #fff;
+            color: $white;
             display: block;
 
             .plus-ico {
-              background: #8dc63f;
-              color: #fff;
+              background: $sushi;
+              color: $white;
               padding: 1px;
               width: 30px;
               height: 30px;
@@ -569,10 +675,17 @@ header {
               font-size: 26px;
               text-align: center;
               line-height: 25px;
-              margin-right: 5px;
+              margin-right: $margin-base-5;
             }
           }
         }
+      }
+
+      @media screen and (max-width: 1366px) {
+        height: auto;
+      }
+      @media screen and (max-width: 967px) {
+        height: 350px;
       }
     }
   }
@@ -583,12 +696,16 @@ header {
   background: #ddeae7;
 
   .mobile-ads-tx {
-    margin: 55px 0 55px 55px;
+    margin: ($margin-base-5 * 11) $margin-none ($margin-base-5 * 11) ($margin-base-5 * 11);
 
     h3 {
-      font-size: 30px;
-      color: #222222;
-      margin-bottom: 15px;
+      font-size: ($font-size-large + 12);
+      color: $mine-shaft;
+      margin-bottom: ($margin-base-5 * 3);
+
+      @media screen and (max-width: 1170px) {
+        font-size: ($font-size-large + 6);
+      }
     }
 
     p {
@@ -598,26 +715,46 @@ header {
     }
 
     .mobile-app-icons {
-      margin: 15px 0 15px 0;
+      margin: ($margin-base-5 * 3) $margin-none ($margin-base-5 * 3) $margin-none;
 
       li {
         display: inline-block;
-        border: 1px solid #444444;
+        border: 1px solid $tundora;
         width: 35px;
         height: 35px;
         @include border-radius(50px);
-        margin-right: 15px;
+        margin-right: ($margin-base-5 * 3);
 
         a {
-          padding: 5px 4px;
+          padding: $padding-base-5 ($padding-base-5 - 1);
           display: block;
         }
       }
     }
+
+    @media screen and (max-width: 970px) {
+      margin: ($margin-base-5 * 11) $margin-none ($margin-base-5 * 3) ($margin-base-5 * 3);
+    }
   }
 
   .mobile-ads-img {
-    margin: 9px 0 0 0;
+    margin: ($margin-base-5 + 4) $margin-none $margin-none $margin-none;
+
+    img {
+      @media screen and (max-width: 970px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        width: auto;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      text-align: right;
+      margin-top: -25px;
+    }
   }
 }
 
@@ -626,30 +763,62 @@ header {
   .religare-sev-tx {
     text-align: center;
 
+    img {
+      @media screen and (max-width: 991px) {
+        height: 120px;
+      }
+      @media screen and (max-width: 767px) {
+        height: auto;
+      }
+    }
+
     h3 {
-      margin: 40px 0 10px 0;
-      font-size: 24px;
+      margin: ($margin-base-5 * 5) $margin-none ($margin-base-5 * 2) $margin-none;
+      font-size: $font-size-large + 6;
+
+      @media screen and (max-width: 1170px) {
+        font-size: $font-size-large + 2;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: $font-size-large;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: $font-size-large;
+        min-height: 46px;
+      }
+      @media screen and (max-width: 767px) {
+        min-height: auto;
+        margin: ($margin-base-5 * 4) $margin-none ($margin-base-5 * 2) $margin-none;
+      }
     }
 
     p {
-      font-size: 16px;
-      color: #666666;
+      font-size: $font-size-medium;
+      color: $dove-gray;
+
+      @media screen and (max-width: 991px) {
+        font-size: $font-size-large - 2;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
   }
 }
 
 /* Company visitor*/
 .company-visitor-count {
-  background: #5b666b;
+  background: $nevada;
 
   .user-visit-ar {
     .visit-user-cnt {
-      padding: 15px 30px;
+      padding: ($padding-base-5 * 3) ($padding-base-5 * 6);
 
       .visit-user-icon {
         height: 102px;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: ($margin-base-5 * 5);
 
         &:after {
           position: absolute;
@@ -657,21 +826,49 @@ header {
           bottom: 0;
           width: 40px;
           height: 3px;
-          background: #8dc63f;
+          background: $sushi;
           content: '';
+
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          height: auto;
         }
       }
       h3 {
-        color: #fff;
+        color: $white;
         font-family: 'ubuntubold';
         line-height: 42px;
         font-size: 42px;
-        margin: 15px 0 10px 0;
+        margin: ($margin-base-5 * 3) $margin-none ($margin-base-5 * 2) $margin-none;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 30px;
+        }
       }
 
       p {
-        color: #fff;
-        margin-bottom: 0;
+        color: $white;
+        margin-bottom: $margin-none;
+      }
+      @media screen and (max-width: 1200px) {
+        padding: ($padding-base-5 * 3) ($padding-base-5 * 2);
+      }
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        padding: ($padding-base-5 * 3) $padding-base-5;
+        margin-bottom: ($margin-base-5 * 5);
+      }
+    }
+
+    > .col-xs-6 {
+      @media screen and (max-width: 360px) {
+        width: 100%;
+        display: block;
+        float: none;
       }
     }
   }
@@ -679,21 +876,32 @@ header {
 
 /* Profile Number */
 .profile-number-bx {
-  background: #6c767a;
-  padding: 30px 0;
+  background: $nevada-dk;
+  padding: ($padding-base-5 * 6) $padding-none;
 }
 .profile-num {
   p {
-    margin: 0;
+    margin: $margin-none;
   }
   .profits-tx {
-    font-size: 24px;
-    color: #fff;
+    font-size: $font-size-large + 6;
+    color: $white;
     text-align: right;
-    margin-top: 5px;
+    margin-top: $margin-base-5;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 640px) {
+      font-size: $font-size-large;
+    }
   }
 
   .profile-ip-bx {
+    position: relative;
+    width: 450px;
+
     .flag-tx {
       float: left;
 
@@ -708,14 +916,14 @@ header {
         }
 
         .ddTitle {
-          background: #fff;
+          background: $white;
           border: none;
           border-radius: 0;
           border-top-left-radius: $base-border-radius;
           border-bottom-left-radius: $base-border-radius;
 
           .ddTitleText {
-            padding: 15px 10px;
+            padding: ($padding-base-5 * 3) ($padding-base-5 * 2);
             height: 48px;
           }
         }
@@ -728,28 +936,50 @@ header {
       img {
         display: inline-block;
         vertical-align: top;
-        margin: 4px 5px 0 0;
+        margin: ($margin-base-5 - 1) $margin-base-5 $margin-none $margin-none;
       }
     }
     .profile-ip {
       float: left;
-      padding: 14px 10px;
+      padding: ($padding-base-5 * 3) - 1 ($padding-base-5 * 2);
       border: none;
-      border-left: 1px solid #ccc;
-      width: 55%;
+      border-left: 1px solid $silver;
+      width: 80%;
       height: 48px;
+
+      @media screen and (max-width: 640px) {
+        width: 66%;
+      }
     }
     .submit-btn {
-      float: left;
+      //float: left;
+      position: absolute;
+      right: 0;
       display: block;
-      background: #8dc63f;
+      background: $sushi;
       padding: 14px;
       width: 94px;
       height: 48px;
       text-align: center;
-      color: #fff;
+      color: $white;
       border-top-right-radius: $base-border-radius;
       border-bottom-right-radius: $base-border-radius;
+
+      @media screen and (max-width: 480px) {
+        width: 80px;
+        padding: 14px 0;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 80%;
+      margin: auto;
+    }
+    @media screen and (max-width: 640px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 640px) {
+      width: 95%;
     }
   }
 }
@@ -758,28 +988,28 @@ header {
    3.2 Qoutes Commodities Page Styles
 ****************************************/
 .sliver-micro-ar {
-  padding: 30px 0;
+  padding: ($padding-base-5 * 6) $padding-none;
 
   .charts-heading {
     .charts-heading-lt {
       float: left;
 
       h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 26px;
+        margin: $margin-none;
+        padding: $padding-none;
+        font-size: $font-size-large + 8;
         font-family: 'ubuntumedium';
-        color: #222222;
+        color: $mine-shaft;
       }
     }
     .charts-heading-rt {
       float: right;
-      background: #40474e;
-      padding: 10px;
+      background: $mako;
+      padding: ($padding-base-5 * 2);
 
       p {
-        color: #fff;
-        margin: 0;
+        color: $white;
+        margin: $margin-none;
       }
     }
   }
@@ -787,41 +1017,61 @@ header {
 
 /************************************************************************************
 
-=========================== 05 Footer Styles ============================
+=========================== 04 Footer Styles ============================
 
 ************************************************************************************/
 
 /****************************************
-   5.1 Footer Page links Styles
+   4.1 Footer List Links
 ****************************************/
 .footer-area {
-  padding: 25px 0;
-  background: #2b2f32;
+  padding: ($padding-base-5 * 5) $padding-none;
+  background: $shark;
 }
 .footer-links {
-  margin-bottom: 35px;
+  margin-bottom: ($margin-base-5 * 7);
 
   .footer-page-link {
     h4 {
-      color: #fff;
-      font-size: 14px;
+      color: $white;
+      font-size: $font-size-small + 2;
+      position: relative;
+
+      &.ft-link-title {
+        &:after {
+          @media screen and (max-width: 991px) {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: -3px;
+            font-size: 28px;
+          }
+        }
+
+        &.active {
+          &:after {
+            content: '-';
+            right: 4px;
+          }
+        }
+      }
     }
 
     .footer-link-list {
-      margin-left: 15px;
+      margin-left: ($margin-base-5 * 3);
 
       li {
         list-style: disc;
-        color: #fff;
+        color: $white;
 
         a {
-          color: #d4d4d4;
+          color: $alto;
           display: block;
-          padding: 5px 0;
+          padding: $padding-base-5 $padding-none;
         }
 
         .ft-sub-menu {
-          margin-left: 15px;
+          margin-left: ($margin-base-5 * 3);
 
           li {
             list-style: none;
@@ -833,31 +1083,73 @@ header {
               left: -15px;
               top: 2px;
               font-size: 19px;
-              color: #fff;
+              color: $white;
               font-family: 'ubuntulight';
             }
           }
         }
 
       }
+
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
     }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    margin-bottom: 0;
   }
 }
 
 
 .ft-download-app {
-  margin-bottom: 35px;
+  margin-bottom: ($margin-base-5 * 7);
 
   .profile-num {
     .profits-tx {
       float: left;
       font-size: 14px;
-      margin: 15px 15px 0 0;
+      margin: ($margin-base-5 * 3) ($margin-base-5 * 3) $margin-none $margin-none;
+
+      @media screen and (max-width: 767px) {
+        float: none;
+        text-align: center;
+        margin: $margin-base-5 ($margin-base-5 * 3) ($margin-base-5 * 3) $margin-none;
+      }
     }
 
     .profile-ip-bx {
+      float: left;
+
       .profile-ip {
-        width: 40%;
+        @media screen and (max-width: 991px) {
+          width: 76%;
+        }
+        @media screen and (max-width: 480px) {
+          width: 65%;
+        }
+      }
+
+      .submit-btn {
+        @media screen and (max-width: 360px) {
+          width: 70px;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        width: 410px;
+      }
+      @media screen and (max-width: 767px) {
+        float: none;
+        margin: auto;
+      }
+      @media screen and (max-width: 480px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 360px) {
+        width: 98%;
       }
     }
   }
@@ -867,35 +1159,40 @@ header {
 
     li {
       display: inline-block;
-      padding: 5px;
-      margin: 0 5px;
+      padding: $padding-base-5;
+      margin: $margin-none $margin-base-5;
       border-radius: 4px;
 
       &.andriod-ic {
-        background: #212121;
+        background: $mine-shaft;
       }
 
       &.apple-ic {
-        background: #fff;
+        background: $white;
       }
+    }
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-top: 15px;
     }
   }
 }
 
 .sitemap-area {
-  margin-bottom: 30px;
+  margin-bottom: ($margin-base-5 * 6);
 
   .sitemap-sec {
     .site-link-list {
-      margin-top: 5px;
+      margin-top: $margin-base-5;
 
       li {
         float: left;
-        border-right: 1px solid #8dc63f;
+        border-right: 1px solid $sushi;
 
         &:first-child {
           a {
-            padding-left: 0;
+            padding-left: $padding-none;
           }
         }
 
@@ -905,9 +1202,17 @@ header {
 
         a {
           display: block;
-          padding: 0px 10px;
-          color: #8dc63f;
+          padding: $padding-none ($padding-base-5 * 2);
+          color: $sushi;
         }
+
+        @media screen and (max-width: 767px) {
+          float: none;
+          display: inline-block;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        text-align: center;
       }
     }
 
@@ -916,36 +1221,46 @@ header {
 
       li {
         display: inline-block;
-        margin-left: 5px;
+        margin-left: $margin-base-5;
+      }
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-top: 15px;
       }
     }
   }
 }
 
 .ft-logo-content {
-  padding: 30px 0;
+  padding: ($padding-base-5 * 6) $padding-none;
 
   .ft-logo {
-    margin-bottom: 10px;
+    margin-bottom: $margin-base-5 * 2;
   }
 
   p {
-    color: #848484;
-    margin-bottom: 15px;
+    color: $gray;
+    margin-bottom: ($margin-base-5 * 3);
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: $margin-none;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
     }
   }
 }
+
 /************************************************************************************
 
-=========================== 06 Common Styles ============================
+=========================== 05 Common Styles ============================
 
 ************************************************************************************/
 
 /****************************************
-   6.1 Icons Styles
+   5.1 Icons Styles
 ****************************************/
 .icons {
   background-image: url("../images/spirit-icon.png");
@@ -1065,28 +1380,49 @@ header {
     width: 44px;
     height: 38px;
   }
+  &.hamburg-menu-icon {
+    background-position: -80px -79px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 /****************************************
-   6.1 Accordion Styles
+   5.2 Accordion Styles
 ****************************************/
 
-.accordionButton {
+.investor-title {
   border-top: 1px solid #545859;
   border-bottom: 1px solid #545859;
   cursor: pointer;
-  color: #fff;
-  padding: 10px 0;
+  color: $white;
+  padding: ($padding-base-5 * 2) $padding-none;
+  position: relative;
+
+  &:after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: -3px;
+    font-size: 28px;
+  }
+
+  &.active {
+    &:after {
+      content: '-';
+      right: 4px;
+    }
+  }
 }
 
-.accordionContent {
+.investor-content {
   //background: #95B1CE;
-  color: #fff;
+  color: $white;
 }
 
 
 /****************************************
-   6.1 Checkbox & Radio button Styles
+   5.3 Checkbox & Radio button Styles
 ****************************************/
 .custom-radiobutton {
   opacity:0;
@@ -1124,7 +1460,7 @@ header {
 
 
 /********************************************************
-   6.16 Common Class Styles
+   5.4 Common Class Styles
 ********************************************************/
 
 .main-container {
@@ -1132,12 +1468,18 @@ header {
   margin: auto;
 
   @media screen and (max-width: 1365px) {
-    width: 100%;
+    width: 98%;
+  }
+}
+
+.container {
+  @media screen and (max-width: 1200px) {
+    width: 98%;
   }
 }
 
 .white-bg {
-  background: #fff;
+  background: $white;
 }
 
 /*********** Overlay Styles **************/
@@ -1159,12 +1501,12 @@ header {
   position: relative;
   text-align: center;
   min-height: 63px;
-  margin: 0px 0 50px 0;
+  margin: $margin-none $margin-none ($margin-base-5 * 10) $margin-none;
 
   h2 {
     font-size: 32px;
-    color: #222222;
-    margin: 0;
+    color: $mine-shaft;
+    margin: $margin-none;
   }
 
   .heading-line {
@@ -1174,22 +1516,22 @@ header {
 
     p {
       width: 100px;
-      margin: 0 auto;
+      margin: $margin-none auto;
       height: 3px;
 
       &.green-line {
-        background: #8dc63f;
+        background: $sushi;
       }
 
       &.yellow-line {
-        background: #fff200;
+        background: $yellow;
       }
     }
   }
 }
 
 .content-pd {
-  padding: 60px 0;
+  padding: ($padding-base-5 * 12) $padding-none;
 }
 
 .border-none {
