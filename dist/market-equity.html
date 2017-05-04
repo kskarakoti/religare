@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="assets/images/favicon.ico">
     <title>Religare - Home</title>
 
     <!-- Custom CSS  -->
@@ -264,50 +264,63 @@
 
     <!--section-->
     <section class="content-block gray-bg-content">
-        <div class="banner-chart center-title">
+        <!--banner-->
+        <div class="banner-chart">
            <div class="container">
-               <h3 class="title heading-bar text-center center-title">Markets Today</h3>
+               <div class="heading-bx mb-20">
+                   <h2>Why Religare?</h2>
+               </div>
                <div class="chart-tab-wrap">
                    <div class="tab-list clearfix">
-                       <ul class="tabs clearfix">
-                           <li class="tab-link current" data-tab="tab-1">
-                               <span class="title"><span class="icon"></span> NIFTY</span>
-                               <span class="sunsex-count">
-                                   <span class="count-1">8,966.20</span>
-                                   <span class="count-1">&#8593; 40.15(0.45%)</span>
-                               </span>
+                       <!-- Nav tabs -->
+                       <ul class="nav nav-tabs" role="tablist">
+                           <li class="nifty-ar active">
+                               <a href="#home" data-toggle="tab">
+                                   <p class="title"><span class="icon"></span> NIFTY</p>
+                                   <p class="sunsex-count">
+                                       <span class="price-value">8,966.20</span>
+                                       <span class="price-percentage gain">&#8593; 40.15(0.45%)</span>
+                                   </p>
+                               </a>
                            </li>
-                           <li class="tab-link" data-tab="tab-2">
-                               <span class="title"><span class="icon"></span> SENSEX</span>
-                               <span class="sunsex-count">
-                                   <span class="count-1">8,966.20</span>
-                                   <span class="count-1">&#8595; 40.15(0.45%)</span>
-                               </span>
+                           <li class="sensex-ar">
+                               <a href="#profile" data-toggle="tab">
+                                   <p class="title"><span class="icon"></span> SENSEX</p>
+                                   <p class="sunsex-count">
+                                       <span class="price-value">28,734.63</span>
+                                       <span class="price-percentage loss">&#8593; 128.31 (0.44%)</span>
+                                   </p>
+                               </a>
                            </li>
-                           <li class="tab-link">
-                               &#43; <select>
-                                        <option>Add Index</option>
-                                        <option>Add Index</option>
-                                    </select>
+                           <li class="add-index">
+                               <a href="#messages" data-toggle="tab"><span class="plus-icon">+</span> <span class="add-tx">Add Index</span> <span class="down-arrow">&#10095;</span> </a>
                            </li>
                        </ul>
-                   </div>
-                   <div class="tab-container clearfix">
-                       <div id="tab-1" class="tab-content current">
-                           <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
+
+                       <!-- Tab panes -->
+                       <div class="tab-content chart-content-tab">
+                           <div role="tabpanel" class="tab-pane active" id="home">
+                               <div class="chart-content-ar">
+                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
+                               </div>
+                           </div>
+                           <div role="tabpanel" class="tab-pane" id="profile">wfedsa.</div>
+                           <div role="tabpanel" class="tab-pane" id="messages">
+                               <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
+                           </div>
                        </div>
-                       <div id="tab-2" class="tab-content">
-                           <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
+
+                       <!--View all-->
+                       <div class="view-detail">
+                           <ul class="view-list-dt">
+                               <li><a href="javascript:void(0);">View Index Puller & Draggers</a></li>
+                               <li><a href="javascript:void(0);">View All Indicas</a></li>
+                           </ul>
                        </div>
-                   </div>
-                   <div class="view-detail">
-                       <ul class="list">
-                           <li><a href="javascript:void(0);">View Index Puller & Draggers</a></li>
-                           <li><a href="javascript:void(0);">View All Indicas</a></li>
-                       </ul>
                    </div>
                </div>
 
+               <!--arrow down-->
                <div class="down-arrow">
                    <span class="icon">
                        <span class="arrow bounce">&#10095;</span>
@@ -315,216 +328,472 @@
                </div>
            </div>
         </div>
-        <div class="container">
 
 
+        <!--Tranding Now-->
+        <div class="tranding-now-area content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>Trending Now</h2>
+                </div>
 
-
-            <div class="equity-trading-wrap center-title">
-                <h3 class="title heading-bar text-center center-title">Support and Resistance Levels</h3>
-                <div class="tab-wrap">
-                    <div class="select-wrap">
-                        <div class="block"></div>
-                        <div class="block"></div>
+                <div class="tranding-content-area">
+                    <!--tranding option-->
+                    <div class="tranding-opt clearfix">
+                        <div class="tranding-select-opt">
+                            <select class="selectImg">
+                                <option value="nse">NSE</option>
+                                <option value="nse">BSE</option>
+                            </select>
+                        </div>
+                        <div class="tranding-select-opt">
+                            <select class="selectImg">
+                                <option value="nse">NSE</option>
+                                <option value="nse">BSE</option>
+                            </select>
+                        </div>
                     </div>
-                    <div  class="tab-wrapper">
-                        <ul  class="nav nav-pills">
-                            <li class="active"><a  href="#gainer-loser" data-toggle="tab">Top Gainer - Loser</a></li>
-                            <li><a href="#most-active" data-toggle="tab">Most Active</a></li>
-                            <li><a href="#high-low" data-toggle="tab">52 week High - Low</a></li>
+
+                    <div class="tranding-tab">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#gainer" data-toggle="tab">Top Gainer-Loser</a></li>
+                            <li><a href="#mostActive" data-toggle="tab">Most Active</a></li>
+                            <li><a href="#highLow" data-toggle="tab">52 week High - Low</a></li>
                         </ul>
-                        <div class="tab-content clearfix">
-                            <div class="tab-pane active" id="gainer-loser">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content share-content-tab">
+                            <div role="tabpanel" class="tab-pane active" id="gainer">
+                                <div class="share-mkt-ar">
+                                    <div class="top-gainers-heading row">
+                                        <div class="col-md-6">
+                                            <div class="share-title clearfix">
+                                                <h3 class="title-left">Top Gainers</h3>
+                                                <ul class="share-dt-sort title-right">
+                                                    <li class="active"><a href="javascript:void(0)">Today</a></li>
+                                                    <li><a href="javascript:void(0)">5 Days</a></li>
+                                                    <li><a href="javascript:void(0)">1 Mon</a></li>
+                                                    <li><a href="javascript:void(0)">3 Mon</a></li>
+                                                    <li><a href="javascript:void(0)">1 Yr</a></li>
+                                                    <li><a href="javascript:void(0)">Max</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="share-mkt-data">
+                                                <table class="shate-data-tbl table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>LTP</th>
+                                                            <th>Value (in Cr.)</th>
+                                                            <th>Volume</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>ICICI Bank</td>
+                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
+                                                            <td>1,135.58</td>
+                                                            <td>3.96 lac</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Larsen & Toubro</td>
+                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
+                                                            <td>1,135.58</td>
+                                                            <td>3.96 lac</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ICICI Bank</td>
+                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
+                                                            <td>1,135.58</td>
+                                                            <td>3.96 lac</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Larsen & Toubro</td>
+                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
+                                                            <td>1,135.58</td>
+                                                            <td>3.96 lac</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="share-title clearfix">
+                                                <h3 class="title-left">Top Losers</h3>
+                                                <ul class="share-dt-sort title-right">
+                                                    <li class="active"><a href="javascript:void(0)">Today</a></li>
+                                                    <li><a href="javascript:void(0)">5 Days</a></li>
+                                                    <li><a href="javascript:void(0)">1 Mon</a></li>
+                                                    <li><a href="javascript:void(0)">3 Mon</a></li>
+                                                    <li><a href="javascript:void(0)">1 Yr</a></li>
+                                                    <li><a href="javascript:void(0)">Max</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="share-mkt-data">
+                                                <table class="shate-data-tbl table table-striped">
+                                                    <thead>
                                                     <tr>
                                                         <th>Name</th>
                                                         <th>LTP</th>
                                                         <th>Value (in Cr.)</th>
                                                         <th>Volume</th>
                                                     </tr>
-                                                </thead>
-                                                <tbody>
+                                                    </thead>
+                                                    <tbody>
                                                     <tr>
                                                         <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
+                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                        <td>1,135.58</td>
+                                                        <td>3.96 lac</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Larsen & Toubro</td>
+                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
                                                     <tr>
                                                         <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
+                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
+                                                        <td>Larsen & Toubro</td>
+                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
-                                                        <td>1,135.58</td>
-                                                        <td>3.96 lac</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
-                                                        <td>1,135.58</td>
-                                                        <td>3.96 lac</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>ICICI Bank</td>
-                                                        <td>287.25
-                                                            16.70 (6.17%)</td>
-                                                        <td>1,135.58</td>
-                                                        <td>3.96 lac</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>LTP</th>
-                                                    <th>Value (in Cr.)</th>
-                                                    <th>Volume</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ICICI Bank</td>
-                                                    <td>287.25
-                                                        16.70 (6.17%)</td>
-                                                    <td>1,135.58</td>
-                                                    <td>3.96 lac</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                                                    </tbody>
+                                                </table>
+                                                <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="most-active">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="high-low">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-                                </div>
+                            <div role="tabpanel" class="tab-pane" id="mostActive">wfedsa.</div>
+                            <div role="tabpanel" class="tab-pane" id="highLow">
+                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="global-indica-wrap center-title">
-                <h3 class="title heading-bar text-center center-title">Support and Resistance Levels</h3>
-                <img src="assets/images/markets_equity_global.jpg" alt="" title="" class="img-responsive">
-            </div>
-            <div class="sector-wrap center-title">
-                <h3 class="title heading-bar text-center center-title">Support and Resistance Levels</h3>
-                <img src="assets/images/markets_equity_sector.jpg" alt="" title="" class="img-responsive">
-            </div>
-            <div class="rec-help-wrap center-title">
+        </div>
 
-            </div>
-            <div class="count-list-wrap center-title">
-                <h3 class="title heading-bar text-center center-title">Support and Resistance Levels</h3>
-                <ul class="level-list">
-                    <li>
-                        <span class="level-title">Support Level -1</span>
-                        <span class="count">15,68,300.62</span>
-                    </li>
-                    <li>
-                        <span class="level-title">Support Level -2</span>
-                        <span class="count">15,68,300.62</span>
-                    </li>
-                    <li>
-                        <span class="level-title">Support Level -3</span>
-                        <span class="count">15,68,300.62</span>
-                    </li>
-                    <li>
-                        <span class="level-title">Support Level -4</span>
-                        <span class="count">15,68,300.62</span>
-                    </li>
-                </ul>
-                <p class="note">Note - Support and resistance values are calculated on weekly basis.</p>
-            </div>
-            <div class="count-list-wrap center-title">
-                <h3 class="title heading-bar text-center ">Moving Average</h3>
-                <ul class="level-list">
-                    <li>
-                        <span class="level-title">10 Days</span>
-                        <span class="count">2,303.54</span>
-                    </li>
-                    <li>
-                        <span class="level-title">20 Days</span>
-                        <span class="count">2,303.54</span>
-                    </li>
-                    <li>
-                        <span class="level-title">50 Days</span>
-                        <span class="count">2,303.54</span>
-                    </li>
-                    <li>
-                        <span class="level-title">100 Days</span>
-                        <span class="count">2,303.54</span>
-                    </li>
-                </ul>
+
+        <!--Global Indices-->
+        <div class="global-indices-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>Global Indices</h2>
+                </div>
             </div>
         </div>
+
+
+        <!--Global Indices-->
+        <div class="sector-performance-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>Sector Performance</h2>
+                </div>
+
+                <div class="sector-perf-cont">
+                    <div class="share-title clearfix">
+                        <div class="title-left">
+                            <div class="sector-opt">
+                                <span>Index :</span>
+                                <input type="radio" id="nse" name="channel" class="css-radio" checked>
+                                <label class="css-label" for="nse">NSE</label>
+                                <input type="radio" id="bse" name="channel" class="css-radio">
+                                <label class="css-label" for="bse">BSE</label>
+                            </div>
+                        </div>
+                        <ul class="share-dt-sort title-right">
+                            <li class="active"><a href="javascript:void(0)">Today</a></li>
+                            <li><a href="javascript:void(0)">5 Days</a></li>
+                            <li><a href="javascript:void(0)">1 Mon</a></li>
+                            <li><a href="javascript:void(0)">3 Mon</a></li>
+                            <li><a href="javascript:void(0)">1 Yr</a></li>
+                            <li><a href="javascript:void(0)">Max</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sector-performance-charts">
+                        <img src="assets/images/sector-performance-img.jpg" alt="Sector Performance">
+                        <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Recommendations Ads-->
+        <div class="recommendations-help-ads">
+            <div class="container">
+                <div class="recommendations-help-ar">
+                    <img src="assets/images/recommendations-help-img.jpg" alt="Recommendations">
+                </div>
+            </div>
+        </div>
+
+
+        <!--Heat Map-->
+        <div class="heat-map-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>Heat Map</h2>
+                </div>
+
+                <div class="heat-map-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tranding-opt clearfix">
+                                <div class="tranding-select-opt">
+                                    <select class="selectImg">
+                                        <option value="nse">NSE</option>
+                                        <option value="nse">BSE</option>
+                                    </select>
+                                </div>
+                                <div class="tranding-select-opt">
+                                    <select class="selectImg">
+                                        <option value="nse">NSE</option>
+                                        <option value="nse">BSE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="share-dt-sort title-right">
+                                <li class="active"><a href="javascript:void(0)">Today</a></li>
+                                <li><a href="javascript:void(0)">5 Days</a></li>
+                                <li><a href="javascript:void(0)">1 Mon</a></li>
+                                <li><a href="javascript:void(0)">3 Mon</a></li>
+                                <li><a href="javascript:void(0)">1 Yr</a></li>
+                                <li><a href="javascript:void(0)">Max</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="heat-map-tbl">
+                        <div class="heat-map-lt">
+                            <ul class="heat-map-list">
+                                <li><a href="javascript:void(0)">&#10095; 5%</a></li>
+                                <li><a href="javascript:void(0)">3% to 5%</a></li>
+                                <li><a href="javascript:void(0)">0% to 3%</a></li>
+                                <li><a href="javascript:void(0)">-3% to 0%</a></li>
+                                <li><a href="javascript:void(0)">-5% to -3%</a></li>
+                                <li><a href="javascript:void(0)">&#10094; --5%</a></li>
+                            </ul>
+                        </div>
+                        <div class="heat-table-rt">
+                            <table class="shate-data-tbl table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>LTP</th>
+                                    <th>Value (in Cr.)</th>
+                                    <th>Volume</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>ICICI Bank</td>
+                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                    <td>1,135.58</td>
+                                    <td>3.96 lac</td>
+                                </tr>
+                                <tr>
+                                    <td>Larsen & Toubro</td>
+                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                    <td>1,135.58</td>
+                                    <td>3.96 lac</td>
+                                </tr>
+                                <tr>
+                                    <td>ICICI Bank</td>
+                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                    <td>1,135.58</td>
+                                    <td>3.96 lac</td>
+                                </tr>
+                                <tr>
+                                    <td>Larsen & Toubro</td>
+                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                    <td>1,135.58</td>
+                                    <td>3.96 lac</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Block Deals-->
+        <div class="block-deals-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>Bulk/Block Deals</h2>
+                </div>
+
+                <div class="block-deal-ar">
+                    <div class="block-opt">
+                        <input type="radio" id="nse" name="channel" class="css-radio" checked>
+                        <label class="css-label" for="nse">Bulk Deals</label>
+                        <input type="radio" id="bse" name="channel" class="css-radio">
+                        <label class="css-label" for="bse">Block Deals</label>
+                    </div>
+
+                    <table class="shate-data-tbl table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Company Name</th>
+                                <th>Client Name</th>
+                                <th>Buy/Sell</th>
+                                <th>Traded Price</th>
+                                <th>Traded Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ICICI Bank</td>
+                                <td>Allure Infra Llp</td>
+                                <td class="green-col">BUY</td>
+                                <td>1,135.58</td>
+                                <td>98,579</td>
+                            </tr>
+                            <tr>
+                                <td>Larsen & Toubro</td>
+                                <td>Rama Chandra Reddy Kadiri</td>
+                                <td class="green-col">BUY</td>
+                                <td>1,135.58</td>
+                                <td>10,00,000</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI Bank</td>
+                                <td>Allure Infra Llp</td>
+                                <td class="green-col">BUY</td>
+                                <td>1,135.58</td>
+                                <td>20,00,000</td>
+                            </tr>
+                            <tr>
+                                <td>Larsen & Toubro</td>
+                                <td>Ig Ginancial Services Pvt Ltd</td>
+                                <td class="red-col">SELL</td>
+                                <td>1,135.58</td>
+                                <td>25,00,000</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI Bank</td>
+                                <td>Sunvision Infotech Pvt Ltd</td>
+                                <td class="red-col">SELL</td>
+                                <td>1,135.58</td>
+                                <td>3,53,538</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--Fii Activities-->
+        <div class="activities-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>FII Activities</h2>
+                </div>
+
+                <div class="count-list-wrap">
+                    <ul class="level-list">
+                        <li>
+                            <div class="count-dt clearfix">
+                            <i class="icons graph-icon"></i>
+                            <span class="level-title">Net Cash in (Cr.) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <i class="icons graph-icon"></i>
+                                <span class="level-title">Today <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                    </ul>
+                    <p class="note">Note - Support and resistance values are calculated on weekly basis.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Fii Activities-->
+        <div class="activities-ar content-pd-sm">
+            <div class="container">
+                <!--heading-->
+                <div class="heading-bx mb-20">
+                    <h2>DII Activities</h2>
+                </div>
+
+                <div class="count-list-wrap">
+                    <ul class="level-list">
+                        <li>
+                            <div class="count-dt clearfix">
+                                <i class="icons graph-icon"></i>
+                                <span class="level-title">Net Cash in (Cr.) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <i class="icons graph-icon"></i>
+                                <span class="level-title">Today <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                        <li>
+                            <div class="count-dt clearfix">
+                                <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
+                            </div>
+                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                        </li>
+                    </ul>
+                    <p class="note">Note - Support and resistance values are calculated on weekly basis.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--news-->
         <div class="news-wrap center-title">
             <div class="container">
                 <h3 class="title heading-bar text-center">Support and Resistance Levels</h3>
@@ -789,6 +1058,7 @@
         </div>
     </div>
 </footer>
+
 
 <div class="overlay-bg"></div>
 <!-- Vendor core JavaScripts -->

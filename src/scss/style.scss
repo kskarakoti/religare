@@ -265,7 +265,20 @@ header {
                   &.sub-item {
                     &.active {
                       background: #f1f1f1;
+
+                      &:after {
+                        content: '-';
+                        right: 23px;
+                      }
                     }
+                    &:after {
+                      content: '+';
+                      position: absolute;
+                      right: 20px;
+                      top: 5px;
+                      font-size: 28px;
+                    }
+
                   }
 
                   > a {
@@ -757,18 +770,18 @@ header {
             width: 65px;
             height: 65px;
             @include border-radius(50px);
-            padding: ($padding-base-5 * 2) + 3;
+            padding: ($padding-base-5 * 2) + 6 ($padding-base-5 * 2) + 2;
             margin-bottom: ($margin-base-5 * 3);
 
             span {
               &.icon-ic_banner_fast {
-                font-size: 38px;
+                font-size: 34px;
               }
               &.icon-ic_banner_high_returns {
-                font-size: 36px;
+                font-size: 34px;
               }
               &.icon-ic_banner_tools {
-                font-size: 36px;
+                font-size: 30px;
               }
             }
           }
@@ -1136,7 +1149,6 @@ header {
    3.3 Qoutes Commodities Page Styles
 ****************************************/
 .count-list-wrap {
-  padding:30px 0 0 0;
   ul {
     &.level-list {
       background: $white;
@@ -1145,11 +1157,37 @@ header {
       overflow: auto;
       box-shadow: 0px 4px 3px -1px #c2c5c8;
       border-right:1px solid $iron;
+
       li {
         float: left;
         width:25%;
         border-right:1px solid $iron;
         padding: ($padding-base-5 * 6) ($padding-base-5 * 6);
+
+        .count-dt {
+          i, .level-title {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+
+            span {
+              display: block;
+              font-size: 18px;
+              color: #444444;
+              font-family: $font-family-ubuntumedium;
+            }
+          }
+        }
+
+        .days-dt {
+          color: #444444;
+          margin: 10px 0 0 0;
+
+          span {
+            font-family: $font-family-ubuntulight;
+            color: #888888;
+          }
+        }
         span {
           display: block;
           &.level-title {
@@ -1179,7 +1217,8 @@ header {
 .news-wrap {
   margin-top:30px;
   padding:30px 0;
-  background: $dark-gray;
+  background: #dadde0;
+
   .news-blocks {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -1439,67 +1478,191 @@ p {
 /****************************************
    3.5 Market Equity Page Styles
 ****************************************/
-.tab-list {
-  ul {
-    background: $loafer;
-    &.tabs {
-      li {
-        float:left;
-        border-right: 1px solid $iron;
-        span {
-          display: block;
-          &.sunsex-count {
-            span {
-              display: inline-block;
+//.tab-list {
+//  ul {
+//    background: $loafer;
+//    &.tabs {
+//      li {
+//        float:left;
+//        border-right: 1px solid $iron;
+//        span {
+//          display: block;
+//          &.sunsex-count {
+//            span {
+//              display: inline-block;
+//            }
+//          }
+//        }
+//        &.current {
+//          background: $white;
+//          border-top:4px solid $green;
+//        }
+//      }
+//    }
+//  }
+//}
+//.tab-container {
+//  .tab-content {
+//    display: none;
+//    &.current {
+//      display: block;
+//    }
+//  }
+//}
+.title-text {
+
+}
+.banner-chart {
+  background: url('../../assets/images/markets_equity_cropped.jpg') no-repeat;
+  background-size:cover ;
+
+  .heading-bx {
+    h2 {
+      color: $white;
+    }
+  }
+
+  .chart-tab-wrap {
+    background: $white;
+
+    .tab-list {
+      .nav-tabs {
+        background: #f8fbf4;
+
+        li {
+          width: 33.33%;
+          border-right: 1px solid #d6dad6;
+
+          &.active {
+            a {
+              border-bottom: 4px solid #8dc63f;
+            }
+          }
+
+          &.nifty-ar {
+            a {
+              .title {
+                color: #755fbb;
+              }
+            }
+          }
+
+          &.sensex-ar {
+            a {
+              .title {
+                color: #51c4dd;
+              }
+            }
+          }
+
+          &.add-index {
+            a {
+              text-align: center;
+              height: 85px;
+              line-height: 62px;
+              color: #222222;
+              font-family: $font-family-ubunturegular;
+              font-size: 18px;
+
+              span {
+                display: inline-block;
+                margin: 0 5px;
+
+                &.plus-icon {
+                  color: $sushi;
+                  font-size: 28px;
+                  font-family: $font-family-ubuntulight;
+                }
+
+                &.down-arrow {
+                  font-family: $font-family-ubuntulight;
+                }
+              }
+            }
+          }
+          a {
+            border: none;
+            padding-left: 30px;
+
+            &:hover {
+              background: $white;
+            }
+
+            p {
+              margin: 0;
+              font-family: $font-family-ubuntumedium;
+            }
+            .title {
+              color: #222222;
+              font-size: 18px;
+            }
+
+            .sunsex-count {
+              font-family: $font-family-ubunturegular;
+              font-size: 26px;
+              color: #222222;
+
+              .price-percentage {
+                font-family: $font-family-ubuntulight;
+                font-size: 18px;
+
+                &.gain {
+                  color: #20ab30;
+                }
+
+                &.loss {
+                  color: #fa4110;
+                }
+              }
             }
           }
         }
-        &.current {
-          background: $white;
-          border-top:4px solid $green;
-        }
       }
-    }
-  }
-}
-.tab-container {
-  .tab-content {
-    display: none;
-    &.current {
-      display: block;
-    }
-  }
-}
-.banner-chart {
-  background: url('/assets/images/markets_equity_cropped.jpg') no-repeat;
-  background-size:cover ;
-  .chart-tab-wrap {
-    @include border-radius(3px);
-    background: $white;
-    .view-detail {
-      text-align: right;
-      ul {
-        padding: ($padding-base-5 * 6);
-        li{
-          display: inline-block;
-          border-right: 1px $iron dashed;
-          padding: 0 ($padding-base-5 + 5);
-          &:last-of-type {
-            border-right:0;
-          }
-          a {
-            text-decoration: underline;
-            color: $tundora;
+
+
+      .chart-content-tab {
+        padding: 15px;
+      }
+
+      .view-detail {
+        margin: 10px 0;
+        padding: 15px;
+
+        .view-list-dt {
+          text-align: right;
+
+          li {
+            display: inline-block;
+
+            a {
+              border-right: 1px dotted #000;
+              display: block;
+              padding: 2px 17px;
+              color: #444444;
+              text-decoration: underline;
+            }
+
+            &:last-child {
+              a {
+                border-right: none;
+              }
+            }
           }
         }
       }
     }
   }
+
 }
 .down-arrow {
   text-align: center;
   position: relative;
-  margin:15px 0 11px 0;
+  margin:15px 0;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  font-family: $font-family-ubuntulight;
+
   span {
     &.icon {
       width: 30px;
@@ -1508,6 +1671,7 @@ p {
       display: inline-block;
       @include border-radius(50%);
       border:1px solid $green;
+
       .arrow {
         position: absolute;
         bottom: 0;
@@ -1516,6 +1680,7 @@ p {
         width: 30px;
         height: 30px;
         right: 0;
+
         &.bounce {
           -moz-animation: bounce 3s infinite;
           -webkit-animation: bounce 3s infinite;
@@ -1576,6 +1741,271 @@ p {
 }
 
 
+/* tranding now*/
+.tranding-now-area {
+  .tranding-content-area {
+    background: $white;
+
+    .tranding-opt {
+      background: #f8fbf4;
+      padding: 20px;
+    }
+
+    .tranding-tab {
+      background: #f8fbf4;
+
+      .nav-tabs {
+        border-top: 1px solid #dcdede;
+
+        li {
+          width: 33.33%;
+          border-right: 1px solid #dcdede;
+
+          &:last-child {
+            border-right: none;
+          }
+
+          &.active {
+            a {
+              border-top: 4px solid #8dc63f;
+            }
+          }
+          a {
+            text-align: center;
+            border-radius: 0;
+            height: 57px;
+            line-height: 33px;
+            color: #40474e;
+            font-size: 18px;
+
+            &:hover {
+              background: $white;
+            }
+          }
+        }
+      }
+
+      .share-content-tab {
+        padding: 15px;
+        background: #fff;
+
+        .share-mkt-ar {
+          .top-gainers-heading {
+
+            .share-mkt-data {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tranding-select-opt {
+  float: left;
+  margin-right: 15px;
+
+  .select2-container {
+    width: 200px !important;
+
+    .select2-selection--single {
+      border-color: #dcdede;
+      height: 35px;
+
+      .select2-selection__rendered {
+        line-height: 35px;
+      }
+
+      .select2-selection__arrow {
+        height: 35px;
+      }
+    }
+  }
+}
+
+/* table common style*/
+.table{
+  &.shate-data-tbl {
+    border: 1px solid #dcdede;
+
+    th {
+      background: #40474e;
+      color: #fff;
+      font-family: $font-family-ubunturegular;
+      font-weight: normal;
+    }
+
+    th, td {
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+
+    td {
+      vertical-align: middle;
+
+      &.green-col {
+        color: #20ab30;
+      }
+
+      &.red-col {
+        color: #fa4110;
+      }
+
+      span {
+        font-size: 12px;
+        display: block;
+
+        &.gain-col {
+          color: #20ab30;
+        }
+
+        &.loss-col {
+          color: #fa4110;
+        }
+      }
+
+    }
+  }
+}
+
+.share-title {
+  h3 {
+    margin: 0;
+    font-size: 20px;
+    font-family: $font-family-ubuntumedium;
+    color: #666666;
+  }
+  .title-left {
+    float: left;
+  }
+
+  .title-right {
+    float: right;
+  }
+}
+
+.share-dt-sort {
+  text-align: right;
+
+  li {
+    display: inline-block;
+
+    &.active {
+      a {
+        color: #444444;
+        border-bottom: 2px solid #8dc63f;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 12px;
+      color: #a1a1a1;
+      padding:2px 5px;
+    }
+  }
+}
+
+.view-all-btn {
+  text-align: right;
+
+  a {
+    font-size: 14px;
+    color: #444444;
+  }
+}
+
+/* Global Indicas */
+.global-indices-ar {
+  background: #33393f;
+
+  .heading-bx {
+    h2 {
+      color: $white;
+    }
+  }
+}
+
+/* Sector Performance */
+.sector-performance-ar {
+  .sector-perf-cont {
+    background: $white;
+    padding: 25px;
+
+    .share-title {
+      .sector-opt {
+        label {
+          margin: 0 15px 0 5px;
+        }
+      }
+    }
+
+    .sector-performance-charts {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* Recommendations help */
+.recommendations-help-ads {
+  .recommendations-help-ar {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* Block Deals */
+.block-deals-ar {
+  .block-deal-ar {
+    background: #fff;
+    padding: 25px;
+
+    .block-opt {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* Heat Map */
+.heat-map-ar {
+  .heat-map-content {
+    background: #fff;
+    padding: 25px;
+  }
+
+  .heat-map-tbl {
+    margin-top: 20px;
+    position: relative;
+
+    .heat-map-lt {
+      width: 120px;
+      position: absolute;
+
+      .heat-map-list {
+        li {
+          text-align: center;
+          background: #ccc;
+
+          a {
+            padding: 15px;
+            display: block;
+          }
+        }
+      }
+    }
+    .heat-table-rt {
+      margin-left: 150px;
+
+    }
+  }
+}
 /************************************************************************************
 
 =========================== 04 Footer Styles ============================
@@ -1970,6 +2400,11 @@ p {
     width: 25px;
     height: 25px;
   }
+  &.graph-icon {
+    background-position: -6px -320px;
+    width: 42px;
+    height: 36px;
+  }
 }
 
 /****************************************
@@ -2183,35 +2618,37 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   min-height: 63px;
   margin: $margin-none $margin-none ($margin-base-5 * 10) $margin-none;
 
+  &.mb-20 {
+    margin: 20px 0;
+  }
+
   h2 {
     font-size: 32px;
     color: $mine-shaft;
     margin: $margin-none;
-  }
+    position: relative;
 
-  .heading-line {
-    width: 100%;
-    position: absolute;;
-    bottom: 0;
-
-    p {
+    &:after {
+      content: '';
+      position: absolute;
+      height: 4px;
       width: 100px;
-      margin: $margin-none auto;
-      height: 3px;
-
-      &.green-line {
-        background: $sushi;
-      }
-
-      &.yellow-line {
-        background: $yellow;
-      }
+      border-top: 3px solid #8dc63f;
+      border-bottom: 3px solid #fff200;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -26px;
     }
   }
 }
 
 .content-pd {
   padding: ($padding-base-5 * 12) $padding-none;
+}
+
+.content-pd-sm {
+  padding: ($padding-base-5 * 6) $padding-none;
 }
 
 .border-none {
@@ -2222,6 +2659,10 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   span {
     font-size: 36px;
   }
+}
+
+.gray-bg-content {
+  background: #e2e5e8;
 }
 
 

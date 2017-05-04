@@ -100,7 +100,20 @@ $(function () {
 
 
 	//select
-	$("select").msDropdown({roundedBorder:false});
+	$(".country-select").msDropdown({roundedBorder:false});
 	//select
-	$("select").select2();
+	// $(".select").select2();
+
+	function formatState (state) {
+		if (!state.id) { return state.text; }
+		var $state = $(
+			'<span><img src="assets/images/market-icon/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+		);
+		return $state;
+	};
+
+	$(".selectImg").select2({
+		minimumResultsForSearch: -1,
+		templateResult: formatState
+	});
 });
