@@ -83,14 +83,6 @@ $(function () {
 
 
 
-
-
-	// if ($(window).width() < 1005) {
-	// 	$('.sub-item').click(function() {
-	// 		$(this).children('.sub-menu-ar').toggleClass('active');
-	// 	});
-	// }
-
 	if ($(window).width() < 991) {
 		//accordion function
 		$('.sub-menu-dt-ar').hide();
@@ -109,4 +101,6 @@ $(function () {
 
 	//select
 	$("select").msDropdown({roundedBorder:false});
+	//select
+	$("select").select2();
 });

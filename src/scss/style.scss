@@ -12,7 +12,9 @@
    03 Main Content Section Styles
 	  3.1 Modal Window Styles
 	  3.2 Landing/Home Page Styles
-	  3.2 Qoutes Commodities Page Styles
+	  3.3 Qoutes Commodities Page Styles
+	  3.4 About us Page Styles
+	  3.5 Market Equity Page Styles
 
    04 Footer Section Styles
 	  4.1 Footer List Links
@@ -33,7 +35,7 @@
 @import "module/mixin";
 @import "vendor-css/dd";
 @import "vendor-css/icomoon";
-//@import "vendor-css/amchart-export";
+@import "vendor-css/select2.min";
 
 
 /************************************************************************************
@@ -256,8 +258,9 @@ header {
               display: none;
 
               .menu-list-dt {
-                li {
+                > li {
                   display: block;
+                  position: relative;
 
                   &.sub-item {
                     &.active {
@@ -265,17 +268,20 @@ header {
                     }
                   }
 
-                  a {
+                  > a {
                     display: block;
-                    padding: 10px;
+                    padding: 10px 10px 10px 60px;
                     color: $tundora;
                     font-family: $font-family-ubuntumedium;
                     font-size: $font-size-small + 1;
+                    line-height: 38px;
 
                     i {
                       display: inline-block;
                       vertical-align: middle;
                       margin-right: 10px;
+                      position: absolute;
+                      left: 10px;
                     }
                   }
 
@@ -288,6 +294,8 @@ header {
                       li {
                         a {
                           color: #777777;
+                          display: block;
+                          padding: 7px 3px;
                         }
                       }
                     }
@@ -340,6 +348,7 @@ header {
                 color: #ffffff;
                 border-radius: 4px;
                 text-align: center;
+                line-height: 23px;
               }
 
               @media screen and (max-width: 1005px) {
@@ -615,6 +624,7 @@ header {
           background: $atlantis-lt;
           color: $white;
           border-radius: $base-border-radius;
+          line-height: 23px;
 
           @media screen and (max-width: 1170px) {
             margin: $margin-none ($margin-base-5 * 2);
@@ -1123,35 +1133,448 @@ header {
 }
 
 /****************************************
-   3.2 Qoutes Commodities Page Styles
+   3.3 Qoutes Commodities Page Styles
 ****************************************/
-.sliver-micro-ar {
-  padding: ($padding-base-5 * 6) $padding-none;
-
-  .charts-heading {
-    .charts-heading-lt {
-      float: left;
-
-      h2 {
-        margin: $margin-none;
-        padding: $padding-none;
-        font-size: $font-size-large + 8;
-        font-family: 'ubuntumedium';
-        color: $mine-shaft;
+.count-list-wrap {
+  padding:30px 0 0 0;
+  ul {
+    &.level-list {
+      background: $white;
+      @include border-radius(3px);
+      clear:both;
+      overflow: auto;
+      box-shadow: 0px 4px 3px -1px #c2c5c8;
+      border-right:1px solid $iron;
+      li {
+        float: left;
+        width:25%;
+        border-right:1px solid $iron;
+        padding: ($padding-base-5 * 6) ($padding-base-5 * 6);
+        span {
+          display: block;
+          &.level-title {
+            font-size:$font-size-medium;
+            color: $green-pea;
+            margin-bottom: 8px;
+          }
+          &.count {
+            font-size: $font-size-large;
+            font-family: $font-family-ubuntumedium;
+            color:$tundora;
+          }
+        }
+        &:last-of-type {
+          border-right:0;
+        }
       }
     }
-    .charts-heading-rt {
-      float: right;
-      background: $mako;
-      padding: ($padding-base-5 * 2);
+  }
+  p {
+    &.note {
+      margin-top:12px;
+      margin-bottom:0;
+    }
+  }
+}
+.news-wrap {
+  margin-top:30px;
+  padding:30px 0;
+  background: $dark-gray;
+  .news-blocks {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    .block {
+      float:left;
+      background: $white;
+      margin-bottom: 30px;
+      @include border-radius(3px);
+      border-right:1px solid $iron;
+      padding:($padding-base-5 * 6) ($padding-base-5 * 6) ($padding-base-5 * 4) ($padding-base-5 * 6);
+      box-shadow: 0px 4px 3px -1px #c2c5c8;
+    }
+  }
+}
 
-      p {
-        color: $white;
-        margin: $margin-none;
+/****************************************
+   3.4 About us Page Styles
+****************************************/
+
+.banner-area {
+  .video-wrap {
+    position:relative;
+    .img-wrap {
+      height:600px;
+      overflow: hidden;
+      @media screen and (max-width: 1200px) {
+        height: auto;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    .overlay-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+h3 {
+  &.title {
+    font-size: 28px;
+    font-family: 'ubuntumedium';
+    position: relative;
+    font-weight: normal;
+    color:#222222;
+    &.heading-bar{
+      margin-bottom:38px;
+      &:after {
+        content: '';
+        position: absolute;
+        height:4px;
+        width: 60px;
+        border-top:2px solid #8dc63f;
+        border-bottom:2px solid #fff200;
+        left: 0;
+        bottom: -22px;
       }
     }
   }
 }
+h4 {
+  &.sub-title {
+    &.colver-title {
+      font-size: 20px;
+      font-family: 'ubuntumedium';
+    }
+  }
+}
+.center-title {
+  h3 {
+    &.heading-bar{
+      margin-bottom:38px;
+      &:after {
+        right:0;
+        margin:auto;
+      }
+    }
+  }
+}
+p {
+  &.desc {
+    font-size: 14px;
+    color:#666666;
+  }
+}
+.link-wrap {
+  a {
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      &.text {
+        font-size: 18px;
+        margin-left:8px;
+        color: #8dc63f;
+        font-family: 'ubuntumedium';
+      }
+    }
+  }
+}
+.content-area {
+  .about-religare-wrap {
+    margin:60px 0;
+    .display-table {
+      display: table;
+      height: 100%;
+      margin:0 -15px;
+      .display-cell {
+        display: table-cell;
+        vertical-align: middle;
+        padding:0 15px;
+        width: 50%;
+        @media screen and (max-width:767px) {
+          width:100%;
+          display: block;
+        }
+      }
+    }
+    p {
+      &.desc {
+        font-size: 16px;
+        color:#666666;
+      }
+    }
+  }
+  .clover-wrap {
+    padding:36px 0;
+    background: #e3f8e4;
+    p {
+      &.section-title {
+        font-size: 18px;
+        padding: 0 10px 35px 10px;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        font-family: 'ubuntumedium';
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+    .block {
+      background: #FFFFFF;
+      min-height:361px;
+      padding:20px;
+      @media screen and (max-width: 1200px) {
+        min-height:471px;
+      }
+      @media screen and (max-width: 991px) {
+        min-height:300px;
+        margin: 15px 0;
+      }
+      @media screen and (max-width: 480px) {
+        min-height:100%;
+      }
+
+    }
+  }
+  .customer-focus-wrap {
+    margin:42px 0;
+    .block {
+      margin-top:14px;
+    }
+    h3 {
+      &.title {
+        &.heading-bar {
+          &:after {
+            margin: auto;
+            right:0;
+          }
+        }
+      }
+    }
+  }
+  .company-map {
+    margin-bottom: 40px;
+    .map-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      .block {
+        float: left;
+        width: 50%;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+        &.block-l {
+          background: #eff4e9;
+          padding:10px;
+          .map-overlay {
+            .address-wrap {
+              background: #FFFFFF;
+              padding:30px 19px;
+              p {
+                &.address-title {
+                  font-size: 18px;
+                  color: #222222;
+                  font-family: 'ubuntumedium';
+                  margin-bottom:5px;
+                }
+              }
+              address {
+                margin-bottom: 13px;
+              }
+              &.address-wrapper {
+                background: transparent;
+              }
+            }
+            .contact-detail {
+              span {
+                &.span-block {
+                  float: left;
+                  width: 50%;
+                  padding-bottom: 10px;
+                  @media screen and (max-width: 480px) {
+                    width: 100%;
+                  }
+                  a {
+                    text-decoration: none;
+                    color: #444444;
+                    font-family: 'ubuntumedium';
+                    .inner-block {
+                      display: inline-block;
+                      vertical-align: middle;
+                      &.text {
+                        vertical-align: bottom;
+                        padding-left: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .select-wrap {
+              padding: 40px 19px 25px;
+            }
+          }
+        }
+      }
+      #googleMap {
+        width: 100%;
+        height: 534px;
+      }
+    }
+  }
+}
+
+
+/****************************************
+   3.5 Market Equity Page Styles
+****************************************/
+.tab-list {
+  ul {
+    background: $loafer;
+    &.tabs {
+      li {
+        float:left;
+        border-right: 1px solid $iron;
+        span {
+          display: block;
+          &.sunsex-count {
+            span {
+              display: inline-block;
+            }
+          }
+        }
+        &.current {
+          background: $white;
+          border-top:4px solid $green;
+        }
+      }
+    }
+  }
+}
+.tab-container {
+  .tab-content {
+    display: none;
+    &.current {
+      display: block;
+    }
+  }
+}
+.banner-chart {
+  background: url('/assets/images/markets_equity_cropped.jpg') no-repeat;
+  background-size:cover ;
+  .chart-tab-wrap {
+    @include border-radius(3px);
+    background: $white;
+    .view-detail {
+      text-align: right;
+      ul {
+        padding: ($padding-base-5 * 6);
+        li{
+          display: inline-block;
+          border-right: 1px $iron dashed;
+          padding: 0 ($padding-base-5 + 5);
+          &:last-of-type {
+            border-right:0;
+          }
+          a {
+            text-decoration: underline;
+            color: $tundora;
+          }
+        }
+      }
+    }
+  }
+}
+.down-arrow {
+  text-align: center;
+  position: relative;
+  margin:15px 0 11px 0;
+  span {
+    &.icon {
+      width: 30px;
+      height: 30px;
+      background: $white;
+      display: inline-block;
+      @include border-radius(50%);
+      border:1px solid $green;
+      .arrow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        &.bounce {
+          -moz-animation: bounce 3s infinite;
+          -webkit-animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
+        }
+      }
+    }
+  }
+}
+
+@-moz-keyframes bounce {
+  0%, 10%, 15%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  5% {
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  20% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 10%, 15%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  5% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%, 10%, 15%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  5% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  20% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
 
 /************************************************************************************
 

@@ -25,10 +25,7 @@ var vendorJSFiles =
     ["./bower_components/jquery/dist/jquery.js",
         "./bower_components/bootstrap/dist/js/bootstrap.js",
         "./src/script/select/jquery.dd.js",
-        "./src/script/check-action/jquery.custom-radiobutton.js",
-        "./src/script/amcharts/amcharts.js",
-        "./src/script/amcharts/serial.js",
-        "./src/script/amcharts/amstock.js",
+        "./src/script/select/select2.full.min.js",
         "./src/script/amcharts/chart-core.js"]
 
 // Load Concat task for JS files
