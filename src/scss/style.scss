@@ -32,7 +32,9 @@
 @import "module/variable";
 @import "module/mixin";
 @import "vendor-css/dd";
-@import "vendor-css/amchart-export";
+@import "vendor-css/icomoon";
+//@import "vendor-css/amchart-export";
+
 
 /************************************************************************************
 
@@ -192,6 +194,7 @@ header {
             height: 10px;
             vertical-align: top;
             margin-top: ($margin-base-5 - 3);
+            color: #29b259;
           }
 
           .highlight-tx {
@@ -248,6 +251,101 @@ header {
           .menu-lt-ar {
             float: left;
             margin-left: $margin-base-5 * 5;
+
+            .mobile-menu {
+              display: none;
+
+              .menu-list-dt {
+                li {
+                  display: block;
+
+                  &.sub-item {
+                    &.active {
+                      background: #f1f1f1;
+                    }
+                  }
+
+                  a {
+                    display: block;
+                    padding: 10px;
+                    color: $tundora;
+                    font-family: $font-family-ubuntumedium;
+                    font-size: $font-size-small + 1;
+
+                    i {
+                      display: inline-block;
+                      vertical-align: middle;
+                      margin-right: 10px;
+                    }
+                  }
+
+                  .sub-menu-dt-ar {
+                    display: none;
+
+                    .sub-menu-dt-list {
+                      margin-left: 58px;
+
+                      li {
+                        a {
+                          color: #777777;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              @media screen and (max-width: 1005px) {
+                display: block;
+              }
+            }
+
+            .mobile-header-link {
+              display: none;
+              padding: 20px 0;
+              border-bottom: 1px solid #ccc;
+
+              .header-links {
+                margin-bottom: 20px;
+
+                li {
+                  display: inline-block;
+                  border-right: 1px dotted #000;
+
+                  &:last-child {
+                    border-right: 0;
+                  }
+
+                  a {
+                    display: block;
+                    padding: 0 10px;
+                    text-transform: uppercase;
+                  }
+
+                  &.build-wealth {
+                    a {
+                      color: #f7941e;
+                    }
+                  }
+                }
+              }
+
+              .account-links {
+                display: block;
+                vertical-align: middle;
+                width: 120px;
+                margin: 0px 10px;
+                padding: 5px 10px;
+                background: $atlantis-lt;
+                color: #ffffff;
+                border-radius: 4px;
+                text-align: center;
+              }
+
+              @media screen and (max-width: 1005px) {
+                display: block;
+              }
+            }
 
             .menu-list {
               > li {
@@ -441,6 +539,10 @@ header {
                   float: none;
                 }
               }
+              //mobile menu
+              @media screen and (max-width: 1005px) {
+                display: none;
+              }
             }
 
             //mobile menu
@@ -458,7 +560,8 @@ header {
                 margin: 0;
                 max-width: 450px;
                 overflow: auto;
-
+                border-top: 3px solid $atlantis-lt;
+                padding: 5px 0px;
               }
             }
           }
@@ -532,8 +635,9 @@ header {
               display: block;
               padding: ($padding-base-5 - 3) ($padding-base-5 + 3);
 
-              @media screen and (max-width: 1366px) {
-                padding: ($padding-base-5 - 3) ($padding-base-5 - 2);
+              i {
+                font-size: 20px;
+                color: $tundora;
               }
             }
           }
@@ -613,6 +717,10 @@ header {
       > img {
         width: 100%;
         border-right: 1px solid $white;
+
+        @media screen and (max-width: 767px) {
+          border-right: none;
+        }
       }
 
       .banner-content {
@@ -639,8 +747,20 @@ header {
             width: 65px;
             height: 65px;
             @include border-radius(50px);
-            padding: ($padding-base-5 + 3);
+            padding: ($padding-base-5 * 2) + 3;
             margin-bottom: ($margin-base-5 * 3);
+
+            span {
+              &.icon-ic_banner_fast {
+                font-size: 38px;
+              }
+              &.icon-ic_banner_high_returns {
+                font-size: 36px;
+              }
+              &.icon-ic_banner_tools {
+                font-size: 36px;
+              }
+            }
           }
 
           p {
@@ -653,10 +773,17 @@ header {
               font-size: $font-size-large * 2;
               line-height: 38px;
               font-family: 'ubuntubold';
+
+              @media screen and (max-width: 1170px) {
+                font-size: $font-size-large + 10;
+              }
             }
 
             @media screen and (max-width: 1170px) {
               font-size: $font-size-large + 4;
+            }
+            @media screen and (max-width: 1170px) {
+              font-size: $font-size-large - 2;
             }
           }
 
@@ -684,7 +811,10 @@ header {
       @media screen and (max-width: 1366px) {
         height: auto;
       }
-      @media screen and (max-width: 967px) {
+      @media screen and (max-width: 767px) {
+        height: 450px;
+      }
+      @media screen and (max-width: 640px) {
         height: 350px;
       }
     }
@@ -726,8 +856,13 @@ header {
         margin-right: ($margin-base-5 * 3);
 
         a {
-          padding: $padding-base-5 ($padding-base-5 - 1);
+          padding: $padding-none ($padding-base-5 - 4);
           display: block;
+
+          i {
+            font-size: 32px;
+            color: $tundora;
+          }
         }
       }
     }
@@ -763,12 +898,9 @@ header {
   .religare-sev-tx {
     text-align: center;
 
-    img {
-      @media screen and (max-width: 991px) {
-        height: 120px;
-      }
-      @media screen and (max-width: 767px) {
-        height: auto;
+    .font-icons {
+      span {
+        font-size: 120px;
       }
     }
 
@@ -831,6 +963,12 @@ header {
 
           @media screen and (max-width: 767px) {
             display: none;
+          }
+        }
+
+        &.font-icons {
+          span {
+            font-size: 75px;
           }
         }
 
@@ -1159,16 +1297,32 @@ header {
 
     li {
       display: inline-block;
-      padding: $padding-base-5;
+      //padding: $padding-base-5;
       margin: $margin-none $margin-base-5;
       border-radius: 4px;
 
+      &.font-icons {
+        span {
+          font-size: 38px;
+        }
+      }
+
       &.andriod-ic {
         background: $mine-shaft;
+        &.font-icons {
+          span {
+            color: $sushi;
+          }
+        }
       }
 
       &.apple-ic {
         background: $white;
+        &.font-icons {
+          span {
+            color: $tundora;
+          }
+        }
       }
     }
 
@@ -1219,9 +1373,17 @@ header {
     .ft-social-link {
       text-align: right;
 
+      &.font-icons {
+        span {
+          font-size: 24px;
+        }
+      }
+
       li {
         display: inline-block;
         margin-left: $margin-base-5;
+
+
       }
 
       @media screen and (max-width: 767px) {
@@ -1458,6 +1620,101 @@ header {
 }
 
 
+/********************************************************
+	4.3 Custom checkbox and radio buttons
+********************************************************/
+
+input[type=checkbox].css-checkbox, input[type=radio].css-radio {
+  display: none;
+}
+input[type=checkbox].css-checkbox + .css-label, input[type=radio].css-radio + .css-label {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input[type=checkbox].css-checkbox + .css-label:hover, input[type=radio].css-radio + .css-label:hover {
+  color: #363636;
+}
+input[type=checkbox].css-checkbox.css-checkbox + .css-label:before, input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radio].css-radio.css-checkbox + .css-label:before, input[type=radio].css-radio.css-radio + .css-label:before {
+  border: 2px solid #a3a4a4;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #ffffff;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 12px;
+  margin-right: 10px;
+  margin-top: -4px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+input[type=checkbox].css-checkbox.css-checkbox:checked + .css-label:before, input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[type=radio].css-radio.css-checkbox:checked + .css-label:before, input[type=radio].css-radio.css-radio:checked + .css-label:before {
+  content: "";
+  background: url("../images/sprite-icons.png") -54px -8px;
+  background-color: #34bfa3;
+  border-color: #34bfa3;
+  color: #ffffff;
+  font-size: 12px;
+}
+input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[type=radio].css-radio.css-radio:checked + .css-label:before {
+  content: "\25cf";
+  background-color: #fff;
+  border-color: #2b49d1;
+  font-size: 24px;
+  line-height: 10px;
+  color: #2b49d1;
+}
+input[type=checkbox].css-checkbox.css-checkbox:disabled + .css-label:before, input[type=checkbox].css-checkbox.css-radio:disabled + .css-label:before, input[type=radio].css-radio.css-checkbox:disabled + .css-label:before, input[type=radio].css-radio.css-radio:disabled + .css-label:before {
+  color: #80a5dc;
+  border-color: #80a5dc;
+  background-color: #f3f3f3;
+}
+input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radio].css-radio.css-radio + .css-label:before {
+  content: '';
+  width: 19px;
+  height: 19px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.filter-list input[type=radio].css-radio.css-radio:checked + .css-label:before {
+  font-size: 13px;
+  line-height: 13px;
+}
+.filter-list input[type=radio].css-radio.css-radio + .css-label:before {
+  width: 16px;
+  height: 16px;
+}
+//
+//.same-addrs .css-checkbox[type="checkbox"]:checked + .css-label::before {
+//  background-color: #ffffff !important;
+//  border-color: #888888 !important;
+//  color: #075c98 !important;
+//  font-size: 16px !important;
+//  line-height: 15px !important;
+//}
+//.same-addrs label {
+//  font-weight: normal;
+//}
+//.same-addrs input[type=checkbox].css-checkbox[type="checkbox"] + .css-label::before {
+//  height: 17px;
+//  width: 17px;
+//  border-color: #bababa;
+//}
+
 
 /********************************************************
    5.4 Common Class Styles
@@ -1536,4 +1793,72 @@ header {
 
 .border-none {
   border: none !important;
+}
+
+.font-icons {
+  span {
+    font-size: 36px;
+  }
+}
+
+
+/* Mobile menu */
+.menue{
+  width: 30px;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+  height: 25px;
+  float: left;
+  display: none;
+
+  .hamburger {
+    list-style: none;
+
+    li {
+      height: 3px;
+      width: 27px;
+      background: $dove-gray;
+      content: '';
+      left: 0px;
+      position: relative;
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+
+      &.rot45deg {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 10px !important;
+      }
+
+      &.rot-45deg {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 7px !important;
+      }
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 5px;
+      }
+
+      &:nth-child(3) {
+        top: 10px;
+      }
+    }
+  }
+
+  .menu-hamburg {
+    position: absolute;
+    top: 19px;
+    left: 61px;
+    font-size: 14px;
+    color: $white;
+  }
+
+  @media screen and (max-width: 1005px) {
+    display: block;
+  }
 }
