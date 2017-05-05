@@ -24,9 +24,11 @@ gulp.task('sass', function(){
 var vendorJSFiles =
     ["./bower_components/jquery/dist/jquery.js",
         "./bower_components/bootstrap/dist/js/bootstrap.js",
+        "./src/script/bootstrap-datepicker/moment-with-locales.js",
+        "./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
         "./src/script/select/jquery.dd.js",
         "./src/script/select/select2.full.min.js",
-        "./src/script/amcharts/chart-core.js"]
+        "./src/script/scroll/jquery.mCustomScrollbar.concat.min.js"]
 
 // Load Concat task for JS files
 gulp.task('vendorJS', function () {
@@ -37,7 +39,8 @@ gulp.task('vendorJS', function () {
 
 // src variable
 var vendorCSSFiles =
-    ["./bower_components/bootstrap/dist/css/bootstrap.css"];
+    ["./bower_components/bootstrap/dist/css/bootstrap.css",
+        "./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"];
 
 // Load Concat task for CSS files
 gulp.task('vendorCSS', function () {

@@ -12,12 +12,14 @@
     <!-- Custom CSS  -->
     <link href="assets/css/vendor.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
     <script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -262,261 +264,548 @@
     </div>
 </header>
 
-    <!--section-->
-    <section class="content-block gray-bg-content">
-        <!--banner-->
-        <div class="banner-chart">
-           <div class="container">
-               <div class="heading-bx mb-20">
-                   <h2>Why Religare?</h2>
-               </div>
-               <div class="chart-tab-wrap">
-                   <div class="tab-list clearfix">
-                       <!-- Nav tabs -->
-                       <ul class="nav nav-tabs" role="tablist">
-                           <li class="nifty-ar active">
-                               <a href="#home" data-toggle="tab">
-                                   <p class="title"><span class="icon"></span> NIFTY</p>
-                                   <p class="sunsex-count">
-                                       <span class="price-value">8,966.20</span>
-                                       <span class="price-percentage gain">&#8593; 40.15(0.45%)</span>
-                                   </p>
-                               </a>
-                           </li>
-                           <li class="sensex-ar">
-                               <a href="#profile" data-toggle="tab">
-                                   <p class="title"><span class="icon"></span> SENSEX</p>
-                                   <p class="sunsex-count">
-                                       <span class="price-value">28,734.63</span>
-                                       <span class="price-percentage loss">&#8593; 128.31 (0.44%)</span>
-                                   </p>
-                               </a>
-                           </li>
-                           <li class="add-index">
-                               <a href="#messages" data-toggle="tab"><span class="plus-icon">+</span> <span class="add-tx">Add Index</span> <span class="down-arrow">&#10095;</span> </a>
-                           </li>
-                       </ul>
+<!--section-->
+<section class="content-block gray-bg-content">
+    <!--banner-->
+    <div class="banner-chart">
+       <div class="container">
+           <div class="heading-bx mb-20">
+               <h2>Markets Today</h2>
+           </div>
+           <div class="chart-tab-wrap">
+               <div class="tab-list clearfix">
+                   <!-- Nav tabs -->
+                   <ul class="nav nav-tabs" role="tablist">
+                       <li class="nifty-ar active">
+                           <a href="#nifty" data-toggle="tab">
+                               <p class="title"><span class="icon-Top-gainers1">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                </span> NIFTY</p>
+                               <p class="sunsex-count">
+                                   <span class="price-value">8,966.20</span>
+                                   <span class="price-percentage gain"><span class="icon-LTP-up-arrow"></span> 40.15(0.45%)</span>
+                               </p>
+                           </a>
+                       </li>
+                       <li class="sensex-ar">
+                           <a href="#sensex" data-toggle="tab">
+                               <p class="title"><span class="icon-Top-gainers1">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                </span> SENSEX</p>
+                               <p class="sunsex-count">
+                                   <span class="price-value">28,734.63</span>
+                                   <span class="price-percentage loss"><span class="icon-LTP-down-arrow1"></span> 128.31 (0.44%)</span>
+                               </p>
+                           </a>
+                       </li>
+                       <li class="add-index">
+                           <a href="#messages" data-toggle="tab"><span class="plus-icon">+</span> <span class="add-tx">Add Index</span> <span class="down-arrow">&#10095;</span> </a>
+                       </li>
+                   </ul>
 
-                       <!-- Tab panes -->
-                       <div class="tab-content chart-content-tab">
-                           <div role="tabpanel" class="tab-pane active" id="home">
-                               <div class="chart-content-ar">
-                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
-                               </div>
+                   <!-- Tab panes -->
+                   <div class="tab-content chart-content-tab">
+                       <div role="tabpanel" class="tab-pane active" id="nifty">
+                           <div class="chart-content-ar">
+                            <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                            </div>
-                           <div role="tabpanel" class="tab-pane" id="profile">wfedsa.</div>
-                           <div role="tabpanel" class="tab-pane" id="messages">
+                       </div>
+                       <div role="tabpanel" class="tab-pane" id="sensex">
+                           <div class="chart-content-ar">
                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                            </div>
                        </div>
-
-                       <!--View all-->
-                       <div class="view-detail">
-                           <ul class="view-list-dt">
-                               <li><a href="javascript:void(0);">View Index Puller & Draggers</a></li>
-                               <li><a href="javascript:void(0);">View All Indicas</a></li>
-                           </ul>
+                       <div role="tabpanel" class="tab-pane" id="messages">
+                           <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                        </div>
                    </div>
-               </div>
 
-               <!--arrow down-->
-               <div class="down-arrow">
-                   <span class="icon">
-                       <span class="arrow bounce">&#10095;</span>
-                   </span>
+                   <!--View all-->
+                   <div class="view-detail">
+                       <ul class="view-list-dt">
+                           <li><a href="javascript:void(0);">View Index Puller & Draggers</a></li>
+                           <li><a href="javascript:void(0);">View All Indicas</a></li>
+                       </ul>
+                   </div>
                </div>
            </div>
-        </div>
+
+           <!--arrow down-->
+           <div class="down-arrow">
+               <span class="icon">
+                   <span class="arrow bounce">&#10095;</span>
+               </span>
+           </div>
+       </div>
+    </div>
 
 
-        <!--Tranding Now-->
-        <div class="tranding-now-area content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>Trending Now</h2>
+    <!--Tranding Now-->
+    <div class="tranding-now-area content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Trending Now</h2>
+            </div>
+
+            <div class="tranding-content-area">
+                <!--tranding option-->
+                <div class="tranding-opt clearfix">
+                    <div class="tranding-select-opt">
+                        <span class="mkt-icons"><span class="icon-NSE1"></span></span>
+                        <select class="select">
+                            <option value="nse">NSE</option>
+                            <option value="nse">BSE</option>
+                        </select>
+                    </div>
+                    <div class="tranding-select-opt">
+                        <span class="mkt-icons"><span class="icon-Select-Index1">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+                </span></span>
+                        <select class="select">
+                            <option value="nse">Select Index</option>
+                            <option value="nse">BSE</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="tranding-content-area">
-                    <!--tranding option-->
-                    <div class="tranding-opt clearfix">
-                        <div class="tranding-select-opt">
-                            <select class="selectImg">
-                                <option value="nse">NSE</option>
-                                <option value="nse">BSE</option>
-                            </select>
-                        </div>
-                        <div class="tranding-select-opt">
-                            <select class="selectImg">
-                                <option value="nse">NSE</option>
-                                <option value="nse">BSE</option>
-                            </select>
-                        </div>
-                    </div>
+                <div class="tranding-tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#gainer" data-toggle="tab">Top Gainer-Loser</a></li>
+                        <li><a href="#mostActive" data-toggle="tab">Most Active</a></li>
+                        <li><a href="#highLow" data-toggle="tab">52 week High - Low</a></li>
+                    </ul>
 
-                    <div class="tranding-tab">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active"><a href="#gainer" data-toggle="tab">Top Gainer-Loser</a></li>
-                            <li><a href="#mostActive" data-toggle="tab">Most Active</a></li>
-                            <li><a href="#highLow" data-toggle="tab">52 week High - Low</a></li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content share-content-tab">
-                            <div role="tabpanel" class="tab-pane active" id="gainer">
-                                <div class="share-mkt-ar">
-                                    <div class="top-gainers-heading row">
-                                        <div class="col-md-6">
-                                            <div class="share-title clearfix">
-                                                <h3 class="title-left">Top Gainers</h3>
-                                                <ul class="share-dt-sort title-right">
-                                                    <li class="active"><a href="javascript:void(0)">Today</a></li>
-                                                    <li><a href="javascript:void(0)">5 Days</a></li>
-                                                    <li><a href="javascript:void(0)">1 Mon</a></li>
-                                                    <li><a href="javascript:void(0)">3 Mon</a></li>
-                                                    <li><a href="javascript:void(0)">1 Yr</a></li>
-                                                    <li><a href="javascript:void(0)">Max</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="share-mkt-data">
-                                                <table class="shate-data-tbl table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Name</th>
-                                                            <th>LTP</th>
-                                                            <th>Value (in Cr.)</th>
-                                                            <th>Volume</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>ICICI Bank</td>
-                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
-                                                            <td>1,135.58</td>
-                                                            <td>3.96 lac</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Larsen & Toubro</td>
-                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
-                                                            <td>1,135.58</td>
-                                                            <td>3.96 lac</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>ICICI Bank</td>
-                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
-                                                            <td>1,135.58</td>
-                                                            <td>3.96 lac</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Larsen & Toubro</td>
-                                                            <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
-                                                            <td>1,135.58</td>
-                                                            <td>3.96 lac</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
-                                            </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content share-content-tab">
+                        <div role="tabpanel" class="tab-pane active" id="gainer">
+                            <div class="share-mkt-ar">
+                                <div class="top-gainers-heading row">
+                                    <div class="col-md-6">
+                                        <div class="share-title clearfix">
+                                            <h3 class="title-left"><span class="icon-Top-gainers1">
+                                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                            </span> Top Gainers</h3>
+                                            <ul class="share-dt-sort title-right">
+                                                <li class="active"><a href="javascript:void(0)">Today</a></li>
+                                                <li><a href="javascript:void(0)">5 Days</a></li>
+                                                <li><a href="javascript:void(0)">1 Mon</a></li>
+                                                <li><a href="javascript:void(0)">3 Mon</a></li>
+                                                <li><a href="javascript:void(0)">1 Yr</a></li>
+                                                <li><a href="javascript:void(0)">Max</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="share-title clearfix">
-                                                <h3 class="title-left">Top Losers</h3>
-                                                <ul class="share-dt-sort title-right">
-                                                    <li class="active"><a href="javascript:void(0)">Today</a></li>
-                                                    <li><a href="javascript:void(0)">5 Days</a></li>
-                                                    <li><a href="javascript:void(0)">1 Mon</a></li>
-                                                    <li><a href="javascript:void(0)">3 Mon</a></li>
-                                                    <li><a href="javascript:void(0)">1 Yr</a></li>
-                                                    <li><a href="javascript:void(0)">Max</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="share-mkt-data">
-                                                <table class="shate-data-tbl table table-striped">
-                                                    <thead>
+                                        <div class="share-mkt-data">
+                                            <table class="shate-data-tbl table table-striped">
+                                                <thead>
                                                     <tr>
                                                         <th>Name</th>
                                                         <th>LTP</th>
                                                         <th>Value (in Cr.)</th>
                                                         <th>Volume</th>
                                                     </tr>
-                                                    </thead>
-                                                    <tbody>
+                                                </thead>
+                                                <tbody>
                                                     <tr>
                                                         <td>ICICI Bank</td>
-                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                        <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Larsen & Toubro</td>
-                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                        <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
                                                     <tr>
                                                         <td>ICICI Bank</td>
-                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                        <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Larsen & Toubro</td>
-                                                        <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                        <td>287.25 <span class="gain-col">16.70 (6.17%)</span></td>
                                                         <td>1,135.58</td>
                                                         <td>3.96 lac</td>
                                                     </tr>
-                                                    </tbody>
-                                                </table>
-                                                <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
-                                            </div>
-
+                                                </tbody>
+                                            </table>
+                                            <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="share-title clearfix">
+                                            <h3 class="title-left"><span class="icon-Top-losers1">
+                                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                            </span> Top Losers</h3>
+                                            <ul class="share-dt-sort title-right">
+                                                <li class="active"><a href="javascript:void(0)">Today</a></li>
+                                                <li><a href="javascript:void(0)">5 Days</a></li>
+                                                <li><a href="javascript:void(0)">1 Mon</a></li>
+                                                <li><a href="javascript:void(0)">3 Mon</a></li>
+                                                <li><a href="javascript:void(0)">1 Yr</a></li>
+                                                <li><a href="javascript:void(0)">Max</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="share-mkt-data">
+                                            <table class="shate-data-tbl table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>LTP</th>
+                                                    <th>Value (in Cr.)</th>
+                                                    <th>Volume</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>ICICI Bank</td>
+                                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                    <td>1,135.58</td>
+                                                    <td>3.96 lac</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larsen & Toubro</td>
+                                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                    <td>1,135.58</td>
+                                                    <td>3.96 lac</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ICICI Bank</td>
+                                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                    <td>1,135.58</td>
+                                                    <td>3.96 lac</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Larsen & Toubro</td>
+                                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
+                                                    <td>1,135.58</td>
+                                                    <td>3.96 lac</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="mostActive">wfedsa.</div>
-                            <div role="tabpanel" class="tab-pane" id="highLow">
-                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
-                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="mostActive">wfedsa.</div>
+                        <div role="tabpanel" class="tab-pane" id="highLow">
+                            <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!--Global Indices-->
-        <div class="global-indices-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>Global Indices</h2>
-                </div>
+    <!--Global Indices-->
+    <div class="global-indices-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Global Indices</h2>
             </div>
-        </div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" preserveAspectRatio="xMinYMin meet" class="hidden-xs svg-map">
+                <image width="1920" height="1080" xlink:href="assets/images/flag/map.png">
+                </image>
+                <g>
+                    <circle cx="910" cy="381" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="910" cy="381" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="640" y="161" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="640" y1="361" x2="982" y2="361" style="stroke:#20ab30;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-kingdom-flag.jpg" height="25" width="50" x="652" y="181"></image>
+                    <text fill="#FFFFFF" x="662" y="237" class="cont-sub">FTSE</text>
+                    <text x="659" y="269" class="cont-num" fill="#FFFFFF">100</text>
+                    <text x="726" y="202" class="cont-name" fill="#FFFFFF">United Kingdom</text>
+                    <text x="724" y="246" class="cont-count" fill="#FFFFFF">156.83</text>
+                    <text x="753" y="283" class="cont-rate" fill="#FFFFFF" style="fill:#20ab30;">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="708" y="264"></image>
+                    <text x="726" y="328" class="cont-date" fill="#FFFFFF">March 8th, 4:30 AM</text>
+                </g>
+                <g>
+                    <circle cx="635" cy="413" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="635" cy="413" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="320" y="438" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="662" y1="636" x2="320" y2="636" style="stroke:#20ab30;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-states-flag.jpg" height="25" width="50" x="334" y="460"></image>
+                    <text fill="#FFFFFF" x="345" y="520" class="cont-sub">DJIA</text>
+                    <text x="406" y="476" fill="#FFFFFF" class="cont-name">United States</text>
+                    <text x="403" y="518" fill="#FFFFFF" class="cont-count">156.83</text>
+                    <text x="430" y="557" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="386" y="536"></image>
+                    <text x="400" y="599" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
 
-
-        <!--Global Indices-->
-        <div class="sector-performance-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>Sector Performance</h2>
-                </div>
-
-                <div class="sector-perf-cont">
-                    <div class="share-title clearfix">
-                        <div class="title-left">
-                            <div class="sector-opt">
-                                <span>Index :</span>
-                                <input type="radio" id="nse" name="channel" class="css-radio" checked>
-                                <label class="css-label" for="nse">NSE</label>
-                                <input type="radio" id="bse" name="channel" class="css-radio">
-                                <label class="css-label" for="bse">BSE</label>
+                </g>
+                <g>
+                    <circle cx="983" cy="393" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="983" cy="393" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="1001" y="343" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="1001" y1="541" x2="1344" y2="541" style="stroke:#fa4110;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/germany-flag.jpg" height="25" width="50" x="1018" y="364"></image>
+                    <text fill="#FFFFFF" x="1025" y="423" class="cont-sub">DAX</text>
+                    <text x="1085" y="384" fill="#FFFFFF" class="cont-name">Germany</text>
+                    <text x="1085" y="428" fill="#FFFFFF" class="cont-count">156.83</text>
+                    <text x="1113" y="467" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1069" y="447"></image>
+                    <text x="1087" y="511" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                </g>
+                <g>
+                    <circle cx="1372" cy="537" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="1372" cy="537" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="1081" y="565" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="1080" y1="762" x2="1423" y2="762" style="stroke:#20ab30;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/china-flag.jpg" height="25" width="50" x="1100" y="584"></image>
+                    <text fill="#FFFFFF" x="1107" y="647" class="cont-sub">SSE</text>
+                    <text x="1107" y="679" fill="#FFFFFF" class="cont-num">Comp</text>
+                    <text x="1179" y="605" fill="#FFFFFF" class="cont-name">China</text>
+                    <text x="1176" y="648" fill="#FFFFFF" class="cont-count">156.83</text>
+                    <text x="1206" y="689" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1161" y="667"></image>
+                    <text x="1174" y="733" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                </g>
+                <g>
+                    <circle cx="1444" cy="595" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="1444" cy="595" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="1462" y="572" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="1461" y1="769" x2="1805" y2="769" style="stroke:#fa4110;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/hong-kong-flag.jpg" height="25" width="50" x="1480" y="593"></image>
+                    <text fill="#FFFFFF" x="1486" y="660" class="cont-sub">Hong</text>
+                    <text x="1484" y="693" fill="#FFFFFF" class="cont-num">Seng</text>
+                    <text x="1543" y="614" fill="#FFFFFF" class="cont-name">Hong Kong</text>
+                    <text x="1544" y="655" fill="#FFFFFF" class="cont-count">156.83</text>
+                    <text x="1577" y="693" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1531" y="675"></image>
+                    <text x="1546" y="737" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                </g>
+                <g>
+                    <circle cx="1478" cy="473" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
+                    <circle cx="1478" cy="473" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
+                    <rect x="1452" y="252" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                    <line x1="1452" y1="450" x2="1794" y2="450" style="stroke:#20ab30;stroke-width:5"></line>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/japan-flag.jpg" height="25" width="50" x="1470" y="274"></image>
+                    <text fill="#FFFFFF" x="1475" y="335" class="cont-sub">Nikkei</text>
+                    <text x="1475" y="367" fill="#FFFFFF" class="cont-num">225</text>
+                    <text x="1539" y="295" fill="#FFFFFF" class="cont-name">Japan</text>
+                    <text x="1538" y="338" fill="#FFFFFF" class="cont-count">156.83</text>
+                    <text x="1571" y="381" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1526" y="362"></image>
+                    <text x="1544" y="422" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                </g>
+            </svg>
+            <!-- for mobile View markup -->
+            <div class="mobile-view-map visible-xs">
+                <div class="row">
+                    <div class="col-xs-6 col-width">
+                        <div class="block green-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/united-states-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">USA</span>
+                                    <span class="inner-block sub-name">DJIA</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-up-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-xs-6 col-width">
+                        <div class="block green-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/united-kingdom-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">United Kingdom</span>
+                                    <span class="inner-block sub-name">FTSE 100</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-up-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-width">
+                        <div class="block red-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/germany-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">Germany</span>
+                                    <span class="inner-block sub-name">DAX</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-down-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-width">
+                        <div class="block green-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/china-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">China</span>
+                                    <span class="inner-block sub-name">SSE Comp</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-up-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-width">
+                        <div class="block green-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/japan-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">Japan</span>
+                                    <span class="inner-block sub-name">Nikkei 225</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-down-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-width">
+                        <div class="block red-bg">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="assets/images/flag/hong-kong-flag.jpg" alt="" title="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="inner-block name">Hong Kong</span>
+                                    <span class="inner-block sub-name">Hong Seng</span>
+                                    <span class="inner-block num">156.83</span>
+                                        <span class="wrap clearfix">
+                                            <span class="icon"><img src="assets/images/flag/LTP-up-arrow.png" alt="" title=" "></span>
+                                            <span class="text">(2.75) 0.38%</span>
+                                        </span>
+                                    <span class="inner-block date">March 8th, 4:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- for mobile View markup -->
+            <div class="view-link">
+                <a href="javascript:void(0);">View All News</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Global Indices-->
+    <div class="sector-performance-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Sector Performance</h2>
+            </div>
+
+            <div class="sector-perf-cont">
+                <div class="share-title clearfix">
+                    <div class="title-left">
+                        <div class="sector-opt">
+                            <span>Index :</span>
+                            <input type="radio" id="nse4" name="channel3" class="css-radio" checked>
+                            <label class="css-label" for="nse4">NSE</label>
+                            <input type="radio" id="bse4" name="channel3" class="css-radio">
+                            <label class="css-label" for="bse4">BSE</label>
+                        </div>
+                    </div>
+                    <ul class="share-dt-sort title-right">
+                        <li class="active"><a href="javascript:void(0)">Today</a></li>
+                        <li><a href="javascript:void(0)">5 Days</a></li>
+                        <li><a href="javascript:void(0)">1 Mon</a></li>
+                        <li><a href="javascript:void(0)">3 Mon</a></li>
+                        <li><a href="javascript:void(0)">1 Yr</a></li>
+                        <li><a href="javascript:void(0)">Max</a></li>
+                    </ul>
+                </div>
+
+                <div class="sector-performance-charts">
+                    <img src="assets/images/sector-performance-img.jpg" alt="Sector Performance">
+                    <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Recommendations Ads-->
+    <div class="recommendations-help-ads">
+        <div class="container">
+            <div class="recommendations-help-ar">
+                <img src="assets/images/recommendations-help-img.jpg" alt="Recommendations">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Heat Map-->
+    <div class="heat-map-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Heat Map</h2>
+            </div>
+
+            <div class="heat-map-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tranding-opt clearfix">
+                            <div class="tranding-select-opt">
+                                <span class="mkt-icons"><span class="icon-NSE1"></span></span>
+                                <select class="select">
+                                    <option value="nse">NSE</option>
+                                    <option value="nse">BSE</option>
+                                </select>
+                            </div>
+                            <div class="tranding-select-opt">
+                                <span class="mkt-icons"><span class="icon-Select-Index1">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
+                </span></span>
+                                <select class="select">
+                                    <option value="nse">NSE</option>
+                                    <option value="nse">BSE</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
                         <ul class="share-dt-sort title-right">
                             <li class="active"><a href="javascript:void(0)">Today</a></li>
                             <li><a href="javascript:void(0)">5 Days</a></li>
@@ -526,335 +815,374 @@
                             <li><a href="javascript:void(0)">Max</a></li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="sector-performance-charts">
-                        <img src="assets/images/sector-performance-img.jpg" alt="Sector Performance">
-                        <p class="view-all-btn"><a href="javascript:void(0)">View All Gainers</a> </p>
+                <div class="heat-map-tbl">
+                    <div class="heat-map-lt">
+                        <ul class="heat-map-list">
+                            <li><a href="javascript:void(0)">&#10095; 5%</a></li>
+                            <li class="active"><a href="javascript:void(0)">3% to 5%</a></li>
+                            <li><a href="javascript:void(0)">0% to 3%</a></li>
+                            <li><a href="javascript:void(0)">-3% to 0%</a></li>
+                            <li><a href="javascript:void(0)">-5% to -3%</a></li>
+                            <li><a href="javascript:void(0)">&#10094; --5%</a></li>
+                        </ul>
                     </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!--Recommendations Ads-->
-        <div class="recommendations-help-ads">
-            <div class="container">
-                <div class="recommendations-help-ar">
-                    <img src="assets/images/recommendations-help-img.jpg" alt="Recommendations">
-                </div>
-            </div>
-        </div>
-
-
-        <!--Heat Map-->
-        <div class="heat-map-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>Heat Map</h2>
-                </div>
-
-                <div class="heat-map-content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tranding-opt clearfix">
-                                <div class="tranding-select-opt">
-                                    <select class="selectImg">
-                                        <option value="nse">NSE</option>
-                                        <option value="nse">BSE</option>
-                                    </select>
-                                </div>
-                                <div class="tranding-select-opt">
-                                    <select class="selectImg">
-                                        <option value="nse">NSE</option>
-                                        <option value="nse">BSE</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="share-dt-sort title-right">
-                                <li class="active"><a href="javascript:void(0)">Today</a></li>
-                                <li><a href="javascript:void(0)">5 Days</a></li>
-                                <li><a href="javascript:void(0)">1 Mon</a></li>
-                                <li><a href="javascript:void(0)">3 Mon</a></li>
-                                <li><a href="javascript:void(0)">1 Yr</a></li>
-                                <li><a href="javascript:void(0)">Max</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="heat-map-tbl">
-                        <div class="heat-map-lt">
-                            <ul class="heat-map-list">
-                                <li><a href="javascript:void(0)">&#10095; 5%</a></li>
-                                <li><a href="javascript:void(0)">3% to 5%</a></li>
-                                <li><a href="javascript:void(0)">0% to 3%</a></li>
-                                <li><a href="javascript:void(0)">-3% to 0%</a></li>
-                                <li><a href="javascript:void(0)">-5% to -3%</a></li>
-                                <li><a href="javascript:void(0)">&#10094; --5%</a></li>
-                            </ul>
-                        </div>
-                        <div class="heat-table-rt">
-                            <table class="shate-data-tbl table table-striped">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>LTP</th>
-                                    <th>Value (in Cr.)</th>
-                                    <th>Volume</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>ICICI Bank</td>
-                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
-                                    <td>1,135.58</td>
-                                    <td>3.96 lac</td>
-                                </tr>
-                                <tr>
-                                    <td>Larsen & Toubro</td>
-                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
-                                    <td>1,135.58</td>
-                                    <td>3.96 lac</td>
-                                </tr>
-                                <tr>
-                                    <td>ICICI Bank</td>
-                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
-                                    <td>1,135.58</td>
-                                    <td>3.96 lac</td>
-                                </tr>
-                                <tr>
-                                    <td>Larsen & Toubro</td>
-                                    <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
-                                    <td>1,135.58</td>
-                                    <td>3.96 lac</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!--Block Deals-->
-        <div class="block-deals-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>Bulk/Block Deals</h2>
-                </div>
-
-                <div class="block-deal-ar">
-                    <div class="block-opt">
-                        <input type="radio" id="nse" name="channel" class="css-radio" checked>
-                        <label class="css-label" for="nse">Bulk Deals</label>
-                        <input type="radio" id="bse" name="channel" class="css-radio">
-                        <label class="css-label" for="bse">Block Deals</label>
-                    </div>
-
-                    <table class="shate-data-tbl table table-striped">
-                        <thead>
+                    <div class="heat-table-rt">
+                        <table class="shate-data-tbl table table-striped">
+                            <thead>
                             <tr>
-                                <th>Company Name</th>
-                                <th>Client Name</th>
-                                <th>Buy/Sell</th>
-                                <th>Traded Price</th>
-                                <th>Traded Quantity</th>
+                                <th>Name</th>
+                                <th>LTP</th>
+                                <th>Value (in Cr.)</th>
+                                <th>Volume</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>
                             <tr>
                                 <td>ICICI Bank</td>
-                                <td>Allure Infra Llp</td>
-                                <td class="green-col">BUY</td>
+                                <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                 <td>1,135.58</td>
-                                <td>98,579</td>
+                                <td>3.96 lac</td>
                             </tr>
                             <tr>
                                 <td>Larsen & Toubro</td>
-                                <td>Rama Chandra Reddy Kadiri</td>
-                                <td class="green-col">BUY</td>
+                                <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                 <td>1,135.58</td>
-                                <td>10,00,000</td>
+                                <td>3.96 lac</td>
                             </tr>
                             <tr>
                                 <td>ICICI Bank</td>
-                                <td>Allure Infra Llp</td>
-                                <td class="green-col">BUY</td>
+                                <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                 <td>1,135.58</td>
-                                <td>20,00,000</td>
+                                <td>3.96 lac</td>
                             </tr>
                             <tr>
                                 <td>Larsen & Toubro</td>
-                                <td>Ig Ginancial Services Pvt Ltd</td>
-                                <td class="red-col">SELL</td>
+                                <td>287.25 <span class="loss-col">16.70 (6.17%)</span></td>
                                 <td>1,135.58</td>
-                                <td>25,00,000</td>
+                                <td>3.96 lac</td>
                             </tr>
-                            <tr>
-                                <td>ICICI Bank</td>
-                                <td>Sunvision Infotech Pvt Ltd</td>
-                                <td class="red-col">SELL</td>
-                                <td>1,135.58</td>
-                                <td>3,53,538</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="login-view-ar">
+                    <span class="login-tx">Login to view the entire heat map</span>
+                    <span><a href="javascript:vodi(0)">Login</a></span>
+                    <span><a href="javascript:vodi(0)">Open Account</a></span>
                 </div>
             </div>
-        </div>
 
-        <!--Fii Activities-->
-        <div class="activities-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>FII Activities</h2>
+
+        </div>
+    </div>
+
+    <!--Block Deals-->
+    <div class="block-deals-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Bulk/Block Deals</h2>
+            </div>
+
+            <div class="block-deal-ar">
+                <div class="block-opt">
+                    <input type="radio" id="nse1" name="channel" class="css-radio" checked>
+                    <label class="css-label" for="nse1">Bulk Deals</label>
+                    <input type="radio" id="bse1" name="channel" class="css-radio">
+                    <label class="css-label" for="bse1">Block Deals</label>
                 </div>
 
-                <div class="count-list-wrap">
-                    <ul class="level-list">
-                        <li>
-                            <div class="count-dt clearfix">
-                            <i class="icons graph-icon"></i>
+                <table class="shate-data-tbl table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Client Name</th>
+                            <th>Buy/Sell</th>
+                            <th>Traded Price</th>
+                            <th>Traded Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ICICI Bank</td>
+                            <td>Allure Infra Llp</td>
+                            <td class="green-col">BUY</td>
+                            <td>1,135.58</td>
+                            <td>98,579</td>
+                        </tr>
+                        <tr>
+                            <td>Larsen & Toubro</td>
+                            <td>Rama Chandra Reddy Kadiri</td>
+                            <td class="green-col">BUY</td>
+                            <td>1,135.58</td>
+                            <td>10,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>ICICI Bank</td>
+                            <td>Allure Infra Llp</td>
+                            <td class="green-col">BUY</td>
+                            <td>1,135.58</td>
+                            <td>20,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Larsen & Toubro</td>
+                            <td>Ig Ginancial Services Pvt Ltd</td>
+                            <td class="red-col">SELL</td>
+                            <td>1,135.58</td>
+                            <td>25,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>ICICI Bank</td>
+                            <td>Sunvision Infotech Pvt Ltd</td>
+                            <td class="red-col">SELL</td>
+                            <td>1,135.58</td>
+                            <td>3,53,538</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="view-all-btn"><a href="javascript:void(0)">View More</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Fii Activities-->
+    <div class="activities-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>FII Activities</h2>
+            </div>
+
+            <div class="count-list-wrap">
+                <ul class="level-list">
+                    <li>
+                        <div class="count-dt clearfix">
+                        <span class="icon-net-cash-graph1"></span>
+                        <span class="level-title">Net Cash in (Cr.) <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="icon-net-cash-graph1"></span>
+                            <span class="level-title">Today <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                </ul>
+                <p class="note clearfix">Note - Support and resistance values are calculated on weekly basis. <a href="javascript:void(0)" class="pull-right">View More</a> </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--DII Activities-->
+    <div class="activities-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>DII Activities</h2>
+            </div>
+
+            <div class="count-list-wrap">
+                <ul class="level-list">
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="icon-net-cash-graph1"></span>
                             <span class="level-title">Net Cash in (Cr.) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
-                        </li>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="icon-net-cash-graph1"></span>
+                            <span class="level-title">Today <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                    <li>
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
+                        </div>
+                        <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                    </li>
+                </ul>
+                <p class="note">Note - Support and resistance values are calculated on weekly basis. <a href="javascript:void(0)" class="pull-right">View More</a> </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Events-->
+    <div class="events-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx mb-20">
+                <h2>Events</h2>
+            </div>
+
+            <div class="main-events">
+                <div class="events-title">
+                    <ul class="events-title-list">
+                        <li class="active"><a href="javascript:void(0)"><span class="icon-expiry"></span> Today</a></li>
                         <li>
-                            <div class="count-dt clearfix">
-                                <i class="icons graph-icon"></i>
-                                <span class="level-title">Today <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
-                        </li>
-                        <li>
-                            <div class="count-dt clearfix">
-                                <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
-                        </li>
-                        <li>
-                            <div class="count-dt clearfix">
-                                <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                            <a href="javascript:void(0)" id="bt1" style="position:relative;"><span class="icon-expiry"></span> Pick Date <input type="hidden" id="datetimepicker1" /></a>
+                            <!--<button id="bt1" style="position:relative;"><span class="glyphicon-calendar glyphicon"></span>dfsdfsdfsd</button>-->
+                            <!--<input type="hidden" id="datetimepicker1" />-->
                         </li>
                     </ul>
-                    <p class="note">Note - Support and resistance values are calculated on weekly basis.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Fii Activities-->
-        <div class="activities-ar content-pd-sm">
-            <div class="container">
-                <!--heading-->
-                <div class="heading-bx mb-20">
-                    <h2>DII Activities</h2>
                 </div>
 
-                <div class="count-list-wrap">
-                    <ul class="level-list">
+                <div class="events-months-date horizontalScroll">
+                    <ul class="events-date-list clearfix">
                         <li>
-                            <div class="count-dt clearfix">
-                                <i class="icons graph-icon"></i>
-                                <span class="level-title">Net Cash in (Cr.) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li class="active">
+                            <p class="week-dt">Today</p>
+                            <p class="date-months"><span>25</span> JULY</p>
+                            <p class="scheduled-tx">Reliance Defence announcing its Fourth Quarter results today</p>
                         </li>
                         <li>
-                            <div class="count-dt clearfix">
-                                <i class="icons graph-icon"></i>
-                                <span class="level-title">Today <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                            <p class="week-dt">Tuesday</p>
+                            <p class="date-months"><span>26</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
                         </li>
                         <li>
-                            <div class="count-dt clearfix">
-                                <span class="level-title">Month (Feb) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                            <p class="week-dt">Wednesday</p>
+                            <p class="date-months"><span>27</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
                         </li>
                         <li>
-                            <div class="count-dt clearfix">
-                                <span class="level-title">Year (2016) <span>15,68,300.62</span></span>
-                            </div>
-                            <p class="days-dt">Wednesday <span>March 8, 17 4:30 AM</span></p>
+                            <p class="week-dt">Thursday</p>
+                            <p class="date-months"><span>28</span> JULY</p>
+                            <p class="scheduled-tx">Vedanta announces dividend of Rs. 17.7 (1770%) for every 1 stock held</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Friday</p>
+                            <p class="date-months"><span>29</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Saturday</p>
+                            <p class="date-months"><span>30</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
+                        </li>
+                        <li>
+                            <p class="week-dt">Sunday</p>
+                            <p class="date-months"><span>24</span> JULY</p>
+                            <p class="scheduled-tx">No events scheduled</p>
                         </li>
                     </ul>
-                    <p class="note">Note - Support and resistance values are calculated on weekly basis.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--news-->
-        <div class="news-wrap center-title">
-            <div class="container">
-                <h3 class="title heading-bar text-center">Support and Resistance Levels</h3>
-                <div class="news-blocks">
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
-                        <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
-                        <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
-                        <div class="date-time-wrap">
-                            <span class="icon"></span>
-                            <span class="date-stamp">March 8, 17 4:30 AM</span>
-                        </div>
+    <!--news-->
+    <div class="news-wrap center-title">
+        <div class="container">
+            <h3 class="title heading-bar text-center">Support and Resistance Levels</h3>
+            <div class="news-blocks">
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
                     </div>
                 </div>
-                <div class="view-link">
-                    <a href="javascript:void(0);">View All News</a>
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
+                    <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
+                    <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                    </div>
+                </div>
+                <div class="block">
+                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
+                    <div class="date-time-wrap">
+                        <span class="icon-clock1"></span>
+                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                    </div>
                 </div>
             </div>
+            <div class="view-link">
+                <a href="javascript:void(0);">View All News</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 <!--footer-->
@@ -944,7 +1272,7 @@
                         <p class="profits-tx">Download our Mobile App</p>
                         <div class="profile-ip-bx clearfix">
                             <div class="flag-tx">
-                                <select name="countries" id="countries1">
+                                <select name="countries" class="country-select" id="countries1">
                                     <option value='ad' data-image="assets/images/blank.gif" data-imagecss="flag ad" data-title="Andorra">376</option>
                                     <option value='ae' data-image="assets/images/blank.gif" data-imagecss="flag ae" data-title="United Arab Emirates">971</option>
                                     <option value='af' data-image="assets/images/blank.gif" data-imagecss="flag af" data-title="Afghanistan">93</option>
