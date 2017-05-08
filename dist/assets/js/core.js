@@ -4,10 +4,10 @@ $(function () {
 
 	//accordion function
 	$('.investor-content').hide();
-	$('.investor-title').click(function() {
+	$('.investor-title').click(function () {
 		$('.investor-title').removeClass('active');
 		$('.investor-content').slideUp('normal');
-		if($(this).next().is(':hidden') == true) {
+		if ($(this).next().is(':hidden') == true) {
 			//ADD THE ON CLASS TO THE BUTTON
 			$(this).addClass('active');
 			//OPEN THE SLIDE
@@ -20,17 +20,18 @@ $(function () {
 	if ($(window).width() < 991) {
 		//accordion function
 		$('.footer-link-list').hide();
-		$('.ft-link-title').click(function() {
+		$('.ft-link-title').click(function () {
 			$('.ft-link-title').removeClass('active');
 			$('.footer-link-list').slideUp('normal');
-			if($(this).next().is(':hidden') == true) {
+			if ($(this).next().is(':hidden') == true) {
 				//ADD THE ON CLASS TO THE BUTTON
 				$(this).addClass('active');
 				//OPEN THE SLIDE
 				$(this).next().slideDown('normal');
 			}
 		});
-	};
+	}
+	;
 
 	//menu black background show function
 	if ($(window).width() > 1005) {
@@ -41,7 +42,8 @@ $(function () {
 				$(".overlay-bg").removeClass('active');
 			}
 		);
-	};
+	}
+	;
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
@@ -56,12 +58,11 @@ $(function () {
 	});
 
 
-
 	//(Custom) - Hamburger fucntion on the left top side menu
 	var breadtop = $(".hamburger li:nth-child(1)"),
 		beef = $(".hamburger li:nth-child(2)"),
 		breadbottom = $(".hamburger li:nth-child(3)");
-	$(".menue").on('click', function() {
+	$(".menue").on('click', function () {
 		if (beef.hasClass("rot-45deg")) {
 			breadtop.removeClass("rot45deg");
 			beef.removeClass("rot-45deg");
@@ -84,25 +85,26 @@ $(function () {
 	if ($(window).width() < 991) {
 		//accordion function
 		$('.sub-menu-dt-ar').hide();
-		$('.menu-list-dt > li > a').click(function() {
+		$('.menu-list-dt > li > a').click(function () {
 			$('.menu-list-dt > li > a').parent().removeClass('active');
 			$('.sub-menu-dt-ar').slideUp('normal');
-			if($(this).next().is(':hidden') == true) {
+			if ($(this).next().is(':hidden') == true) {
 				//ADD THE ON CLASS TO THE BUTTON
 				$(this).parent().addClass('active');
 				//OPEN THE SLIDE
 				$(this).next().slideDown('normal');
 			}
 		});
-	};
+	}
+	;
 
 	//heat map page active
-	$(".heat-map-list li a").click(function(event) {
+	$(".heat-map-list li a").click(function (event) {
 		// event.preventDefault();
 		$(this).parent().addClass("active");
 		$(this).parent().siblings().removeClass("active");
 	});
-	$(".share-dt-sort li a").click(function(event) {
+	$(".share-dt-sort li a").click(function (event) {
 		// event.preventDefault();
 		$(this).parent().addClass("active");
 		$(this).parent().siblings().removeClass("active");
@@ -117,6 +119,18 @@ $(function () {
 		$('#datetimepicker1').data('DateTimePicker').toggle();
 	});
 
+
+	if ($(window).width() < 767){
+		//for dropdown toggle on click
+			$('button.btn-toggle').on('click', function () {
+				$('ul.toggle-list').toggle();
+			});
+		$('ul.toggle-list li a').on('click', function () {
+			var vals = $('ul.toggle-list li.active a').html();
+			$('button.btn-toggle span.text').html(vals);
+			$('ul.toggle-list').toggle();
+		});
+	}
 	// $('#datetimepicker1').datetimepicker();
 
 	//select
@@ -148,5 +162,17 @@ $(function () {
 			theme: "dark",
 			autoExpandHorizontalScroll: true
 		});
+	});
+
+
+	//for datatable
+	$('.data-table').DataTable({
+		responsive: true,
+		"bPaginate": false,
+		"ordering": false,
+		"searching": false,
+		rowReorder: {
+			selector: 'td:nth-child(2)'
+		},
 	});
 });
