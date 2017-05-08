@@ -30,8 +30,7 @@ $(function () {
 				$(this).next().slideDown('normal');
 			}
 		});
-	}
-	;
+	};
 
 	//menu black background show function
 	if ($(window).width() > 1005) {
@@ -42,8 +41,33 @@ $(function () {
 				$(".overlay-bg").removeClass('active');
 			}
 		);
-	}
-	;
+	};
+
+	//banner action function
+	$('.banner-action').click(function () {
+		$(this).parents('li').addClass('active');
+		$(this).parents('li').siblings().removeClass('active');
+		var tab = $(this).attr("href");
+		$(".tab-content").not(tab).css("display", "none");
+		$(tab).fadeIn();
+		return false;
+	});
+
+	$('.close-btn').click(function () {
+		$(this).parents('li').removeClass('active');
+		$(".tab-content").fadeOut();
+		return false;
+	});
+
+	// $(window).resize(function(){
+	// 	divheight();
+	// });
+	// function divheight() {
+	// 	//div  height calculation
+	// 	var height = $('.transact-block .img-wrap img').height();
+	// 	$('.transact-block .block-d').height(height);
+	// }
+
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
@@ -54,6 +78,14 @@ $(function () {
 			$("body").removeClass('overflownone');
 			$(".hamburger li").removeClass();
 			$(".menue").removeClass('active');
+		}
+
+		var q = $(e.target).closest('.banner-list li, .banner-content').length;
+		if (!q) {
+			$('.banner-action').parents('li').removeClass('active');
+			$('.close-btn').removeClass('active');;
+			$('.banner-action').show();
+			$(".tab-content").fadeOut();
 		}
 	});
 
@@ -122,15 +154,28 @@ $(function () {
 
 	if ($(window).width() < 767){
 		//for dropdown toggle on click
-			$('button.btn-toggle').on('click', function () {
-				$('ul.toggle-list').toggle();
-			});
+		$('button.btn-toggle').on('click', function () {
+			$('ul.toggle-list').toggle();
+		});
 		$('ul.toggle-list li a').on('click', function () {
 			var vals = $('ul.toggle-list li.active a').html();
 			$('button.btn-toggle span.text').html(vals);
 			$('ul.toggle-list').toggle();
 		});
 	}
+
+
+	$(window).resize(function () {
+		//for dropdown toggle on click
+		$('button.btn-toggle').on('click', function () {
+			$('ul.toggle-list').toggle();
+		});
+		$('ul.toggle-list li a').on('click', function () {
+			var vals = $('ul.toggle-list li.active a').html();
+			$('button.btn-toggle span.text').html(vals);
+			$('ul.toggle-list').toggle();
+		});
+	});
 	// $('#datetimepicker1').datetimepicker();
 
 	//select
