@@ -156,12 +156,10 @@ $(function () {
 	});
 
 	// Malihu Scroll
-	$(window).on("load",function(){
-		$(".horizontalScroll").mCustomScrollbar({
-			axis:"x",
-			theme: "dark",
-			autoExpandHorizontalScroll: true
-		});
+	$(".horizontalScroll").mCustomScrollbar({
+		axis:"x",
+		theme: "dark",
+		autoExpandHorizontalScroll: true
 	});
 
 
