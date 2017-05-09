@@ -1,4 +1,18 @@
 // Core API
+
+$(document).ready(function(){
+	wow = new WOW(
+		{
+			animateClass: 'animated',
+			offset:       100,
+			callback:     function(box) {
+				console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+			}
+		}
+	);
+	wow.init();
+});
+
 $(function () {
 	"use strict";
 
@@ -48,14 +62,14 @@ $(function () {
 		$(this).parents('li').addClass('active');
 		$(this).parents('li').siblings().removeClass('active');
 		var tab = $(this).attr("href");
-		$(".tab-content").not(tab).css("display", "none");
+		$(".tabcontent").not(tab).css("display", "none");
 		$(tab).fadeIn();
 		return false;
 	});
 
 	$('.close-btn').click(function () {
 		$(this).parents('li').removeClass('active');
-		$(".tab-content").fadeOut();
+		$(".tabcontent").fadeOut();
 		return false;
 	});
 
@@ -80,7 +94,7 @@ $(function () {
 			$(".menue").removeClass('active');
 		}
 
-		var q = $(e.target).closest('.banner-list li, .banner-content').length;
+		var q = $(e.target).closest('.banner-list li, .banner-main-content').length;
 		if (!q) {
 			$('.banner-action').parents('li').removeClass('active');
 			$('.close-btn').removeClass('active');;

@@ -29,6 +29,7 @@ var vendorJSFiles =
         "./src/script/select/jquery.dd.js",
         "./src/script/datatable/jquery.dataTables.min.js",
         "./src/script/datatable/dataTables.responsive.js",
+        "./src/script/wow-scroll/wow.min.js",
         "./src/script/select/select2.full.min.js",
         "./src/script/scroll/jquery.mCustomScrollbar.concat.min.js"]
 
