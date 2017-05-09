@@ -3,8 +3,11 @@
 $(document).ready(function(){
 	wow = new WOW(
 		{
+			boxClass: 'wow',
 			animateClass: 'animated',
-			offset:       100
+			offset: 350,
+			mobile: true,
+			live: true
 		}
 	);
 	wow.init();
@@ -63,10 +66,9 @@ $(function () {
 			$(".tabcontent").not(tab).css("display", "none");
 			$(tab).fadeIn();
 
-
 			$("body, html").animate({
-				scrollTop: $(tab).offset().top
-			}, 1000);
+				scrollTop: $( $(this).attr('href')).offset().top - 285+ "px"
+			}, 600);
 
 			return false;
 		});
@@ -96,6 +98,8 @@ $(function () {
 
 		$(".ban-cont1").on("click", function(){
 			$("#transacts").clone().appendTo(".ban-main-cont1");
+			$(".ban-main-cont2 #returns").remove();
+			$(".ban-main-cont3 #researchs").remove();
 		});
 		$(".remove-ban-cont1").on("click", function(){
 			$(this).parents('li').removeClass('active');
@@ -104,6 +108,8 @@ $(function () {
 
 		$(".ban-cont2").on("click", function(){
 			$('#returns').clone().appendTo(".ban-main-cont2");
+			$(".ban-main-cont1 #transacts").remove();
+			$(".ban-main-cont3 #researchs").remove();
 		});
 		$(".remove-ban-cont2").on("click", function(){
 			$(this).parents('li').removeClass('active');
@@ -112,6 +118,8 @@ $(function () {
 
 		$(".ban-cont3").on("click", function(){
 			$('#researchs').clone().appendTo(".ban-main-cont3");
+			$(".ban-main-cont1 #transacts").remove();
+			$(".ban-main-cont2 #returns").remove();
 		});
 		$(".remove-ban-cont3").on("click", function(){
 			$(this).parents('li').removeClass('active');

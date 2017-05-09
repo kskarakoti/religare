@@ -8359,12 +8359,21 @@ header {
                   top: 14px;
                   position: absolute;
                   left: 10px; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons.icon-products {
+                    margin-left: 5px; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons.icon-research-reports {
+                    margin-left: 9px; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons.icon-tools {
+                    margin-left: 5px; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons.icon-about-religare {
+                    margin-left: 6px; }
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons span {
                     font-size: 28px; }
               header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li .sub-menu-dt-ar {
                 display: none; }
                 header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li .sub-menu-dt-ar .sub-menu-dt-list {
-                  margin-left: 58px; }
+                  margin-left: 58px;
+                  padding-bottom: 15px; }
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li .sub-menu-dt-ar .sub-menu-dt-list li a {
                     color: #777777;
                     display: block;
@@ -8396,6 +8405,10 @@ header {
                   color: #f7941e; }
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-header-link .header-links li.build-wealth a:hover {
                     color: #da7a08; }
+                header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-header-link .header-links li.active-trade a {
+                  color: #1e723f; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-header-link .header-links li.active-trade a:hover {
+                    color: #269450; }
             header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-header-link .account-links {
               display: block;
               vertical-align: middle;
@@ -8506,6 +8519,8 @@ header {
                     text-transform: uppercase;
                     font-family: "ubuntumedium", sans-serif;
                     line-height: 28px; }
+                    header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-fluid li a:hover {
+                      color: #8dc63f; }
                     header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-fluid li a .font-icons {
                       display: inline-block;
                       vertical-align: top;
@@ -8517,23 +8532,25 @@ header {
                         padding: 8px 5px; } }
                 header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service {
                   margin-left: 67px; }
-                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service li a {
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li > a {
                     color: #444444;
                     display: block;
                     padding: 5px 0px;
                     font-size: 14px;
                     font-family: "ubuntumedium", sans-serif; }
-                    header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service li a:hover {
-                      color: #757575; }
-                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service li ul {
+                    header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li > a:hover {
+                      color: #8dc63f; }
+                  header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul {
                     margin: 10px 0px 0px 10px; }
-                    header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service li ul li {
+                    header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul li {
                       margin-bottom: 5px; }
-                      header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service li ul li a {
+                      header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul li a {
                         color: #8dc63f;
                         display: block;
                         padding: 0px;
                         font-family: "ubunturegular", sans-serif; }
+                        header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul li a:hover {
+                          color: #444444; }
                 @media screen and (max-width: 1005px) {
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu {
                     border: none;
@@ -9103,9 +9120,14 @@ header {
         width: 200px;
         font-size: 16px;
         text-transform: uppercase; }
-    .banner-toggle-wrap .registration-info.trail-info {
+    .banner-toggle-wrap .registration-info .trail-info {
       color: #222222;
       font-size: 16px; }
+      .banner-toggle-wrap .registration-info .trail-info a {
+        color: #222222;
+        font-size: 16px; }
+        .banner-toggle-wrap .registration-info .trail-info a:hover {
+          color: #7bc11c; }
     @media screen and (max-width: 767px) {
       .banner-toggle-wrap .registration-info {
         margin-top: 10px; } }
@@ -9172,6 +9194,9 @@ header {
   text-align: center; }
   .religare-service-ar .religare-sev-tx .font-icons span {
     font-size: 120px; }
+    @media screen and (max-width: 480px) {
+      .religare-service-ar .religare-sev-tx .font-icons span {
+        font-size: 80px; } }
   .religare-service-ar .religare-sev-tx h3 {
     margin: 25px 0px 10px 0px;
     font-size: 24px; }
@@ -9188,16 +9213,19 @@ header {
     @media screen and (max-width: 767px) {
       .religare-service-ar .religare-sev-tx h3 {
         min-height: auto;
-        margin: 20px 0px 10px 0px; } }
+        margin: 12px 0px 10px 0px; } }
   .religare-service-ar .religare-sev-tx p {
     font-size: 16px;
     color: #666666; }
     @media screen and (max-width: 991px) {
       .religare-service-ar .religare-sev-tx p {
         font-size: 16px; } }
+    @media screen and (max-width: 480px) {
+      .religare-service-ar .religare-sev-tx p {
+        font-size: 14px; } }
   @media screen and (max-width: 767px) {
     .religare-service-ar .religare-sev-tx {
-      margin-bottom: 30px; } }
+      margin-bottom: 60px; } }
 
 /* Company visitor*/
 .company-visitor-count {
@@ -10836,6 +10864,11 @@ p.desc {
 .investor-content {
   color: #ffffff;
   padding: 15px 15px 15px 0; }
+  .investor-content p {
+    color: #848484; }
+    @media screen and (max-width: 767px) {
+      .investor-content p {
+        font-size: 12px; } }
 
 /****************************************
    5.3 Checkbox & Radio button Styles
@@ -11023,6 +11056,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     @media screen and (max-width: 480px) {
       .heading-bx h2 {
         font-size: 22px; } }
+  @media screen and (max-width: 767px) {
+    .heading-bx {
+      margin: 0px 0px 25px 0px; } }
 
 .content-pd {
   padding: 60px 0px; }
@@ -11065,13 +11101,15 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
       .menue .hamburger li.rot-45deg {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        top: 7px !important; }
+        top: 8px !important; }
       .menue .hamburger li:nth-child(1) {
         top: 0; }
       .menue .hamburger li:nth-child(2) {
         top: 5px; }
       .menue .hamburger li:nth-child(3) {
         top: 10px; }
+  .menue.active {
+    margin-top: 5px; }
   .menue .menu-hamburg {
     position: absolute;
     top: 19px;

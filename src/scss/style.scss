@@ -324,6 +324,18 @@ header {
                       position: absolute;
                       left: 10px;
 
+                      &.icon-products {
+                        margin-left: 5px;
+                      }
+                      &.icon-research-reports {
+                        margin-left: 9px;
+                      }
+                      &.icon-tools {
+                        margin-left: 5px;
+                      }
+                      &.icon-about-religare {
+                        margin-left: 6px;
+                      }
                       span {
                         font-size: 28px;
                       }
@@ -335,6 +347,7 @@ header {
 
                     .sub-menu-dt-list {
                       margin-left: 58px;
+                      padding-bottom: 15px;
 
                       li {
                         a {
@@ -388,6 +401,16 @@ header {
 
                       &:hover {
                         color: #da7a08;
+                      }
+                    }
+                  }
+
+                  &.active-trade {
+                    a {
+                      color: #1e723f;
+
+                      &:hover {
+                        color: #269450;
                       }
                     }
                   }
@@ -563,6 +586,10 @@ header {
                           font-family: $font-family-ubuntumedium;
                           line-height: 28px;
 
+                          &:hover {
+                            color: #8dc63f;
+                          }
+
                           .font-icons {
                             display: inline-block;
                             vertical-align: top;
@@ -584,8 +611,8 @@ header {
                     .sub-menu-service {
                       margin-left: 67px;
 
-                      li {
-                        a {
+                      > li {
+                        > a {
                           color: $tundora;
                           display: block;
                           padding: $padding-base-5 $padding-none;
@@ -593,7 +620,7 @@ header {
                           font-family: $font-family-ubuntumedium;
 
                           &:hover {
-                            color: #757575;
+                            color: #8dc63f;
                           }
                         }
 
@@ -608,6 +635,10 @@ header {
                               display: block;
                               padding: $padding-none;
                               font-family: $font-family-ubunturegular;
+
+                              &:hover {
+                                color: $tundora;
+                              }
                             }
                           }
                         }
@@ -1336,7 +1367,7 @@ header {
     }
   }
   .registration-info {
-    margin-top:40px;
+    margin-top: 40px;
 
     .btn-wrap {
       margin-bottom: 25px;
@@ -1348,9 +1379,18 @@ header {
         text-transform: uppercase;
       }
     }
-    &.trail-info {
+    .trail-info {
       color:#222222;
       font-size: 16px;
+
+      a {
+        color: #222222;
+        font-size: 16px;
+
+        &:hover {
+          color: #7bc11c;
+        }
+      }
     }
     @media screen and (max-width: 767px) {
       margin-top: 10px;
@@ -1445,6 +1485,10 @@ header {
     .font-icons {
       span {
         font-size: 120px;
+
+        @media screen and (max-width: 480px) {
+          font-size: 80px;
+        }
       }
     }
 
@@ -1464,7 +1508,7 @@ header {
       }
       @media screen and (max-width: 767px) {
         min-height: auto;
-        margin: ($margin-base-5 * 4) $margin-none ($margin-base-5 * 2) $margin-none;
+        margin: ($margin-base-5 * 2) + 2 $margin-none ($margin-base-5 * 2) $margin-none;
       }
     }
 
@@ -1475,10 +1519,13 @@ header {
       @media screen and (max-width: 991px) {
         font-size: $font-size-large - 2;
       }
+      @media screen and (max-width: 480px) {
+        font-size: $font-size-medium - 2;
+      }
     }
 
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -3846,6 +3893,14 @@ p {
   //background: #95B1CE;
   color: $white;
   padding: 15px 15px 15px 0;
+
+  p {
+    color: #848484;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
 }
 
 
@@ -4078,6 +4133,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
       font-size: 22px;
     }
   }
+  @media screen and (max-width: 767px) {
+    margin: $margin-none $margin-none ($margin-base-5 * 5) $margin-none;
+  }
 }
 
 .content-pd {
@@ -4134,7 +4192,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
       &.rot-45deg {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        top: 7px !important;
+        top: 8px !important;
       }
 
       &:nth-child(1) {
@@ -4151,6 +4209,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     }
   }
 
+  &.active {
+    margin-top: 5px;
+  }
   .menu-hamburg {
     position: absolute;
     top: 19px;
