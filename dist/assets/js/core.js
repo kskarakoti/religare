@@ -4,10 +4,7 @@ $(document).ready(function(){
 	wow = new WOW(
 		{
 			animateClass: 'animated',
-			offset:       100,
-			callback:     function(box) {
-				console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-			}
+			offset:       100
 		}
 	);
 	wow.init();
@@ -65,6 +62,12 @@ $(function () {
 			var tab = $(this).attr("href");
 			$(".tabcontent").not(tab).css("display", "none");
 			$(tab).fadeIn();
+
+
+			$("body, html").animate({
+				scrollTop: $(tab).offset().top
+			}, 1000);
+
 			return false;
 		});
 
@@ -76,6 +79,13 @@ $(function () {
 
 	}
 
+	//down action function
+	$(".down-arrow .scrolls").on("click", function( e ) {
+		e.preventDefault();
+		$("body, html").animate({
+			scrollTop: $('#scroll-position').offset().top
+		}, 600);
+	});
 
 	if ($(window).width() < 767) {
 		$('.banner-action').click(function () {

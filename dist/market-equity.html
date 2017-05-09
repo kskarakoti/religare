@@ -361,16 +361,18 @@
 
            <!--arrow down-->
            <div class="down-arrow">
-               <span class="icon">
-                   <span class="arrow "><img src="assets/images/arrow-down.png"></span>
-               </span>
+             <span class="icon">
+                <span class="arrow bounce">
+                    <a href="#scroll-position" class="scrolls"><span class="up-angle"></span></a>
+                </span>
+             </span>
            </div>
        </div>
     </div>
 
 
     <!--Tranding Now-->
-    <div class="tranding-now-area content-pd-sm">
+    <div id="scroll-position" class="tranding-now-area content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx mb-20">
@@ -831,88 +833,99 @@
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" preserveAspectRatio="xMinYMin meet" class="hidden-xs svg-map">
                 <image width="1920" height="1080" xlink:href="assets/images/flag/map.png">
                 </image>
-                <g>
+                <g class="main-grp">
                     <circle cx="910" cy="381" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="910" cy="381" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="640" y="161" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="640" y1="361" x2="982" y2="361" style="stroke:#20ab30;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-kingdom-flag.jpg" height="25" width="50" x="652" y="181"></image>
-                    <text fill="#FFFFFF" x="662" y="237" class="cont-sub">FTSE</text>
-                    <text x="659" y="269" class="cont-num" fill="#FFFFFF">100</text>
-                    <text x="726" y="202" class="cont-name" fill="#FFFFFF">United Kingdom</text>
-                    <text x="724" y="246" class="cont-count" fill="#FFFFFF">156.83</text>
-                    <text x="753" y="283" class="cont-rate" fill="#FFFFFF" style="fill:#20ab30;">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="708" y="264"></image>
-                    <text x="726" y="328" class="cont-date" fill="#FFFFFF">March 8th, 4:30 AM</text>
+                    <g class="inner-grp">
+                        <rect x="640" y="161" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="640" y1="361" x2="982" y2="361" style="stroke:#20ab30;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-kingdom-flag.jpg" height="25" width="50" x="652" y="181"></image>
+                        <text fill="#FFFFFF" x="662" y="237" class="cont-sub">FTSE</text>
+                        <text x="659" y="269" class="cont-num" fill="#FFFFFF">100</text>
+                        <text x="726" y="202" class="cont-name" fill="#FFFFFF">United Kingdom</text>
+                        <text x="724" y="246" class="cont-count" fill="#FFFFFF">156.83</text>
+                        <text x="753" y="283" class="cont-rate" fill="#FFFFFF" style="fill:#20ab30;">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="708" y="264"></image>
+                        <text x="726" y="328" class="cont-date" fill="#FFFFFF">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
-                <g>
+                <g class="main-grp">
                     <circle cx="635" cy="413" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="635" cy="413" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="320" y="438" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="662" y1="636" x2="320" y2="636" style="stroke:#20ab30;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-states-flag.jpg" height="25" width="50" x="334" y="460"></image>
-                    <text fill="#FFFFFF" x="345" y="520" class="cont-sub">DJIA</text>
-                    <text x="406" y="476" fill="#FFFFFF" class="cont-name">United States</text>
-                    <text x="403" y="518" fill="#FFFFFF" class="cont-count">156.83</text>
-                    <text x="430" y="557" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="386" y="536"></image>
-                    <text x="400" y="599" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
-
+                    <g class="inner-grp">
+                        <rect x="320" y="438" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="662" y1="636" x2="320" y2="636" style="stroke:#20ab30;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/united-states-flag.jpg" height="25" width="50" x="334" y="460"></image>
+                        <text fill="#FFFFFF" x="345" y="520" class="cont-sub">DJIA</text>
+                        <text x="406" y="476" fill="#FFFFFF" class="cont-name">United States</text>
+                        <text x="403" y="518" fill="#FFFFFF" class="cont-count">156.83</text>
+                        <text x="430" y="557" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="386" y="536"></image>
+                        <text x="400" y="599" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
-                <g>
+                <g class="main-grp">
                     <circle cx="983" cy="393" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="983" cy="393" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="1001" y="343" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="1001" y1="541" x2="1344" y2="541" style="stroke:#fa4110;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/germany-flag.jpg" height="25" width="50" x="1018" y="364"></image>
-                    <text fill="#FFFFFF" x="1025" y="423" class="cont-sub">DAX</text>
-                    <text x="1085" y="384" fill="#FFFFFF" class="cont-name">Germany</text>
-                    <text x="1085" y="428" fill="#FFFFFF" class="cont-count">156.83</text>
-                    <text x="1113" y="467" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1069" y="447"></image>
-                    <text x="1087" y="511" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    <g class="inner-grp">
+                        <rect x="1001" y="343" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="1001" y1="541" x2="1344" y2="541" style="stroke:#fa4110;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/germany-flag.jpg" height="25" width="50" x="1018" y="364"></image>
+                        <text fill="#FFFFFF" x="1025" y="423" class="cont-sub">DAX</text>
+                        <text x="1085" y="384" fill="#FFFFFF" class="cont-name">Germany</text>
+                        <text x="1085" y="428" fill="#FFFFFF" class="cont-count">156.83</text>
+                        <text x="1113" y="467" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1069" y="447"></image>
+                        <text x="1087" y="511" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
-                <g>
+                <g class="main-grp">
                     <circle cx="1372" cy="537" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="1372" cy="537" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="1081" y="565" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="1080" y1="762" x2="1423" y2="762" style="stroke:#20ab30;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/china-flag.jpg" height="25" width="50" x="1100" y="584"></image>
-                    <text fill="#FFFFFF" x="1107" y="647" class="cont-sub">SSE</text>
-                    <text x="1107" y="679" fill="#FFFFFF" class="cont-num">Comp</text>
-                    <text x="1179" y="605" fill="#FFFFFF" class="cont-name">China</text>
-                    <text x="1176" y="648" fill="#FFFFFF" class="cont-count">156.83</text>
-                    <text x="1206" y="689" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1161" y="667"></image>
-                    <text x="1174" y="733" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    <g class="inner-grp">
+                        <rect x="1081" y="565" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="1080" y1="762" x2="1423" y2="762" style="stroke:#20ab30;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/china-flag.jpg" height="25" width="50" x="1100" y="584"></image>
+                        <text fill="#FFFFFF" x="1107" y="647" class="cont-sub">SSE</text>
+                        <text x="1107" y="679" fill="#FFFFFF" class="cont-num">Comp</text>
+                        <text x="1179" y="605" fill="#FFFFFF" class="cont-name">China</text>
+                        <text x="1176" y="648" fill="#FFFFFF" class="cont-count">156.83</text>
+                        <text x="1206" y="689" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1161" y="667"></image>
+                        <text x="1174" y="733" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
-                <g>
+                <g class="main-grp">
                     <circle cx="1444" cy="595" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="1444" cy="595" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="1462" y="572" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="1461" y1="769" x2="1805" y2="769" style="stroke:#fa4110;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/hong-kong-flag.jpg" height="25" width="50" x="1480" y="593"></image>
-                    <text fill="#FFFFFF" x="1486" y="660" class="cont-sub">Hong</text>
-                    <text x="1484" y="693" fill="#FFFFFF" class="cont-num">Seng</text>
-                    <text x="1543" y="614" fill="#FFFFFF" class="cont-name">Hong Kong</text>
-                    <text x="1544" y="655" fill="#FFFFFF" class="cont-count">156.83</text>
-                    <text x="1577" y="693" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1531" y="675"></image>
-                    <text x="1546" y="737" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    <g class="inner-grp">
+                        <rect x="1462" y="572" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="1461" y1="769" x2="1805" y2="769" style="stroke:#fa4110;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/hong-kong-flag.jpg" height="25" width="50" x="1480" y="593"></image>
+                        <text fill="#FFFFFF" x="1486" y="660" class="cont-sub">Hong</text>
+                        <text x="1484" y="693" fill="#FFFFFF" class="cont-num">Seng</text>
+                        <text x="1543" y="614" fill="#FFFFFF" class="cont-name">Hong Kong</text>
+                        <text x="1544" y="655" fill="#FFFFFF" class="cont-count">156.83</text>
+                        <text x="1577" y="693" fill="#FFFFFF" class="cont-rate" style="fill:#fa4110">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-down-arrow.png" height="25" width="50" x="1531" y="675"></image>
+                        <text x="1546" y="737" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
-                <g>
+                <g class="main-grp">
                     <circle cx="1478" cy="473" r="10" stroke="#FFF" stroke-width="3" fill="none"></circle>
                     <circle cx="1478" cy="473" r="5" stroke="#FFF" stroke-width="0" fill="#FFF"></circle>
-                    <rect x="1452" y="252" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
-                    <line x1="1452" y1="450" x2="1794" y2="450" style="stroke:#20ab30;stroke-width:5"></line>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/japan-flag.jpg" height="25" width="50" x="1470" y="274"></image>
-                    <text fill="#FFFFFF" x="1475" y="335" class="cont-sub">Nikkei</text>
-                    <text x="1475" y="367" fill="#FFFFFF" class="cont-num">225</text>
-                    <text x="1539" y="295" fill="#FFFFFF" class="cont-name">Japan</text>
-                    <text x="1538" y="338" fill="#FFFFFF" class="cont-count">156.83</text>
-                    <text x="1571" y="381" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
-                    <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1526" y="362"></image>
-                    <text x="1544" y="422" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    <g class="inner-grp">
+                        <rect x="1452" y="252" width="341" height="200" fill-opacity="0.9" style="fill:rgb(25,26,27);"></rect>
+                        <line x1="1452" y1="450" x2="1794" y2="450" style="stroke:#20ab30;stroke-width:5"></line>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/japan-flag.jpg" height="25" width="50" x="1470" y="274"></image>
+                        <text fill="#FFFFFF" x="1475" y="335" class="cont-sub">Nikkei</text>
+                        <text x="1475" y="367" fill="#FFFFFF" class="cont-num">225</text>
+                        <text x="1539" y="295" fill="#FFFFFF" class="cont-name">Japan</text>
+                        <text x="1538" y="338" fill="#FFFFFF" class="cont-count">156.83</text>
+                        <text x="1571" y="381" fill="#FFFFFF" class="cont-rate" style="fill:#20ab30">(2.75) 0.38%</text>
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/flag/LTP-up-arrow.png" height="25" width="50" x="1526" y="362"></image>
+                        <text x="1544" y="422" fill="#FFFFFF" class="cont-date">March 8th, 4:30 AM</text>
+                    </g>
                 </g>
             </svg>
             <!-- for mobile View markup -->
@@ -1095,7 +1108,27 @@
     <div class="recommendations-help-ads">
         <div class="container">
             <div class="recommendations-help-ar">
-                <img src="assets/images/recommendations-help-img.jpg" alt="Recommendations">
+                <div class="img-wrap">
+                    <img src="assets/images/banner_background.jpg" alt="" title="" class="hidden-xs back-grid">
+                    <img src="assets/images/banner_background-1.png" alt="" title="" class="visible-xs back-grid">
+                </div>
+                <div class="overlay">
+                    <div class="display-table">
+                        <div class="display-cell">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/currency-icon.png" alt="" title="">
+                                </li>
+                                <li>
+                                    <p class="info">Our recommendations help traders make maximum profits</p>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="primary-btn">View Recommendations</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
