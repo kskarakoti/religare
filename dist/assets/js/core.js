@@ -58,21 +58,54 @@ $(function () {
 	};
 
 	//banner action function
-	$('.banner-action').click(function () {
-		$(this).parents('li').addClass('active');
-		$(this).parents('li').siblings().removeClass('active');
-		var tab = $(this).attr("href");
-		$(".tabcontent").not(tab).css("display", "none");
-		$(tab).fadeIn();
-		return false;
-	});
+	if ($(window).width() > 767) {
+		$('.banner-action').click(function () {
+			$(this).parents('li').addClass('active');
+			$(this).parents('li').siblings().removeClass('active');
+			var tab = $(this).attr("href");
+			$(".tabcontent").not(tab).css("display", "none");
+			$(tab).fadeIn();
+			return false;
+		});
 
-	$('.close-btn').click(function () {
-		$(this).parents('li').removeClass('active');
-		$(".tabcontent").fadeOut();
-		return false;
-	});
+		$('.close-btn').click(function () {
+			$(this).parents('li').removeClass('active');
+			$(".tabcontent").fadeOut();
+			return false;
+		});
 
+	}
+
+
+	if ($(window).width() < 767) {
+		$('.banner-action').click(function () {
+			$(this).parents('li').addClass('active');
+			$(this).parents('li').siblings().removeClass('active');
+			return false;
+		});
+
+		$(".ban-cont1").on("click", function(){
+			$("#transacts").clone().appendTo(".ban-main-cont1");
+		});
+		/*$("remove-ban-cont1").on("click", function(){
+			$("#transacts").remove();
+		});*/
+
+		$(".ban-cont2").on("click", function(){
+			$('#returns').clone().appendTo(".ban-main-cont2");
+		});
+		/*$("remove-ban-cont2").on("click", function(){
+			$("#returns").remove();
+		});*/
+
+		$(".ban-cont3").on("click", function(){
+			$('#researchs').clone().appendTo(".ban-main-cont3");
+		});
+		$(".close-btn a").on("click", function(){
+			$(this).parents('li').removeClass('active');
+			$(".tabcontent").remove();
+		});
+	}
 	// $(window).resize(function(){
 	// 	divheight();
 	// });
@@ -99,9 +132,10 @@ $(function () {
 			$('.banner-action').parents('li').removeClass('active');
 			$('.close-btn').removeClass('active');;
 			$('.banner-action').show();
-			$(".tab-content").fadeOut();
+			$(".tabcontent").fadeOut();
 		}
 	});
+
 
 
 	//(Custom) - Hamburger fucntion on the left top side menu

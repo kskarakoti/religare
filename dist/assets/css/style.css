@@ -8669,23 +8669,24 @@ header {
   display: inline-block;
   padding: 0px;
   position: relative;
-  height: 570px; }
-  .banner-area .banner-list li.img-banner1 {
-    background: url("../images/home-banner1.jpg") no-repeat center;
-    background-size: cover; }
-  .banner-area .banner-list li.img-banner2 {
-    background: url("../images/home-banner2.jpg") no-repeat center;
-    background-size: cover; }
-  .banner-area .banner-list li.img-banner3 {
-    background: url("../images/home-banner3.jpg") no-repeat center;
-    background-size: cover; }
+  /*@media screen and (max-width: 640px) {
+        height: 325px;
+      }*/ }
   .banner-area .banner-list li .banner-sec {
     width: 100%;
     display: block;
-    border-right: 1px solid #ffffff; }
+    border-right: 1px solid #ffffff;
+    height: 570px; }
+    .banner-area .banner-list li .banner-sec.img-banner1 {
+      background: url("../images/home-banner1.jpg") no-repeat center;
+      background-size: cover; }
+    .banner-area .banner-list li .banner-sec.img-banner2 {
+      background: url("../images/home-banner2.jpg") no-repeat center;
+      background-size: cover; }
+    .banner-area .banner-list li .banner-sec.img-banner3 {
+      background: url("../images/home-banner3.jpg") no-repeat center;
+      background-size: cover; }
   .banner-area .banner-list li.active {
-    background: #8dc63f;
-    height: 610px;
     /*&:before {
           background: $sushi;
           width: 100%;
@@ -8695,28 +8696,35 @@ header {
           left: 0;
           content: '';
         }*/ }
-    .banner-area .banner-list li.active .banner-sec .banner-action {
-      display: none; }
+    .banner-area .banner-list li.active .banner-sec {
+      background: #8dc63f;
+      height: 610px; }
+      .banner-area .banner-list li.active .banner-sec .banner-action {
+        display: none; }
+      @media screen and (max-width: 1366px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 490px; } }
+      @media screen and (max-width: 1280px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 460px; } }
+      @media screen and (max-width: 1024px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 430px; } }
+      @media screen and (max-width: 991px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 380px; } }
+      @media screen and (max-width: 767px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 490px; } }
+      @media screen and (max-width: 640px) {
+        .banner-area .banner-list li.active .banner-sec {
+          height: 325px; } }
     .banner-area .banner-list li.active .close-btn {
       display: block; }
-    @media screen and (max-width: 1366px) {
-      .banner-area .banner-list li.active {
-        height: 490px; } }
-    @media screen and (max-width: 1280px) {
-      .banner-area .banner-list li.active {
-        height: 460px; } }
-    @media screen and (max-width: 1024px) {
-      .banner-area .banner-list li.active {
-        height: 430px; } }
-    @media screen and (max-width: 991px) {
-      .banner-area .banner-list li.active {
-        height: 380px; } }
-    @media screen and (max-width: 767px) {
-      .banner-area .banner-list li.active {
-        height: 490px; } }
-    @media screen and (max-width: 640px) {
-      .banner-area .banner-list li.active {
-        height: 325px; } }
+      @media screen and (max-width: 767px) {
+        .banner-area .banner-list li.active .close-btn {
+          position: relative;
+          bottom: 20px; } }
   .banner-area .banner-list li .close-btn {
     display: none;
     width: 100%;
@@ -8831,6 +8839,9 @@ header {
       @media screen and (max-width: 767px) {
         .banner-area .banner-list li .banner-content .banner-cell {
           text-align: center; } }
+    @media screen and (max-width: 767px) {
+      .banner-area .banner-list li .banner-content {
+        position: relative; } }
   @media screen and (max-width: 1366px) {
     .banner-area .banner-list li {
       height: 450px; } }
@@ -8845,10 +8856,7 @@ header {
       height: 330px; } }
   @media screen and (max-width: 767px) {
     .banner-area .banner-list li {
-      height: 450px; } }
-  @media screen and (max-width: 640px) {
-    .banner-area .banner-list li {
-      height: 325px; } }
+      height: auto; } }
 
 /*.banner-list li:nth-child(1) {
   background: url("../images/home-banner1.jpg") no-repeat;
@@ -8931,6 +8939,9 @@ header {
 */
 .banner-main-content {
   overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .banner-main-content {
+      display: none; } }
 
 .banner-toggle-wrap {
   background: #f6f9fa;
@@ -11042,3 +11053,6 @@ table.dataTable tr.child ul {
 
 .tabcontent {
   display: none; }
+  @media screen and (max-width: 767px) {
+    .tabcontent {
+      display: block; } }

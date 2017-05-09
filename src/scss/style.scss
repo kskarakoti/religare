@@ -813,39 +813,65 @@ header {
       display: inline-block;
       padding: $padding-none;
       position: relative;
-      height: 570px;
 
-      &.img-banner1 {
-        background: url("../images/home-banner1.jpg") no-repeat center;
-        background-size: cover;
-      }
-      &.img-banner2 {
-        background: url("../images/home-banner2.jpg") no-repeat center;
-        background-size: cover;
-      }
-      &.img-banner3 {
-        background: url("../images/home-banner3.jpg") no-repeat center;
-        background-size: cover;
-      }
+
 
       .banner-sec{
         width: 100%;
         display: block;
         border-right: 1px solid $white;
+        height: 570px;
+
+        &.img-banner1 {
+          background: url("../images/home-banner1.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &.img-banner2 {
+          background: url("../images/home-banner2.jpg") no-repeat center;
+          background-size: cover;
+        }
+        &.img-banner3 {
+          background: url("../images/home-banner3.jpg") no-repeat center;
+          background-size: cover;
+        }
       }
 
       &.active {
-        background: $sushi;
-        height: 610px;
-
         .banner-sec {
+          background: $sushi;
+          height: 610px;
+
           .banner-action {
             display: none;
+          }
+
+          @media screen and (max-width: 1366px) {
+            height: 490px;
+          }
+          @media screen and (max-width: 1280px) {
+            height: 460px;
+          }
+          @media screen and (max-width: 1024px) {
+            height: 430px;
+          }
+          @media screen and (max-width: 991px) {
+            height: 380px;
+          }
+          @media screen and (max-width: 767px) {
+            height: 490px;
+          }
+          @media screen and (max-width: 640px) {
+            height: 325px;
           }
         }
 
         .close-btn {
           display: block;
+
+          @media screen and (max-width: 767px) {
+            position: relative;
+            bottom: 20px;
+          }
         }
 
         /*&:before {
@@ -858,24 +884,7 @@ header {
           content: '';
         }*/
 
-        @media screen and (max-width: 1366px) {
-          height: 490px;
-        }
-        @media screen and (max-width: 1280px) {
-          height: 460px;
-        }
-        @media screen and (max-width: 1024px) {
-          height: 430px;
-        }
-        @media screen and (max-width: 991px) {
-          height: 380px;
-        }
-        @media screen and (max-width: 767px) {
-          height: 490px;
-        }
-        @media screen and (max-width: 640px) {
-          height: 325px;
-        }
+
       }
 
       .close-btn {
@@ -1028,6 +1037,9 @@ header {
             text-align: center;
           }
         }
+        @media screen and (max-width: 767px) {
+          position: relative;
+        }
       }
 
       @media screen and (max-width: 1366px) {
@@ -1043,11 +1055,11 @@ header {
         height: 330px;
       }
       @media screen and (max-width: 767px) {
-        height: 450px;
+        height: auto;
       }
-      @media screen and (max-width: 640px) {
+      /*@media screen and (max-width: 640px) {
         height: 325px;
-      }
+      }*/
     }
   }
 }
@@ -1134,6 +1146,10 @@ header {
 
 .banner-main-content {
   overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .banner-toggle-wrap {
@@ -4106,4 +4122,8 @@ table.dataTable tr.child ul {
 
 .tabcontent {
   display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
