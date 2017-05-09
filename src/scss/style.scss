@@ -814,8 +814,6 @@ header {
       padding: $padding-none;
       position: relative;
 
-
-
       .banner-sec{
         width: 100%;
         display: block;
@@ -833,6 +831,25 @@ header {
         &.img-banner3 {
           background: url("../images/home-banner3.jpg") no-repeat center;
           background-size: cover;
+        }
+
+        @media screen and (max-width: 1366px) {
+          height: 450px;
+        }
+        @media screen and (max-width: 1280px) {
+          height: 420px;
+        }
+        @media screen and (max-width: 1024px) {
+          height: 380px;
+        }
+        @media screen and (max-width: 991px) {
+          height: 330px;
+        }
+        @media screen and (max-width: 767px) {
+          height: 330px;
+        }
+        @media screen and (max-width: 640px) {
+          height: 300px;
         }
       }
 
@@ -1041,25 +1058,6 @@ header {
           position: relative;
         }
       }
-
-      @media screen and (max-width: 1366px) {
-        height: 450px;
-      }
-      @media screen and (max-width: 1280px) {
-        height: 420px;
-      }
-      @media screen and (max-width: 1024px) {
-        height: 380px;
-      }
-      @media screen and (max-width: 991px) {
-        height: 330px;
-      }
-      @media screen and (max-width: 767px) {
-        height: auto;
-      }
-      /*@media screen and (max-width: 640px) {
-        height: 325px;
-      }*/
     }
   }
 }

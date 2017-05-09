@@ -87,24 +87,30 @@ $(function () {
 		$(".ban-cont1").on("click", function(){
 			$("#transacts").clone().appendTo(".ban-main-cont1");
 		});
-		/*$("remove-ban-cont1").on("click", function(){
-			$("#transacts").remove();
-		});*/
+		$(".remove-ban-cont1").on("click", function(){
+			$(this).parents('li').removeClass('active');
+			$(".ban-main-cont1 #transacts").remove();
+		});
 
 		$(".ban-cont2").on("click", function(){
 			$('#returns').clone().appendTo(".ban-main-cont2");
 		});
-		/*$("remove-ban-cont2").on("click", function(){
-			$("#returns").remove();
-		});*/
+		$(".remove-ban-cont2").on("click", function(){
+			$(this).parents('li').removeClass('active');
+			$(".ban-main-cont2 #returns").remove();
+		});
 
 		$(".ban-cont3").on("click", function(){
 			$('#researchs').clone().appendTo(".ban-main-cont3");
 		});
-		$(".close-btn a").on("click", function(){
+		$(".remove-ban-cont3").on("click", function(){
+			$(this).parents('li').removeClass('active');
+			$(".ban-main-cont3 #researchs").remove();
+		});
+		/*$(".close-btn a").on("click", function(){
 			$(this).parents('li').removeClass('active');
 			$(".tabcontent").remove();
-		});
+		});*/
 	}
 	// $(window).resize(function(){
 	// 	divheight();

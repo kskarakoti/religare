@@ -8668,10 +8668,7 @@ header {
 .banner-area .banner-list li {
   display: inline-block;
   padding: 0px;
-  position: relative;
-  /*@media screen and (max-width: 640px) {
-        height: 325px;
-      }*/ }
+  position: relative; }
   .banner-area .banner-list li .banner-sec {
     width: 100%;
     display: block;
@@ -8686,6 +8683,24 @@ header {
     .banner-area .banner-list li .banner-sec.img-banner3 {
       background: url("../images/home-banner3.jpg") no-repeat center;
       background-size: cover; }
+    @media screen and (max-width: 1366px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 450px; } }
+    @media screen and (max-width: 1280px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 420px; } }
+    @media screen and (max-width: 1024px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 380px; } }
+    @media screen and (max-width: 991px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 330px; } }
+    @media screen and (max-width: 767px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 330px; } }
+    @media screen and (max-width: 640px) {
+      .banner-area .banner-list li .banner-sec {
+        height: 300px; } }
   .banner-area .banner-list li.active {
     /*&:before {
           background: $sushi;
@@ -8842,21 +8857,6 @@ header {
     @media screen and (max-width: 767px) {
       .banner-area .banner-list li .banner-content {
         position: relative; } }
-  @media screen and (max-width: 1366px) {
-    .banner-area .banner-list li {
-      height: 450px; } }
-  @media screen and (max-width: 1280px) {
-    .banner-area .banner-list li {
-      height: 420px; } }
-  @media screen and (max-width: 1024px) {
-    .banner-area .banner-list li {
-      height: 380px; } }
-  @media screen and (max-width: 991px) {
-    .banner-area .banner-list li {
-      height: 330px; } }
-  @media screen and (max-width: 767px) {
-    .banner-area .banner-list li {
-      height: auto; } }
 
 /*.banner-list li:nth-child(1) {
   background: url("../images/home-banner1.jpg") no-repeat;
