@@ -1898,18 +1898,16 @@ header {
   background: #f6f9fa;
 
   .video-wrap {
-    position:relative;
+    position: relative;
 
-    /*.img-wrap {
-      height:600px;
-      overflow: hidden;
-      @media screen and (max-width: 1200px) {
-        height: auto;
-      }
+    .img-wrap {
       img {
-        height: 100%;
+        @media screen and (max-width: 480px) {
+          height: 200px;
+        }
       }
-    }*/
+    }
+
     .overlay-wrap {
       position: absolute;
       top: 0;
@@ -1919,6 +1917,21 @@ header {
       margin: auto;
       width: 85px;
       height: 85px;
+
+      .icon-wrap {
+        img {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 60px;
+        height: 60px;
+      }
+      @media screen and (max-width: 640px) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
@@ -1929,6 +1942,9 @@ h3 {
     position: relative;
     font-weight: normal;
     color:#222222;
+    @media screen and (max-width:480px) {
+      font-size: 20px;
+    }
     &.heading-bar{
       margin-bottom:38px;
       &:after {
@@ -1949,6 +1965,10 @@ h4 {
     &.colver-title {
       font-size: 20px;
       font-family: 'ubuntumedium';
+      @media screen and (max-width:480px) {
+        margin:0 0 4px 0;
+        font-size: 16px;
+      }
     }
   }
 }
@@ -1970,6 +1990,7 @@ p {
   }
 }
 .link-wrap {
+  margin-top:20px;
   a {
     span {
       display: inline-block;
@@ -1978,14 +1999,28 @@ p {
         font-size: 18px;
         margin-left:8px;
         color: #8dc63f;
-        font-family: 'ubuntumedium';
+        @media screen and (max-width:480px) {
+          font-size: 16px;
+        }
+      }
+    }
+    &:hover {
+      .text {
+        color:#444444;
       }
     }
   }
 }
 .content-area {
+  transition:all 0.5s ease-in-out;
+  -webkit-transition:all 0.5s ease-in-out;
+  -moz-transition:all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;
   .about-religare-wrap {
     margin:60px 0;
+    @media screen and (max-width:767px) {
+      margin:30px 0;
+    }
     .display-table {
       display: table;
       height: 100%;
@@ -2005,6 +2040,9 @@ p {
       &.desc {
         font-size: 16px;
         color:#666666;
+        @media screen and (max-width:480px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -2022,12 +2060,19 @@ p {
         @media screen and (max-width: 767px) {
           width: 100%;
         }
+        @media screen and (max-width: 480px) {
+          font-size: 16px;
+          padding: 0 10px 25px 10px;
+        }
       }
     }
     .block {
       background: #FFFFFF;
       min-height:361px;
       padding:20px;
+      &:hover {
+        background:#eff4e9;
+      }
       @media screen and (max-width: 1200px) {
         min-height:471px;
       }
@@ -2037,14 +2082,24 @@ p {
       }
       @media screen and (max-width: 480px) {
         min-height:100%;
+        margin: 7px 0;
+        padding: 8px 20px 13px;
       }
-
     }
   }
   .customer-focus-wrap {
     margin:42px 0;
     .block {
       margin-top:14px;
+      //padding: 12px;
+      min-height: 200px;
+      @media screen and (max-width: 480px) {
+        margin-top:26px;
+        min-height: 100%;
+      }
+      &:hover {
+        background:#eff4e9;
+      }
     }
     h3 {
       &.title {
@@ -2134,6 +2189,9 @@ p {
                   margin-bottom: 10px;
                   float: none;
                   width: 100%;
+                  .select2-container {
+                    width: 100% !important;
+                  }
                 }
               }
             }
@@ -2147,6 +2205,7 @@ p {
     }
   }
 }
+
 
 
 /****************************************
@@ -2885,19 +2944,21 @@ p {
 
 
 /* Recommendations help */
-.recommendations-help-ads {
+/*.recommendations-help-ads {
    .recommendations-help-ar {
      img {
        width: 100%;
      }
    }
- }
+ }*/
 .recommendations-help-ads {
    .recommendations-help-ar {
      position:relative;
      .img-wrap {
        min-height: 151px;
        img {
+         width: 100%;
+
          &.back-grid {
            height: 151px;
            @media screen and (max-width: 991px) {

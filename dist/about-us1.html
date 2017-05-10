@@ -440,11 +440,6 @@
             <div class="about-religare-wrap">
                 <div class="container">
                     <div class="display-table">
-                        <div class="display-cell visible-xs">
-                            <div class="img-wrap">
-                                <img src="assets/images/our-group.jpg" alt="" title="" class="img-responsive img-width">
-                            </div>
-                        </div>
                         <div class="display-cell">
                             <h3 class="title heading-bar">Our Group</h3>
                             <p class="desc">
@@ -458,7 +453,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="display-cell hidden-xs">
+                        <div class="display-cell">
                             <div class="img-wrap">
                                 <img src="assets/images/our-group.jpg" alt="" title="" class="img-responsive img-width">
                             </div>
@@ -493,14 +488,14 @@
                                 </div>
                                 <div class="select-wrap">
                                     <div class="block">
-                                        <select class="select">
+                                        <select class="js-example-basic-single">
                                             <option value="AL">Alabama</option>
                                             <option value="WY">Wyoming</option>
                                             <option value="WY">Wyoming</option>
                                         </select>
                                     </div>
                                     <div class="block">
-                                        <select class="select">
+                                        <select class="js-example-basic-single">
                                             <option value="AL">Alabama</option>
                                             <option value="WY">Wyoming</option>
                                             <option value="WY">Wyoming</option>
@@ -542,7 +537,7 @@
                             </div>
                         </div>
                         <div class="block block-r">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9610408302897!2d72.85231231510716!3d19.10936498706879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c834f80aab2f%3A0x13e1bfcbf2c059ed!2sReligare!5e0!3m2!1sen!2sin!4v1493880193258" width="100%" height="499" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.9610408302897!2d72.85231231510716!3d19.10936498706879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c834f80aab2f%3A0x13e1bfcbf2c059ed!2sReligare!5e0!3m2!1sen!2sin!4v1493880193258" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -550,6 +545,8 @@
         </div>
     </section>
 
+
+<!--footer-->
 
 <!--footer-->
 <footer class="footer-area">
@@ -765,7 +762,18 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <!-- Core API JavaScript-->
-<script src="assets/js/core.js"></script>
+<!-- Google Map API -->
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&sensor=false"></script>
+    <script src="assets/js/core.js"></script>
+    <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
 </body>
 </html>
