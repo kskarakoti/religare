@@ -248,25 +248,13 @@ header {
 
             .logo-ar {
               display: inline-block;
+              margin-top: 1px;
 
                 img {
                   @media screen and (max-width: 480px) {
                     width: 170px;
                   }
                 }
-              /*.desk-icon {
-                @media screen and (max-width: 1005px) {
-                  display: none;
-                }
-              }
-
-              .mobile-icon {
-                display: none;
-
-                @media screen and (max-width: 1005px) {
-                  display: block;
-                }
-              }*/
             }
 
             .hamburg-menu-btn {
@@ -444,6 +432,12 @@ header {
                 display: inline-block;
                 float: left;
 
+                &:hover {
+                  a {
+                    color: #7bc11c;
+                  }
+                }
+
                 > a {
                   display: block;
                   padding: ($padding-base-5 + 3) ($padding-base-5 * 3) ($padding-base-5 * 5) - 1 ($padding-base-5 * 3);
@@ -451,10 +445,6 @@ header {
                   color: $tundora;
                   text-transform: uppercase;
                   font-family: $font-family-ubuntumedium;
-
-                  &:hover {
-                    color: #7bc11c;
-                  }
 
                   @media screen and (max-width: 1170px) {
                     padding: ($padding-base-5 + 3) ($padding-base-5 * 2);
@@ -526,7 +516,7 @@ header {
 
                       a {
                         display: block;
-                        padding: ($padding-base-5 + 3) ($padding-base-5 * 3);
+                        padding: ($padding-base-5 * 4) ($padding-base-5 * 3);
                         font-size: $font-size-small + 1;
                         color: #444444;
                         text-transform: uppercase;
@@ -617,7 +607,6 @@ header {
                           display: block;
                           padding: $padding-base-5 $padding-none;
                           font-size: $font-size-small + 2;
-                          font-family: $font-family-ubuntumedium;
 
                           &:hover {
                             color: #8dc63f;
@@ -634,7 +623,6 @@ header {
                               color: $sushi;
                               display: block;
                               padding: $padding-none;
-                              font-family: $font-family-ubunturegular;
 
                               &:hover {
                                 color: $tundora;
@@ -2211,7 +2199,93 @@ p {
 /****************************************
    3.5 Market Equity Page Styles
 ****************************************/
+.tab-structure {
+  &.nav-tabs {
+    background: #f8fbf4;
+    border-bottom: none;
 
+    &.table-cell {
+      li {
+        display: table;
+        a {
+          display: table-cell;
+        }
+      }
+    }
+
+    li {
+      padding: 0;
+      border-right: 1px solid #d6dad6;
+      border-bottom: 1px solid #ddd;
+
+      &.active, &:hover {
+        border-bottom-color: $white;
+        background: $white;
+
+        a {
+          border-top: 4px solid #8dc63f;
+        }
+      }
+
+      a {
+        border: none;
+        /*border-bottom: 1px solid #ccc;*/
+        border-top: 4px solid #f8fbf4;
+        padding: 8px 15px 8px 30px;
+        min-height: 80px;
+        border-radius: 0;
+        margin-right: 0;
+
+        &:hover {
+          background: $white;
+        }
+
+        p {
+          margin: 0;
+          font-family: $font-family-ubuntumedium;
+        }
+        .title {
+          color: #222222;
+          font-size: 18px;
+        }
+
+        .sunsex-count {
+          font-family: $font-family-ubunturegular;
+          font-size: 26px;
+          color: #222222;
+          line-height: 28px;
+
+          .price-percentage {
+            font-family: $font-family-ubuntulight;
+            font-size: 18px;
+
+            &.gain {
+              color: #20ab30;
+            }
+
+            &.loss {
+              color: #fa4110;
+            }
+
+            @media screen and (max-width: 991px) {
+              font-size: 14px;
+            }
+            @media screen and (max-width: 767px) {
+              display: block;
+            }
+          }
+          @media screen and (max-width: 991px) {
+            font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 410px) {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
 .banner-chart {
   background: url('../../assets/images/markets_equity_cropped.jpg') no-repeat;
   background-size:cover ;
@@ -2224,20 +2298,28 @@ p {
 
   .chart-tab-wrap {
     background: $white;
+    border-radius: 4px;
+    overflow: hidden;
 
     .tab-list {
       .nav-tabs {
-        background: #f8fbf4;
+        /*background: #f8fbf4;
+        border-bottom: none;*/
 
         li {
-          width: 33.33%;
+          //width: 33.33%;
+          /*padding: 0;
           border-right: 1px solid #d6dad6;
+          border-bottom: 1px solid #ddd;*/
 
-          &.active {
+          /*&.active, &:hover {
+            border-bottom-color: $white;
+            background: $white;
+
             a {
-              border-bottom: 4px solid #8dc63f;
+              border-top: 4px solid #8dc63f;
             }
-          }
+          }*/
 
           &.nifty-ar {
             a {
@@ -2278,7 +2360,7 @@ p {
           &.add-index {
             a {
               text-align: center;
-              height: 85px;
+              height: 80px;
               line-height: 62px;
               color: #222222;
               font-family: $font-family-ubunturegular;
@@ -2304,10 +2386,13 @@ p {
               display: none;
             }
           }
-          a {
+          /*a {
             border: none;
-            padding-left: 30px;
-            min-height: 85px;
+            border-top: 4px solid #f8fbf4;
+            padding: 8px 15px 8px 30px;
+            min-height: 80px;
+            border-radius: 0;
+            margin-right: 0;
 
             &:hover {
               background: $white;
@@ -2326,6 +2411,7 @@ p {
               font-family: $font-family-ubunturegular;
               font-size: 26px;
               color: #222222;
+              line-height: 28px;
 
               .price-percentage {
                 font-family: $font-family-ubuntulight;
@@ -2354,21 +2440,18 @@ p {
             @media screen and (max-width: 410px) {
               padding: 15px;
             }
-          }
-          @media screen and (max-width: 767px) {
-            width: 50%;
-          }
+          }*/
         }
       }
 
 
       .chart-content-tab {
-        padding: 15px;
+        padding: 10px 15px;
       }
 
       .view-detail {
-        margin: 10px 0;
-        padding: 15px;
+        margin: 1px 0;
+        padding: 5px 15px;
 
         .view-list-dt {
           text-align: right;
@@ -2465,6 +2548,8 @@ p {
 .tranding-now-area {
   .tranding-content-area {
     background: $white;
+    border-radius: 4px;
+    overflow: hidden;
 
     .tranding-opt {
       background: #f8fbf4;
@@ -2501,24 +2586,16 @@ p {
     }
 
     .tranding-tab {
-      background: #f8fbf4;
+      /*background: #f8fbf4;*/
 
       .nav-tabs {
         border-top: 1px solid #dcdede;
 
         li {
-          width: 33.33%;
-          border-right: 1px solid #dcdede;
-
           &:last-child {
             border-right: none;
           }
 
-          &.active {
-            a {
-              border-top: 4px solid #8dc63f;
-            }
-          }
           a {
             text-align: center;
             border-radius: 0;
@@ -2842,9 +2919,11 @@ p {
       }
       &.cont-count {
         font-size: 30px;
+        font-family: $font-family-ubuntumedium;
       }
       &.cont-rate {
         font-size: 25px;
+        font-family: $font-family-ubuntulight;
       }
       &.cont-date {
         font-size: 23px;
@@ -2916,6 +2995,8 @@ p {
   .sector-perf-cont {
     background: $white;
     padding: 25px;
+    overflow: hidden;
+    border-radius: 4px;
 
     .share-title {
       margin-bottom: 10px;
@@ -2944,19 +3025,15 @@ p {
 
 
 /* Recommendations help */
-/*.recommendations-help-ads {
-   .recommendations-help-ar {
-     img {
-       width: 100%;
-     }
-   }
- }*/
 .recommendations-help-ads {
    .recommendations-help-ar {
      position:relative;
+     background: #40474e url("../images/banner_background.jpg") no-repeat center bottom;
+     background-size: cover;
+     min-height: 151px;
+
      .img-wrap {
-       min-height: 151px;
-       img {
+       /*img {
          width: 100%;
 
          &.back-grid {
@@ -2968,7 +3045,7 @@ p {
              height:300px;
            }
          }
-       }
+       }*/
      }
      .overlay {
        position:absolute;
@@ -2979,18 +3056,31 @@ p {
        margin: auto;
        height: 100%;
        width: 100%;
+
        .display-table {
          display: table;
          height: 100%;
          width: 100%;
          text-align: center;
+
          .display-cell {
            display: table-cell;
            vertical-align: middle;
+
            ul {
              li {
                display:inline-block;
                padding:0 26px;
+
+               &.font-icons {
+                 span {
+                   font-size: 48px;
+                   vertical-align: middle;
+                   margin-top: -10px;
+                   display: inline-block;
+                 }
+               }
+
                @media screen and (max-width: 1200px) {
                  padding:0 8px;
                }
@@ -3005,6 +3095,8 @@ p {
                  &.info {
                    font-size: 20px;
                    color: $white;
+                   margin-top: 7px;
+                   display: inline-block;
                  }
                }
                .btn-green {
@@ -3029,6 +3121,8 @@ p {
   .block-deal-ar {
     background: #fff;
     padding: 25px;
+    border-radius: 4px;
+    overflow: hidden;
 
     .block-opt {
       margin-bottom: 15px;
@@ -3041,6 +3135,8 @@ p {
   .heat-map-content {
     background: #fff;
     padding: 25px;
+    overflow: hidden;
+    border-radius: 4px;
 
     .col-xs-8 {
       @media screen and (max-width: 767px) {
@@ -3464,7 +3560,7 @@ p {
           vertical-align: top;
           min-height: 196px;
 
-          &.active {
+          &.active, &:hover {
             p {
               color: #000;
             }
@@ -4151,7 +4247,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: 9;
+  z-index: 99;
 
   &.active {
     display: block;
@@ -4163,6 +4259,17 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   text-align: center;
   min-height: 63px;
   margin: $margin-none $margin-none ($margin-base-5 * 10) $margin-none;
+
+  &.mtb-sp {
+    margin: 20px 0 5px 0;
+  }
+  &.mb-5 {
+    margin: 5px 0;
+  }
+
+  &.mb-10 {
+    margin: 10px 0;
+  }
 
   &.mb-20 {
     margin: 20px 0;
@@ -4377,7 +4484,7 @@ table.dataTable tr.child ul {
     span {
       display: inline-block;
       vertical-align: middle;
-      padding:15px 0 0 0;
+      padding:0px 0 0 0;
       width: 46%;
       &.dtr-title {
         padding-top: 0;

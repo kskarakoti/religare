@@ -1,11 +1,11 @@
 // Core API
 
 $(document).ready(function(){
-	wow = new WOW(
+	var wow = new WOW(
 		{
 			boxClass: 'wow',
 			animateClass: 'animated',
-			offset: 350,
+			offset: 0,
 			mobile: true,
 			live: true
 		}
@@ -67,8 +67,10 @@ $(function () {
 			$(tab).fadeIn();
 
 			$("body, html").animate({
-				scrollTop: $( $(this).attr('href')).offset().top - 285+ "px"
+				scrollTop: $( $(this).attr('href')).offset().top - 200+ "px"
 			}, 600);
+
+			wow.init();
 
 			return false;
 		});
@@ -125,19 +127,9 @@ $(function () {
 			$(this).parents('li').removeClass('active');
 			$(".ban-main-cont3 #researchs").remove();
 		});
-		/*$(".close-btn a").on("click", function(){
-			$(this).parents('li').removeClass('active');
-			$(".tabcontent").remove();
-		});*/
+
 	}
-	// $(window).resize(function(){
-	// 	divheight();
-	// });
-	// function divheight() {
-	// 	//div  height calculation
-	// 	var height = $('.transact-block .img-wrap img').height();
-	// 	$('.transact-block .block-d').height(height);
-	// }
+
 
 
 	//Section Close on other side click Script_______________________________________________
@@ -254,19 +246,6 @@ $(function () {
 	if($('.country-select').length) {
 		$(".country-select").msDropdown({roundedBorder:false});
 	}
-	//select 2
-	// function formatState (state) {
-	// 	console.log('change')
-	// 	if (!state.id) { return state.text; }
-	// 	var $state = $(
-	// 		'<span><img src="assets/images/market-icon/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
-	// 	);
-	// 	return $state;
-	// };
-    //
-	// $(".selectImg").select2({
-	// 	templateResult: formatState
-	// });
 
 	$(".select").select2({
 		minimumResultsForSearch: -1
@@ -277,7 +256,7 @@ $(function () {
 		axis:"x",
 		theme: "dark",
 		autoExpandHorizontalScroll: true
-	});
+		});
 
 
 	//for datatable

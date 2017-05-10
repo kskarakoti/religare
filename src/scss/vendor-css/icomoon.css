@@ -24,6 +24,783 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Commodities .path1:before {
+  content: "\eaf5";
+  color: rgb(255, 255, 255);
+}
+.icon-Commodities .path2:before {
+  content: "\eaf6";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path3:before {
+  content: "\eaf7";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path4:before {
+  content: "\eaf8";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path5:before {
+  content: "\eaf9";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path6:before {
+  content: "\eafa";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path7:before {
+  content: "\eafb";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path8:before {
+  content: "\eafc";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path9:before {
+  content: "\eafd";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path10:before {
+  content: "\eafe";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path11:before {
+  content: "\eaff";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path12:before {
+  content: "\eb00";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path13:before {
+  content: "\eb01";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path14:before {
+  content: "\eb02";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path15:before {
+  content: "\eb03";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path16:before {
+  content: "\eb04";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path17:before {
+  content: "\eb05";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path18:before {
+  content: "\eb06";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Commodities .path19:before {
+  content: "\eb07";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path20:before {
+  content: "\eb08";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path21:before {
+  content: "\eb09";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path22:before {
+  content: "\eb0a";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path23:before {
+  content: "\eb0b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path24:before {
+  content: "\eb0c";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path25:before {
+  content: "\eb0d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path26:before {
+  content: "\eb0e";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path27:before {
+  content: "\eb0f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path28:before {
+  content: "\eb10";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path29:before {
+  content: "\eb11";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path30:before {
+  content: "\eb12";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path31:before {
+  content: "\eb13";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path32:before {
+  content: "\eb14";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path33:before {
+  content: "\eb15";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path34:before {
+  content: "\eb16";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path35:before {
+  content: "\eb17";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Commodities .path36:before {
+  content: "\eb18";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Commodities .path37:before {
+  content: "\eb19";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path1:before {
+  content: "\eb1a";
+  color: rgb(255, 255, 255);
+}
+.icon-Currency .path2:before {
+  content: "\eb1b";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Currency .path3:before {
+  content: "\eb1c";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path4:before {
+  content: "\eb1d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path5:before {
+  content: "\eb1e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path6:before {
+  content: "\eb1f";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path7:before {
+  content: "\eb20";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path8:before {
+  content: "\eb21";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path9:before {
+  content: "\eb22";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path10:before {
+  content: "\eb23";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path11:before {
+  content: "\eb24";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path12:before {
+  content: "\eb25";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path13:before {
+  content: "\eb26";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path14:before {
+  content: "\eb27";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path15:before {
+  content: "\eb28";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path16:before {
+  content: "\eb29";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path17:before {
+  content: "\eb2a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path18:before {
+  content: "\eb2b";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path19:before {
+  content: "\eb2c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path20:before {
+  content: "\eb2d";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path21:before {
+  content: "\eb2e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path22:before {
+  content: "\eb2f";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path23:before {
+  content: "\eb30";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path24:before {
+  content: "\eb31";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path25:before {
+  content: "\eb32";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path26:before {
+  content: "\eb33";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path27:before {
+  content: "\eb34";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path28:before {
+  content: "\eb35";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path29:before {
+  content: "\eb36";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path30:before {
+  content: "\eb37";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path31:before {
+  content: "\eb38";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path32:before {
+  content: "\eb39";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path33:before {
+  content: "\eb3a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path34:before {
+  content: "\eb3b";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path35:before {
+  content: "\eb3c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path36:before {
+  content: "\eb3d";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path37:before {
+  content: "\eb3e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path38:before {
+  content: "\eb3f";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path39:before {
+  content: "\eb40";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Currency .path40:before {
+  content: "\eb41";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Currency .path41:before {
+  content: "\eb42";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Debt-Fixed-Income .path1:before {
+  content: "\eb43";
+  color: rgb(255, 255, 255);
+}
+.icon-Debt-Fixed-Income .path2:before {
+  content: "\eb44";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Debt-Fixed-Income .path3:before {
+  content: "\eb45";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Debt-Fixed-Income .path4:before {
+  content: "\eb46";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Debt-Fixed-Income .path5:before {
+  content: "\eb47";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Debt-Fixed-Income .path6:before {
+  content: "\eb48";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Debt-Fixed-Income .path7:before {
+  content: "\eb49";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Debt-Fixed-Income .path8:before {
+  content: "\eb4a";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Debt-Fixed-Income .path9:before {
+  content: "\eb4b";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-Derivatives .path1:before {
+  content: "\eb4c";
+  color: rgb(255, 255, 255);
+}
+.icon-Derivatives .path2:before {
+  content: "\eb4d";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Derivatives .path3:before {
+  content: "\eb4e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path4:before {
+  content: "\eb4f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path5:before {
+  content: "\eb50";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path6:before {
+  content: "\eb51";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path7:before {
+  content: "\eb52";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path8:before {
+  content: "\eb53";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path9:before {
+  content: "\eb54";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Derivatives .path10:before {
+  content: "\eb55";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Equity .path1:before {
+  content: "\eb56";
+  color: rgb(255, 255, 255);
+}
+.icon-Equity .path2:before {
+  content: "\eb57";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Equity .path3:before {
+  content: "\eb58";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Equity .path4:before {
+  content: "\eb59";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Equity .path5:before {
+  content: "\eb5a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Equity .path6:before {
+  content: "\eb5b";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path7:before {
+  content: "\eb5c";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path8:before {
+  content: "\eb5d";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path9:before {
+  content: "\eb5e";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path10:before {
+  content: "\eb5f";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path11:before {
+  content: "\eb60";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path12:before {
+  content: "\eb61";
+  margin-left: -1em;
+  color: rgb(209, 227, 145);
+}
+.icon-Equity .path13:before {
+  content: "\eb62";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path14:before {
+  content: "\eb63";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Equity .path15:before {
+  content: "\eb64";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Equity .path16:before {
+  content: "\eb65";
+  margin-left: -1em;
+  color: rgb(209, 227, 145);
+}
+.icon-Equity .path17:before {
+  content: "\eb66";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Insurance .path1:before {
+  content: "\eb67";
+  color: rgb(255, 255, 255);
+}
+.icon-Insurance .path2:before {
+  content: "\eb68";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Insurance .path3:before {
+  content: "\eb69";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path4:before {
+  content: "\eb6a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path5:before {
+  content: "\eb6b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path6:before {
+  content: "\eb6c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path7:before {
+  content: "\eb6d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path8:before {
+  content: "\eb6e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path9:before {
+  content: "\eb6f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path10:before {
+  content: "\eb70";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path11:before {
+  content: "\eb71";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path12:before {
+  content: "\eb72";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path13:before {
+  content: "\eb73";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Insurance .path14:before {
+  content: "\eb74";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-IPO .path1:before {
+  content: "\eb75";
+  color: rgb(255, 255, 255);
+}
+.icon-IPO .path2:before {
+  content: "\eb76";
+  margin-left: -1em;
+  color: rgb(175, 203, 216);
+}
+.icon-IPO .path3:before {
+  content: "\eb77";
+  margin-left: -1em;
+  color: rgb(209, 227, 145);
+}
+.icon-IPO .path4:before {
+  content: "\eb78";
+  margin-left: -1em;
+  color: rgb(209, 227, 145);
+}
+.icon-IPO .path5:before {
+  content: "\eb79";
+  margin-left: -1em;
+  color: rgb(175, 203, 216);
+}
+.icon-IPO .path6:before {
+  content: "\eb7a";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-IPO .path7:before {
+  content: "\eb7b";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-IPO .path8:before {
+  content: "\eb7c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-IPO .path9:before {
+  content: "\eb7d";
+  margin-left: -1em;
+  color: rgb(43, 43, 43);
+}
+.icon-IPO .path10:before {
+  content: "\eb7e";
+  margin-left: -1em;
+  color: rgb(187, 221, 140);
+}
+.icon-IPO .path11:before {
+  content: "\eb7f";
+  margin-left: -1em;
+  color: rgb(43, 43, 43);
+}
+.icon-IPO .path12:before {
+  content: "\eb80";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Mutual-funds .path1:before {
+  content: "\eb81";
+  color: rgb(255, 255, 255);
+}
+.icon-Mutual-funds .path2:before {
+  content: "\eb82";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Mutual-funds .path3:before {
+  content: "\eb83";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Mutual-funds .path4:before {
+  content: "\eb84";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mutual-funds .path5:before {
+  content: "\eb85";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mutual-funds .path6:before {
+  content: "\eb86";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mutual-funds .path7:before {
+  content: "\eb87";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mutual-funds .path8:before {
+  content: "\eb88";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Mutual-funds .path9:before {
+  content: "\eb89";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Mutual-funds .path10:before {
+  content: "\eb8a";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-Category-dropdown:before {
+  content: "\eb8b";
+}
+.icon-Crude-Oil:before {
+  content: "\eb8c";
+}
+.icon-date-dropdown:before {
+  content: "\eb8d";
+}
+.icon-Gold .path1:before {
+  content: "\eb8e";
+  color: rgb(255, 210, 0);
+}
+.icon-Gold .path2:before {
+  content: "\eb8f";
+  margin-left: -1em;
+  color: rgb(220, 130, 1);
+}
+.icon-Silver .path1:before {
+  content: "\eb90";
+  color: rgb(215, 220, 220);
+}
+.icon-Silver .path2:before {
+  content: "\eb91";
+  margin-left: -1em;
+  color: rgb(131, 134, 134);
+}
+.icon-Type-dropdown:before {
+  content: "\eb92";
+}
 .icon-about-religare .path1:before {
   content: "\ea41";
   color: rgb(218, 234, 243);
@@ -2217,6 +2994,82 @@
   margin-left: -1em;
   color: rgb(90, 155, 0);
 }
+.icon-Care .path1:before {
+  content: "\eb93";
+  color: rgb(28, 113, 63);
+}
+.icon-Care .path2:before {
+  content: "\eb94";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Care .path3:before {
+  content: "\eb95";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Care .path4:before {
+  content: "\eb96";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Good-fortune .path1:before {
+  content: "\eb97";
+  color: rgb(28, 113, 63);
+}
+.icon-Good-fortune .path2:before {
+  content: "\eb98";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Good-fortune .path3:before {
+  content: "\eb99";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Good-fortune .path4:before {
+  content: "\eb9a";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Hope .path1:before {
+  content: "\eb9b";
+  color: rgb(28, 113, 63);
+}
+.icon-Hope .path2:before {
+  content: "\eb9c";
+  margin-left: -0.99609375em;
+  color: rgb(219, 218, 218);
+}
+.icon-Hope .path3:before {
+  content: "\eb9d";
+  margin-left: -0.99609375em;
+  color: rgb(219, 218, 218);
+}
+.icon-Hope .path4:before {
+  content: "\eb9e";
+  margin-left: -0.99609375em;
+  color: rgb(219, 218, 218);
+}
+.icon-Trust .path1:before {
+  content: "\eb9f";
+  color: rgb(28, 113, 63);
+}
+.icon-Trust .path2:before {
+  content: "\eba0";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Trust .path3:before {
+  content: "\eba1";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
+.icon-Trust .path4:before {
+  content: "\eba2";
+  margin-left: -0.9951171875em;
+  color: rgb(219, 218, 218);
+}
 .icon-large-network .path1:before {
   content: "\ea35";
   color: rgb(218, 234, 243);
@@ -2439,3 +3292,4 @@
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+

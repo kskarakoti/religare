@@ -1040,6 +1040,783 @@ img.fnone {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-Commodities .path1:before {
+  content: "\eaf5";
+  color: white; }
+
+.icon-Commodities .path2:before {
+  content: "\eaf6";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path3:before {
+  content: "\eaf7";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path4:before {
+  content: "\eaf8";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path5:before {
+  content: "\eaf9";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path6:before {
+  content: "\eafa";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path7:before {
+  content: "\eafb";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path8:before {
+  content: "\eafc";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path9:before {
+  content: "\eafd";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path10:before {
+  content: "\eafe";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path11:before {
+  content: "\eaff";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path12:before {
+  content: "\eb00";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path13:before {
+  content: "\eb01";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path14:before {
+  content: "\eb02";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path15:before {
+  content: "\eb03";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path16:before {
+  content: "\eb04";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path17:before {
+  content: "\eb05";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path18:before {
+  content: "\eb06";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Commodities .path19:before {
+  content: "\eb07";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path20:before {
+  content: "\eb08";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path21:before {
+  content: "\eb09";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path22:before {
+  content: "\eb0a";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path23:before {
+  content: "\eb0b";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path24:before {
+  content: "\eb0c";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path25:before {
+  content: "\eb0d";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path26:before {
+  content: "\eb0e";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path27:before {
+  content: "\eb0f";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path28:before {
+  content: "\eb10";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path29:before {
+  content: "\eb11";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path30:before {
+  content: "\eb12";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path31:before {
+  content: "\eb13";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path32:before {
+  content: "\eb14";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path33:before {
+  content: "\eb15";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path34:before {
+  content: "\eb16";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path35:before {
+  content: "\eb17";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Commodities .path36:before {
+  content: "\eb18";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Commodities .path37:before {
+  content: "\eb19";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path1:before {
+  content: "\eb1a";
+  color: white; }
+
+.icon-Currency .path2:before {
+  content: "\eb1b";
+  margin-left: -1em;
+  color: #8dc63f;
+  opacity: 0.6; }
+
+.icon-Currency .path3:before {
+  content: "\eb1c";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path4:before {
+  content: "\eb1d";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path5:before {
+  content: "\eb1e";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path6:before {
+  content: "\eb1f";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path7:before {
+  content: "\eb20";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path8:before {
+  content: "\eb21";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path9:before {
+  content: "\eb22";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path10:before {
+  content: "\eb23";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path11:before {
+  content: "\eb24";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path12:before {
+  content: "\eb25";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path13:before {
+  content: "\eb26";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path14:before {
+  content: "\eb27";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path15:before {
+  content: "\eb28";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path16:before {
+  content: "\eb29";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path17:before {
+  content: "\eb2a";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path18:before {
+  content: "\eb2b";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path19:before {
+  content: "\eb2c";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path20:before {
+  content: "\eb2d";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path21:before {
+  content: "\eb2e";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path22:before {
+  content: "\eb2f";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path23:before {
+  content: "\eb30";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path24:before {
+  content: "\eb31";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path25:before {
+  content: "\eb32";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path26:before {
+  content: "\eb33";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path27:before {
+  content: "\eb34";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path28:before {
+  content: "\eb35";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path29:before {
+  content: "\eb36";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path30:before {
+  content: "\eb37";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path31:before {
+  content: "\eb38";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path32:before {
+  content: "\eb39";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path33:before {
+  content: "\eb3a";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path34:before {
+  content: "\eb3b";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path35:before {
+  content: "\eb3c";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path36:before {
+  content: "\eb3d";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path37:before {
+  content: "\eb3e";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path38:before {
+  content: "\eb3f";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path39:before {
+  content: "\eb40";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Currency .path40:before {
+  content: "\eb41";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Currency .path41:before {
+  content: "\eb42";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Debt-Fixed-Income .path1:before {
+  content: "\eb43";
+  color: white; }
+
+.icon-Debt-Fixed-Income .path2:before {
+  content: "\eb44";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Debt-Fixed-Income .path3:before {
+  content: "\eb45";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Debt-Fixed-Income .path4:before {
+  content: "\eb46";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Debt-Fixed-Income .path5:before {
+  content: "\eb47";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Debt-Fixed-Income .path6:before {
+  content: "\eb48";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Debt-Fixed-Income .path7:before {
+  content: "\eb49";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Debt-Fixed-Income .path8:before {
+  content: "\eb4a";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Debt-Fixed-Income .path9:before {
+  content: "\eb4b";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-Derivatives .path1:before {
+  content: "\eb4c";
+  color: white; }
+
+.icon-Derivatives .path2:before {
+  content: "\eb4d";
+  margin-left: -1em;
+  color: #8dc63f;
+  opacity: 0.6; }
+
+.icon-Derivatives .path3:before {
+  content: "\eb4e";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path4:before {
+  content: "\eb4f";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path5:before {
+  content: "\eb50";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path6:before {
+  content: "\eb51";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path7:before {
+  content: "\eb52";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path8:before {
+  content: "\eb53";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path9:before {
+  content: "\eb54";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Derivatives .path10:before {
+  content: "\eb55";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Equity .path1:before {
+  content: "\eb56";
+  color: white; }
+
+.icon-Equity .path2:before {
+  content: "\eb57";
+  margin-left: -1em;
+  color: #8dc63f;
+  opacity: 0.6; }
+
+.icon-Equity .path3:before {
+  content: "\eb58";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Equity .path4:before {
+  content: "\eb59";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Equity .path5:before {
+  content: "\eb5a";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Equity .path6:before {
+  content: "\eb5b";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path7:before {
+  content: "\eb5c";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path8:before {
+  content: "\eb5d";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path9:before {
+  content: "\eb5e";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path10:before {
+  content: "\eb5f";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path11:before {
+  content: "\eb60";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path12:before {
+  content: "\eb61";
+  margin-left: -1em;
+  color: #d1e391; }
+
+.icon-Equity .path13:before {
+  content: "\eb62";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path14:before {
+  content: "\eb63";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Equity .path15:before {
+  content: "\eb64";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Equity .path16:before {
+  content: "\eb65";
+  margin-left: -1em;
+  color: #d1e391; }
+
+.icon-Equity .path17:before {
+  content: "\eb66";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Insurance .path1:before {
+  content: "\eb67";
+  color: white; }
+
+.icon-Insurance .path2:before {
+  content: "\eb68";
+  margin-left: -1em;
+  color: #8dc63f;
+  opacity: 0.6; }
+
+.icon-Insurance .path3:before {
+  content: "\eb69";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path4:before {
+  content: "\eb6a";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path5:before {
+  content: "\eb6b";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path6:before {
+  content: "\eb6c";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path7:before {
+  content: "\eb6d";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path8:before {
+  content: "\eb6e";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path9:before {
+  content: "\eb6f";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path10:before {
+  content: "\eb70";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path11:before {
+  content: "\eb71";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path12:before {
+  content: "\eb72";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path13:before {
+  content: "\eb73";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Insurance .path14:before {
+  content: "\eb74";
+  margin-left: -1em;
+  color: black; }
+
+.icon-IPO .path1:before {
+  content: "\eb75";
+  color: white; }
+
+.icon-IPO .path2:before {
+  content: "\eb76";
+  margin-left: -1em;
+  color: #afcbd8; }
+
+.icon-IPO .path3:before {
+  content: "\eb77";
+  margin-left: -1em;
+  color: #d1e391; }
+
+.icon-IPO .path4:before {
+  content: "\eb78";
+  margin-left: -1em;
+  color: #d1e391; }
+
+.icon-IPO .path5:before {
+  content: "\eb79";
+  margin-left: -1em;
+  color: #afcbd8; }
+
+.icon-IPO .path6:before {
+  content: "\eb7a";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-IPO .path7:before {
+  content: "\eb7b";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-IPO .path8:before {
+  content: "\eb7c";
+  margin-left: -1em;
+  color: white; }
+
+.icon-IPO .path9:before {
+  content: "\eb7d";
+  margin-left: -1em;
+  color: #2b2b2b; }
+
+.icon-IPO .path10:before {
+  content: "\eb7e";
+  margin-left: -1em;
+  color: #bbdd8c; }
+
+.icon-IPO .path11:before {
+  content: "\eb7f";
+  margin-left: -1em;
+  color: #2b2b2b; }
+
+.icon-IPO .path12:before {
+  content: "\eb80";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Mutual-funds .path1:before {
+  content: "\eb81";
+  color: white; }
+
+.icon-Mutual-funds .path2:before {
+  content: "\eb82";
+  margin-left: -1em;
+  color: #8dc63f;
+  opacity: 0.6; }
+
+.icon-Mutual-funds .path3:before {
+  content: "\eb83";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Mutual-funds .path4:before {
+  content: "\eb84";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Mutual-funds .path5:before {
+  content: "\eb85";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Mutual-funds .path6:before {
+  content: "\eb86";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Mutual-funds .path7:before {
+  content: "\eb87";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Mutual-funds .path8:before {
+  content: "\eb88";
+  margin-left: -1em;
+  color: #fff200; }
+
+.icon-Mutual-funds .path9:before {
+  content: "\eb89";
+  margin-left: -1em;
+  color: black; }
+
+.icon-Mutual-funds .path10:before {
+  content: "\eb8a";
+  margin-left: -1em;
+  color: #231f20; }
+
+.icon-Category-dropdown:before {
+  content: "\eb8b"; }
+
+.icon-Crude-Oil:before {
+  content: "\eb8c"; }
+
+.icon-date-dropdown:before {
+  content: "\eb8d"; }
+
+.icon-Gold .path1:before {
+  content: "\eb8e";
+  color: #ffd200; }
+
+.icon-Gold .path2:before {
+  content: "\eb8f";
+  margin-left: -1em;
+  color: #dc8201; }
+
+.icon-Silver .path1:before {
+  content: "\eb90";
+  color: #d7dcdc; }
+
+.icon-Silver .path2:before {
+  content: "\eb91";
+  margin-left: -1em;
+  color: #838686; }
+
+.icon-Type-dropdown:before {
+  content: "\eb92"; }
+
 .icon-about-religare .path1:before {
   content: "\ea41";
   color: #daeaf3; }
@@ -3232,6 +4009,82 @@ img.fnone {
   content: "\e91d";
   margin-left: -1em;
   color: #5a9b00; }
+
+.icon-Care .path1:before {
+  content: "\eb93";
+  color: #1c713f; }
+
+.icon-Care .path2:before {
+  content: "\eb94";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Care .path3:before {
+  content: "\eb95";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Care .path4:before {
+  content: "\eb96";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Good-fortune .path1:before {
+  content: "\eb97";
+  color: #1c713f; }
+
+.icon-Good-fortune .path2:before {
+  content: "\eb98";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Good-fortune .path3:before {
+  content: "\eb99";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Good-fortune .path4:before {
+  content: "\eb9a";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Hope .path1:before {
+  content: "\eb9b";
+  color: #1c713f; }
+
+.icon-Hope .path2:before {
+  content: "\eb9c";
+  margin-left: -0.99609375em;
+  color: #dbdada; }
+
+.icon-Hope .path3:before {
+  content: "\eb9d";
+  margin-left: -0.99609375em;
+  color: #dbdada; }
+
+.icon-Hope .path4:before {
+  content: "\eb9e";
+  margin-left: -0.99609375em;
+  color: #dbdada; }
+
+.icon-Trust .path1:before {
+  content: "\eb9f";
+  color: #1c713f; }
+
+.icon-Trust .path2:before {
+  content: "\eba0";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Trust .path3:before {
+  content: "\eba1";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
+
+.icon-Trust .path4:before {
+  content: "\eba2";
+  margin-left: -0.9951171875em;
+  color: #dbdada; }
 
 .icon-large-network .path1:before {
   content: "\ea35";
@@ -5826,11 +6679,12 @@ table.dataTable tr.child span.dtr-title {
   font-weight: bold; }
 
 /*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -5850,19 +6704,18 @@ Copyright (c) 2015 Daniel Eden
   animation-duration: .75s; }
 
 @-webkit-keyframes bounce {
-  0%, 100%, 20%, 53%, 80% {
+  0%, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0); }
-  70% {
+  40%, 43%, 70% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+  70% {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0); }
   90% {
@@ -5870,19 +6723,18 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, -4px, 0); } }
 
 @keyframes bounce {
-  0%, 100%, 20%, 53%, 80% {
+  0%, 20%, 53%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0); }
-  70% {
+  40%, 43%, 70% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+  70% {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0); }
   90% {
@@ -5896,13 +6748,13 @@ Copyright (c) 2015 Daniel Eden
   transform-origin: center bottom; }
 
 @-webkit-keyframes flash {
-  0%, 100%, 50% {
+  0%, 50%, to {
     opacity: 1; }
   25%, 75% {
     opacity: 0; } }
 
 @keyframes flash {
-  0%, 100%, 50% {
+  0%, 50%, to {
     opacity: 1; }
   25%, 75% {
     opacity: 0; } }
@@ -5913,25 +6765,25 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 .pulse {
   -webkit-animation-name: pulse;
@@ -5939,8 +6791,8 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rubberBand {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1); }
@@ -5956,14 +6808,14 @@ Copyright (c) 2015 Daniel Eden
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 @keyframes rubberBand {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1); }
@@ -5979,18 +6831,18 @@ Copyright (c) 2015 Daniel Eden
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand; }
 
 @-webkit-keyframes shake {
-  0%, 100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+  0%, to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0); }
@@ -5999,9 +6851,9 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(10px, 0, 0); } }
 
 @keyframes shake {
-  0%, 100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+  0%, to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0); }
@@ -6013,39 +6865,85 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: shake;
   animation-name: shake; }
 
+@-webkit-keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes headShake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  6.5% {
+    -webkit-transform: translateX(-6px) rotateY(-9deg);
+    transform: translateX(-6px) rotateY(-9deg); }
+  18.5% {
+    -webkit-transform: translateX(5px) rotateY(7deg);
+    transform: translateX(5px) rotateY(7deg); }
+  31.5% {
+    -webkit-transform: translateX(-3px) rotateY(-5deg);
+    transform: translateX(-3px) rotateY(-5deg); }
+  43.5% {
+    -webkit-transform: translateX(2px) rotateY(3deg);
+    transform: translateX(2px) rotateY(3deg); }
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+.headShake {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: headShake;
+  animation-name: headShake; }
+
 @-webkit-keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg); }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
   40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg); }
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg); }
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
   80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg); }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg); } }
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 
 @keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg); }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
   40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg); }
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg); }
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
   80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg); }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg); } }
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
 
 .swing {
   -webkit-transform-origin: top center;
@@ -6055,37 +6953,37 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes tada {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   10%, 20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
   40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 @keyframes tada {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
   10%, 20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg); }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg); }
   40%, 60%, 80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 .tada {
   -webkit-animation-name: tada;
@@ -6096,21 +6994,21 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: none;
     transform: none; }
   15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+    -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+    transform: translate3d(-25%, 0, 0) rotate(-5deg); }
   30% {
-    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+    -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+    transform: translate3d(20%, 0, 0) rotate(3deg); }
   45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+    -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+    transform: translate3d(-15%, 0, 0) rotate(-3deg); }
   60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+    -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+    transform: translate3d(10%, 0, 0) rotate(2deg); }
   75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
-  100% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+    transform: translate3d(-5%, 0, 0) rotate(-1deg); }
+  to {
     -webkit-transform: none;
     transform: none; } }
 
@@ -6119,21 +7017,21 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: none;
     transform: none; }
   15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+    -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+    transform: translate3d(-25%, 0, 0) rotate(-5deg); }
   30% {
-    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+    -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+    transform: translate3d(20%, 0, 0) rotate(3deg); }
   45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+    -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+    transform: translate3d(-15%, 0, 0) rotate(-3deg); }
   60% {
-    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+    -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+    transform: translate3d(10%, 0, 0) rotate(2deg); }
   75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
-  100% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+    transform: translate3d(-5%, 0, 0) rotate(-1deg); }
+  to {
     -webkit-transform: none;
     transform: none; } }
 
@@ -6142,7 +7040,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: wobble; }
 
 @-webkit-keyframes jello {
-  0%, 100%, 11.1% {
+  0%, 11.1%, to {
     -webkit-transform: none;
     transform: none; }
   22.2% {
@@ -6168,7 +7066,7 @@ Copyright (c) 2015 Daniel Eden
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
 
 @keyframes jello {
-  0%, 100%, 11.1% {
+  0%, 11.1%, to {
     -webkit-transform: none;
     transform: none; }
   22.2% {
@@ -6200,7 +7098,7 @@ Copyright (c) 2015 Daniel Eden
   transform-origin: center; }
 
 @-webkit-keyframes bounceIn {
-  0%, 100%, 20%, 40%, 60%, 80% {
+  0%, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6220,13 +7118,13 @@ Copyright (c) 2015 Daniel Eden
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97); }
-  100% {
+  to {
     opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 @keyframes bounceIn {
-  0%, 100%, 20%, 40%, 60%, 80% {
+  0%, 20%, 40%, 60%, 80%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6246,17 +7144,17 @@ Copyright (c) 2015 Daniel Eden
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97); }
-  100% {
+  to {
     opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 .bounceIn {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn; }
 
 @-webkit-keyframes bounceInDown {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6273,12 +7171,12 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
 @keyframes bounceInDown {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6295,7 +7193,7 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
@@ -6304,7 +7202,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: bounceInDown; }
 
 @-webkit-keyframes bounceInLeft {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6321,12 +7219,12 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(5px, 0, 0);
     transform: translate3d(5px, 0, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
 @keyframes bounceInLeft {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6343,7 +7241,7 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(5px, 0, 0);
     transform: translate3d(5px, 0, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
@@ -6352,7 +7250,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: bounceInLeft; }
 
 @-webkit-keyframes bounceInRight {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6369,12 +7267,12 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(-5px, 0, 0);
     transform: translate3d(-5px, 0, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
 @keyframes bounceInRight {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6391,7 +7289,7 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(-5px, 0, 0);
     transform: translate3d(-5px, 0, 0); }
-  100% {
+  to {
     -webkit-transform: none;
     transform: none; } }
 
@@ -6400,7 +7298,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: bounceInRight; }
 
 @-webkit-keyframes bounceInUp {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6417,12 +7315,12 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(0, -5px, 0);
     transform: translate3d(0, -5px, 0); }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 @keyframes bounceInUp {
-  0%, 100%, 60%, 75%, 90% {
+  0%, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% {
@@ -6439,9 +7337,9 @@ Copyright (c) 2015 Daniel Eden
   90% {
     -webkit-transform: translate3d(0, -5px, 0);
     transform: translate3d(0, -5px, 0); }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
@@ -6455,7 +7353,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); } }
@@ -6468,7 +7366,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); } }
@@ -6485,7 +7383,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); } }
@@ -6498,7 +7396,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); } }
@@ -6512,7 +7410,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); } }
@@ -6522,7 +7420,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); } }
@@ -6536,7 +7434,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(-20px, 0, 0);
     transform: translate3d(-20px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); } }
@@ -6546,7 +7444,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(-20px, 0, 0);
     transform: translate3d(-20px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); } }
@@ -6563,7 +7461,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); } }
@@ -6576,7 +7474,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); } }
@@ -6588,13 +7486,13 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
 
 @keyframes fadeIn {
   0% {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
 
 .fadeIn {
@@ -6606,7 +7504,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6616,7 +7514,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6630,7 +7528,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6640,7 +7538,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6654,7 +7552,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6664,7 +7562,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6678,7 +7576,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6688,7 +7586,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6702,7 +7600,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6712,7 +7610,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6726,7 +7624,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6736,7 +7634,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6750,7 +7648,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6760,7 +7658,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6774,7 +7672,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6784,7 +7682,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); }
-  100% {
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -6796,13 +7694,13 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0; } }
 
 @keyframes fadeOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0; } }
 
 .fadeOut {
@@ -6812,7 +7710,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutDown {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); } }
@@ -6820,7 +7718,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutDown {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); } }
@@ -6832,7 +7730,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutDownBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); } }
@@ -6840,7 +7738,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutDownBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0); } }
@@ -6852,7 +7750,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutLeft {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); } }
@@ -6860,7 +7758,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutLeft {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); } }
@@ -6872,7 +7770,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutLeftBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); } }
@@ -6880,7 +7778,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutLeftBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0); } }
@@ -6892,7 +7790,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutRight {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); } }
@@ -6900,7 +7798,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutRight {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); } }
@@ -6912,7 +7810,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutRightBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); } }
@@ -6920,7 +7818,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutRightBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0); } }
@@ -6932,7 +7830,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutUp {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); } }
@@ -6940,7 +7838,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutUp {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); } }
@@ -6952,7 +7850,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes fadeOutUpBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); } }
@@ -6960,7 +7858,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes fadeOutUpBig {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: translate3d(0, -2000px, 0);
     transform: translate3d(0, -2000px, 0); } }
@@ -6971,26 +7869,24 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes flip {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) rotateY(-1turn);
+    transform: perspective(400px) rotateY(-1turn); }
+  0%, 40% {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(-190deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-190deg); }
   50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(-170deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-170deg); }
+  50%, 80% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   80% {
     -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  100% {
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
     -webkit-animation-timing-function: ease-in;
@@ -6998,26 +7894,24 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes flip {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) rotateY(-1turn);
+    transform: perspective(400px) rotateY(-1turn); }
+  0%, 40% {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(-190deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-190deg); }
   50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(-170deg);
+    transform: perspective(400px) translateZ(150px) rotateY(-170deg); }
+  50%, 80% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   80% {
     -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  100% {
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
     -webkit-animation-timing-function: ease-in;
@@ -7031,47 +7925,45 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes flipInX {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  0%, 40% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg); }
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
     opacity: 1; }
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
-  100% {
+    -webkit-transform: perspective(400px) rotateX(-5deg);
+    transform: perspective(400px) rotateX(-5deg); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px); } }
 
 @keyframes flipInX {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  0%, 40% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg); }
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
     opacity: 1; }
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
-  100% {
+    -webkit-transform: perspective(400px) rotateX(-5deg);
+    transform: perspective(400px) rotateX(-5deg); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px); } }
 
@@ -7083,47 +7975,45 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes flipInY {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  0%, 40% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-20deg);
+    transform: perspective(400px) rotateY(-20deg); }
   60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
     opacity: 1; }
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
-  100% {
+    -webkit-transform: perspective(400px) rotateY(-5deg);
+    transform: perspective(400px) rotateY(-5deg); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px); } }
 
 @keyframes flipInY {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  0%, 40% {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-20deg);
+    transform: perspective(400px) rotateY(-20deg); }
   60% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
     opacity: 1; }
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
-  100% {
+    -webkit-transform: perspective(400px) rotateY(-5deg);
+    transform: perspective(400px) rotateY(-5deg); }
+  to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px); } }
 
@@ -7138,12 +8028,12 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: perspective(400px);
     transform: perspective(400px); }
   30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg);
     opacity: 1; }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  to {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0; } }
 
 @keyframes flipOutX {
@@ -7151,12 +8041,12 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: perspective(400px);
     transform: perspective(400px); }
   30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg);
     opacity: 1; }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  to {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0; } }
 
 .flipOutX {
@@ -7170,12 +8060,12 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: perspective(400px);
     transform: perspective(400px); }
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(400px) rotateY(-15deg);
+    transform: perspective(400px) rotateY(-15deg);
     opacity: 1; }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  to {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0; } }
 
 @keyframes flipOutY {
@@ -7183,12 +8073,12 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: perspective(400px);
     transform: perspective(400px); }
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(400px) rotateY(-15deg);
+    transform: perspective(400px) rotateY(-15deg);
     opacity: 1; }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+  to {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
     opacity: 0; } }
 
 .flipOutY {
@@ -7204,13 +8094,13 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0; }
   60% {
     -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
+    transform: skewX(20deg); }
+  60%, 80% {
     opacity: 1; }
   80% {
     -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1; }
-  100% {
+    transform: skewX(-5deg); }
+  to {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
@@ -7222,13 +8112,13 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0; }
   60% {
     -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
+    transform: skewX(20deg); }
+  60%, 80% {
     opacity: 1; }
   80% {
     -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1; }
-  100% {
+    transform: skewX(-5deg); }
+  to {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
@@ -7242,7 +8132,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes lightSpeedOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0; } }
@@ -7250,7 +8140,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes lightSpeedOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0; } }
@@ -7263,13 +8153,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateIn {
   0% {
-    -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: center;
+  0%, to {
+    -webkit-transform-origin: center; }
+  to {
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
@@ -7277,13 +8167,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes rotateIn {
   0% {
-    -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: center;
+  0%, to {
+    -webkit-transform-origin: center; }
+  to {
     transform-origin: center;
     -webkit-transform: none;
     transform: none;
@@ -7295,13 +8185,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateInDownLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
@@ -7309,13 +8199,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes rotateInDownLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
@@ -7327,13 +8217,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateInDownRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
@@ -7341,13 +8231,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes rotateInDownRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
@@ -7359,13 +8249,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateInUpLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
@@ -7373,13 +8263,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes rotateInUpLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
     -webkit-transform: none;
     transform: none;
@@ -7391,13 +8281,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateInUpRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    transform: rotate3d(0, 0, 1, -90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
@@ -7405,13 +8295,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes rotateInUpRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -90deg);
-    transform: rotate3d(0, 0, 1, -90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     opacity: 0; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
     -webkit-transform: none;
     transform: none;
@@ -7423,26 +8313,26 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateOut {
   0% {
-    -webkit-transform-origin: center;
     transform-origin: center;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: center;
+  0%, to {
+    -webkit-transform-origin: center; }
+  to {
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
     opacity: 0; } }
 
 @keyframes rotateOut {
   0% {
-    -webkit-transform-origin: center;
     transform-origin: center;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: center;
+  0%, to {
+    -webkit-transform-origin: center; }
+  to {
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
     opacity: 0; } }
 
 .rotateOut {
@@ -7451,26 +8341,26 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateOutDownLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; } }
 
 @keyframes rotateOutDownLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0; } }
 
 .rotateOutDownLeft {
@@ -7479,26 +8369,26 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateOutDownRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; } }
 
 @keyframes rotateOutDownRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; } }
 
 .rotateOutDownRight {
@@ -7507,26 +8397,26 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateOutUpLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; } }
 
 @keyframes rotateOutUpLeft {
   0% {
-    -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: left bottom;
+  0%, to {
+    -webkit-transform-origin: left bottom; }
+  to {
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     opacity: 0; } }
 
 .rotateOutUpLeft {
@@ -7535,26 +8425,26 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes rotateOutUpRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 90deg);
-    transform: rotate3d(0, 0, 1, 90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     opacity: 0; } }
 
 @keyframes rotateOutUpRight {
   0% {
-    -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
     opacity: 1; }
-  100% {
-    -webkit-transform-origin: right bottom;
+  0%, to {
+    -webkit-transform-origin: right bottom; }
+  to {
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 90deg);
-    transform: rotate3d(0, 0, 1, 90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     opacity: 0; } }
 
 .rotateOutUpRight {
@@ -7563,52 +8453,48 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes hinge {
   0% {
+    transform-origin: top left; }
+  0%, 20%, 60% {
     -webkit-transform-origin: top left;
-    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out; }
   20%, 60% {
-    -webkit-transform: rotate3d(0, 0, 1, 80deg);
-    transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out; }
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+    transform-origin: top left; }
   40%, 80% {
-    -webkit-transform: rotate3d(0, 0, 1, 60deg);
-    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
     -webkit-transform-origin: top left;
     transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     opacity: 1; }
-  100% {
+  to {
     -webkit-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
     opacity: 0; } }
 
 @keyframes hinge {
   0% {
+    transform-origin: top left; }
+  0%, 20%, 60% {
     -webkit-transform-origin: top left;
-    transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out; }
   20%, 60% {
-    -webkit-transform: rotate3d(0, 0, 1, 80deg);
-    transform: rotate3d(0, 0, 1, 80deg);
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out; }
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+    transform-origin: top left; }
   40%, 80% {
-    -webkit-transform: rotate3d(0, 0, 1, 60deg);
-    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
     -webkit-transform-origin: top left;
     transform-origin: top left;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     opacity: 1; }
-  100% {
+  to {
     -webkit-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
     opacity: 0; } }
@@ -7620,9 +8506,9 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes rollIn {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
-  100% {
+    -webkit-transform: translate3d(-100%, 0, 0) rotate(-120deg);
+    transform: translate3d(-100%, 0, 0) rotate(-120deg); }
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -7630,9 +8516,9 @@ Copyright (c) 2015 Daniel Eden
 @keyframes rollIn {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
-  100% {
+    -webkit-transform: translate3d(-100%, 0, 0) rotate(-120deg);
+    transform: translate3d(-100%, 0, 0) rotate(-120deg); }
+  to {
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
@@ -7644,18 +8530,18 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes rollOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+    -webkit-transform: translate3d(100%, 0, 0) rotate(120deg);
+    transform: translate3d(100%, 0, 0) rotate(120deg); } }
 
 @keyframes rollOut {
   0% {
     opacity: 1; }
-  100% {
+  to {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
-    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+    -webkit-transform: translate3d(100%, 0, 0) rotate(120deg);
+    transform: translate3d(100%, 0, 0) rotate(120deg); } }
 
 .rollOut {
   -webkit-animation-name: rollOut;
@@ -7813,20 +8699,18 @@ Copyright (c) 2015 Daniel Eden
   0% {
     opacity: 1; }
   50% {
-    opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); }
-  100% {
+  50%, to {
     opacity: 0; } }
 
 @keyframes zoomOut {
   0% {
     opacity: 1; }
   50% {
-    opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3); }
-  100% {
+  50%, to {
     opacity: 0; } }
 
 .zoomOut {
@@ -7840,7 +8724,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
@@ -7856,7 +8740,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
@@ -7874,7 +8758,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
     transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
     transform: scale(0.1) translate3d(-2000px, 0, 0);
@@ -7886,7 +8770,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
     transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale(0.1) translate3d(-2000px, 0, 0);
     transform: scale(0.1) translate3d(-2000px, 0, 0);
@@ -7902,7 +8786,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
     transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
     transform: scale(0.1) translate3d(2000px, 0, 0);
@@ -7914,7 +8798,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
     transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
     transform: scale(0.1) translate3d(2000px, 0, 0);
@@ -7932,7 +8816,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
@@ -7948,7 +8832,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
     transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
@@ -7966,18 +8850,18 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 @keyframes slideInDown {
   0% {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 .slideInDown {
   -webkit-animation-name: slideInDown;
@@ -7988,18 +8872,18 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 @keyframes slideInLeft {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
@@ -8010,18 +8894,18 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 @keyframes slideInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 .slideInRight {
   -webkit-animation-name: slideInRight;
@@ -8032,18 +8916,18 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 @keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     visibility: visible; }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
 
 .slideInUp {
   -webkit-animation-name: slideInUp;
@@ -8051,18 +8935,18 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideOutDown {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); } }
 
 @keyframes slideOutDown {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0); } }
@@ -8073,18 +8957,18 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideOutLeft {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); } }
 
 @keyframes slideOutLeft {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); } }
@@ -8095,18 +8979,18 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideOutRight {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); } }
 
 @keyframes slideOutRight {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); } }
@@ -8117,18 +9001,18 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes slideOutUp {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); } }
 
 @keyframes slideOutUp {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); } }
@@ -8307,19 +9191,7 @@ header {
           margin-bottom: 0px; }
           header .header-main .header-area .header-left .header-lt-sec .logo .logo-ar {
             display: inline-block;
-            /*.desk-icon {
-                @media screen and (max-width: 1005px) {
-                  display: none;
-                }
-              }
-
-              .mobile-icon {
-                display: none;
-
-                @media screen and (max-width: 1005px) {
-                  display: block;
-                }
-              }*/ }
+            margin-top: 1px; }
             @media screen and (max-width: 480px) {
               header .header-main .header-area .header-left .header-lt-sec .logo .logo-ar img {
                 width: 170px; } }
@@ -8428,6 +9300,8 @@ header {
           header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li {
             display: inline-block;
             float: left; }
+            header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li:hover a {
+              color: #7bc11c; }
             header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li > a {
               display: block;
               padding: 8px 15px 24px 15px;
@@ -8435,8 +9309,6 @@ header {
               color: #444444;
               text-transform: uppercase;
               font-family: "ubuntumedium", sans-serif; }
-              header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li > a:hover {
-                color: #7bc11c; }
               @media screen and (max-width: 1170px) {
                 header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li > a {
                   padding: 8px 10px; } }
@@ -8480,7 +9352,7 @@ header {
                   display: inline-block; }
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-menu-list li a {
                     display: block;
-                    padding: 8px 15px;
+                    padding: 20px 15px;
                     font-size: 13px;
                     color: #444444;
                     text-transform: uppercase;
@@ -8536,8 +9408,7 @@ header {
                     color: #444444;
                     display: block;
                     padding: 5px 0px;
-                    font-size: 14px;
-                    font-family: "ubuntumedium", sans-serif; }
+                    font-size: 14px; }
                     header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li > a:hover {
                       color: #8dc63f; }
                   header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul {
@@ -8547,8 +9418,7 @@ header {
                       header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul li a {
                         color: #8dc63f;
                         display: block;
-                        padding: 0px;
-                        font-family: "ubunturegular", sans-serif; }
+                        padding: 0px; }
                         header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .menu-list > li .sub-menu-ar .sub-large-menu .sub-menu-service > li ul li a:hover {
                           color: #444444; }
                 @media screen and (max-width: 1005px) {
@@ -9731,20 +10601,142 @@ p.desc {
 /****************************************
    3.5 Market Equity Page Styles
 ****************************************/
+.tab-structure.nav-tabs {
+  background: #f8fbf4;
+  border-bottom: none; }
+  .tab-structure.nav-tabs.table-cell li {
+    display: table; }
+    .tab-structure.nav-tabs.table-cell li a {
+      display: table-cell; }
+  .tab-structure.nav-tabs li {
+    padding: 0;
+    border-right: 1px solid #d6dad6;
+    border-bottom: 1px solid #ddd; }
+    .tab-structure.nav-tabs li.active, .tab-structure.nav-tabs li:hover {
+      border-bottom-color: #ffffff;
+      background: #ffffff; }
+      .tab-structure.nav-tabs li.active a, .tab-structure.nav-tabs li:hover a {
+        border-top: 4px solid #8dc63f; }
+    .tab-structure.nav-tabs li a {
+      border: none;
+      /*border-bottom: 1px solid #ccc;*/
+      border-top: 4px solid #f8fbf4;
+      padding: 8px 15px 8px 30px;
+      min-height: 80px;
+      border-radius: 0;
+      margin-right: 0; }
+      .tab-structure.nav-tabs li a:hover {
+        background: #ffffff; }
+      .tab-structure.nav-tabs li a p {
+        margin: 0;
+        font-family: "ubuntumedium", sans-serif; }
+      .tab-structure.nav-tabs li a .title {
+        color: #222222;
+        font-size: 18px; }
+      .tab-structure.nav-tabs li a .sunsex-count {
+        font-family: "ubunturegular", sans-serif;
+        font-size: 26px;
+        color: #222222;
+        line-height: 28px; }
+        .tab-structure.nav-tabs li a .sunsex-count .price-percentage {
+          font-family: "ubuntulight", sans-serif;
+          font-size: 18px; }
+          .tab-structure.nav-tabs li a .sunsex-count .price-percentage.gain {
+            color: #20ab30; }
+          .tab-structure.nav-tabs li a .sunsex-count .price-percentage.loss {
+            color: #fa4110; }
+          @media screen and (max-width: 991px) {
+            .tab-structure.nav-tabs li a .sunsex-count .price-percentage {
+              font-size: 14px; } }
+          @media screen and (max-width: 767px) {
+            .tab-structure.nav-tabs li a .sunsex-count .price-percentage {
+              display: block; } }
+        @media screen and (max-width: 991px) {
+          .tab-structure.nav-tabs li a .sunsex-count {
+            font-size: 18px; } }
+      @media screen and (max-width: 410px) {
+        .tab-structure.nav-tabs li a {
+          padding: 15px; } }
+
 .banner-chart {
   background: url("../../assets/images/markets_equity_cropped.jpg") no-repeat;
   background-size: cover; }
   .banner-chart .heading-bx h2 {
     color: #ffffff; }
   .banner-chart .chart-tab-wrap {
-    background: #ffffff; }
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden; }
     .banner-chart .chart-tab-wrap .tab-list .nav-tabs {
-      background: #f8fbf4; }
+      /*background: #f8fbf4;
+        border-bottom: none;*/ }
       .banner-chart .chart-tab-wrap .tab-list .nav-tabs li {
-        width: 33.33%;
-        border-right: 1px solid #d6dad6; }
-        .banner-chart .chart-tab-wrap .tab-list .nav-tabs li.active a {
-          border-bottom: 4px solid #8dc63f; }
+        /*padding: 0;
+          border-right: 1px solid #d6dad6;
+          border-bottom: 1px solid #ddd;*/
+        /*&.active, &:hover {
+            border-bottom-color: $white;
+            background: $white;
+
+            a {
+              border-top: 4px solid #8dc63f;
+            }
+          }*/
+        /*a {
+            border: none;
+            border-top: 4px solid #f8fbf4;
+            padding: 8px 15px 8px 30px;
+            min-height: 80px;
+            border-radius: 0;
+            margin-right: 0;
+
+            &:hover {
+              background: $white;
+            }
+
+            p {
+              margin: 0;
+              font-family: $font-family-ubuntumedium;
+            }
+            .title {
+              color: #222222;
+              font-size: 18px;
+            }
+
+            .sunsex-count {
+              font-family: $font-family-ubunturegular;
+              font-size: 26px;
+              color: #222222;
+              line-height: 28px;
+
+              .price-percentage {
+                font-family: $font-family-ubuntulight;
+                font-size: 18px;
+
+                &.gain {
+                  color: #20ab30;
+                }
+
+                &.loss {
+                  color: #fa4110;
+                }
+
+                @media screen and (max-width: 991px) {
+                  font-size: 14px;
+                }
+                @media screen and (max-width: 767px) {
+                  display: block;
+                }
+              }
+              @media screen and (max-width: 991px) {
+                font-size: 18px;
+              }
+            }
+
+            @media screen and (max-width: 410px) {
+              padding: 15px;
+            }
+          }*/ }
         .banner-chart .chart-tab-wrap .tab-list .nav-tabs li.nifty-ar a .title {
           color: #755fbb; }
           .banner-chart .chart-tab-wrap .tab-list .nav-tabs li.nifty-ar a .title .icon-Top-gainers1 span.path1:before {
@@ -9755,7 +10747,7 @@ p.desc {
             color: #51c4dd; }
         .banner-chart .chart-tab-wrap .tab-list .nav-tabs li.add-index a {
           text-align: center;
-          height: 85px;
+          height: 80px;
           line-height: 62px;
           color: #222222;
           font-family: "ubunturegular", sans-serif;
@@ -9772,49 +10764,11 @@ p.desc {
         @media screen and (max-width: 767px) {
           .banner-chart .chart-tab-wrap .tab-list .nav-tabs li.add-index {
             display: none; } }
-        .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a {
-          border: none;
-          padding-left: 30px;
-          min-height: 85px; }
-          .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a:hover {
-            background: #ffffff; }
-          .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a p {
-            margin: 0;
-            font-family: "ubuntumedium", sans-serif; }
-          .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .title {
-            color: #222222;
-            font-size: 18px; }
-          .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count {
-            font-family: "ubunturegular", sans-serif;
-            font-size: 26px;
-            color: #222222; }
-            .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count .price-percentage {
-              font-family: "ubuntulight", sans-serif;
-              font-size: 18px; }
-              .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count .price-percentage.gain {
-                color: #20ab30; }
-              .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count .price-percentage.loss {
-                color: #fa4110; }
-              @media screen and (max-width: 991px) {
-                .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count .price-percentage {
-                  font-size: 14px; } }
-              @media screen and (max-width: 767px) {
-                .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count .price-percentage {
-                  display: block; } }
-            @media screen and (max-width: 991px) {
-              .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a .sunsex-count {
-                font-size: 18px; } }
-          @media screen and (max-width: 410px) {
-            .banner-chart .chart-tab-wrap .tab-list .nav-tabs li a {
-              padding: 15px; } }
-        @media screen and (max-width: 767px) {
-          .banner-chart .chart-tab-wrap .tab-list .nav-tabs li {
-            width: 50%; } }
     .banner-chart .chart-tab-wrap .tab-list .chart-content-tab {
-      padding: 15px; }
+      padding: 10px 15px; }
     .banner-chart .chart-tab-wrap .tab-list .view-detail {
-      margin: 10px 0;
-      padding: 15px; }
+      margin: 1px 0;
+      padding: 5px 15px; }
       .banner-chart .chart-tab-wrap .tab-list .view-detail .view-list-dt {
         text-align: right; }
         .banner-chart .chart-tab-wrap .tab-list .view-detail .view-list-dt li {
@@ -9891,7 +10845,9 @@ p.desc {
 
 /* tranding now*/
 .tranding-now-area .tranding-content-area {
-  background: #ffffff; }
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden; }
   .tranding-now-area .tranding-content-area .tranding-opt {
     background: #f8fbf4;
     padding: 20px; }
@@ -9912,37 +10868,32 @@ p.desc {
       .tranding-now-area .tranding-content-area .tranding-opt {
         padding: 20px 0; } }
   .tranding-now-area .tranding-content-area .tranding-tab {
-    background: #f8fbf4; }
+    /*background: #f8fbf4;*/ }
     .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs {
       border-top: 1px solid #dcdede; }
-      .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li {
-        width: 33.33%;
-        border-right: 1px solid #dcdede; }
-        .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li:last-child {
-          border-right: none; }
-        .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li.active a {
-          border-top: 4px solid #8dc63f; }
-        .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
-          text-align: center;
-          border-radius: 0;
-          height: 57px;
-          line-height: 33px;
-          color: #40474e;
-          font-size: 18px;
-          margin-right: 0px;
-          border-right: none;
-          border-left: none;
-          padding: 10px 15px; }
-          .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a:hover {
-            background: #ffffff; }
-          @media screen and (max-width: 767px) {
-            .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
-              font-size: 14px; } }
-          @media screen and (max-width: 640px) {
-            .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
-              line-height: 18px;
-              padding: 10px 6px;
-              font-size: 13px; } }
+      .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li:last-child {
+        border-right: none; }
+      .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
+        text-align: center;
+        border-radius: 0;
+        height: 57px;
+        line-height: 33px;
+        color: #40474e;
+        font-size: 18px;
+        margin-right: 0px;
+        border-right: none;
+        border-left: none;
+        padding: 10px 15px; }
+        .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a:hover {
+          background: #ffffff; }
+        @media screen and (max-width: 767px) {
+          .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
+            font-size: 14px; } }
+        @media screen and (max-width: 640px) {
+          .tranding-now-area .tranding-content-area .tranding-tab .nav-tabs li a {
+            line-height: 18px;
+            padding: 10px 6px;
+            font-size: 13px; } }
     .tranding-now-area .tranding-content-area .tranding-tab .share-content-tab {
       padding: 15px;
       background: #fff; }
@@ -10133,9 +11084,11 @@ p.desc {
     .global-indices-ar .svg-map text.cont-name {
       font-size: 27px; }
     .global-indices-ar .svg-map text.cont-count {
-      font-size: 30px; }
+      font-size: 30px;
+      font-family: "ubuntumedium", sans-serif; }
     .global-indices-ar .svg-map text.cont-rate {
-      font-size: 25px; }
+      font-size: 25px;
+      font-family: "ubuntulight", sans-serif; }
     .global-indices-ar .svg-map text.cont-date {
       font-size: 23px; }
   @media screen and (max-width: 480px) {
@@ -10173,7 +11126,9 @@ p.desc {
 /* Sector Performance */
 .sector-performance-ar .sector-perf-cont {
   background: #ffffff;
-  padding: 25px; }
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 4px; }
   .sector-performance-ar .sector-perf-cont .share-title {
     margin-bottom: 10px; }
     .sector-performance-ar .sector-perf-cont .share-title .sector-opt label {
@@ -10188,27 +11143,25 @@ p.desc {
       padding: 15px; } }
 
 /* Recommendations help */
-/*.recommendations-help-ads {
-   .recommendations-help-ar {
-     img {
-       width: 100%;
-     }
-   }
- }*/
 .recommendations-help-ads .recommendations-help-ar {
-  position: relative; }
+  position: relative;
+  background: #40474e url("../images/banner_background.jpg") no-repeat center bottom;
+  background-size: cover;
+  min-height: 151px; }
   .recommendations-help-ads .recommendations-help-ar .img-wrap {
-    min-height: 151px; }
-    .recommendations-help-ads .recommendations-help-ar .img-wrap img {
-      width: 100%; }
-      .recommendations-help-ads .recommendations-help-ar .img-wrap img.back-grid {
-        height: 151px; }
-        @media screen and (max-width: 991px) {
-          .recommendations-help-ads .recommendations-help-ar .img-wrap img.back-grid {
-            height: 250px; } }
-        @media screen and (max-width: 767px) {
-          .recommendations-help-ads .recommendations-help-ar .img-wrap img.back-grid {
-            height: 300px; } }
+    /*img {
+         width: 100%;
+
+         &.back-grid {
+           height: 151px;
+           @media screen and (max-width: 991px) {
+             height:250px;
+           }
+           @media screen and (max-width: 767px) {
+             height:300px;
+           }
+         }
+       }*/ }
   .recommendations-help-ads .recommendations-help-ar .overlay {
     position: absolute;
     top: 0;
@@ -10229,6 +11182,11 @@ p.desc {
         .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li {
           display: inline-block;
           padding: 0 26px; }
+          .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li.font-icons span {
+            font-size: 48px;
+            vertical-align: middle;
+            margin-top: -10px;
+            display: inline-block; }
           @media screen and (max-width: 1200px) {
             .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li {
               padding: 0 8px; } }
@@ -10240,7 +11198,9 @@ p.desc {
             width: auto; }
           .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li p.info {
             font-size: 20px;
-            color: #ffffff; }
+            color: #ffffff;
+            margin-top: 7px;
+            display: inline-block; }
           .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li .btn-green {
             margin-bottom: 0;
             text-transform: capitalize;
@@ -10253,14 +11213,18 @@ p.desc {
 /* Block Deals */
 .block-deals-ar .block-deal-ar {
   background: #fff;
-  padding: 25px; }
+  padding: 25px;
+  border-radius: 4px;
+  overflow: hidden; }
   .block-deals-ar .block-deal-ar .block-opt {
     margin-bottom: 15px; }
 
 /* Heat Map */
 .heat-map-ar .heat-map-content {
   background: #fff;
-  padding: 25px; }
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 4px; }
   @media screen and (max-width: 767px) {
     .heat-map-ar .heat-map-content .col-xs-8 {
       padding-right: 0; } }
@@ -10582,7 +11546,7 @@ p.desc {
       width: 170px;
       vertical-align: top;
       min-height: 196px; }
-      .events-ar .main-events .events-months-date .events-date-list > li.active p {
+      .events-ar .main-events .events-months-date .events-date-list > li.active p, .events-ar .main-events .events-months-date .events-date-list > li:hover p {
         color: #000; }
       .events-ar .main-events .events-months-date .events-date-list > li p {
         margin-bottom: 0;
@@ -11072,7 +12036,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: 9; }
+  z-index: 99; }
   .overlay-bg.active {
     display: block; }
 
@@ -11082,6 +12046,12 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   text-align: center;
   min-height: 63px;
   margin: 0px 0px 50px 0px; }
+  .heading-bx.mtb-sp {
+    margin: 20px 0 5px 0; }
+  .heading-bx.mb-5 {
+    margin: 5px 0; }
+  .heading-bx.mb-10 {
+    margin: 10px 0; }
   .heading-bx.mb-20 {
     margin: 20px 0; }
   .heading-bx h2 {
@@ -11254,7 +12224,7 @@ table.dataTable tr.child ul {
     table.dataTable tr.child ul li span {
       display: inline-block;
       vertical-align: middle;
-      padding: 15px 0 0 0;
+      padding: 0px 0 0 0;
       width: 46%; }
       table.dataTable tr.child ul li span.dtr-title {
         padding-top: 0; }
