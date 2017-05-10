@@ -1900,7 +1900,7 @@ header {
   .video-wrap {
     position:relative;
 
-    .img-wrap {
+    /*.img-wrap {
       height:600px;
       overflow: hidden;
       @media screen and (max-width: 1200px) {
@@ -1909,7 +1909,7 @@ header {
       img {
         height: 100%;
       }
-    }
+    }*/
     .overlay-wrap {
       position: absolute;
       top: 0;
@@ -2946,13 +2946,14 @@ p {
                    color: $white;
                  }
                }
-               .primary-btn {
+               .btn-green {
                  margin-bottom: 0;
                  text-transform: capitalize;
                  font-size: 14px;
-                 @media screen and (max-width: 1200px) {
+                 padding: 12px 17px;
+                 /*@media screen and (max-width: 1200px) {
                    padding: 12px 17px;
-                 }
+                 }*/
                }
              }
            }

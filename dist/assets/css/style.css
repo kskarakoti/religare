@@ -9504,15 +9504,17 @@ header {
 .banner-area {
   background: #f6f9fa; }
   .banner-area .video-wrap {
-    position: relative; }
-    .banner-area .video-wrap .img-wrap {
-      height: 600px;
-      overflow: hidden; }
+    position: relative;
+    /*.img-wrap {
+      height:600px;
+      overflow: hidden;
       @media screen and (max-width: 1200px) {
-        .banner-area .video-wrap .img-wrap {
-          height: auto; } }
-      .banner-area .video-wrap .img-wrap img {
-        height: 100%; }
+        height: auto;
+      }
+      img {
+        height: 100%;
+      }
+    }*/ }
     .banner-area .video-wrap .overlay-wrap {
       position: absolute;
       top: 0;
@@ -10192,13 +10194,14 @@ p.desc {
           .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li p.info {
             font-size: 20px;
             color: #ffffff; }
-          .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li .primary-btn {
+          .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li .btn-green {
             margin-bottom: 0;
             text-transform: capitalize;
-            font-size: 14px; }
-            @media screen and (max-width: 1200px) {
-              .recommendations-help-ads .recommendations-help-ar .overlay .display-table .display-cell ul li .primary-btn {
-                padding: 12px 17px; } }
+            font-size: 14px;
+            padding: 12px 17px;
+            /*@media screen and (max-width: 1200px) {
+                   padding: 12px 17px;
+                 }*/ }
 
 /* Block Deals */
 .block-deals-ar .block-deal-ar {
