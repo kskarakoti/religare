@@ -191,8 +191,22 @@ $(function () {
 				$(this).next().slideDown('normal');
 			}
 		});
-	}
-	;
+	};
+
+
+	//for converting tab to accordion
+	$(".tab-content .accordion-heading").click(function(){
+		if(false == $(this).next().is(':visible')) {
+			$('.tab-content .tab-pane').slideUp(600);
+			$(".tab-content .accordion-heading span").addClass('plus');
+			$(".tab-content .accordion-heading span").removeClass('minus');
+		}
+		$(this).next().slideToggle(600);
+		$(this).children('.plus, .minus').toggleClass("plus minus");
+	});
+	$('.tab-content .tab-pane:eq(0)').show();
+
+
 
 	//heat map page active
 	$(".heat-map-list li a").click(function (event) {
@@ -206,15 +220,6 @@ $(function () {
 		$(this).parent().siblings().removeClass("active");
 	});
 
-	//datepickers
-	var $btn = $('#bt1');
-	$('#datetimepicker1').datetimepicker({
-		widgetParent: $btn
-	});
-	$btn.click(function () {
-		$('#datetimepicker1').data('DateTimePicker').toggle();
-	});
-
 
 	if ($(window).width() < 767){
 		//for dropdown toggle on click
@@ -225,22 +230,33 @@ $(function () {
 			var vals = $('ul.toggle-list li.active a').html();
 			$('button.btn-toggle span.text').html(vals);
 			$('ul.toggle-list').toggle();
+			console.log(vals)
+		});
+
+		$(window).resize(function () {
+			//for dropdown toggle on click
+			$('button.btn-toggle').on('click', function () {
+				$('ul.toggle-list').toggle();
+			});
+			$('ul.toggle-list li a').on('click', function () {
+				var vals = $('ul.toggle-list li.active a').html();
+				$('button.btn-toggle span.text').html(vals);
+				$('ul.toggle-list').toggle();
+			});
 		});
 	}
 
-
-	$(window).resize(function () {
-		//for dropdown toggle on click
-		$('button.btn-toggle').on('click', function () {
-			$('ul.toggle-list').toggle();
-		});
-		$('ul.toggle-list li a').on('click', function () {
-			var vals = $('ul.toggle-list li.active a').html();
-			$('button.btn-toggle span.text').html(vals);
-			$('ul.toggle-list').toggle();
-		});
+	//datepickers
+	var $btn = $('#bt1');
+	$('#datetimepicker1').datetimepicker({
+		widgetParent: $btn
 	});
-	// $('#datetimepicker1').datetimepicker();
+	$btn.click(function () {
+		$('#datetimepicker1').data('DateTimePicker').toggle();
+	});
+
+	//for div height calculation
+	divheight();
 
 	//select
 	if($('.country-select').length) {
@@ -255,7 +271,8 @@ $(function () {
 	$(".horizontalScroll").mCustomScrollbar({
 		axis:"x",
 		theme: "dark",
-		autoExpandHorizontalScroll: true
+		autoExpandHorizontalScroll: true,
+		mouseWheel:{ scrollAmount: 600}
 		});
 
 
@@ -270,3 +287,25 @@ $(function () {
 		},
 	});
 });
+
+
+
+//for div height calculation
+$(window).resize(function(){
+	divheight();
+});
+function divheight() {
+	var height = $('.sec-block.sec-l').height();
+	$('.sec-r').height(height);
+}
+
+//for accordion icon
+function toggleIcon(e) {
+	$(e.target)
+		.prev('.panel-heading')
+		.find(".more-less")
+		.toggleClass('glyphicon-plus glyphicon-minus');
+	$(e.target).prev('.panel-heading').toggleClass('active')
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
