@@ -44,7 +44,6 @@
 @import "vendor-css/jquery.dataTables.min";
 @import "vendor-css/dataTables.responsive";
 @import "vendor-css/animate.min";
-@import "vendor-css/ie9";
 
 
 /************************************************************************************
@@ -436,7 +435,7 @@ header {
                 display: inline-block;
                 float: left;
 
-                &:hover {
+                &:hover, &.active {
                   a {
                     color: $hover-dark-green;
                   }
@@ -1099,6 +1098,9 @@ header {
             @media screen and (max-width: 991px) {
               min-height: 113px;
             }
+            @media screen and (max-width: 767px) {
+              min-height: auto;
+            }
             @media screen and (max-width: 640px) {
               margin-bottom: ($margin-base-5 * 2);
             }
@@ -1507,7 +1509,9 @@ header {
 /* Why Religare */
 .religare-why-sec {
   &.content-pd {
-    padding-bottom: 0;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
   }
 }
 .religare-service-ar {
@@ -2106,6 +2110,10 @@ p {
     }
     .sec-block {
       display: table;
+      .img-wrap {
+        display: table-cell;
+        vertical-align: middle;
+      }
       .block {
         display: table-cell;
         vertical-align: middle;
@@ -2567,6 +2575,10 @@ p {
                    span {
                      margin: 0;
                      vertical-align: inherit;
+
+                     &.icon-Top-gainers1 {
+                       color: #ffba00;
+                     }
                    }
                  }
 
@@ -2833,6 +2845,9 @@ p {
           }
           @media screen and (max-width: 640px) {
             width: 120px !important;
+          }
+          @media screen and (max-width: 480px) {
+            width: 100% !important;
           }
         }
         @media screen and (max-width: 480px) {
@@ -3164,9 +3179,15 @@ p {
 /* Global Indicas */
 .global-indices-ar {
   background: repeating-linear-gradient( -45deg, #33393f 4px, #272b31 2px, #33393f 6px, #272b31 7px );
-  .heading-bx {
-    h2 {
-      color: $white;
+  &.content-pd-sm {
+    .heading-bx {
+      margin-bottom: 10px;
+      h2 {
+        color: $white;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
     }
   }
   .view-link {
@@ -4165,7 +4186,7 @@ h3 {
     }
   }
   .pro-ser-wrap {
-    margin:2px -2px 0 -2px;
+    margin:4px -2px 0 -2px;
     @media screen and (max-width: 767px) {
       text-align: center;
     }
@@ -4505,13 +4526,16 @@ h3 {
           padding: $padding-none ($padding-base-5 * 2);
           color: $sushi;
           line-height: 14px;
-
+          @media screen and (max-width: 991px) {
+            padding: $padding-none ($padding-base-5 + 1);
+            font-size: 12px;
+          }
           &:hover {
             color: $hover-dark-green;
           }
 
           @media screen and (max-width: 991px) {
-            padding: $padding-none ($padding-base-5 * 2) - 3;
+            padding: $padding-none $padding-base-5;
             font-size: 13px;
           }
         }
@@ -4538,8 +4562,9 @@ h3 {
       li {
         display: inline-block;
         margin-left: $margin-base-5;
-
-
+        @media screen and (max-width: 991px) {
+          margin-left: ($margin-base-5 - 1);
+        }
       }
 
       @media screen and (max-width: 767px) {
@@ -5406,7 +5431,7 @@ span {
             border-bottom:none;
 
             @media screen and (max-width: 991px) {
-              padding: 14px 11px;
+              padding: 23px 11px;
             }
           }
         }

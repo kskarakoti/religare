@@ -24,6 +24,405 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Smart_Charts .path1:before {
+  content: "\ebe2";
+  color: rgb(218, 234, 243);
+}
+.icon-Smart_Charts .path2:before {
+  content: "\ebe3";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path3:before {
+  content: "\ebe4";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path4:before {
+  content: "\ebe5";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path5:before {
+  content: "\ebe6";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path6:before {
+  content: "\ebe7";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path7:before {
+  content: "\ebe8";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path8:before {
+  content: "\ebe9";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path9:before {
+  content: "\ec67";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path10:before {
+  content: "\ec68";
+  margin-left: -1.3466796875em;
+  color: rgb(255, 242, 0);
+}
+.icon-Smart_Charts .path11:before {
+  content: "\ec69";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path12:before {
+  content: "\ec6a";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path13:before {
+  content: "\ec6b";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path1:before {
+  content: "\ebd6";
+  color: rgb(218, 234, 243);
+}
+.icon-MF_Screener .path2:before {
+  content: "\ebd7";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path3:before {
+  content: "\ebd8";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MF_Screener .path4:before {
+  content: "\ebd9";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-MF_Screener .path5:before {
+  content: "\ebda";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path6:before {
+  content: "\ebdb";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path7:before {
+  content: "\ebdc";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path8:before {
+  content: "\ebdd";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path9:before {
+  content: "\ebde";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-MF_Screener .path10:before {
+  content: "\ebdf";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path11:before {
+  content: "\ebe0";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path12:before {
+  content: "\ebe1";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path1:before {
+  content: "\ec6c";
+  color: rgb(218, 234, 243);
+}
+.icon-Star_Rating .path2:before {
+  content: "\ec6d";
+  margin-left: -1.0029296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Star_Rating .path3:before {
+  content: "\ec6e";
+  margin-left: -1.0029296875em;
+  color: rgb(218, 234, 243);
+}
+.icon-Star_Rating .path4:before {
+  content: "\ec6f";
+  margin-left: -1.0029296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Star_Rating .path5:before {
+  content: "\ec70";
+  margin-left: -1.0029296875em;
+  color: rgb(218, 234, 243);
+}
+.icon-Star_Rating .path6:before {
+  content: "\ec71";
+  margin-left: -1.0029296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Star_Rating .path7:before {
+  content: "\ec72";
+  margin-left: -1.0029296875em;
+  color: rgb(218, 234, 243);
+}
+.icon-Star_Rating .path8:before {
+  content: "\ec73";
+  margin-left: -1.0029296875em;
+  color: rgb(0, 0, 0);
+}
+.icon-Star_Rating .path9:before {
+  content: "\ec74";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path10:before {
+  content: "\ec75";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path11:before {
+  content: "\ec76";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path12:before {
+  content: "\ec77";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path13:before {
+  content: "\ec78";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path14:before {
+  content: "\ec79";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Star_Rating .path15:before {
+  content: "\ec7a";
+  margin-left: -1.0029296875em;
+  color: rgb(255, 255, 255);
+}
+.icon-Star_Rating .path16:before {
+  content: "\ec7b";
+  margin-left: -1.0029296875em;
+  color: rgb(255, 242, 0);
+}
+.icon-Star_Rating .path17:before {
+  content: "\ec7c";
+  margin-left: -1.0029296875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_Comparision .path1:before {
+  content: "\ec7d";
+  color: rgb(218, 234, 243);
+}
+.icon-Stock_Comparision .path2:before {
+  content: "\ec7e";
+  margin-left: -1.056640625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_Comparision .path3:before {
+  content: "\ec7f";
+  margin-left: -1.056640625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_Comparision .path4:before {
+  content: "\ec80";
+  margin-left: -1.056640625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_Comparision .path5:before {
+  content: "\ec81";
+  margin-left: -1.056640625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_Comparision .path6:before {
+  content: "\ec82";
+  margin-left: -1.056640625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_Comparision .path7:before {
+  content: "\ec83";
+  margin-left: -1.056640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Stock_Comparision .path8:before {
+  content: "\ec84";
+  margin-left: -1.056640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Stock_Comparision .path9:before {
+  content: "\ec85";
+  margin-left: -1.056640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Stock_Comparision .path10:before {
+  content: "\ec86";
+  margin-left: -1.056640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Stock_Comparision .path11:before {
+  content: "\ec87";
+  margin-left: -1.056640625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Stock_Comparision .path12:before {
+  content: "\ec88";
+  margin-left: -1.056640625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path1:before {
+  content: "\ec89";
+  color: rgb(218, 234, 243);
+}
+.icon-Stock_screener .path2:before {
+  content: "\ec8a";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path3:before {
+  content: "\ec8b";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path4:before {
+  content: "\ec8c";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_screener .path5:before {
+  content: "\ec8d";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path6:before {
+  content: "\ec8e";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path7:before {
+  content: "\ec8f";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path8:before {
+  content: "\ec90";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path9:before {
+  content: "\ec91";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path10:before {
+  content: "\ec92";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path11:before {
+  content: "\ec93";
+  margin-left: -1.3759765625em;
+  color: rgb(141, 198, 63);
+}
+.icon-Stock_screener .path12:before {
+  content: "\ec94";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path13:before {
+  content: "\ec95";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-Stock_screener .path14:before {
+  content: "\ec96";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Stock_screener .path15:before {
+  content: "\ec97";
+  margin-left: -1.3759765625em;
+  color: rgb(141, 198, 63);
+}
+.icon-Stock_screener .path16:before {
+  content: "\ec98";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path1:before {
+  content: "\ec99";
+  color: rgb(218, 234, 243);
+}
+.icon-Trading_Platform .path2:before {
+  content: "\ec9a";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path3:before {
+  content: "\ec9b";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path4:before {
+  content: "\ec9c";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path5:before {
+  content: "\ec9d";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path6:before {
+  content: "\ec9e";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path7:before {
+  content: "\ec9f";
+  margin-left: -1.5830078125em;
+  color: rgb(255, 255, 255);
+}
+.icon-Trading_Platform .path8:before {
+  content: "\eca0";
+  margin-left: -1.5830078125em;
+  color: rgb(255, 242, 0);
+}
+.icon-Trading_Platform .path9:before {
+  content: "\eca1";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path10:before {
+  content: "\eca2";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
+.icon-Trading_Platform .path11:before {
+  content: "\eca3";
+  margin-left: -1.5830078125em;
+  color: rgb(68, 68, 68);
+}
 .icon-Rupee-dropdown .path1:before {
   content: "\ec46";
   color: rgb(141, 198, 63);
@@ -263,6 +662,153 @@
   margin-left: -1.001953125em;
   color: rgb(0, 0, 0);
 }
+.icon-Demat_Account .path1:before {
+  content: "\eca4";
+  color: rgb(255, 255, 255);
+}
+.icon-Demat_Account .path2:before {
+  content: "\eca5";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Demat_Account .path3:before {
+  content: "\eca6";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Demat_Account .path4:before {
+  content: "\eca7";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Demat_Account .path5:before {
+  content: "\eca8";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Demat_Account .path6:before {
+  content: "\eca9";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Demat_Account .path7:before {
+  content: "\ecaa";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Demat_Account .path8:before {
+  content: "\ecbf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Trading_account .path1:before {
+  content: "\ecab";
+  color: rgb(255, 255, 255);
+}
+.icon-Trading_account .path2:before {
+  content: "\ecac";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Trading_account .path3:before {
+  content: "\ecad";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.icon-Trading_account .path4:before {
+  content: "\ecae";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Trading_account .path5:before {
+  content: "\ecaf";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.icon-Trading_account .path6:before {
+  content: "\ecb0";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Trading_account .path7:before {
+  content: "\ecb1";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.icon-Trading_account .path8:before {
+  content: "\ecb2";
+  margin-left: -1em;
+  color: rgb(141, 198, 63);
+  opacity: 0.6;
+}
+.icon-Trading_account .path9:before {
+  content: "\ecb3";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.icon-Trading_account .path10:before {
+  content: "\ecb4";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path11:before {
+  content: "\ecb5";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path12:before {
+  content: "\ecb6";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path13:before {
+  content: "\ecb7";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path14:before {
+  content: "\ecb8";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path15:before {
+  content: "\ecb9";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path16:before {
+  content: "\ecba";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Trading_account .path17:before {
+  content: "\ecbb";
+  margin-left: -1em;
+  color: rgb(255, 242, 0);
+}
+.icon-Trading_account .path18:before {
+  content: "\ecbc";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path19:before {
+  content: "\ecbd";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Trading_account .path20:before {
+  content: "\ecbe";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
 .icon-NPS .path1:before {
   content: "\ebf4";
   color: rgb(255, 255, 255);
@@ -491,113 +1037,6 @@
 }
 .icon-Aadhar .path5:before {
   content: "\ebd5";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path1:before {
-  content: "\ebd6";
-  color: rgb(255, 255, 255);
-}
-.icon-Dmat_and_trading_account .path2:before {
-  content: "\ebd7";
-  margin-left: -1em;
-  color: rgb(141, 198, 63);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path3:before {
-  content: "\ebd8";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path4:before {
-  content: "\ebd9";
-  margin-left: -1em;
-  color: rgb(141, 198, 63);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path5:before {
-  content: "\ebda";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path6:before {
-  content: "\ebdb";
-  margin-left: -1em;
-  color: rgb(141, 198, 63);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path7:before {
-  content: "\ebdc";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path8:before {
-  content: "\ebdd";
-  margin-left: -1em;
-  color: rgb(141, 198, 63);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path9:before {
-  content: "\ebde";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-  opacity: 0.6;
-}
-.icon-Dmat_and_trading_account .path10:before {
-  content: "\ebdf";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path11:before {
-  content: "\ebe0";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path12:before {
-  content: "\ebe1";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path13:before {
-  content: "\ebe2";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path14:before {
-  content: "\ebe3";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path15:before {
-  content: "\ebe4";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path16:before {
-  content: "\ebe5";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-Dmat_and_trading_account .path17:before {
-  content: "\ebe6";
-  margin-left: -1em;
-  color: rgb(255, 242, 0);
-}
-.icon-Dmat_and_trading_account .path18:before {
-  content: "\ebe7";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path19:before {
-  content: "\ebe8";
-  margin-left: -1em;
-  color: rgb(0, 0, 0);
-}
-.icon-Dmat_and_trading_account .path20:before {
-  content: "\ebe9";
   margin-left: -1em;
   color: rgb(0, 0, 0);
 }
@@ -4281,3 +4720,4 @@
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
+

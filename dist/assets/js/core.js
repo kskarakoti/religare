@@ -56,6 +56,13 @@ $(function () {
 	});
 
 
+	//for addclass on page load
+	$("ul.menu-list li a").each(function() {
+		if (this.href == window.location) {
+			$(this).parent().addClass("active");
+		};
+	});
+
 	//menu black background show function
 	if ($(window).width() > 1023) {
 		$(".sub-item").hover(
