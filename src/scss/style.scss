@@ -2387,6 +2387,12 @@ header {
     }
   }
 
+  .down-arrow {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
   .chart-tab-wrap {
     background: $white;
     border-radius: 4px;
@@ -2437,6 +2443,12 @@ header {
           }
 
           &.add-index {
+            &:hover {
+
+              .add-index-drop {
+                border-top: 4px solid #8dc63f;
+              }
+            }
            > .add-index-drop {
               text-align: center;
               width: 100%;
@@ -2444,6 +2456,11 @@ header {
               line-height: 62px;
               margin-bottom: 0;
               display: table;
+              border-top: 4px solid #f8fbf4;
+
+             &:hover {
+               background: $white;
+             }
 
               a {
                 color: #222222;
@@ -2473,7 +2490,7 @@ header {
              .dropdown-scd {
                display: none;
                text-align: left;
-               padding: 14px 20px;
+               padding: 12px 20px;
                position: relative;
 
                .edit-icons {
@@ -2489,12 +2506,17 @@ header {
                  line-height: 22px;
 
                  &.title {
+                   color: #ffba00;
                    span {
                      margin: 0;
                      vertical-align: inherit;
 
                      &.icon-Top-gainers1 {
-                       color: #ffba00;
+                       .path1{
+                         &:before {
+                           color: #ffba00;
+                         }
+                       }
                      }
                    }
                  }
@@ -2615,7 +2637,7 @@ header {
 
       .view-detail {
         margin: 0 0 3px 0;
-        padding: 5px 15px;
+        padding: 2px 15px 5px 15px;
 
         .view-list-dt {
           text-align: right;
@@ -2683,6 +2705,7 @@ header {
   font-family: $font-family-ubuntulight;
   width: 30px;
   height: 30px;
+
   span {
     &.icon {
       width: 30px;
@@ -2777,69 +2800,69 @@ header {
         padding: 20px 0;
       }
     }
+  }
+}
 
-    .tranding-tab {
-      .nav-tabs {
-        border-top: 1px solid #dcdede;
+.tranding-tab {
+  .nav-tabs {
+    border-top: 1px solid #dcdede;
 
-        li {
-          &:last-child {
-            border-right: none;
-          }
+    li {
+      &:last-child {
+        border-right: none;
+      }
 
-          a {
-            text-align: center;
-            border-radius: 0;
-            height: 58px;
-            line-height: 33px;
-            color: #40474e;
-            font-size: 18px;
-            margin-right: 0px;
-            border-right: none;
-            border-left: none;
-            padding: 10px 15px;
+      a {
+        text-align: center;
+        border-radius: 0;
+        height: 58px;
+        line-height: 33px;
+        color: #40474e;
+        font-size: 18px;
+        margin-right: 0px;
+        border-right: none;
+        border-left: none;
+        padding: 10px 15px;
 
-            &:hover {
-              background: $white;
-            }
+        &:hover {
+          background: $white;
+        }
 
-            @media screen and (max-width: 767px) {
-              font-size: 14px;
-              display: table-cell;
-              vertical-align: middle;
-            }
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+          display: table-cell;
+          vertical-align: middle;
+        }
 
-            @media screen and (max-width: 640px) {
-              line-height: 18px;
-              padding: 10px 6px;
-              font-size: 13px;
-            }
-          }
-
-          @media screen and (max-width: 767px) {
-            display: table;
-            height: 90px;
-          }
+        @media screen and (max-width: 640px) {
+          line-height: 18px;
+          padding: 10px 6px;
+          font-size: 13px;
         }
       }
 
-      .share-content-tab {
-        padding: 25px 15px;
-        background: #fff;
+      @media screen and (max-width: 767px) {
+        display: table;
+        height: 90px;
+      }
+    }
+  }
 
-        .share-mkt-ar {
-          .top-gainers-heading {
+  .share-content-tab {
+    padding: 25px 15px;
+    background: #fff;
 
-            .share-mkt-data {
-              margin: 15px 0 0 0;
+    .share-mkt-ar {
+      .top-gainers-heading {
 
-              .view-all-btn {
-                margin-bottom: 0;
-              }
-              @media screen and (max-width: 991px) {
-                margin-bottom: 40px;
-              }
-            }
+        .share-mkt-data {
+          margin: 15px 0 0 0;
+
+          .view-all-btn {
+            margin-bottom: 0;
+          }
+          @media screen and (max-width: 991px) {
+            margin-bottom: 50px;
           }
         }
       }
@@ -3047,6 +3070,8 @@ header {
           width: 100%;
           text-align: left;
           position:relative;
+          min-height: 35px;
+
           span {
             &.text {
               display: inline-block;
@@ -3098,7 +3123,7 @@ header {
   background: repeating-linear-gradient( -45deg, #33393f 4px, #272b31 2px, #33393f 6px, #272b31 7px );
   &.content-pd-sm {
     .heading-bx {
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       h2 {
         color: $white;
       }
@@ -4034,7 +4059,7 @@ header {
 
 .report-wrap {
   background: #eeeff1;
-  padding:40px 0;
+  /*padding:40px 0;*/
   h3 {
     &.green-title {
       margin-bottom: 20px;
@@ -4904,6 +4929,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
   &.mtb-sp {
     margin: 20px 0 5px 0;
+    @media screen and (max-width: 767px) {
+      margin: 20px 0px 40px 0px;
+    }
   }
   &.mb-5 {
     margin: 5px 0;
@@ -5432,3 +5460,26 @@ span {
 }
 
 
+/*Paddings and Margins*/
+.padno{padding:0 !important;}
+.padlno{padding-left:0;}
+.padrno{padding-right:0;}
+.p10 {padding:10px;}
+.p20{padding:20px;}
+.pt0{padding-top: 0 !important;}
+.pb0{padding-bottom: 0 !important;}
+.nomargin{margin:0 !important;}
+.mt0{margin-top:0px !important;}
+.mt5{margin-top:5px !important;}
+.mt10{margin-top:10px !important;}
+.mt20{margin-top:20px !important;}
+.mt30{margin-top:30px !important;}
+.mt40{margin-top:40px !important;}
+.mt50{margin-top:50px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb20{margin-bottom:20px !important;}
+.mb30{margin-bottom:30px !important;;}
+.ml20{margin-left:20px !important;;}
+.ml30{margin-left:30px !important;;}
+.mr20{margin-right:20px !important;;}
+.mr30{margin-right:30px !important;;}
