@@ -204,7 +204,7 @@ header {
             width: 15px;
             height: 10px;
             vertical-align: top;
-            margin-top: ($margin-base-5 - 1);
+            margin-top: ($margin-base-5 - 1); 
             color: #29b259;
             font-size: 8px;
           }
@@ -843,6 +843,7 @@ header {
 ****************************************/
 /* banner */
 .banner-area {
+  background: #f6f9fa;
   .banner-list {
     li {
       display: inline-block;
@@ -1159,85 +1160,9 @@ header {
   }
 }
 
-/*.banner-list li:nth-child(1) {
-  background: url("../images/home-banner1.jpg") no-repeat;
-  background-size: cover;
-}
-.banner-list li:nth-child(2) {
-  background: url("../images/home-banner2.jpg") no-repeat;
-  background-size: cover;
-}
-.banner-list li:nth-child(3) {
-  background: url("../images/home-banner3.jpg") no-repeat;
-  background-size: cover;
-}*/
+
 /*------ Homepage banner toggle css --------*/
-/*
-.banner-toggle-wrap {
-  background: #f6f9fa;
-  padding:70px 0;
 
-  .transact-block {
-    padding-bottom:30px;
-
-    .img-wrap {
-
-      &.left {
-        width: 85%;
-        margin-left: 12%;
-      }
-
-      &.right {
-        width: 85%;
-        margin-right: 12%;
-      }
-      img {
-        width: 100%;
-      }
-    }
-
-    .block-d {
-      display: table;
-      width: 90%;
-      height: 300px;
-      margin-left: 30px;
-
-      &.left {
-        text-align: left;
-      }
-
-      &.right {
-        text-align: right;
-      }
-      p {
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 24px;
-        line-height: 32px;
-        color:#51575b;
-      }
-    }
-  }
-  .registration-info {
-    margin-top:40px;
-
-    .btn-wrap {
-      margin-bottom: 25px;
-
-      a {
-        padding: 10px 15px;
-        width: 200px;
-        font-size: 16px;
-        text-transform: uppercase;
-      }
-    }
-    &.trail-info {
-      color:#222222;
-      font-size: 16px;
-    }
-  }
-}
-*/
 
 .banner-main-content {
   overflow: hidden;
@@ -1947,9 +1872,7 @@ header {
    3.4 About us Page Styles
 ****************************************/
 
-.banner-area {
-  background: #f6f9fa;
-
+.banner-inner-area {
   .video-wrap {
     position: relative;
     .img-wrap {
@@ -2015,8 +1938,7 @@ header {
     }
   }
 }
-h3 {
-  &.title {
+/*.title {
     font-size: 28px;
     font-family: 'ubuntumedium';
     position: relative;
@@ -2038,45 +1960,40 @@ h3 {
         bottom: -22px;
       }
     }
+}*/
+.colver-title {
+  font-size: 20px;
+  font-family: 'ubuntumedium';
+  @media screen and (max-width:480px) {
+    margin:0 0 4px 0;
+    font-size: 16px;
   }
 }
-h4 {
-  &.sub-title {
-    &.colver-title {
-      font-size: 20px;
-      font-family: 'ubuntumedium';
-      @media screen and (max-width:480px) {
-        margin:0 0 4px 0;
-        font-size: 16px;
-      }
-    }
-  }
-}
-.center-title {
-  h3 {
-    &.heading-bar{
+/*.center-title {
+  .heading-bar{
       margin-bottom:38px;
       &:after {
         right:0;
         margin:auto;
       }
     }
-  }
-}
-p {
-  &.desc {
+}*/
+.desc {
     font-size: 14px;
     color:#666666;
-  }
 }
 .link-wrap {
   margin-top:20px;
   a {
+    display: block;
     span {
       display: inline-block;
       vertical-align: middle;
       color: #8dc63f;
       font-size: 18px;
+        &.icon {
+            line-height: 22px;
+        }
       &.text {
 
         margin-left:8px;
@@ -2098,23 +2015,16 @@ p {
     margin-bottom: 5px;
   }
 }
-.content-area {
-  transition:all 0.5s ease-in-out;
-  -webkit-transition:all 0.5s ease-in-out;
-  -moz-transition:all 0.5s ease-in-out;
-  -ms-transition:all 0.5s ease-in-out;
-  .about-religare-wrap {
-    margin:60px 0;
-    @media screen and (max-width:767px) {
-      margin:30px 0;
-    }
-    .sec-block {
-      display: table;
-      .img-wrap {
-        display: table-cell;
-        vertical-align: middle;
-      }
-      .block {
+
+/* common style of block */
+.sec-block {
+  display: table;
+  .img-wrap {
+    display: table-cell;
+    vertical-align: middle;
+  }
+    
+    .block {
         display: table-cell;
         vertical-align: middle;
         .heading-bx {
@@ -2125,36 +2035,28 @@ p {
             }
           }
         }
-      }
-      @media screen and (max-width:767px) {
-        width:100%;
-        display: block;
-        height:100% !important;
-      }
-    }
-    p {
-      &.desc {
-        font-size: 16px;
-        color:#666666;
-        @media screen and (max-width:480px) {
-          font-size: 14px;
+
+        .desc {
+            font-size: 16px;
+            color:#666666;
+            @media screen and (max-width:480px) {
+              font-size: 14px;
+            }
         }
-      }
     }
-    .center-wrap {
-      p {
-        &.desc {
-          font-size: 18px;
-          margin-bottom: 30px;
-        }
-      }
-    }
+  @media screen and (max-width:767px) {
+    width:100%;
+    display: block;
+    height:100% !important;
   }
-  .clover-wrap {
-    padding:36px 0;
+}
+
+
+/* Clover */
+.clover-wrap {
+    /*padding:36px 0;*/
     background: #e3f8e4;
-    p {
-      &.section-title {
+    .section-title {
         font-size: 18px;
         padding: 0 10px 35px 10px;
         margin: 0 auto;
@@ -2168,51 +2070,62 @@ p {
           font-size: 16px;
           padding: 0 10px 25px 10px;
         }
-      }
     }
     .block {
-      background: #FFFFFF;
-      min-height:383px;
-      padding:20px;
-      border:2px solid transparent;
-      transition: border 0.2s ease-in-out;
-      -webkit-transition: border 0.2s ease-in-out;
-      -moz-transition: border 0.2s ease-in-out;
-      -ms-transition: border 0.2s ease-in-out;
-      &:hover {
-        border:2px solid #1d723f;
-      }
-      @media screen and (max-width: 1200px) {
-        min-height:320px;
-        margin: 15px 0;
-      }
-      @media screen and (max-width: 480px) {
-        min-height:100%;
-        margin: 7px 0;
-        padding: 8px 20px 13px;
-      }
-      .img-wrap {
-        height: 66px;
-        width: 66px;
-        margin:0 auto;
-        span {
-          font-size: 30px;
-          line-height: 66px;
+    background: #FFFFFF;
+    min-height:383px;
+    padding:20px;
+    display: block;
+    border:2px solid transparent;
+    transition: border 0.2s ease-in-out;
+    -webkit-transition: border 0.2s ease-in-out;
+    -moz-transition: border 0.2s ease-in-out;
+    -ms-transition: border 0.2s ease-in-out;
+        &:hover {
+            border:2px solid #1d723f;
         }
-        @media screen and (max-width: 767px) {
-          height: 53px;
-          width: 53px;
-          span {
-            line-height: 53px;
-          }
+        @media screen and (max-width: 1200px) {
+            min-height:320px;
+            margin: 15px 0;
         }
-      }
+        @media screen and (max-width: 480px) {
+            min-height:100%;
+            margin: 7px 0;
+            padding: 8px 20px 13px;
+        }
+        .img-wrap {
+            height: 66px;
+            width: 66px;
+            margin:0 auto;
+            span {
+              font-size: 30px;
+              line-height: 66px;
+            }
+            @media screen and (max-width: 767px) {
+              height: 53px;
+              width: 53px;
+              span {
+                line-height: 53px;
+              }
+            }
+        }
+        .desc {
+            font-size: 14px;
+        }
     }
-  }
-  .customer-focus-wrap {
-    margin:42px 0;
-    .block {
+}
+
+
+/* customer focus */
+.customer-focus-wrap {
+    .heading-bx {
+        margin: 20px 0 0 0;
+    }
+}
+.content-list-cent {    
+    .customer-focus-ar {
       margin-top:14px;
+      text-align: center;
       padding: 15px;
       min-height: 240px;
       transition: border 0.2s ease-in-out;
@@ -2236,23 +2149,20 @@ p {
           }
         }
       }
-    }
-    h3 {
-      &.title {
-        &.heading-bar {
-          &:after {
-            margin: auto;
-            right:0;
-          }
+        p {
+            font-size: 14px;
+            color: #666666;
         }
-      }
     }
-  }
-  .company-map {
-    margin-bottom: 40px;
+}
+
+/* Company Map */
+.company-map {
+    /*margin-bottom: 40px;*/
     .map-wrap {
       border-radius: 2px;
       overflow: hidden;
+      background: #eff4e9;
       .block {
         float: left;
         width: 50%;
@@ -2264,20 +2174,27 @@ p {
           padding:10px;
           .map-overlay {
             .address-wrap {
-              background: #FFFFFF;
-              padding:30px 19px;
-              p {
-                &.address-title {
+              padding:25px 20px;
+
+              &.bg-white {
+                background: #fff !important;
+              }
+
+              &.bg-green-ligt {
+                background: #eff4e9 !important;
+              }
+                
+              .address-title {
                   font-size: 18px;
                   color: #222222;
                   font-family: 'ubuntumedium';
                   margin-bottom:5px;
                 }
-              }
+                
               address {
                 margin-bottom: 13px;
               }
-              &.address-wrapper {
+              /*&.address-wrapper {
                 background: transparent;
               }
               &.address-wrapper {
@@ -2285,7 +2202,7 @@ p {
                 @media screen and (max-width: 480px) {
                   margin-top: 0;
                 }
-              }
+              }*/
             }
             .contact-detail {
               span {
@@ -2330,6 +2247,8 @@ p {
                 float: left;
                 width: auto;
                 margin-right: 30px;
+                display: block;
+                  
                 @media screen and (max-width: 1200px) {
                   .select2-container {
                     width: 170px !important;
@@ -2353,9 +2272,7 @@ p {
         height: 534px;
       }
     }
-  }
 }
-
 
 /****************************************
    3.5 Market Equity Page Styles
@@ -3988,35 +3905,38 @@ p {
     margin: 40px 0;
     .tab-content {
       .tab-pane {
-        padding:30px 40px 1px 40px;
+        padding:30px 40px;
         @media screen and (max-width: 991px) {
-          padding:30px 30px 1px 30px;
+          padding:30px;
         }
         @media screen and (max-width: 767px) {
-          padding:15px 15px 1px 15px;
+          padding:15px;
         }
       }
     }
   }
-  .company-map {
-    border:1px solid #dedede;
-    .map-wrap {
-      .block {
-        &.block-l {
-          background: $white;
-          padding:0;
-          .map-overlay {
-            .address-wrap {
-              background: #eff4e9;
-              padding: 22px 19px 30px 19px;
-              &.address-wrapper {
-                margin-top:0;
+  .support-contact {
+    .company-map {
+      border:1px solid #dedede;
+      .map-wrap {
+        background: $white;
+        .block {
+          &.block-l {
+            padding:0;
+            background: $white;
+            .map-overlay {
+              .address-wrap {
+                background: #eff4e9;
+                /*padding: 22px 19px 30px 19px;
+                &.address-wrapper {
+                  margin-top:0;
+                }*/
               }
-            }
-            .nr-u-wrap {
-              padding:0 19px;
-              a {
-                color: #222;
+              .nr-u-wrap {
+                padding:0 19px;
+                a {
+                  color: #222;
+                }
               }
             }
           }
@@ -4046,11 +3966,15 @@ p {
             &.absolute-icon {
               position: absolute;
               z-index: 1;
-              top: 0;
+              top: 6px;
               bottom: 0;
               margin: auto;
               line-height: 30px;
-              left: 6px;
+              left: 10px;
+                
+                &.icon-Rupee-dropdown {
+                    font-size: 18px;
+                }
             }
           }
           .select2-container {
@@ -4095,6 +4019,12 @@ p {
 /****************************************
    3.7 Reseach Page Styles
 ****************************************/
+.center-wrap {
+  .desc {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+}
 h3 {
   &.green-title {
     color:#1e723f;
@@ -4161,9 +4091,7 @@ h3 {
 ****************************************/
 .prod-services-wrap {
   background:#eeeff1;
-  padding:40px 0 60px 0;
-  p {
-    &.sec-info {
+  .sec-info {
       width: 80%;
       margin: 0 auto;
       padding-bottom:30px;
@@ -4173,7 +4101,6 @@ h3 {
         width: 100%;
       }
     }
-  }
   .tab-content {
     background: $white;
     *zoom: 1;
@@ -5059,9 +4986,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 .content-pd-sm {
   padding: ($padding-base-5 * 6) $padding-none;
 
-  .heading-bx {
+  /*.heading-bx {
     margin: $margin-none $margin-none ($margin-base-5 * 8) $margin-none;
-  }
+  }*/
 }
 
 .inbetween-padding {
