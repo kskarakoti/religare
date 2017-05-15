@@ -4025,13 +4025,11 @@ header {
       margin-bottom: 30px;
     }
 }
-h3 {
-  &.green-title {
-    color:#1e723f;
-    font-size: 24px;
-    font-family: $font-family-ubuntumedium;
-    margin-top:0;
-  }
+.green-title {
+  color:#1e723f;
+  font-size: 24px;
+  font-family: $font-family-ubuntumedium;
+  margin-top:0;
 }
 
 .report-wrap {
