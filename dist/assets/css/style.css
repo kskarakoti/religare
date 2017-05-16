@@ -12721,6 +12721,9 @@ header {
   .tranding-now-area .tranding-content-area:last-child {
     margin-bottom: 0; }
 
+.tranding-opt-none {
+  margin-bottom: 20px; }
+
 .tranding-opt {
   background: #f8fbf4;
   padding: 20px; }
@@ -12862,6 +12865,9 @@ header {
     border: none;
     padding: 15px;
     font-size: 16px; }
+    .table.shate-data-tbl th .date-tx, .table.shate-data-tbl td .date-tx {
+      font-size: 12px;
+      display: inline-block; }
     .table.shate-data-tbl th a, .table.shate-data-tbl td a {
       color: #222222; }
       .table.shate-data-tbl th a:hover, .table.shate-data-tbl td a:hover {

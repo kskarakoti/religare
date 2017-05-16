@@ -2834,6 +2834,9 @@ header {
   }
 }
 
+.tranding-opt-none {
+  margin-bottom: 20px;
+}
 .tranding-opt {
   background: #f8fbf4;
   padding: 20px;
@@ -3036,6 +3039,10 @@ header {
       padding: 15px;
       font-size: 16px;
 
+      .date-tx {
+        font-size: 12px;
+        display: inline-block;
+      }
       a {
         color: #222222;
 
