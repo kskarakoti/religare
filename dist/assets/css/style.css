@@ -12743,6 +12743,11 @@ header {
   @media screen and (max-width: 480px) {
     .tranding-opt {
       padding: 20px 0; } }
+  @media screen and (max-width: 520px) {
+    .tranding-opt .tranding-select-opt.single-sel {
+      width: 100%;
+      margin-right: 0;
+      float: none; } }
   @media screen and (max-width: 767px) {
     .tranding-opt .tranding-select-opt .select2-container .select2-selection--single .select2-selection__rendered {
       padding-left: 15px; } }
@@ -12793,8 +12798,8 @@ header {
         vertical-align: middle; } }
     @media screen and (max-width: 640px) {
       .tranding-tab .nav-tabs li a {
-        line-height: 18px;
-        padding: 10px 6px;
+        line-height: 16px;
+        padding: 10px 3px;
         font-size: 13px; } }
   @media screen and (max-width: 767px) {
     .tranding-tab .nav-tabs li {
@@ -13430,7 +13435,8 @@ header {
         width: 125px; }
         @media screen and (max-width: 640px) {
           .heat-map-ar .heat-map-tbl .heat-map-lt .heat-map-list li:hover, .heat-map-ar .heat-map-tbl .heat-map-lt .heat-map-list li.active {
-            width: 16.6%; } }
+            width: 16.6%;
+            height: 85px; } }
       .heat-map-ar .heat-map-tbl .heat-map-lt .heat-map-list li a {
         padding: 15px;
         color: #fff;
@@ -13800,17 +13806,22 @@ header {
 /****************************************
    3.9 Market Commodities Page Styles
 ****************************************/
-.chart-opt-tab .chart-opt-sec {
-  background: #f8fbf4;
-  padding: 15px;
-  border-bottom: 1px solid #ddd; }
-  .chart-opt-tab .chart-opt-sec .chart-opt-lt {
-    float: left; }
-    .chart-opt-tab .chart-opt-sec .chart-opt-lt .chart-index-ar {
-      width: 600px;
-      margin-top: 8px; }
-  .chart-opt-tab .chart-opt-sec .chart-opt-rt {
-    float: right; }
+.chart-opt-tab {
+  border-radius: 4px;
+  overflow: hidden; }
+  .chart-opt-tab .chart-opt-sec {
+    background: #f8fbf4;
+    padding: 15px;
+    border-bottom: 1px solid #ddd; }
+    .chart-opt-tab .chart-opt-sec .chart-opt-lt {
+      float: left; }
+      .chart-opt-tab .chart-opt-sec .chart-opt-lt .chart-index-ar {
+        width: 600px;
+        margin-top: 8px; }
+    .chart-opt-tab .chart-opt-sec .chart-opt-rt {
+      float: right; }
+  .chart-opt-tab .chart-tab-wrap {
+    border-radius: 0; }
 
 .custom-tab li {
   width: 20%; }
@@ -14568,6 +14579,9 @@ table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:b
 table.dataTable.dtr-inline.collapsed tbody td.child,
 table.dataTable.dtr-inline.collapsed tbody th.child {
   padding: 0; }
+
+table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
+  padding: 5px 5px 5px 26px; }
 
 table.dataTable tr.child ul {
   width: 100%; }

@@ -2881,6 +2881,13 @@ header {
   }
 
   .tranding-select-opt {
+    &.single-sel {
+      @media screen and (max-width: 520px) {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+      }
+    }
     .select2-container {
       .select2-selection--single {
         .select2-selection__rendered {
@@ -2949,8 +2956,8 @@ header {
         }
 
         @media screen and (max-width: 640px) {
-          line-height: 18px;
-          padding: 10px 6px;
+          line-height: 16px;
+          padding: 10px 3px;
           font-size: 13px;
         }
       }
@@ -3881,6 +3888,7 @@ header {
 
             @media screen and (max-width: 640px) {
               width: 16.6%;
+              height: 85px;
             }
           }
 
@@ -4416,6 +4424,9 @@ header {
 ****************************************/
 
 .chart-opt-tab {
+  border-radius: 4px;
+  overflow: hidden;
+
   .chart-opt-sec {
     background: #f8fbf4;
     padding: 15px;
@@ -4432,6 +4443,9 @@ header {
     .chart-opt-rt {
       float: right;
     }
+  }
+  .chart-tab-wrap {
+    border-radius: 0;
   }
 }
 
@@ -5414,6 +5428,9 @@ table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:b
 table.dataTable.dtr-inline.collapsed tbody td.child,
 table.dataTable.dtr-inline.collapsed tbody th.child {
   padding:0;
+}
+table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
+  padding: 5px 5px 5px 26px;
 }
 table.dataTable tr.child ul {
   width: 100%;
