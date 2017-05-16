@@ -25,7 +25,7 @@ var vendorJSFiles =
     ["./bower_components/jquery/dist/jquery.js",
         "./bower_components/bootstrap/dist/js/bootstrap.js",
         "./src/script/bootstrap-datepicker/moment-with-locales.js",
-        "./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+        "./src/script/bootstrap-datepicker/bootstrap-datepicker.min.js",
         "./src/script/select/jquery.dd.js",
         "./src/script/datatable/jquery.dataTables.min.js",
         "./src/script/datatable/dataTables.responsive.js",

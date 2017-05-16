@@ -147,7 +147,7 @@ $(function () {
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
-		var p = $(e.target).closest('.header-left ').length;
+		var p = $(e.target).closest('.header-left, .dropdown-menu ').length;
 		if (!p) {
 			$(".menu-lt-ar").removeClass('active');
 			$(".overlay-bg").removeClass('active');
@@ -234,6 +234,7 @@ $(function () {
 	$(".search-dp-list ul li a").click(function () {
 		$('.dropdown-frst').hide();
 		$('.dropdown-scd').show();
+		$('.overlay-bg').removeClass('active');
 		var selectData = $(this).html();
 		$(this).parents('li').children().find('.title-val').html(selectData);
 		console.log(selectData);
@@ -276,13 +277,20 @@ $(function () {
 		});
 	}
 
+	/*$(document).on('click', function(e) {
+		if ( $(e.target).closest('.dropdown-menu-right, .search-drop').length ) {
+			$(".overlay-bg").toggleClass('active');
+		}else if ( ! $(e.target).closest('.dropdown-menu-right,.search-drop').length ) {
+			$('.overlay-bg').removeClass('active');
+		}
+	});*/
+
 	//datepickers
-	var $btn = $('#bt1');
-	$('#datetimepicker1').datetimepicker({
-		widgetParent: $btn
-	});
-	$btn.click(function () {
-		$('#datetimepicker1').data('DateTimePicker').toggle();
+	$('#datePicker').datepicker({
+		format: "mm/dd/yyyy",
+		todayHighlight: true,
+	}).on('changeDate', function(e) {
+		$('.datepicker').hide();
 	});
 
 	//for div height calculation

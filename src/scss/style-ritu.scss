@@ -18,7 +18,6 @@
 	  3.6 Support Page Styles
 	  3.7 Reseach Page Styles
 	  3.8 Product and Services Page Styles
-	  3.9 Market Commodities Page Styles
 
 
    04 Footer Section Styles
@@ -45,7 +44,7 @@
 @import "vendor-css/jquery.dataTables.min";
 @import "vendor-css/dataTables.responsive";
 @import "vendor-css/animate.min";
-@import "vendor-css/datepicker3.min";
+@import "vendor-css/datepicker3.min"; 
 
 
 /************************************************************************************
@@ -207,7 +206,7 @@ header {
             height: 10px;
             vertical-align: top;
             margin-top: ($margin-base-5 - 1); 
-            color: #29b259;
+            color: $jungle-green;
             font-size: 8px;
           }
 
@@ -287,7 +286,7 @@ header {
 
                   &.sub-item {
                     &.active {
-                      background: #f1f1f1;
+                      background: $off-white;
 
                       &:after {
                         content: '-';
@@ -344,7 +343,7 @@ header {
 
                       li {
                         a {
-                          color: #777777;
+                          color: $boulder;
                           display: block;
                           padding: 7px 3px;
 
@@ -369,14 +368,14 @@ header {
             .mobile-header-link {
               display: none;
               padding: 20px 0;
-              border-bottom: 1px solid #ccc;
+              border-bottom: 1px solid $silver;
 
               .header-links {
                 margin-bottom: 20px;
 
                 li {
                   display: inline-block;
-                  border-right: 1px dotted #000;
+                  border-right: 1px dotted $black;
 
                   &:last-child {
                     border-right: 0;
@@ -390,17 +389,17 @@ header {
 
                   &.build-wealth {
                     a {
-                      color: #f7941e;
+                      color: $tree-poppy;
 
                       &:hover {
-                        color: #da7a08;
+                        color: $christine;
                       }
                     }
                   }
 
                   &.active-trade {
                     a {
-                      color: #1e723f;
+                      color: $green-pea;
 
                       &:hover {
                         color: #269450;
@@ -417,7 +416,7 @@ header {
                 margin: 0px 10px;
                 padding: 5px 10px;
                 background: $atlantis-lt;
-                color: #ffffff;
+                color: $white;
                 border-radius: 4px;
                 text-align: center;
                 line-height: 23px;
@@ -523,7 +522,7 @@ header {
                         display: block;
                         padding: ($padding-base-5 * 4) ($padding-base-5 * 4) - 1;
                         font-size: $font-size-small + 1;
-                        color: #444444;
+                        color: $hover-gray;
                         text-transform: uppercase;
                         font-family: $font-family-ubuntumedium;
                         line-height: 28px;
@@ -586,7 +585,7 @@ header {
                           line-height: 28px;
 
                           &:hover {
-                            color: #8dc63f;
+                            color: $sushi;
                           }
 
                           .font-icons {
@@ -668,7 +667,7 @@ header {
               &.active {
                 display: block;
                 position: fixed;
-                background: #fff;
+                background: $white;
                 left: 0;
                 top: 96px;
                 width: 75%;
@@ -711,7 +710,7 @@ header {
                 color: $tree-poppy;
 
                 &:hover {
-                  color: #da7a08;
+                  color: $christine;
                 }
               }
             }
@@ -815,7 +814,7 @@ header {
   background: -o-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* opera 11.10+ */
   background: -ms-linear-gradient(92deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* ie10+ */
   background: linear-gradient(358deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$black000', endColorstr='$black000',GradientType=0 ); /* ie6-9 */
 
   &:before {
     display: $dis-inblock;
@@ -939,17 +938,6 @@ header {
           }
         }
 
-        /*&:before {
-          background: $sushi;
-          width: 100%;
-          height: 590px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: '';
-        }*/
-
-
       }
 
       .close-btn {
@@ -962,14 +950,12 @@ header {
 
         a {
           display: inline-block;
-          background: #fff;
+          background: $white;
           padding: 13px;
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          -webkit-box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.37);
-          -moz-box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.37);
-          box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.37);
+          @include box-shadow(0px 2px 7px -2px rgba(0,0,0,0.37));
         }
 
         @media screen and (max-width: 767px) {
@@ -1336,15 +1322,15 @@ header {
       }
     }
     .trail-info {
-      color:#222222;
+      color:$mine-shaft;
       font-size: 16px;
 
       a {
-        color: #222222;
+        color: $mine-shaft;
         font-size: 16px;
 
         &:hover {
-          color: #7bc11c;
+          color: $lima;
         }
       }
     }
@@ -1376,7 +1362,7 @@ header {
 
     p {
       font-size: 16px;
-      color: #666666;
+      color:$dove-gray;
       margin-left: 5px;
     }
 
@@ -1696,7 +1682,7 @@ header {
       @include border-radius(3px);
       clear:both;
       overflow: auto;
-      box-shadow: 0px 4px 3px -1px #c2c5c8;
+      @include box-shadow(0px 4px 3px -1px #c2c5c8)
       border-right:1px solid $iron;
 
       li {
@@ -1714,7 +1700,7 @@ header {
         .count-dt {
           .icon-net-cash-graph1 {
             font-size: 30px;
-            color: #8dc63f;
+            color: $sushi;
           }
           .icon-net-cash-graph1, .level-title {
             display: inline-block;
@@ -1724,7 +1710,7 @@ header {
             span {
               display: block;
               font-size: 18px;
-              color: #444444;
+              color: $hover-gray;
               font-family: $font-family-ubuntumedium;
             }
           }
@@ -1741,12 +1727,12 @@ header {
         }
 
         .days-dt {
-          color: #444444;
+          color: $hover-gray;
           margin: 5px 0 0 0;
 
           span {
             font-family: $font-family-ubuntulight;
-            color: #888888;
+            color: $light-gray;
           }
         }
         span {
@@ -1780,7 +1766,7 @@ header {
       }
 
       a {
-        color: #444444;
+        color: $hover-gray;
         text-decoration: underline;
 
         &.pull-right {
@@ -1898,10 +1884,7 @@ header {
         &.banner-title {
           position:relative;
           top:50%;
-          transform:translateY(-50%);
-          -webkit-transform:translateY(-50%);
-          -moz-transform:translateY(-50%);
-          -ms-transform:translateY(-50%);
+          @include transform(translateY(-50%));
           color:$white;
           font-size: 24px;
           padding:0 15px;
@@ -1940,7 +1923,6 @@ header {
     }
   }
 }
-
 .colver-title {
   font-size: 20px;
   font-family: 'ubuntumedium';
@@ -1949,7 +1931,6 @@ header {
     font-size: 16px;
   }
 }
-
 .desc {
     font-size: 14px;
     color:#666666;
@@ -1961,7 +1942,7 @@ header {
     span {
       display: inline-block;
       vertical-align: middle;
-      color: #8dc63f;
+      color: $sushi;
       font-size: 18px;
         &.icon {
             line-height: 22px;
@@ -1976,7 +1957,7 @@ header {
     }
     &:hover {
       span {
-        color:#444444;
+        color:$hover-gray;
       }
     }
   }
@@ -2027,7 +2008,7 @@ header {
 /* Clover */
 .clover-wrap {
     /*padding:36px 0;*/
-    background: #e3f8e4;
+    background: $tara;
     .section-title {
         font-size: 18px;
         padding: 0 10px 35px 10px;
@@ -2044,15 +2025,12 @@ header {
         }
     }
     .block {
-    background: #FFFFFF;
+    background: $white;
     min-height:383px;
     padding:20px;
     display: block;
     border:2px solid transparent;
-    transition: border 0.2s ease-in-out;
-    -webkit-transition: border 0.2s ease-in-out;
-    -moz-transition: border 0.2s ease-in-out;
-    -ms-transition: border 0.2s ease-in-out;
+    @include transition;
         &:hover {
             border:2px solid #1d723f;
         }
@@ -2100,10 +2078,7 @@ header {
       text-align: center;
       padding: 15px;
       min-height: 240px;
-      transition: border 0.2s ease-in-out;
-      -webkit-transition: border 0.2s ease-in-out;
-      -moz-transition: border 0.2s ease-in-out;
-      -ms-transition: border 0.2s ease-in-out;
+      @include transition;
       border:2px solid transparent;
       @media screen and (max-width: 480px) {
         margin-top:26px;
@@ -2111,7 +2086,7 @@ header {
       }
       &:hover {
         border:2px solid #1d723f;
-        box-shadow:2px 2px 10px -1px rgba(102, 102, 102, 0.55)
+        @include box-shadow(2px 2px 10px -1px rgba(102, 102, 102, 0.55));
       }
       span {
         &.fontsize {
@@ -2123,7 +2098,7 @@ header {
       }
         p {
             font-size: 14px;
-            color: #666666;
+            color:$dove-gray;
         }
     }
 }
@@ -2149,7 +2124,7 @@ header {
               padding:25px 20px;
 
               &.bg-white {
-                background: #fff !important;
+                background: $white !important;
               }
 
               &.bg-green-ligt {
@@ -2158,7 +2133,7 @@ header {
                 
               .address-title {
                   font-size: 18px;
-                  color: #222222;
+                  color: $mine-shaft;
                   font-family: 'ubuntumedium';
                   margin-bottom:5px;
                 }
@@ -2166,15 +2141,6 @@ header {
               address {
                 margin-bottom: 13px;
               }
-              /*&.address-wrapper {
-                background: transparent;
-              }
-              &.address-wrapper {
-                margin-top:24px;
-                @media screen and (max-width: 480px) {
-                  margin-top: 0;
-                }
-              }*/
             }
             .contact-detail {
               span {
@@ -2187,7 +2153,7 @@ header {
                   }
                   a {
                     text-decoration: none;
-                    color: #444444;
+                    color: $hover-gray;
                     font-family: 'ubuntumedium';
                     .inner-block {
                       display: inline-block;
@@ -2195,7 +2161,7 @@ header {
                       span {
                         &.fontsize {
                           font-size: 15px;
-                          color: #8dc63f;
+                          color: $sushi;
                         }
                       }
                       &.text {
@@ -2204,7 +2170,7 @@ header {
                       }
                     }
                     &:hover {
-                      color: #8dc63f;
+                      color: $sushi;
                     }
                   }
                 }
@@ -2251,33 +2217,8 @@ header {
 ****************************************/
 .tab-structure {
   &.nav-tabs {
-    background: #f8fbf4;
+    background: $loafer;
     border-bottom: none;
-
-    &.tab-4 {
-      li {
-        a {
-          .sunsex-count {
-            line-height: 22px;
-            /*.price-value {
-              @media screen and (max-width: 980px) {
-                display: block;
-              }
-              @media screen and (max-width: 767px) {
-                display: inline-block;
-              }
-            }*/
-          }
-        }
-        &.add-index {
-          .add-index-drop {
-            @media screen and (max-width: 980px) {
-              height: 92px !important;
-            }
-          }
-        }
-      }
-    }
 
     &.table-cell {
       li {
@@ -2298,7 +2239,7 @@ header {
         background: $white;
 
         > a {
-          border-top: 4px solid #8dc63f;
+          border-top: 4px solid $sushi;
         }
       }
 
@@ -2307,14 +2248,14 @@ header {
         border-bottom: 1px solid #ddd;
 
         > a {
-          border-top: 4px solid #8dc63f;
+          border-top: 4px solid $sushi;
         }
       }
 
      > a {
         border: none;
-        border-top: 4px solid #f8fbf4;
-        padding: 8px 15px 8px 15px;
+        border-top: 4px solid $loafer;
+        padding: 8px 15px 8px 30px;
         min-height: 80px;
         border-radius: 0;
         margin-right: 0;
@@ -2334,27 +2275,19 @@ header {
       }
 
       .title {
-        color: #222222;
+        color: $mine-shaft;
         font-size: 18px;
-        text-transform: uppercase;
-
-        .month-time-tx {
-          font-size: 14px;
-          color: #666666;
-          font-family: $font-family-ubunturegular;
-          text-transform: capitalize;
-        }
       }
 
       .sunsex-count {
         font-family: $font-family-ubunturegular;
         font-size: 26px;
-        color: #222222;
+        color: $mine-shaft;
         line-height: 28px;
 
         .price-percentage {
           font-family: $font-family-ubuntulight;
-          font-size: 16px;
+          font-size: 18px;
 
           &.gain {
             color: #20ab30;
@@ -2364,9 +2297,6 @@ header {
             color: #fa4110;
           }
 
-          @media screen and (max-width: 1170px) {
-            font-size: 15px;
-          }
           @media screen and (max-width: 991px) {
             font-size: 14px;
           }
@@ -2377,21 +2307,13 @@ header {
         @media screen and (max-width: 991px) {
           font-size: 18px;
         }
-        @media screen and (max-width: 1170px) {
-          font-size: 20px;
-        }
       }
     }
   }
 }
 .banner-chart {
   background: url('../../assets/images/markets_equity_cropped.jpg') no-repeat;
-  background-size:cover;
-
-  &.commodities-bann {
-    background: url('../../assets/images/market-commodities.jpg') no-repeat;
-    background-size:cover;
-  }
+  background-size:cover ;
 
   .heading-bx {
     h2 {
@@ -2458,65 +2380,11 @@ header {
             }
           }
 
-          &.gold-ar {
-            a {
-              .title {
-                color: #daa005;
-
-                .icon-Top-gainers1 {
-                  span {
-                    &.path1 {
-                      &:before{
-                        color: #daa005;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          &.silver-ar {
-            a {
-              .title {
-                color: #a7aaaa;
-
-                .icon-Top-gainers1 {
-                  span {
-                    &.path1 {
-                      &:before{
-                        color: #a7aaaa;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
-          &.crude-ar {
-            a {
-              .title {
-                color: #a7aaaa;
-
-                .icon-Top-gainers1 {
-                  span {
-                    &.path1 {
-                      &:before{
-                        color: #a7aaaa;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-
           &.add-index {
             &:hover {
 
               .add-index-drop {
-                border-top: 4px solid #8dc63f;
+                border-top: 4px solid $sushi;
               }
             }
            > .add-index-drop {
@@ -2526,14 +2394,14 @@ header {
               line-height: 62px;
               margin-bottom: 0;
               display: table;
-              border-top: 4px solid #f8fbf4;
+              border-top: 4px solid $loafer;
 
              &:hover {
                background: $white;
              }
 
               a {
-                color: #222222;
+                color: $mine-shaft;
                 font-family: $font-family-ubunturegular;
                 font-size: 18px;
                 display: table-cell;
@@ -2542,7 +2410,7 @@ header {
 
                  span {
                   display: inline-block;
-                  /*margin: 0 5px;*/
+                  margin: 0 5px;
                   vertical-align: middle;
 
                   &.plus-icon {
@@ -2560,7 +2428,7 @@ header {
              .dropdown-scd {
                display: none;
                text-align: left;
-               padding: 12px 15px;
+               padding: 12px 20px;
                position: relative;
 
                .edit-icons {
@@ -2611,7 +2479,7 @@ header {
               width: 96%;
               padding: 15px;
               margin: 15px 10px 0 0;
-              background: #f8fbf4;
+              background: $loafer;
 
               &:after, &:before {
                 bottom: 100%;
@@ -2626,13 +2494,13 @@ header {
 
               &:after {
                 border-color: rgba(136, 183, 213, 0);
-                border-bottom-color: #fff;
+                border-bottom-color: $white;
                 border-width: 10px;
                 margin-right: -2px;
               }
               &:before {
                 border-color: rgba(194, 225, 245, 0);
-                border-bottom-color: #ccc;
+                border-bottom-color: $silver;
                 border-width: 12px;
                 margin-right: -4px;
               }
@@ -2642,7 +2510,7 @@ header {
 
                 .input-ip {
                   width: 100%;
-                  border: 1px solid #ccc;
+                  border: 1px solid $silver;
                   padding: 4px 10px;
                   box-shadow: none;
                 }
@@ -2651,7 +2519,7 @@ header {
                   position: absolute;
                   right: 4px;
                   top: 0px;
-                  color: #ccc;
+                  color: $silver;
                   padding: 5px;
                 }
               }
@@ -2672,7 +2540,7 @@ header {
                     }
                     a {
                       display: block;
-                      color: #666666;
+                      color:$dove-gray;
                       font-size: 12px;
                       padding: 3px 0;
                     }
@@ -2692,7 +2560,7 @@ header {
             margin-bottom: 0;
 
             &:first-child {
-              border-bottom: 1px solid #ccc;
+              border-bottom: 1px solid $silver;
             }
           }
         }
@@ -2715,7 +2583,7 @@ header {
           li {
             display: inline-block;
             padding: 0px 10px;
-            border-right: 1px dotted #000;
+            border-right: 1px dotted $black;
 
             &:last-child {
               border: none;
@@ -2723,7 +2591,7 @@ header {
 
             a {
               display: block;
-              color: #444444;
+              color: $hover-gray;
               text-decoration: underline;
               line-height: 17px;
 
@@ -2825,76 +2693,57 @@ header {
     background: $white;
     border-radius: 4px;
     overflow: hidden;
-    margin-bottom: 50px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    .tranding-opt {
+      background: $loafer;
+      padding: 20px;
 
-  }
-}
+      .tranding-select-opt {
+        .mkt-icons {
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+        .select2-container {
+          .select2-selection--single {
+            .select2-selection__rendered {
+              @media screen and (max-width: 767px) {
+                padding-left: 15px;
+              }
+            }
+            @media screen and (max-width: 480px) {
+              border-right: 0;
+              border-radius: 0;
+              background: $white;
+            }
+          }
 
-.tranding-opt {
-  background: #f8fbf4;
-  padding: 20px;
-
-  &.tranding-white-bg{
-    background: $white;
-  }
-
-  @media screen and (max-width: 480px) {
-    padding: 20px 0;
-  }
-}
-.tranding-select-opt {
-  &.right {
-    float: right;
-  }
-
-  &.float-none {
-    float: none;
-  }
-  .sector-opt {
-    margin-top: 8px;
-  }
-  .mkt-icons {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
-  .select2-container {
-    .select2-selection--single {
-      .select2-selection__rendered {
-        @media screen and (max-width: 767px) {
-          padding-left: 15px;
+          @media screen and (max-width: 991px) {
+            width: 144px !important;
+          }
+          @media screen and (max-width: 640px) {
+            width: 120px !important;
+          }
+          @media screen and (max-width: 480px) {
+            width: 100% !important;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          width: 50%;
+          margin-right: 0;
         }
       }
+
       @media screen and (max-width: 480px) {
-        border-right: 0;
-        border-radius: 0;
-        background: #fff;
+        padding: 20px 0;
       }
     }
-
-    @media screen and (max-width: 991px) {
-      width: 144px !important;
-    }
-    @media screen and (max-width: 640px) {
-      width: 120px !important;
-    }
-    @media screen and (max-width: 480px) {
-      width: 100% !important;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    width: 50%;
-    margin-right: 0;
   }
 }
 
 .tranding-tab {
   .nav-tabs {
-    border-top: 1px solid #dcdede;
+    border-top: 1px solid $iron;
 
     li {
       &:last-child {
@@ -2906,7 +2755,7 @@ header {
         border-radius: 0;
         height: 58px;
         line-height: 33px;
-        color: #40474e;
+        color: $mako;
         font-size: 18px;
         margin-right: 0px;
         border-right: none;
@@ -2939,7 +2788,7 @@ header {
 
   .share-content-tab {
     padding: 25px 15px;
-    background: #fff;
+    background: $white;
 
     .share-mkt-ar {
       .top-gainers-heading {
@@ -2970,29 +2819,29 @@ header {
 
   .mkt-icons {
     position: absolute;
-    top:12px;
+    top:10px;
     left: 12px;
     z-index: 99;
 
     span {
       font-size: 16px;
-      color: #8dc63f;
+      color: $sushi;
     }
   }
   .select2-container {
     width: 200px !important;
 
     .select2-selection--single {
-      border-color: #dcdede;
-      height: 40px;
+      border-color: $iron;
+      height: 35px;
 
       .select2-selection__rendered {
-        line-height: 40px;
+        line-height: 35px;
         padding-left: 40px;
       }
 
       .select2-selection__arrow {
-        height: 40px;
+        height: 35px;
       }
 
       @media screen and (max-width: 767px) {
@@ -3003,7 +2852,7 @@ header {
 
   .select2-container {
     .select2-selection--single {
-      background: #f8fbf4;
+      background: $loafer;
     }
   }
 }
@@ -3011,21 +2860,12 @@ header {
 /* table common style*/
 .table{
   &.shate-data-tbl {
-    border: 1px solid #dcdede;
+    border: 1px solid $iron;
     margin-bottom: 10px;
 
-    &.text-right {
-      th, td {
-        text-align: right;
-
-        &.text-left {
-          text-align: left;
-        }
-      }
-    }
     th {
-      background: #40474e;
-      color: #fff;
+      background: $mako;
+      color: $white;
       font-family: $font-family-ubunturegular;
       font-weight: normal;
       vertical-align: middle;
@@ -3037,7 +2877,7 @@ header {
       font-size: 16px;
 
       a {
-        color: #222222;
+        color: $mine-shaft;
 
         &:hover{
           color: $hover-dark-green;
@@ -3060,8 +2900,6 @@ header {
       }
 
       &.red-col {
-        color: #fa4110;
-
         a {
           color: #fa4110;
         }
@@ -3089,7 +2927,7 @@ header {
     margin: 0;
     font-size: 20px;
     font-family: $font-family-ubuntumedium;
-    color: #666666;
+    color:$dove-gray;
   }
   .title-left {
     float: left;
@@ -3112,8 +2950,8 @@ header {
 
     &.active, &:hover {
       a {
-        color: #444444;
-        border-bottom: 2px solid #8dc63f;
+        color: $hover-gray;
+        border-bottom: 2px solid $sushi;
       }
     }
 
@@ -3134,7 +2972,7 @@ header {
     .toggle-list {
       text-align: left;
       width:95%;
-      border:1px solid #dcdede;
+      border:1px solid $iron;
       position:absolute;
       z-index: 9;
       background: $white;
@@ -3156,15 +2994,15 @@ header {
           a {
             border:none;
             background:#5897fb;
-            color: #FFF;
+            color: $white;
           }
         }
       }
     }
     .btn-wrap {
       button {
-        border-color: #dcdede;
-        background: #f8fbf4;
+        border-color: $iron;
+        background: $loafer;
         box-shadow:none;
         &.btn-toggle {
           width: 100%;
@@ -3182,7 +3020,7 @@ header {
               &:after {
                 content: '';
                 position: absolute;
-                border-color: #888 transparent transparent transparent;
+                border-color: $light-gray transparent transparent transparent;
                 height: 10px;
                 right: 10px;
                 margin-left: -9px;
@@ -3192,7 +3030,7 @@ header {
                 width: 10px;
                 background: transparent;
                 transform: rotate(-45deg);
-                border: 1px solid #6b6b6a;
+                border: 1px solid $storm-dust;
                 border-top: 0;
                 border-right: 0;
               }
@@ -3247,24 +3085,13 @@ header {
       &.main-grp {
         g {
           &.inner-grp {
-            transition: all 0.4s ease-in-out;
-            -webkit-transition: all 0.4s ease-in-out;
-            -moz-transition: all 0.4s ease-in-out;
-            -ms-transition: all 0.4s ease-in-out;
-            -o-transition: all 0.4s ease-in-out;
-            transform: translateZ(0);
-            -webkit-transform: translateZ(0);
-            -moz-transform: translateZ(0);
-            -ms-transform: translateZ(0);
-            -o-transform: translateZ(0);
+            @include transition;
+            @include transform(translateZ(0));
           }
         }
         &:hover {
           .inner-grp {
-            transform: translateY(-8px);
-            -webkit-transform: translateY(-8px);
-            -moz-transform: translateY(-8px);
-            -ms-transform: translateY(-8px);
+            @include transform(translateY(-8px));
           }
         }
       }
@@ -3417,7 +3244,7 @@ header {
 .recommendations-help-ads {
    .recommendations-help-ar {
      position:relative;
-     background: #40474e url("../images/banner_background.jpg") no-repeat center bottom;
+     background: $mako url("../images/banner_background.jpg") no-repeat center bottom;
      background-size: cover;
      min-height: 151px;
 
@@ -3492,7 +3319,7 @@ header {
 /* Block Deals */
 .block-deals-ar {
   .block-deal-ar {
-    background: #fff;
+    background: $white;
     padding: 25px;
     border-radius: 4px;
     overflow: hidden;
@@ -3506,7 +3333,7 @@ header {
 /* Heat Map */
 .heat-map-ar {
   .heat-map-content {
-    background: #fff;
+    background: $white;
     padding: 25px;
     overflow: hidden;
     border-radius: 4px;
@@ -3588,16 +3415,13 @@ header {
       .heat-map-list {
         li {
           text-align: center;
-          background: #ccc;
+          background: $silver;
           width: 102px;
           height: 54px;
           margin: auto;
           display: table;
           position: relative;
-          transition: all 0.3s ease-in-out;
-          -webkit-transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          -ms-transition: all 0.3s ease-in-out;
+          @include transition;
 
           &:nth-child(1){
             background: #20ab30;
@@ -3832,7 +3656,7 @@ header {
 
           a {
             padding: 15px;
-            color: #fff;
+            color: $white;
             font-family: $font-family-ubuntulight;
             display: table-cell;
             vertical-align: middle;
@@ -3885,7 +3709,7 @@ header {
 
       &.login-tx {
         font-size: 24px;
-        color: #40474e;
+        color: $mako;
 
         @media screen and (max-width: 991px) {
           font-size: 20px;
@@ -3941,7 +3765,7 @@ header {
 
           > a {
             padding: 10px;
-            color: #40474e;
+            color: $mako;
             font-size: 18px;
 
             .bootstrap-datetimepicker-widget {
@@ -3958,7 +3782,7 @@ header {
 
             span {
               margin-right: 5px;
-              color: #8dc63f;
+              color: $sushi;
             }
 
             @media screen and (max-width: 640px) {
@@ -3973,7 +3797,7 @@ header {
       .events-date-list {
         width: 100%;
         white-space:nowrap;
-        border-top: 1px solid #ccc;
+        border-top: 1px solid $silver;
         padding: 0 10px;
 
         > li {
@@ -3985,13 +3809,13 @@ header {
 
           &.active, &:hover {
             p {
-              color: #000;
+              color: $black;
             }
           }
 
           p {
             margin-bottom: 0;
-            color: #777777;
+            color: $boulder;
 
             &.scheduled-tx {
               white-space:pre-wrap;
@@ -4042,7 +3866,7 @@ header {
   }
   .support-contact {
     .company-map {
-      border:1px solid #dedede;
+      border:1px solid $altoss;
       .map-wrap {
         background: $white;
         .block {
@@ -4060,7 +3884,7 @@ header {
               .nr-u-wrap {
                 padding:0 19px;
                 a {
-                  color: #222;
+                  color: $mine-shaft;
                 }
               }
             }
@@ -4131,7 +3955,7 @@ header {
               bottom:3px;
               left: 0;
               width:100%;
-              border-bottom:1px solid #cccccc;
+              border-bottom:1px solid $silver;
             }
           }
         }
@@ -4151,14 +3975,14 @@ header {
     }
 }
 .green-title {
-  color:#1e723f;
+  color:$green-pea;
   font-size: 24px;
   font-family: $font-family-ubuntumedium;
   margin-top:0;
 }
 
 .report-wrap {
-  background: #eeeff1;
+  background: $athens-gray;
   /*padding:40px 0;*/
   h3 {
     &.green-title {
@@ -4167,11 +3991,8 @@ header {
   }
   .block {
     background: $white;
+    @include box-shadow(0px 2px 4px 2px #ddd);
     padding:30px 30px 25px 30px;
-    box-shadow: 0px 2px 4px 2px #ddd;
-    -webkit-box-shadow: 0px 2px 4px 2px #ddd;
-    -moz-box-shadow: 0px 2px 4px 2px #ddd;
-    -ms-box-shadow: 0px 2px 4px 2px #ddd;
     min-height: 420px;
     @media screen and (max-width: 991px) {
       margin-bottom:20px;
@@ -4194,12 +4015,12 @@ header {
             &.icon-clock1 {
               font-size:16px;
               vertical-align: text-bottom;
-              color:#1e723f;
+              color:$green-pea;
             }
           }
         }
         &.date {
-          color: #888888;
+          color: $light-gray;
         }
       }
     }
@@ -4209,12 +4030,11 @@ header {
   }
 }
 
-
 /****************************************
    3.8 Product and Services Page Styles
 ****************************************/
 .prod-services-wrap {
-  background:#eeeff1;
+  background:$athens-gray;
   .sec-info {
       width: 80%;
       margin: 0 auto;
@@ -4251,7 +4071,7 @@ header {
         display: block;
         text-decoration: none;
         color: $mine-shaft;
-        background: #e3f8e4;
+        background: $tara;
         .innner-block {
           display: table;
           min-height: 105px;
@@ -4328,7 +4148,7 @@ header {
           left:0;
           width: 100%;
           height: 100%;
-          background:#cae9cb;
+          background:$zanah;
           padding:13px;
           display: none;
           p {
@@ -4357,82 +4177,6 @@ header {
   }
 }
 
-/****************************************
-   3.9 Market Commodities Page Styles
-****************************************/
-
-.chart-opt-tab {
-  .chart-opt-sec {
-    background: #f8fbf4;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-
-    .chart-opt-lt {
-      float: left;
-
-      .chart-index-ar {
-        width: 600px;
-        margin-top: 8px;
-      }
-    }
-    .chart-opt-rt {
-      float: right;
-    }
-  }
-}
-
-.custom-tab {
-  li {
-    width: 20%;
-  }
-}
-
-.block-panel {
-  background: $white;
-
-  .block-deal-pd0 {
-    padding: 0 15px 15px 15px;
-  }
-}
-
-.option-chain-ar {
-  .option-chain-bx {
-    background: #f8fbf4;
-    padding: 40px 30px;
-
-    .option-opt-bx {
-      width: 95%;
-      margin: auto;
-
-      .tranding-select-opt {
-        margin-right: 0;
-        .select2-container {
-          width: 100% !important;
-
-          .select2-selection--single {
-            background: #fff;
-          }
-        }
-      }
-
-      .btn-green {
-        padding: 7px 15px;
-        width: 80%;
-        text-align: center;
-      }
-    }
-  }
-}
-/*.select-relative {
-  position: relative;
-
-  .mkt-icons {
-    position: absolute;
-    top: 10px;
-    left: 12px;
-    z-index: 99;
-  }
-}*/
 
 /************************************************************************************
 
@@ -4468,7 +4212,7 @@ header {
       &.ft-link-title {
         @media screen and (max-width: 991px) {
           cursor: pointer;
-          border-top: 1px solid #545859;
+          border-top: 1px solid $abbey;
           padding-top: 9px;
         }
 
@@ -4606,7 +4350,7 @@ header {
           color: $white;
 
           &:hover {
-            color: #7bc11c;
+            color: $lima;
           }
         }
       }
@@ -4866,10 +4610,10 @@ header {
    5.2 Accordion Styles
 ****************************************/
 .attention-investor {
-  border-bottom: 1px solid #545859;
+  border-bottom: 1px solid $abbey;
 }
 .investor-title {
-  border-top: 1px solid #545859;
+  border-top: 1px solid $abbey;
   cursor: pointer;
   color: $white;
   padding: ($padding-base-5 * 2) $padding-none;
@@ -4897,7 +4641,7 @@ header {
   padding: 15px 15px 15px 0;
 
   p {
-    color: #848484;
+    color: $gray;
 
     @media screen and (max-width: 767px) {
       font-size: 12px;
@@ -4927,10 +4671,10 @@ header {
   height:18px;
   vertical-align:middle;
   /*background:url("../images/radio-bg.png") center 0 no-repeat;*/
-  border: 1px solid #ccc;
+  border: 1px solid $silver;
 }
 
-.custom-radiobutton-checked.custom-radiobutton-checked {border-color: #66c6a3;}
+.custom-radiobutton-checked.custom-radiobutton-checked {border-color: $downy;}
 .custom-radiobutton-display:before {
   content:' ';
   display:inline-block;
@@ -4939,7 +4683,7 @@ header {
 }
 
 .custom-radiobutton-display.custom-radiobutton-checked:before {
-  background: #66c6a3;
+  background: $downy;
 }
 
 
@@ -4961,15 +4705,15 @@ input[type=checkbox].css-checkbox + .css-label, input[type=radio].css-radio + .c
   margin-right: 15px;
 }
 input[type=checkbox].css-checkbox + .css-label:hover, input[type=radio].css-radio + .css-label:hover {
-  color: #363636;
+  color: $mine-shaft-light;
 }
 input[type=checkbox].css-checkbox.css-checkbox + .css-label:before, input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radio].css-radio.css-checkbox + .css-label:before, input[type=radio].css-radio.css-radio + .css-label:before {
-  border: 2px solid #8dc63f;
+  border: 2px solid $sushi;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  color: #ffffff;
+  color: $white;
   content: "";
   display: inline-block;
   width: 16px;
@@ -4986,18 +4730,18 @@ input[type=checkbox].css-checkbox.css-checkbox + .css-label:before, input[type=c
 input[type=checkbox].css-checkbox.css-checkbox:checked + .css-label:before, input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[type=radio].css-radio.css-checkbox:checked + .css-label:before, input[type=radio].css-radio.css-radio:checked + .css-label:before {
   content: "";
   background: url("../images/sprite-icons.png") -54px -8px;
-  background-color: #34bfa3;
-  border-color: #34bfa3;
-  color: #ffffff;
+  background-color: $shamrock;
+  border-color: $shamrock;
+  color: $white;
   font-size: 12px;
 }
 input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[type=radio].css-radio.css-radio:checked + .css-label:before {
   content: "";
-  //background-color: #fff;
+  //background-color: $white;
   //border-color: #589800;
   //font-size: 24px;
   //line-height: 10px;
-  //color: #8dc63f;
+  //color: $sushi;
   background: url("../../assets/images/radio-active.png") no-repeat;
   width: 16px;
   height: 16px;
@@ -5005,9 +4749,9 @@ input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[t
   top:-3px;
 }
 input[type=checkbox].css-checkbox.css-checkbox:disabled + .css-label:before, input[type=checkbox].css-checkbox.css-radio:disabled + .css-label:before, input[type=radio].css-radio.css-checkbox:disabled + .css-label:before, input[type=radio].css-radio.css-radio:disabled + .css-label:before {
-  color: #80a5dc;
-  border-color: #80a5dc;
-  background-color: #f3f3f3;
+  color: $chetwode-blue;
+  border-color: $chetwode-blue;
+  background-color: $concrete;
 }
 input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radio].css-radio.css-radio + .css-label:before {
   content: '';
@@ -5027,24 +4771,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   width: 16px;
   height: 16px;
 }
-//
-//.same-addrs .css-checkbox[type="checkbox"]:checked + .css-label::before {
-//  background-color: #ffffff !important;
-//  border-color: #888888 !important;
-//  color: #075c98 !important;
-//  font-size: 16px !important;
-//  line-height: 15px !important;
-//}
-//.same-addrs label {
-//  font-weight: normal;
-//}
-//.same-addrs input[type=checkbox].css-checkbox[type="checkbox"] + .css-label::before {
-//  height: 17px;
-//  width: 17px;
-//  border-color: #bababa;
-//}
-
-
 /********************************************************
    5.4 Common Class Styles
 ********************************************************/
@@ -5068,21 +4794,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   background: $white;
 }
 
-
-/* Map */
-/*.svg-map g {
-  display: inline-block;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.svg-map g:hover {color:#fff;     -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);}*/
 
 /*********** Overlay Styles **************/
 .overlay-bg {
@@ -5147,8 +4858,8 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
       position: absolute;
       height: 4px;
       width: 90px;
-      border-top: 2px solid #8dc63f;
-      border-bottom: 2px solid #fff200;
+      border-top: 2px solid $sushi;
+      border-bottom: 2px solid $yellow;
       left: 0;
       right: 0;
       margin: auto;
@@ -5189,10 +4900,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .content-pd-sm {
   padding: ($padding-base-5 * 6) $padding-none;
-
-  /*.heading-bx {
-    margin: $margin-none $margin-none ($margin-base-5 * 8) $margin-none;
-  }*/
 }
 
 .inbetween-padding {
@@ -5213,7 +4920,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 }
 
 .gray-bg-content {
-  background: #e2e5e8;
+  background: $porcelain;
 }
 
 
@@ -5287,18 +4994,18 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   vertical-align: middle;
   margin: 0px 15px;
   padding: 2px 10px;
-  background: #8ac639;
-  color: #ffffff;
+  background: $atlantis-lt;
+  color: $white;
   border-radius: $base-border-radius;
   line-height: 23px;
 
   &:hover {
     background: $hover-dark-green;
-    color: #fff;
+    color: $white;
   }
 
   &:before {
-    border-color: #74c309;
+    border-color: $pistachio;
   }
 }
 
@@ -5309,7 +5016,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   position:relative;
   transition:0.5s color ease;
   text-decoration:underline;
-  color:#444444;
+  color:$hover-gray;
   font-size:14px;
   display: inline-block;
 }
@@ -5320,7 +5027,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 .link:after{
   height:1px;
   width:0;
-  background:#74c309;
+  background:$pistachio;
   bottom:2px;
   content: "";
   transition:0.5s all ease;
@@ -5336,11 +5043,11 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 }
 
 /*--- datatable override css ---*/
-table.dataTable.no-footer {width: 100% !important; border-color: #dcdede;}
+table.dataTable.no-footer {width: 100% !important; border-color: $iron;}
 table.data-table.dataTable.dtr-inline.collapsed tbody td:first-child:before,
 table.data-table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
   top: 0;
-  color: #444;
+  color: $hover-gray;
   border: 0;
   border-radius: 16px;
   box-shadow: none;
@@ -5407,13 +5114,13 @@ span {
 
   .select2-selection--single {
     &:hover {
-      background: #eef3e7;
+      background: $willow-brook;
     }
     border-radius:3px;
     .select2-selection__arrow {
       height: 35px;
       b {
-        border-color: #888 transparent transparent transparent;
+        border-color: $light-gray transparent transparent transparent;
         height: 10px;
         left: 28%;
         margin-left: -9px;
@@ -5423,7 +5130,7 @@ span {
         width: 10px;
         background: transparent;
         transform: rotate(-45deg);
-        border: 1px solid #6b6b6a;
+        border: 1px solid $storm-dust;
         border-top: 0;
         border-right: 0;
       }
@@ -5437,7 +5144,7 @@ span {
     .select2-selection--single {
       .select2-selection__arrow {
         b {
-          border-color: #888 transparent transparent transparent;
+          border-color: $light-gray transparent transparent transparent;
           height: 10px;
           left: 28%;
           margin-left: -9px;
@@ -5447,7 +5154,7 @@ span {
           width: 10px;
           background: transparent;
           transform: rotate(-225deg);
-          border: 1px solid #6b6b6a;
+          border: 1px solid $storm-dust;
           border-top: 0;
           border-right: 0;
         }
@@ -5462,7 +5169,7 @@ span {
   }
   .select2-selection--single {
     background: #f8faf6;
-    border-color: #dcdede;
+    border-color: $iron;
     height: 35px;
   }
 }
@@ -5472,9 +5179,9 @@ span {
 /*----- For Accordion ------*/
 .common-accordion {
   border-top:0;
-  border-left:1px solid #dcdede;
-  border-right:1px solid #dcdede;
-  border-bottom:1px solid #dcdede;
+  border-left:1px solid $iron;
+  border-right:1px solid $iron;
+  border-bottom:1px solid $iron;
   border-radius:4px;
   ul {
     border-top:0;
@@ -5486,7 +5193,7 @@ span {
       margin-top:0;
     }
     .panel-collapse {
-      background: #f5f6f6;
+      background: $black-haze;
       ul {
         border-top: 0;
       }
@@ -5494,19 +5201,19 @@ span {
   }
   .panel-heading {
     background-color: transparent;
-    border-top:1px solid #dcdede;
+    border-top:1px solid $iron;
     border-radius:0;
     position:relative;
     padding: 13px 15px;
     &.active {
       h4 {
         a {
-          color: #1e723f;
+          color: $green-pea;
           &:before {
             position:absolute;
             width: 3px;
             height: 61%;
-            background: #1e723f;
+            background: $green-pea;
             content: '';
             left: 0;
             top: 0;
@@ -5522,7 +5229,7 @@ span {
       font-size: 18px;
       a {
         &.collapsed {
-          color: #40474e;
+          color: $mako;
           &:before {
             background: transparent;
           }
@@ -5533,7 +5240,7 @@ span {
             float: right;
             font-size: 11px;
             padding:5px 0;
-            color:#40474e;
+            color:$mako;
           }
         }
       }
@@ -5546,7 +5253,7 @@ span {
 .common-tabs {
   box-shadow:0px 3px 3px 1px #ddd;
   ul {
-    border-top:1px solid #dfdfdf;
+    border-top:1px solid $altos;
     border-bottom:none;
     &.nav-tabs {
       li {
@@ -5556,7 +5263,7 @@ span {
         &.active {
           a {
             background: $white;
-            border-top:4px solid #79c117;
+            border-top:4px solid $limas;
             padding:14px 15px;
             color: $mine-shaft;
             border-bottom:none;
@@ -5567,15 +5274,15 @@ span {
           }
         }
         a {
-          background:#f8fbf4;
+          background:$loafer;
           margin-right: 0;
           @include border-radius(0);
           border:0;
           padding:16px 15px;
           font-size: $font-size-large;
           color: $dove-gray;
-          /*border-bottom:1px solid #dfdfdf;*/
-          border-right:1px solid #dfdfdf;
+          /*border-bottom:1px solid $altos;*/
+          border-right:1px solid $altos;
 
           @media screen and (max-width: 991px) {
             padding: 16px 11px;
@@ -5585,7 +5292,7 @@ span {
           border:0;
           a {
             background: $white;
-            border-right:1px solid #dfdfdf;
+            border-right:1px solid $altos;
           }
         }
       }
@@ -5600,9 +5307,9 @@ span {
       display: none;
     }
     .accordion-heading {
-      background: #f8fbf4;
+      background: $loafer;
       font-size: 18px;
-      color: #666666;
+      color:$dove-gray;
       margin: 0;
       padding: 15px 15px;
       display: block;
@@ -5645,16 +5352,7 @@ span {
 .p10 {padding:10px;}
 .p20{padding:20px;}
 .pt0{padding-top: 0 !important;}
-.pt10{padding-top: 10px !important;}
-.pt20{padding-top: 20px !important;}
-.pt30{padding-top: 30px !important;}
-.pt40{padding-top: 40px !important;}
-.pt50{padding-top: 50px !important;}
-.pb10{padding-bottom: 10px !important;}
-.pb20{padding-bottom: 20px !important;}
-.pb30{padding-bottom: 30px !important;}
-.pb40{padding-bottom: 40px !important;}
-.pb50{padding-bottom: 50px !important;}
+.pb0{padding-bottom: 0 !important;}
 .nomargin{margin:0 !important;}
 .mt0{margin-top:0px !important;}
 .mt5{margin-top:5px !important;}
@@ -5743,9 +5441,9 @@ input[type="radio"]:checked + label:after {
   animation: ripple 1s none;
 }
 /*------- Calender override css --------*/
-.datepicker table tr td.today,
-.datepicker table tr td.today:hover,
-.datepicker table tr td.today.disabled,
+.datepicker table tr td.today, 
+.datepicker table tr td.today:hover, 
+.datepicker table tr td.today.disabled, 
 .datepicker table tr td.today.disabled:hover {
   background-color: $sushi;
   border-color: $sushi;
@@ -5753,7 +5451,7 @@ input[type="radio"]:checked + label:after {
   color: $white;
   box-shadow: 2px 2px 2px $altoss;
 }
-.datepicker table tr td.today:hover,
+.datepicker table tr td.today:hover, 
 .datepicker table tr td.today:hover:hover,
 .datepicker table tr td.today:active,
 .datepicker table tr td.today:hover:active {
@@ -5782,5 +5480,5 @@ input[type="radio"]:checked + label:after {
 .datepicker th.prev:after {
   font-family: "Glyphicons Halflings";
   content: "\e079";
-  color: $sushi;
+  color: $sushi; 
 }
