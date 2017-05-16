@@ -236,30 +236,47 @@
 
            <div class="chart-opt-tab mb30">
                <div class="chart-opt-sec clearfix">
-                   <div class="tranding-select-opt">
-                       <div class="sector-opt">
-                           <span>Index :</span>
-                           <input type="radio" id="nse4" name="channel3" class="css-radio" checked>
-                           <label class="css-label" for="nse4">NSE</label>
-                           <input type="radio" id="mcx" name="channel3" class="css-radio">
-                           <label class="css-label" for="mcx">MCX</label>
+                   <div class="tranding-select-opt relative-div">
+                        <div class="btn-wrap visible-xs">
+                            <button class="btn btn-radio-toggle">
+                                <span class="radio-list">Index</span>
+                            </button>
+                        </div>
+                       <div class="sector-opt toggle-radio">
+                           <span class="hidden-xs">Index :</span>
+                           <span class="radio-list">
+                               <input type="radio" id="nse4" name="channel3" class="css-radio" checked>
+                               <label class="css-label" for="nse4">NSE</label>
+                           </span>
+                           <span class="radio-list">
+                               <input type="radio" id="mcx" name="channel3" class="css-radio">
+                               <label class="css-label" for="mcx">MCX</label>
+                           </span>
                        </div>
                    </div>
-                   <div class="tranding-select-opt">
-                       <div class="sector-opt">
-                           <span>Type :</span>
-                           <input type="radio" id="futures" name="channel4" class="css-radio" checked>
-                           <label class="css-label" for="futures">Futures</label>
-                           <input type="radio" id="spot" name="channel4" class="css-radio">
-                           <label class="css-label" for="spot">Spot</label>
+                  <div class="tranding-select-opt relative-div">
+                        <div class="btn-wrap visible-xs">
+                            <button class="btn btn-radio-toggle">
+                                <span class="radio-list">Type</span>
+                            </button>
+                        </div>
+                       <div class="sector-opt toggle-radio">
+                           <span class="hidden-xs">Type :</span>
+                           <span class="radio-list">
+                               <input type="radio" id="futures" name="channel4" class="css-radio" checked>
+                               <label class="css-label" for="futures">Futures</label>
+                           </span>
+                           <span class="radio-list">
+                               <input type="radio" id="spot" name="channel4" class="css-radio">
+                               <label class="css-label" for="spot">Spot</label>
+                           </span>
                        </div>
                    </div>
                    <div class="tranding-select-opt right">
-                       <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                       <select class="select">
-                           <option value="nse">Expiry</option>
-                           <option value="nse">BSE</option>
-                       </select>
+                       <div class="input-date">
+                           <input  type="text" placeholder="Expiry" class="datePicker" >
+                           <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                       </div>
                    </div>
                </div>
                <div class="chart-tab-wrap">
@@ -409,21 +426,29 @@
             <div class="tranding-content-area">
                 <!--tranding option-->
                 <div class="tranding-opt clearfix">
-                    <div class="tranding-select-opt">
-                        <div class="sector-opt">
-                            <span>Index :</span>
-                            <input type="radio" id="mcx8" name="channel5" class="css-radio" checked>
-                            <label class="css-label" for="mcx8">MCX</label>
-                            <input type="radio" id="ncdex1" name="channel5" class="css-radio">
-                            <label class="css-label" for="ncdex1">NCDEX</label>
+                    <div class="tranding-select-opt relative-div">
+                        <div class="btn-wrap visible-xs">
+                            <button class="btn btn-radio-toggle">
+                                <span class="radio-list">Index</span>
+                            </button>
+                        </div>
+                        <div class="sector-opt toggle-radio">
+                            <span class="hidden-xs">Index :</span>
+                            <span class="radio-list">
+                                <input type="radio" id="mcx8" name="channel5" class="css-radio" checked>
+                                <label class="css-label" for="mcx8">MCX</label>
+                            </span>
+                            <span class="radio-list">
+                                <input type="radio" id="ncdex1" name="channel5" class="css-radio">
+                                <label class="css-label" for="ncdex1">NCDEX</label>
+                            </span>
                         </div>
                     </div>
                     <div class="tranding-select-opt">
-                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                        <select class="select">
-                            <option value="nse">Expiry</option>
-                            <option value="nse">Expiry</option>
-                        </select>
+                        <div class="input-date">
+                            <input  type="text" placeholder="Expiry" class="datePicker" >
+                            <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                        </div>
                     </div>
                     <div class="tranding-select-opt right">
                         <div class="mobile-drop">
@@ -710,13 +735,22 @@
             <div class="tranding-content-area">
                 <!--tranding option-->
                 <div class="tranding-opt clearfix">
-                    <div class="tranding-select-opt">
-                        <div class="sector-opt">
-                            <span>Index :</span>
-                            <input type="radio" id="mcx4" name="channel5" class="css-radio" checked>
-                            <label class="css-label" for="mcx4">MCX</label>
-                            <input type="radio" id="ncdex" name="channel5" class="css-radio">
-                            <label class="css-label" for="ncdex">NCDEX</label>
+                    <div class="tranding-select-opt relative-div">
+                         <div class="btn-wrap visible-xs">
+                            <button class="btn btn-radio-toggle">
+                                <span class="radio-list">Index</span>
+                            </button>
+                        </div>
+                        <div class="sector-opt toggle-radio">
+                            <span class="hidden-xs">Index :</span>
+                            <span class="radio-list">
+                                <input type="radio" id="mcx4" name="channel5" class="css-radio" checked>
+                                <label class="css-label" for="mcx4">MCX</label>
+                            </span>
+                            <span class="radio-list">
+                                <input type="radio" id="ncdex" name="channel5" class="css-radio">
+                                <label class="css-label" for="ncdex">NCDEX</label>
+                            </span>
                         </div>
                     </div>
                     <div class="tranding-select-opt">

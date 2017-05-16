@@ -236,47 +236,30 @@
 
             <div class="chart-opt-tab mb30">
                 <div class="chart-opt-sec clearfix">
-                    <div class="tranding-select-opt relative-div">
-                        <div class="btn-wrap visible-xs">
-                            <button class="btn btn-radio-toggle">
-                                <span class="radio-list">Index</span>
-                            </button>
+                    <div class="tranding-select-opt">
+                        <div class="sector-opt">
+                            <span>Index :</span>
+                            <input type="radio" id="nse4" name="secl3" class="css-radio" checked>
+                            <label class="css-label" for="nse4">NSE</label>
+                            <input type="radio" id="mcx" name="secl3" class="css-radio">
+                            <label class="css-label" for="mcx">MCX</label>
                         </div>
-                       <div class="sector-opt toggle-radio">
-                           <span class="hidden-xs">Index :</span>
-                           <span class="radio-list">
-                                <input type="radio" id="nse4" name="secl3" class="css-radio" checked>
-                                <label class="css-label" for="nse4">NSE</label>
-                           </span>
-                           <span class="radio-list">
-                                <input type="radio" id="mcx" name="secl3" class="css-radio">
-                                <label class="css-label" for="mcx">MCX</label>
-                           </span>
-                       </div>
                     </div>
-                    <div class="tranding-select-opt relative-div">
-                        <div class="btn-wrap visible-xs">
-                            <button class="btn btn-radio-toggle">
-                                <span class="radio-list">Type</span>
-                            </button>
+                    <div class="tranding-select-opt">
+                        <div class="sector-opt">
+                            <span>Type :</span>
+                            <input type="radio" id="futures" name="futul4" class="css-radio" checked>
+                            <label class="css-label" for="futures">Futures</label>
+                            <input type="radio" id="spot" name="futul4" class="css-radio">
+                            <label class="css-label" for="spot">Spot</label>
                         </div>
-                       <div class="sector-opt toggle-radio">
-                           <span class="hidden-xs">Type :</span>
-                           <span class="radio-list">
-                                <input type="radio" id="futures" name="futul4" class="css-radio" checked>
-                                <label class="css-label" for="futures">Futures</label>
-                           </span>
-                           <span class="radio-list">
-                                <input type="radio" id="spot" name="futul4" class="css-radio">
-                                <label class="css-label" for="spot">Spot</label>
-                           </span>
-                       </div>
                     </div>
                     <div class="tranding-select-opt right">
-                        <div class="input-date">
-                            <input  type="text" placeholder="Today" class="datePicker" >
-                            <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                        </div>
+                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                        <select class="select">
+                            <option value="nse">Expiry</option>
+                            <option value="nse">BSE</option>
+                        </select>
                     </div>
                 </div>
                 <div class="chart-tab-wrap">
@@ -394,41 +377,23 @@
                     <div class="tab-content share-content-tab">
                         <div role="tabpanel" class="tab-pane active" id="mostAtive">
                             <div class="share-title mb10 clearfix">
-                                <div class="title-left relative-div">
-                                    <div class="btn-wrap visible-xs">
-                                        <button class="btn btn-radio-toggle">
-                                            <span class="radio-list">Index</span>
-                                        </button>
+                                <div class="title-left">
+                                    <div class="sector-opt">
+                                        <span>Index :</span>
+                                        <input type="radio" id="nseAr" name="nsel3" class="css-radio" checked>
+                                        <label class="css-label" for="nseAr">NSE</label>
+                                        <input type="radio" id="mcxAr" name="nsel3" class="css-radio">
+                                        <label class="css-label" for="mcxAr">MCX</label>
                                     </div>
-                                   <div class="sector-opt toggle-radio">
-                                       <span class="hidden-xs">Index :</span>
-                                       <span class="radio-list">
-                                            <input type="radio" id="nseAr" name="nsel3" class="css-radio" checked>
-                                            <label class="css-label" for="nseAr">NSE</label>
-                                       </span>
-                                       <span class="radio-list">
-                                            <input type="radio" id="mcxAr" name="nsel3" class="css-radio">
-                                            <label class="css-label" for="mcxAr">MCX</label>
-                                       </span>
-                                   </div>
                                 </div>
-                                <div class="title-left relative-div">
-                                    <div class="btn-wrap visible-xs">
-                                        <button class="btn btn-radio-toggle">
-                                            <span class="radio-list">Type</span>
-                                        </button>
-                                    </div>
-                                   <div class="sector-opt toggle-radio">
-                                       <span class="hidden-xs">Type :</span>
-                                       <span class="radio-list">
-                                            <input type="radio" id="futuresAr" name="type3" class="css-radio" checked>
+                                <div class="title-left">
+                                    <div class="sector-opt">
+                                        <span>Type :</span>
+                                        <input type="radio" id="futuresAr" name="type3" class="css-radio" checked>
                                         <label class="css-label" for="futuresAr">Futures</label>
-                                       </span>
-                                       <span class="radio-list">
-                                            <input type="radio" id="optionAr" name="typel3" class="css-radio">
-                                            <label class="css-label" for="optionAr">Options</label>
-                                       </span>
-                                   </div>
+                                        <input type="radio" id="optionAr" name="typel3" class="css-radio">
+                                        <label class="css-label" for="optionAr">Options</label>
+                                    </div>
                                 </div>
                                 <div class="title-right">
                                     <div class="mobile-drop">
@@ -689,29 +654,21 @@
                     <div class="tab-content share-content-tab">
                         <div role="tabpanel" class="tab-pane active" id="futureOiAr">
                             <div class="chart-opt-sec mb20 clearfix">
-                                <div class="tranding-select-opt relative-div">
-                                    <div class="btn-wrap visible-xs">
-                                        <button class="btn btn-radio-toggle">
-                                            <span class="radio-list">Type</span>
-                                        </button>
+                                <div class="tranding-select-opt">
+                                    <div class="sector-opt">
+                                        <span>Type :</span>
+                                        <input type="radio" id="nseOpen" name="channel4" class="css-radio" checked>
+                                        <label class="css-label" for="nseOpen">NSE</label>
+                                        <input type="radio" id="mcxOpen" name="channel4" class="css-radio">
+                                        <label class="css-label" for="mcxOpen">MCX</label>
                                     </div>
-                                   <div class="sector-opt toggle-radio">
-                                       <span class="hidden-xs">Type :</span>
-                                       <span class="radio-list">
-                                           <input type="radio" id="nseOpen" name="channel4" class="css-radio" checked>
-                                            <label class="css-label" for="nseOpen">NSE</label>
-                                       </span>
-                                       <span class="radio-list">
-                                            <input type="radio" id="mcxOpen" name="channel4" class="css-radio">
-                                            <label class="css-label" for="mcxOpen">MCX</label>
-                                       </span>
-                                   </div>
                                 </div>
                                 <div class="tranding-select-opt">
-                                    <div class="input-date">
-                                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                                    </div>
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nse">Expiry</option>
+                                        <option value="nse">BSE</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="share-mkt-ar">

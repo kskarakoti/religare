@@ -270,8 +270,36 @@ $(function () {
 		});
 	}
 
+	//radio button covert in select box
+	var winwidth = $(window).width();
+	if(winwidth <= 767) {
+		$('.toggle-radio').hide();
+		$('.btn-wrap button.btn-radio-toggle').on('click',function(e){
+			e.preventDefault();
+			var $list = $(this).parent().next('.toggle-radio');
+			$list.slideToggle();
+			$('.toggle-radio').not($list).slideUp();
+		});
+		$('.toggle-radio .css-label').on('click', function(e){
+			e.preventDefault();
+			$(this).parent().parent().prev().find('span.radio-list').text($(this).text());
+			if($('.toggle-radio').is(':visible')) {
+				$('.toggle-radio').hide();
+			}
+		});
+	} else {
+		$('.toggle-radio').show();
+	}
+
 	//datepickers
 	$('#datePicker').datepicker({
+		format: "mm/dd/yyyy",
+		todayHighlight: true,
+	}).on('changeDate', function(e) {
+		$('.datepicker').hide();
+	});
+
+	$('.datePicker').datepicker({
 		format: "mm/dd/yyyy",
 		todayHighlight: true,
 	}).on('changeDate', function(e) {
@@ -321,6 +349,12 @@ $(function () {
 $(window).resize(function(){
 	divheight();
 	// footernav();
+	var winwidth = $(window).width();
+	if(winwidth >= 768) {
+		$('.toggle-radio').show();
+	} else {
+		$('.toggle-radio').hide();
+	}
 });
 function divheight() {
 	var maxHeight = -1;
