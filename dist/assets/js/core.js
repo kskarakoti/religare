@@ -249,34 +249,26 @@ $(function () {
 	if ($(window).width() < 767){
 		//for dropdown toggle on click
 		$('button.btn-toggle').on('click', function () {
-			$('ul.toggle-list').toggle();
+			$(this).parents('.btn-wrap').next('.toggle-list').toggle();
 		});
 		$('.share-dt-sort li a').on('click', function () {
 			var vals = $(this).html();
 			$(this).parents().prev('.btn-wrap').find('button.btn-toggle span.text').html(vals);
-			$('ul.toggle-list').toggle();
+			$(this).parents('ul.toggle-list').toggle();
 		});
 
 		$(window).resize(function () {
 			//for dropdown toggle on click
 			$('button.btn-toggle').on('click', function () {
-				$('ul.toggle-list').toggle();
+				$(this).parents('.btn-wrap').next('.toggle-list').toggle();
 			});
 			$('.share-dt-sort li a').on('click', function () {
 				var vals = $(this).html();
 				$(this).parents().prev('.btn-wrap').find('button.btn-toggle span.text').html(vals);
-				$('ul.toggle-list').toggle();
+				$(this).parents.toggle();
 			});
 		});
 	}
-
-	/*$(document).on('click', function(e) {
-		if ( $(e.target).closest('.dropdown-menu-right, .search-drop').length ) {
-			$(".overlay-bg").toggleClass('active');
-		}else if ( ! $(e.target).closest('.dropdown-menu-right,.search-drop').length ) {
-			$('.overlay-bg').removeClass('active');
-		}
-	});*/
 
 	//datepickers
 	$('#datePicker').datepicker({
@@ -340,7 +332,7 @@ function divheight() {
 	});
 	var winsize = $(window).width();
 	if(winsize <= 767) {
-		$('.sec-block .heading-bx').css('margin-top', '20px');
+		$('.sec-block .heading-bx').css('margin-top', '10px');
 	}else {
 		$('.sec-block .heading-bx').css('margin-top', 0);
 	}
@@ -357,24 +349,3 @@ function toggleIcon(e) {
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
-
-//footer menu toggle
-/*function footernav() {
-	if ($(window).width() < 991) {
-		//accordion function
-		$('.footer-link-list').hide();
-		$('.ft-link-title').click(function () {
-			$('.ft-link-title').removeClass('active');
-			$('.footer-link-list').slideUp('normal');
-			if ($(this).next().is(':hidden') == true) {
-				//ADD THE ON CLASS TO THE BUTTON
-				$(this).addClass('active');
-				//OPEN THE SLIDE
-				$(this).next().slideDown('normal');
-			}
-		});
-	} else if ($(window).width() > 991) {
-		$('.footer-link-list').show();
-		$('.ft-link-title').unbind('click');
-	};
-}*/
