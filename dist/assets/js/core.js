@@ -165,13 +165,6 @@ $(function () {
 				$(".tabcontent").fadeOut();
 			}
 		}
-
-		/*if ($(window).width() > 767) {
-			var a = $(e.target).closest('.search-dp-list').length;
-			if (!a) {
-				$('.overlay-bg').removeClass('active');;
-			}
-		}*/
 	});
 
 

@@ -12370,18 +12370,22 @@ header {
   background: #f8fbf4;
   border-bottom: none; }
   .tab-structure.nav-tabs.tab-4 li a .sunsex-count {
-    line-height: 22px;
-    /*.price-value {
-              @media screen and (max-width: 980px) {
-                display: block;
-              }
-              @media screen and (max-width: 767px) {
-                display: inline-block;
-              }
-            }*/ }
+    line-height: 22px; }
   @media screen and (max-width: 980px) {
     .tab-structure.nav-tabs.tab-4 li.add-index .add-index-drop {
       height: 92px !important; } }
+  @media screen and (max-width: 990px) {
+    .tab-structure.nav-tabs.tab-col-4 li a .title .month-time-tx {
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .tab-structure.nav-tabs.tab-col-4 li a .title .month-time-tx {
+      display: inline-block; } }
+  @media screen and (max-width: 990px) {
+    .tab-structure.nav-tabs.tab-col-4 li a .sunsex-count .price-percentage {
+      display: block; } }
+  @media screen and (max-width: 767px) {
+    .tab-structure.nav-tabs.tab-col-4 li a .sunsex-count .price-percentage {
+      display: inline-block; } }
   .tab-structure.nav-tabs.table-cell li {
     display: table; }
     .tab-structure.nav-tabs.table-cell li a {
@@ -12426,9 +12430,9 @@ header {
         text-transform: capitalize; }
     .tab-structure.nav-tabs > li .sunsex-count {
       font-family: "ubunturegular", sans-serif;
-      font-size: 26px;
+      font-size: 22px;
       color: #222222;
-      line-height: 28px; }
+      line-height: 26px; }
       .tab-structure.nav-tabs > li .sunsex-count .price-percentage {
         font-family: "ubuntulight", sans-serif;
         font-size: 16px; }
@@ -12877,8 +12881,10 @@ header {
         font-size: 14px; } }
   .table.shate-data-tbl td {
     vertical-align: middle; }
-    .table.shate-data-tbl td.green-col a {
+    .table.shate-data-tbl td.green-col {
       color: #20ab30; }
+      .table.shate-data-tbl td.green-col a {
+        color: #20ab30; }
     .table.shate-data-tbl td.red-col {
       color: #fa4110; }
       .table.shate-data-tbl td.red-col a {
