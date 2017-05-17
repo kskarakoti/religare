@@ -63,6 +63,10 @@ $(function () {
 		};
 	});
 
+	$("ul.sub-menu-list li").each(function() {
+		$('ul.sub-menu-list li.active').parents().find('.sub-menu-ar').parent().addClass('active').next().removeClass('active');
+	});
+
 	//menu black background show function
 	if ($(window).width() > 1023) {
 		$(".sub-item").hover(

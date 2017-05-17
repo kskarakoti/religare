@@ -254,7 +254,7 @@
                            </span>
                        </div>
                     </div>
-                    <div class="tranding-select-opt relative-div">
+                    <div class="tranding-select-opt tranding-radio-btn relative-div">
                         <div class="btn-wrap visible-xs">
                             <button class="btn btn-radio-toggle">
                                 <span class="radio-list">Type</span>
@@ -276,6 +276,7 @@
                         <div class="input-date">
                             <input  type="text" placeholder="Today" class="datePicker" >
                             <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                            <span class="mkt-arrow-icons"></span>
                         </div>
                     </div>
                 </div>
@@ -375,7 +376,7 @@
 
 
     <!--Performance-->
-    <div class="performance-open tranding-now-area content-pd-sm">
+    <div class="performance-open-mob tranding-now-area content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx">
@@ -412,7 +413,7 @@
                                        </span>
                                    </div>
                                 </div>
-                                <div class="title-left relative-div">
+                                <div class="title-left tranding-radio-btn relative-div">
                                     <div class="btn-wrap visible-xs">
                                         <button class="btn btn-radio-toggle">
                                             <span class="radio-list">Type</span>
@@ -498,14 +499,41 @@
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="topGainers">
-                            <div class="share-title clearfix">
-                                <div class="title-left">
-                                    <div class="sector-opt">
-                                        <span>Index :</span>
-                                        <input type="radio" id="nseAr4" name="channel3" class="css-radio" checked>
-                                        <label class="css-label" for="nseAr4">NSE</label>
-                                        <input type="radio" id="bseAr4" name="channel3" class="css-radio">
-                                        <label class="css-label" for="bseAr4">BSE</label>
+                            <div class="share-title mb10 clearfix">
+                                <div class="title-left relative-div">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Index</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Index :</span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="nseAr8" name="nse8" class="css-radio" checked>
+                                            <label class="css-label" for="nseAr8">NSE</label>
+                                       </span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="mcxAr8" name="nse8" class="css-radio">
+                                            <label class="css-label" for="mcxAr8">MCX</label>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="title-left tranding-radio-btn relative-div">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Type</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Type :</span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="futuresAr9" name="type9" class="css-radio" checked>
+                                        <label class="css-label" for="futuresAr9">Futures</label>
+                                       </span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="optionAr9" name="type9" class="css-radio">
+                                            <label class="css-label" for="optionAr9">Options</label>
+                                       </span>
                                     </div>
                                 </div>
                                 <div class="title-right">
@@ -583,7 +611,7 @@
 
 
     <!--Put Call Ratio-->
-    <div class="derivatives-open content-pd-sm">
+    <div class="put-call-ratio currency-put-mob content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx">
@@ -669,7 +697,7 @@
 
 
     <!--Open Interest Analysis-->
-    <div class="open-interest-analysis tranding-now-area content-pd-sm">
+    <div class="open-interest-analysis currency-interest-mob tranding-now-area content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx">
@@ -711,6 +739,7 @@
                                     <div class="input-date">
                                         <input  type="text" placeholder="Expiry" class="datePicker" >
                                         <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                        <span class="mkt-arrow-icons"></span>
                                     </div>
                                 </div>
                             </div>

@@ -19,6 +19,8 @@
 	  3.7 Reseach Page Styles
 	  3.8 Product and Services Page Styles
 	  3.9 Market Commodities Page Styles
+	  3.10 Market Derivatives Page Styles
+	  3.11 Market Currency Page Styles
 
 
    04 Footer Section Styles
@@ -2418,11 +2420,61 @@ header {
   &.commodities-bann {
     background: url('../../assets/images/market-commodities.jpg') no-repeat;
     background-size:cover;
+
+    .chart-opt-tab {
+      .chart-opt-sec {
+        .tranding-select-opt {
+          .btn-radio-toggle {
+            @media screen and (max-width: 767px) {
+              margin: 0;
+              min-width: 100%;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            float: left;
+            margin-right: 0;
+            width: 33.33%;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          padding: 15px 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      background: none;
+    }
   }
 
   &.currency-bann {
     background: url('../../assets/images/market-currency.jpg') no-repeat;
     background-size:cover;
+
+    .chart-opt-tab {
+      .chart-opt-sec {
+        .tranding-select-opt {
+          .btn-radio-toggle {
+            @media screen and (max-width: 767px) {
+              margin: 0;
+              min-width: 100%;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            float: left;
+            margin-right: 0;
+            width: 33.33%;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          padding: 15px 0;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      background: none;
+    }
   }
   .heading-bx {
     h2 {
@@ -2448,6 +2500,9 @@ header {
     .tab-list {
       .nav-tabs {
         > li {
+          &.active {
+            border-color: #ddd;
+          }
           a {
             @media screen and (max-width: 767px) {
               border: none;
@@ -2719,11 +2774,13 @@ header {
             }
           }
           @media screen and (max-width: 767px) {
-            border: none;
+            /*border: none;*/
+            float: none;
+            display: block;
             margin-bottom: 0;
 
-            &:first-child {
-              border-bottom: 1px solid #ccc;
+            &:last-child {
+              border: none;
             }
           }
         }
@@ -3036,6 +3093,10 @@ header {
       .select2-selection__rendered {
         line-height: 40px;
         padding-left: 40px;
+
+        @media screen and (max-width: 767px) {
+          padding-left: 15px;
+        }
       }
 
       .select2-selection__arrow {
@@ -3250,6 +3311,10 @@ header {
                 border-right: 0;
               }
             }
+          }
+
+          @media screen and (max-width: 767px) {
+            border-radius: 0;
           }
         }
       }
@@ -3924,6 +3989,7 @@ header {
         position: relative;
         width: 100%;
         margin-bottom: 30px;
+        min-height: 96px;
       }
     }
     .heat-table-rt {
@@ -4419,6 +4485,8 @@ header {
   }
 }
 
+
+
 /****************************************
    3.9 Market Commodities Page Styles
 ****************************************/
@@ -4463,6 +4531,53 @@ header {
   }
 }
 
+.tranding-radio-btn {
+  margin-left: 50px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.market-analysis-ar {
+  .tranding-content-area {
+    .tranding-opt {
+      .tranding-select-opt {
+        .datePicker {
+          @media screen and (max-width: 480px) {
+            background: #fff;
+          }
+        }
+        .btn-toggle {
+          @media screen and (max-width: 480px) {
+            background: #fff;
+          }
+        }
+        .btn-radio-toggle {
+          margin: 0;
+          min-width: 100%;
+          @media screen and (max-width: 480px) {
+            background: #fff;
+          }
+        }
+
+        .select2-container {
+          width: 100% !important;
+        }
+        @media screen and (max-width: 640px) {
+          margin-right: 0;
+          float: left;
+          width: 33.33%;
+        }
+      }
+    }
+  }
+}
+
+
+/****************************************
+  3.10 Market Derivatives Page Styles
+****************************************/
 .option-chain-ar {
   .option-chain-bx {
     background: #f8fbf4;
@@ -4472,8 +4587,17 @@ header {
       width: 95%;
       margin: auto;
 
+      .opt-mob {
+        @media screen and (max-width: 540px) {
+          padding: 0;
+        }
+      }
+
       .tranding-select-opt {
         margin-right: 0;
+        .datePicker {
+          background: #fff;
+        }
         .select2-container {
           width: 100% !important;
 
@@ -4483,25 +4607,197 @@ header {
         }
       }
 
-      .btn-green {
-        padding: 7px 15px;
-        width: 80%;
-        text-align: center;
+      .get-option-btn {
+        margin-bottom: 0;
+        .btn-green {
+          padding: 7px 15px;
+          width: 80%;
+          text-align: center;
+
+          @media screen and (max-width: 991px) {
+            width: 200px;
+            margin: auto;
+          }
+        }
+        @media screen and (max-width: 991px) {
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      padding: 20px 15px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 20px 0px;
+    }
+  }
+}
+
+.open-interest-analysis-mob {
+  .share-content-tab {
+    .tranding-opt-none {
+      .tranding-select-opt {
+        .select2-container {
+          @media screen and (max-width: 480px) {
+            width: 100% !important;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          margin-right: 0px;
+          width: 50%;
+        }
+      }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 20px 0px;
+    }
+  }
+}
+
+
+/****************************************
+ 3.11 Market Currency Page Styles
+****************************************/
+.currency-put-mob {
+  .tranding-opt {
+    .tranding-select-opt {
+      @media screen and (max-width: 480px) {
+        width: 100%;
       }
     }
   }
 }
-/*.select-relative {
-  position: relative;
 
-  .mkt-icons {
-    position: absolute;
-    top: 10px;
-    left: 12px;
-    z-index: 99;
+.currency-interest-mob {
+  .share-content-tab {
+    .chart-opt-sec {
+      .tranding-select-opt {
+        @media screen and (max-width: 480px) {
+          width: 50%;
+          margin-right: 0;
+        }
+
+        .btn-radio-toggle {
+          @media screen and (max-width: 480px) {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
   }
-}*/
+}
 
+.performance-open-mob {
+  .tranding-content-area {
+    .share-content-tab {
+      .share-title {
+        .title-left {
+          .btn-radio-toggle {
+            @media screen and (max-width: 767px) {
+              min-width: 100%;
+              margin: 0;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            width: 33.3%;
+            margin: 0;
+          }
+        }
+        .title-right {
+          @media screen and (max-width: 767px) {
+            float: left;
+            width: 33.3%;
+            margin: 0;
+          }
+        }
+      }
+      @media screen and (max-width: 767px) {
+        padding: 25px 0;
+      }
+    }
+  }
+}
+
+/****************************************
+ 3.12 Market Mutual Fund Page Styles
+****************************************/
+.fund-performance-mob {
+  .share-content-tab {
+    .tranding-opt-none {
+      .tranding-select-opt {
+        .select2-container {
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+        .btn-radio-toggle {
+          @media screen and (max-width: 767px) {
+            min-width: 100%;
+            padding-right: 10px;
+            margin: 0;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          width: 33.3%;
+          margin: 0;
+          float: left;
+        }
+      }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 25px 0;
+    }
+  }
+}
+
+.tax-saving-mob {
+  .block-panel {
+    .tranding-opt {
+      .tranding-select-opt {
+        .select2-container {
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+        .btn-radio-toggle {
+          @media screen and (max-width: 767px) {
+            min-width: 100%;
+            padding-right: 10px;
+            margin: 0;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          width: 33.3%;
+          margin: 0;
+          float: left;
+        }
+      }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 25px 0;
+    }
+  }
+}
+
+.what-out {
+  .block-panel {
+    .tranding-opt {
+      .tranding-select-opt {
+        .btn-radio-toggle {
+          @media screen and (max-width: 480px) {
+            margin: 0;
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 /************************************************************************************
 
 =========================== 04 Footer Styles ============================
@@ -5879,7 +6175,9 @@ button {
       background: #f8fbf4;
       box-shadow: none;
       margin: 0 0 10px 10px;
+      min-width: 150px;
       min-height: 40px;
+      text-align: left;
       @include border-radius(0);
       position: relative;
       &:after {
@@ -5920,10 +6218,12 @@ button {
       border: 1px solid #dcdede;
       z-index: 1;
       top: 38px;
-      margin-left: 10px;
+      display: none;
+      /*margin-left: 10px;*/
       padding: 0 !important;
       margin-top: 0;
       left: 0;
+      min-width: 150px;
       label {
         font-weight: normal;
       }
@@ -5945,8 +6245,9 @@ button {
 }
 .input-date {
   border-color: #dcdede;
-  min-width: 200px;
+  max-width: 270px;
   height: 40px;
+  position: relative;
   input {
     &.datePicker {
       border-color: #dcdede;
@@ -5956,6 +6257,32 @@ button {
       border-radius: 3px;
       background: #f8fbf4;
       text-indent: 40px;
+
+      @media screen and (max-width: 767px) {
+        text-indent: 15px;
+      }
     }
+  }
+}
+.mkt-arrow-icons {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+
+  &:before {
+    content: '';
+    border-color: #888 transparent transparent transparent;
+    height: 10px;
+    left: 28%;
+    margin-left: -9px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    background: transparent;
+    transform: rotate(-45deg);
+    border: 1px solid #6b6b6a;
+    border-top: 0;
+    border-right: 0;
   }
 }
