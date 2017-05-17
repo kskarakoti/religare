@@ -196,7 +196,45 @@ $(function () {
 		}
 	});
 
+
+
+
+
+
+
+
+
+
+
+
 	if ($(window).width() < 991) {
+		$('.sub-menu-dt-ar').hide();
+	}
+	$('.menu-list-dt > li > a').click(function () {
+		if ($(window).width() < 991) {
+			$('.menu-list-dt > li > a').parent().removeClass('active');
+			$('.sub-menu-dt-ar').slideUp('normal');
+			if ($(this).next().is(':hidden') == true) {
+				//ADD THE ON CLASS TO THE BUTTON
+				$(this).parent().addClass('active');
+				//OPEN THE SLIDE
+				$(this).next().slideDown('normal');
+			}
+		}
+	});
+
+	$(window).resize(function(){
+		if ($(window).width() < 991) {
+			$('.sub-menu-dt-ar').hide();
+		}else {
+			$('.sub-menu-dt-ar').show();
+		}
+	});
+
+
+
+
+	/*if ($(window).width() < 991) {
 		//accordion function
 		$('.sub-menu-dt-ar').hide();
 		$('.menu-list-dt > li > a').click(function () {
@@ -210,6 +248,14 @@ $(function () {
 			}
 		});
 	};
+
+	$(window).resize(function(){
+		if ($(window).width() < 991) {
+			$('.sub-menu-dt-ar').hide();
+		}else {
+			$('.sub-menu-dt-ar').show();
+		}
+	});*/
 
 
 	//for converting tab to accordion
@@ -343,7 +389,7 @@ $(function () {
 		"searching": false,
 		rowReorder: {
 			selector: 'td:nth-child(2)'
-		},
+		}
 	});
 });
 

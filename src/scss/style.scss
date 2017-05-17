@@ -454,7 +454,7 @@ header {
                   font-family: $font-family-ubuntumedium;
 
                   @media screen and (max-width: 1170px) {
-                    padding: ($padding-base-5 + 3) ($padding-base-5 * 2);
+                    padding: ($padding-base-5 + 3) ($padding-base-5 * 2) ($padding-base-5 * 5) - 1 ($padding-base-5 * 2);
                   }
                 }
 
@@ -2417,6 +2417,46 @@ header {
   background: url('../../assets/images/markets_equity_cropped.jpg') no-repeat;
   background-size:cover;
 
+  &.derivatives-bann {
+    background: url('../../assets/images/markets_equity_cropped.jpg') no-repeat;
+    background-size:cover;
+
+    .chart-tab-wrap {
+      .tab-list {
+        .tab-structure {
+          li {
+            p {
+              .month-time-tx {
+                @media screen and (max-width: 991px) {
+                  display: block;
+                }
+                @media screen and (max-width: 767px) {
+                  display: inline-block;
+                }
+              }
+            }
+            &.add-index {
+              .add-index-drop {
+                .dropdown-scd {
+                  @media screen and (max-width: 991px) {
+                    padding: 9px 15px;
+                  }
+                }
+                @media screen and (max-width: 991px) {
+                 height: 95px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      background: none;
+    }
+  }
+
   &.commodities-bann {
     background: url('../../assets/images/market-commodities.jpg') no-repeat;
     background-size:cover;
@@ -2438,6 +2478,27 @@ header {
         }
         @media screen and (max-width: 767px) {
           padding: 15px 0;
+        }
+      }
+
+      .chart-tab-wrap {
+        .tab-list {
+          .tab-structure {
+            li {
+              a {
+                .title {
+                  .month-time-tx {
+                    @media screen and (max-width: 991px) {
+                      display: block;
+                    }
+                    @media screen and (max-width: 767px) {
+                      display: inline-block;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -2599,8 +2660,7 @@ header {
           }
 
           &.add-index {
-            &:hover {
-
+            &:hover, &.active {
               .add-index-drop {
                 border-top: 4px solid #8dc63f;
               }
@@ -2864,6 +2924,12 @@ header {
   width: 30px;
   height: 30px;
 
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
   span {
     &.icon {
       width: 30px;
@@ -2931,6 +2997,27 @@ header {
 
   &.tranding-white-bg{
     background: $white;
+
+    .input-date {
+      .datePicker {
+        background: #f8fbf4;
+      }
+    }
+
+    .tranding-select-opt {
+      .select2-container {
+        .select2-selection--single {
+          background: #f8fbf4;
+        }
+      }
+    }
+  }
+
+
+  .input-date {
+    .datePicker {
+      background: #fff;
+    }
   }
 
   @media screen and (max-width: 480px) {
@@ -2947,6 +3034,8 @@ header {
     }
     .select2-container {
       .select2-selection--single {
+        background: #fff;
+
         .select2-selection__rendered {
           @media screen and (max-width: 767px) {
             padding-left: 15px;
@@ -2955,7 +3044,6 @@ header {
         @media screen and (max-width: 480px) {
           border-right: 0;
           border-radius: 0;
-          background: #fff;
         }
       }
 
@@ -3158,6 +3246,7 @@ header {
 
       @media screen and (max-width: 640px) {
         font-size: 14px;
+        padding: 10px;
       }
     }
 
@@ -4511,6 +4600,12 @@ header {
     .chart-opt-rt {
       float: right;
     }
+
+    .input-date {
+      .datePicker {
+        background: #fff;
+      }
+    }
   }
   .chart-tab-wrap {
     border-radius: 0;
@@ -4562,13 +4657,18 @@ header {
         }
 
         .select2-container {
-          width: 100% !important;
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
         }
         @media screen and (max-width: 640px) {
           margin-right: 0;
           float: left;
           width: 33.33%;
         }
+      }
+      @media screen and (max-width: 991px) {
+        padding: 20px 15px;
       }
     }
   }
@@ -4663,10 +4763,17 @@ header {
  3.11 Market Currency Page Styles
 ****************************************/
 .currency-put-mob {
-  .tranding-opt {
-    .tranding-select-opt {
+  .block-panel {
+    .tranding-opt {
+      .tranding-select-opt {
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+    .block-deal-pd0 {
       @media screen and (max-width: 480px) {
-        width: 100%;
+        padding: 0;
       }
     }
   }
@@ -4683,11 +4790,14 @@ header {
 
         .btn-radio-toggle {
           @media screen and (max-width: 480px) {
-            width: 100%;
+            min-width: 100%;
             margin: 0;
           }
         }
       }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 25px 0;
     }
   }
 }
@@ -5728,6 +5838,23 @@ table.dataTable.dtr-inline.collapsed tbody th.child {
 table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
   padding: 5px 5px 5px 26px;
 }
+/*table.dataTable.dtr-column tbody td.control::before, table.dataTable.dtr-column tbody th.control::before {
+  left: auto;
+  top:52%;
+  right: 10px;
+  background: none;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  font-family: $font-family-ubunturegular;
+  font-size: 20px;
+}
+table.dataTable.dtr-column tbody tr.parent td.control::before, table.dataTable.dtr-column tbody tr.parent th.control::before {
+  background: none;
+}
+table.dataTable.dtr-column tbody td.control, table.dataTable.dtr-column tbody th.control {
+  padding-right: 35px;
+}*/
 table.dataTable tr.child ul {
   width: 100%;
   li {
@@ -6071,6 +6198,10 @@ input[type="radio"] + label {
   position: relative;
   cursor: pointer;
   padding-left: 25px;
+  color: #7a838c;
+}
+input[type="radio"]:checked + label {
+  color: #40474e;
 }
 input[type="radio"] + label:before, input[type="radio"] + label:after {
   content: "";
@@ -6158,13 +6289,6 @@ input[type="radio"]:checked + label:after {
   height:499px;
 }
 
-
-/*.datepicker-ip {
-  background: none;
-  padding: 5px 10px 5px 40px;
-  border: 1px solid #dcdede;
-  height: 40px;
-}*/
 
 /* radio box responsive style */
 button {
