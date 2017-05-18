@@ -2332,10 +2332,9 @@ header {
       }
 
       &:hover {
-        border-right: 1px solid #d6dad6;
-        border-bottom: 1px solid #ddd;
 
         > a {
+          border: 0;
           border-top: 4px solid #8dc63f;
         }
       }
@@ -2372,6 +2371,36 @@ header {
           color: #666666;
           font-family: $font-family-ubunturegular;
           text-transform: capitalize;
+
+          &.time-arrow {
+            &:after {
+              display: inline-block;
+              content: '';
+              height: 9px;
+              content: '';
+              width: 9px;
+              background: transparent;
+              border: 2px solid #8d8d8d;
+              transform: rotate(-45deg);
+              top: 3px;
+              position: absolute;
+              border-top: 0;
+              border-right: 0;
+              right: -20px;
+              margin: auto;
+            }
+          }
+
+          .datepick-ip {
+            border: none;
+            background: none;
+            color: #666666;
+            outline: none;
+            width: 111px;
+            &:focus {
+              outline: none;
+            }
+          }
         }
       }
 
@@ -2427,6 +2456,7 @@ header {
           li {
             p {
               .month-time-tx {
+                position: relative;
                 @media screen and (max-width: 991px) {
                   display: block;
                 }
@@ -2467,6 +2497,7 @@ header {
           .btn-radio-toggle {
             @media screen and (max-width: 767px) {
               margin: 0;
+              background: #fff;
               min-width: 100%;
             }
           }
@@ -2562,7 +2593,11 @@ header {
       .nav-tabs {
         > li {
           &.active {
-            border-color: #ddd;
+            border-bottom-color: #fff;
+
+            @media screen and (max-width: 767px) {
+              border-bottom-color: #ddd;
+            }
           }
           a {
             @media screen and (max-width: 767px) {
@@ -2980,6 +3015,21 @@ header {
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 50px;
+
+    .tranding-tab {
+      .share-content-tab {
+        .share-mkt-ar {
+          .share-title {
+            @media screen and (max-width: 480px) {
+              padding: 0 20px;
+            }
+          }
+        }
+        @media screen and (max-width: 480px) {
+          padding: 20px 0;
+        }
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -3704,6 +3754,29 @@ header {
     border-radius: 4px;
     overflow: hidden;
 
+    .heat-opt-bx {
+      margin-bottom: 10px;
+
+      .btn-radio-toggle {
+        @media screen and (max-width: 480px) {
+          min-width: 100%;
+        }
+      }
+
+      .toggle-radio {
+        @media screen and (max-width: 480px) {
+          min-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        padding: 0 25px;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 0;
+      }
+    }
+
     .block-opt {
       margin-bottom: 15px;
 
@@ -4161,7 +4234,7 @@ header {
             color: #40474e;
             font-size: 18px;
 
-            .bootstrap-datetimepicker-widget {
+            /*.bootstrap-datetimepicker-widget {
               &.dropdown-menu {
                 left: auto !important;
                 right: -42px !important;
@@ -4171,7 +4244,7 @@ header {
                   left: 50%;
                 }
               }
-            }
+            }*/
 
             span {
               margin-right: 5px;
@@ -4233,8 +4306,8 @@ header {
   }
 }
 
-.bootstrap-datetimepicker-widget.dropdown-menu.bottom {
-  top: 26px !important;
+.bootstrap-datetimepicker-widget .datepicker-days {
+ display: block;
 }
 
 
@@ -4623,6 +4696,10 @@ header {
 
   .block-deal-pd0 {
     padding: 0 15px 15px 15px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 0px 20px 0px;
+    }
   }
 }
 
@@ -4670,6 +4747,9 @@ header {
       @media screen and (max-width: 991px) {
         padding: 20px 15px;
       }
+      @media screen and (max-width: 480px) {
+        padding: 20px 0px;
+      }
     }
   }
 }
@@ -4693,6 +4773,11 @@ header {
         }
       }
 
+      .input-date {
+        @media screen and (max-width: 767px) {
+          max-width: 100%;
+        }
+      }
       .tranding-select-opt {
         margin-right: 0;
         .datePicker {
@@ -4704,6 +4789,9 @@ header {
           .select2-selection--single {
             background: #fff;
           }
+        }
+        @media screen and (max-width: 767px) {
+          margin-bottom: 20px;
         }
       }
 
@@ -4731,9 +4819,9 @@ header {
     @media screen and (max-width: 991px) {
       padding: 20px 15px;
     }
-    @media screen and (max-width: 480px) {
+    /*@media screen and (max-width: 480px) {
       padding: 20px 0px;
-    }
+    }*/
   }
 }
 
@@ -4758,6 +4846,25 @@ header {
   }
 }
 
+.derivatives-open {
+  .block-panel {
+    .block-deal-pd0 {
+      @media screen and (max-width: 480px) {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
+
+.put-call-open {
+  .block-panel {
+    .block-deal-pd0 {
+      @media screen and (max-width: 480px) {
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}
 
 /****************************************
  3.11 Market Currency Page Styles
@@ -4773,7 +4880,7 @@ header {
     }
     .block-deal-pd0 {
       @media screen and (max-width: 480px) {
-        padding: 0;
+        padding: 0 0 20px 0;
       }
     }
   }
@@ -4888,9 +4995,6 @@ header {
         }
       }
     }
-    @media screen and (max-width: 480px) {
-      padding: 25px 0;
-    }
   }
 }
 
@@ -4904,6 +5008,11 @@ header {
             min-width: 100%;
           }
         }
+      }
+    }
+    .block-deal-pd0 {
+      @media screen and (max-width: 480px) {
+        padding: 0 0 20px 0;
       }
     }
   }
@@ -5834,9 +5943,13 @@ table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:b
 table.dataTable.dtr-inline.collapsed tbody td.child,
 table.dataTable.dtr-inline.collapsed tbody th.child {
   padding:0;
+  text-align: left;
+}
+table.dataTable.dtr-inline.collapsed tbody tr.child td.child{
+  padding-left: 10px;
 }
 table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
-  padding: 5px 5px 5px 26px;
+  padding: 5px 5px 5px 24px;
 }
 /*table.dataTable.dtr-column tbody td.control::before, table.dataTable.dtr-column tbody th.control::before {
   left: auto;
@@ -6298,7 +6411,7 @@ button {
       border-color: #dcdede;
       background: #f8fbf4;
       box-shadow: none;
-      margin: 0 0 10px 10px;
+      margin: 0 0 10px 0px;
       min-width: 150px;
       min-height: 40px;
       text-align: left;
@@ -6322,6 +6435,13 @@ button {
         &.radio-list {
           display: block;
           padding-right:10px;
+
+          @media screen and (max-width: 360px) {
+            overflow: hidden;
+            width: 62px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
         }
       }
     }
@@ -6410,3 +6530,6 @@ button {
     border-right: 0;
   }
 }
+
+
+

@@ -111,6 +111,7 @@ $(function () {
 		}, 600);
 	});
 
+
 	if ($(window).width() < 767) {
 		$('.banner-action').click(function () {
 			$(this).parents('li').addClass('active');
@@ -172,6 +173,7 @@ $(function () {
 	});
 
 
+
 	//(Custom) - Hamburger fucntion on the left top side menu
 	var breadtop = $(".hamburger li:nth-child(1)"),
 		beef = $(".hamburger li:nth-child(2)"),
@@ -196,17 +198,7 @@ $(function () {
 		}
 	});
 
-
-
-
-
-
-
-
-
-
-
-
+	//hamburgar menu
 	if ($(window).width() < 991) {
 		$('.sub-menu-dt-ar').hide();
 	}
@@ -230,33 +222,6 @@ $(function () {
 			$('.sub-menu-dt-ar').show();
 		}
 	});
-
-
-
-
-	/*if ($(window).width() < 991) {
-		//accordion function
-		$('.sub-menu-dt-ar').hide();
-		$('.menu-list-dt > li > a').click(function () {
-			$('.menu-list-dt > li > a').parent().removeClass('active');
-			$('.sub-menu-dt-ar').slideUp('normal');
-			if ($(this).next().is(':hidden') == true) {
-				//ADD THE ON CLASS TO THE BUTTON
-				$(this).parent().addClass('active');
-				//OPEN THE SLIDE
-				$(this).next().slideDown('normal');
-			}
-		});
-	};
-
-	$(window).resize(function(){
-		if ($(window).width() < 991) {
-			$('.sub-menu-dt-ar').hide();
-		}else {
-			$('.sub-menu-dt-ar').show();
-		}
-	});*/
-
 
 	//for converting tab to accordion
 	$(".tab-content .accordion-heading").click(function(){
@@ -297,28 +262,40 @@ $(function () {
 
 	//list item to replace on select box in mobile
 	if ($(window).width() < 767){
-		//for dropdown toggle on click
-		$('button.btn-toggle').on('click', function () {
-			$(this).parents('.btn-wrap').next('.toggle-list').toggle();
+		$('.btn-wrap button.btn-toggle').on('click',function(e){
+			e.preventDefault();
+			var $list = $(this).parent().next('.share-dt-sort');
+			$list.slideToggle();
+			$('ul.toggle-list').not($list).slideUp();
 		});
-		$('.share-dt-sort li a').on('click', function () {
+		$('ul.toggle-list li a').on('click', function(e){
+			e.preventDefault();
 			var vals = $(this).html();
 			$(this).parents().prev('.btn-wrap').find('button.btn-toggle span.text').html(vals);
-			$(this).parents('ul.toggle-list').toggle();
+			if($('ul.toggle-list').is(':visible')) {
+				$('ul.toggle-list').hide();
+			}
 		});
-
-		$(window).resize(function () {
-			//for dropdown toggle on click
-			$('button.btn-toggle').on('click', function () {
-				$(this).parents('.btn-wrap').next('.toggle-list').toggle();
-			});
-			$('.share-dt-sort li a').on('click', function () {
-				var vals = $(this).html();
-				$(this).parents().prev('.btn-wrap').find('button.btn-toggle span.text').html(vals);
-				$(this).parents.toggle();
-			});
-		});
+	}else {
+		$('ul.toggle-list').show();
 	}
+
+	$(document).on("click", function (e) {
+		if ($(window).width() < 767) {
+			var p = $(e.target).closest('.btn-wrap button.btn-toggle').length;
+			if (!p) {
+				var $list = $(this).parent().next('.share-dt-sort');
+				$list.slideToggle();
+				$('ul.toggle-list').not($list).slideUp();
+			}
+			var p1 = $(e.target).closest('.btn-wrap button.btn-radio-toggle').length;
+			if (!p1) {
+				var $list = $(this).parent().next('.toggle-radio');
+				$list.slideToggle();
+				$('.toggle-radio').not($list).slideUp();
+			}
+		}
+	});
 
 	//radio button covert in select box
 	var winwidth = $(window).width();
@@ -354,6 +331,10 @@ $(function () {
 		todayHighlight: true,
 	}).on('changeDate', function(e) {
 		$('.datepicker').hide();
+	});
+
+	$('.datetimepicker').datetimepicker({
+		format: 'MMMM DD, HH:mm'
 	});
 
 	//for div height calculation
@@ -401,9 +382,9 @@ $(window).resize(function(){
 	// footernav();
 	var winwidth = $(window).width();
 	if(winwidth >= 768) {
-		$('.toggle-radio').show();
+		$('.toggle-radio,ul.toggle-list').show();
 	} else {
-		$('.toggle-radio').hide();
+		$('.toggle-radio,ul.toggle-list').hide();
 	}
 });
 function divheight() {

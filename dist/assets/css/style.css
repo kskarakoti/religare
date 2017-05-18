@@ -12405,11 +12405,9 @@ header {
       background: #ffffff; }
       .tab-structure.nav-tabs > li.active > a {
         border-top: 4px solid #8dc63f; }
-    .tab-structure.nav-tabs > li:hover {
-      border-right: 1px solid #d6dad6;
-      border-bottom: 1px solid #ddd; }
-      .tab-structure.nav-tabs > li:hover > a {
-        border-top: 4px solid #8dc63f; }
+    .tab-structure.nav-tabs > li:hover > a {
+      border: 0;
+      border-top: 4px solid #8dc63f; }
     .tab-structure.nav-tabs > li > a {
       border: none;
       border-top: 4px solid #f8fbf4;
@@ -12434,6 +12432,29 @@ header {
         color: #666666;
         font-family: "ubunturegular", sans-serif;
         text-transform: capitalize; }
+        .tab-structure.nav-tabs > li .title .month-time-tx.time-arrow:after {
+          display: inline-block;
+          content: '';
+          height: 9px;
+          content: '';
+          width: 9px;
+          background: transparent;
+          border: 2px solid #8d8d8d;
+          transform: rotate(-45deg);
+          top: 3px;
+          position: absolute;
+          border-top: 0;
+          border-right: 0;
+          right: -20px;
+          margin: auto; }
+        .tab-structure.nav-tabs > li .title .month-time-tx .datepick-ip {
+          border: none;
+          background: none;
+          color: #666666;
+          outline: none;
+          width: 111px; }
+          .tab-structure.nav-tabs > li .title .month-time-tx .datepick-ip:focus {
+            outline: none; }
     .tab-structure.nav-tabs > li .sunsex-count {
       font-family: "ubunturegular", sans-serif;
       font-size: 22px;
@@ -12468,12 +12489,14 @@ header {
   .banner-chart.derivatives-bann {
     background: url("../../assets/images/markets_equity_cropped.jpg") no-repeat;
     background-size: cover; }
-    @media screen and (max-width: 991px) {
-      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
-        display: block; } }
-    @media screen and (max-width: 767px) {
-      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
-        display: inline-block; } }
+    .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
+      position: relative; }
+      @media screen and (max-width: 991px) {
+        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
+          display: block; } }
+      @media screen and (max-width: 767px) {
+        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
+          display: inline-block; } }
     @media screen and (max-width: 991px) {
       .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li.add-index .add-index-drop .dropdown-scd {
         padding: 9px 15px; } }
@@ -12489,6 +12512,7 @@ header {
     @media screen and (max-width: 767px) {
       .banner-chart.commodities-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
         margin: 0;
+        background: #fff;
         min-width: 100%; } }
     @media screen and (max-width: 767px) {
       .banner-chart.commodities-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt {
@@ -12538,7 +12562,10 @@ header {
     border-radius: 4px;
     overflow: hidden; }
     .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.active {
-      border-color: #ddd; }
+      border-bottom-color: #fff; }
+      @media screen and (max-width: 767px) {
+        .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.active {
+          border-bottom-color: #ddd; } }
     @media screen and (max-width: 767px) {
       .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li a {
         border: none; } }
@@ -12793,6 +12820,12 @@ header {
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 50px; }
+  @media screen and (max-width: 480px) {
+    .tranding-now-area .tranding-content-area .tranding-tab .share-content-tab .share-mkt-ar .share-title {
+      padding: 0 20px; } }
+  @media screen and (max-width: 480px) {
+    .tranding-now-area .tranding-content-area .tranding-tab .share-content-tab {
+      padding: 20px 0; } }
   .tranding-now-area .tranding-content-area:last-child {
     margin-bottom: 0; }
 
@@ -13255,6 +13288,20 @@ header {
   padding: 25px;
   border-radius: 4px;
   overflow: hidden; }
+  .block-deals-ar .block-deal-ar .heat-opt-bx {
+    margin-bottom: 10px; }
+    @media screen and (max-width: 480px) {
+      .block-deals-ar .block-deal-ar .heat-opt-bx .btn-radio-toggle {
+        min-width: 100%; } }
+    @media screen and (max-width: 480px) {
+      .block-deals-ar .block-deal-ar .heat-opt-bx .toggle-radio {
+        min-width: 100%; } }
+    @media screen and (max-width: 767px) {
+      .block-deals-ar .block-deal-ar .heat-opt-bx {
+        padding: 0 25px; } }
+    @media screen and (max-width: 480px) {
+      .block-deals-ar .block-deal-ar .heat-opt-bx {
+        padding: 0; } }
   .block-deals-ar .block-deal-ar .block-opt {
     margin-bottom: 15px; }
     @media screen and (max-width: 767px) {
@@ -13599,13 +13646,18 @@ header {
       .events-ar .main-events .events-title .events-title-list > li > a {
         padding: 10px;
         color: #40474e;
-        font-size: 18px; }
-        .events-ar .main-events .events-title .events-title-list > li > a .bootstrap-datetimepicker-widget.dropdown-menu {
-          left: auto !important;
-          right: -42px !important;
-          margin-top: 15px; }
-          .events-ar .main-events .events-title .events-title-list > li > a .bootstrap-datetimepicker-widget.dropdown-menu:before, .events-ar .main-events .events-title .events-title-list > li > a .bootstrap-datetimepicker-widget.dropdown-menu:after {
-            left: 50%; }
+        font-size: 18px;
+        /*.bootstrap-datetimepicker-widget {
+              &.dropdown-menu {
+                left: auto !important;
+                right: -42px !important;
+                margin-top: 15px;
+
+                &:before, &:after {
+                  left: 50%;
+                }
+              }
+            }*/ }
         .events-ar .main-events .events-title .events-title-list > li > a span {
           margin-right: 5px;
           color: #8dc63f; }
@@ -13639,8 +13691,8 @@ header {
             font-size: 60px;
             line-height: 60px; }
 
-.bootstrap-datetimepicker-widget.dropdown-menu.bottom {
-  top: 26px !important; }
+.bootstrap-datetimepicker-widget .datepicker-days {
+  display: block; }
 
 /****************************************
    3.6 Support Page Styles
@@ -13911,6 +13963,9 @@ header {
   background: #ffffff; }
   .block-panel .block-deal-pd0 {
     padding: 0 15px 15px 15px; }
+    @media screen and (max-width: 768px) {
+      .block-panel .block-deal-pd0 {
+        padding: 0 0px 20px 0px; } }
 
 .tranding-radio-btn {
   margin-left: 50px; }
@@ -13947,18 +14002,28 @@ header {
   .market-analysis-ar .tranding-content-area .tranding-opt {
     padding: 20px 15px; } }
 
+@media screen and (max-width: 480px) {
+  .market-analysis-ar .tranding-content-area .tranding-opt {
+    padding: 20px 0px; } }
+
 /****************************************
   3.10 Market Derivatives Page Styles
 ****************************************/
 .option-chain-ar .option-chain-bx {
   background: #f8fbf4;
-  padding: 40px 30px; }
+  padding: 40px 30px;
+  /*@media screen and (max-width: 480px) {
+      padding: 20px 0px;
+    }*/ }
   .option-chain-ar .option-chain-bx .option-opt-bx {
     width: 95%;
     margin: auto; }
     @media screen and (max-width: 540px) {
       .option-chain-ar .option-chain-bx .option-opt-bx .opt-mob {
         padding: 0; } }
+    @media screen and (max-width: 767px) {
+      .option-chain-ar .option-chain-bx .option-opt-bx .input-date {
+        max-width: 100%; } }
     .option-chain-ar .option-chain-bx .option-opt-bx .tranding-select-opt {
       margin-right: 0; }
       .option-chain-ar .option-chain-bx .option-opt-bx .tranding-select-opt .datePicker {
@@ -13967,6 +14032,9 @@ header {
         width: 100% !important; }
         .option-chain-ar .option-chain-bx .option-opt-bx .tranding-select-opt .select2-container .select2-selection--single {
           background: #fff; }
+      @media screen and (max-width: 767px) {
+        .option-chain-ar .option-chain-bx .option-opt-bx .tranding-select-opt {
+          margin-bottom: 20px; } }
     .option-chain-ar .option-chain-bx .option-opt-bx .get-option-btn {
       margin-bottom: 0; }
       .option-chain-ar .option-chain-bx .option-opt-bx .get-option-btn .btn-green {
@@ -13987,9 +14055,6 @@ header {
   @media screen and (max-width: 991px) {
     .option-chain-ar .option-chain-bx {
       padding: 20px 15px; } }
-  @media screen and (max-width: 480px) {
-    .option-chain-ar .option-chain-bx {
-      padding: 20px 0px; } }
 
 @media screen and (max-width: 480px) {
   .open-interest-analysis-mob .share-content-tab .tranding-opt-none .tranding-select-opt .select2-container {
@@ -14004,6 +14069,14 @@ header {
   .open-interest-analysis-mob .share-content-tab {
     padding: 20px 0px; } }
 
+@media screen and (max-width: 480px) {
+  .derivatives-open .block-panel .block-deal-pd0 {
+    padding: 0 0 20px 0; } }
+
+@media screen and (max-width: 480px) {
+  .put-call-open .block-panel .block-deal-pd0 {
+    padding: 0 0 20px 0; } }
+
 /****************************************
  3.11 Market Currency Page Styles
 ****************************************/
@@ -14013,7 +14086,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .currency-put-mob .block-panel .block-deal-pd0 {
-    padding: 0; } }
+    padding: 0 0 20px 0; } }
 
 @media screen and (max-width: 480px) {
   .currency-interest-mob .share-content-tab .chart-opt-sec .tranding-select-opt {
@@ -14089,13 +14162,13 @@ header {
     float: left; } }
 
 @media screen and (max-width: 480px) {
-  .tax-saving-mob .block-panel {
-    padding: 25px 0; } }
-
-@media screen and (max-width: 480px) {
   .what-out .block-panel .tranding-opt .tranding-select-opt .btn-radio-toggle {
     margin: 0;
     min-width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .what-out .block-panel .block-deal-pd0 {
+    padding: 0 0 20px 0; } }
 
 /************************************************************************************
 
@@ -14817,10 +14890,14 @@ table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:b
 
 table.dataTable.dtr-inline.collapsed tbody td.child,
 table.dataTable.dtr-inline.collapsed tbody th.child {
-  padding: 0; }
+  padding: 0;
+  text-align: left; }
+
+table.dataTable.dtr-inline.collapsed tbody tr.child td.child {
+  padding-left: 10px; }
 
 table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
-  padding: 5px 5px 5px 26px; }
+  padding: 5px 5px 5px 24px; }
 
 /*table.dataTable.dtr-column tbody td.control::before, table.dataTable.dtr-column tbody th.control::before {
   left: auto;
@@ -15270,7 +15347,7 @@ button.btn.btn-radio-toggle {
   border-color: #dcdede;
   background: #f8fbf4;
   box-shadow: none;
-  margin: 0 0 10px 10px;
+  margin: 0 0 10px 0px;
   min-width: 150px;
   min-height: 40px;
   text-align: left;
@@ -15295,6 +15372,12 @@ button.btn.btn-radio-toggle {
   button.btn.btn-radio-toggle span.radio-list {
     display: block;
     padding-right: 10px; }
+    @media screen and (max-width: 360px) {
+      button.btn.btn-radio-toggle span.radio-list {
+        overflow: hidden;
+        width: 62px;
+        white-space: nowrap;
+        text-overflow: ellipsis; } }
 
 @media screen and (max-width: 767px) {
   .relative-div {
