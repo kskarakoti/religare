@@ -2396,7 +2396,14 @@ header {
             background: none;
             color: #666666;
             outline: none;
-            width: 111px;
+            width: 54px;
+
+            &:after {
+              content: 'th';
+              position: absolute;
+              right: 0;
+              top:0;
+            }
             &:focus {
               outline: none;
             }

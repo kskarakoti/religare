@@ -333,8 +333,11 @@ $(function () {
 		$('.datepicker').hide();
 	});
 
-	$('.datetimepicker').datetimepicker({
-		format: 'MMMM DD, HH:mm'
+	$('.datePickerTab').datepicker({
+		format: "MM dd",
+		todayHighlight: true,
+	}).on('changeDate', function(e) {
+		$('.datepicker').hide();
 	});
 
 	//for div height calculation

@@ -12452,7 +12452,12 @@ header {
           background: none;
           color: #666666;
           outline: none;
-          width: 111px; }
+          width: 54px; }
+          .tab-structure.nav-tabs > li .title .month-time-tx .datepick-ip:after {
+            content: 'th';
+            position: absolute;
+            right: 0;
+            top: 0; }
           .tab-structure.nav-tabs > li .title .month-time-tx .datepick-ip:focus {
             outline: none; }
     .tab-structure.nav-tabs > li .sunsex-count {

@@ -26,7 +26,6 @@ var vendorJSFiles =
         "./bower_components/bootstrap/dist/js/bootstrap.js",
         "./src/script/bootstrap-datepicker/moment-with-locales.js",
         "./src/script/bootstrap-datepicker/bootstrap-datepicker.min.js",
-        "./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
         "./src/script/select/jquery.dd.js",
         "./src/script/datatable/jquery.dataTables.min.js",
         "./src/script/datatable/dataTables.responsive.js",
@@ -43,8 +42,7 @@ gulp.task('vendorJS', function () {
 
 // src variable
 var vendorCSSFiles =
-    ["./bower_components/bootstrap/dist/css/bootstrap.css",
-        "./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"];
+    ["./bower_components/bootstrap/dist/css/bootstrap.css"];
 
 // Load Concat task for CSS files
 gulp.task('vendorCSS', function () {
