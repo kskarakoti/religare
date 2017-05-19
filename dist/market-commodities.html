@@ -96,21 +96,6 @@
                                         <a href="research.html"><span class="icon-research-reports font-icons">
                                     <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
                                     </span> Research</a>
-                                        <div class="sub-menu-dt-ar">
-                                            <ul class="sub-menu-dt-list">
-                                                <li><a href="javascript:void(0)">Overview</a></li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Reports</a>
-                                                    <ul>
-                                                        <li><a href="javascript:void(0)">Equity</a></li>
-                                                        <li><a href="javascript:void(0)">Commodities</a></li>
-                                                        <li><a href="javascript:void(0)">Currencies</a></li>
-                                                        <li><a href="javascript:void(0)">Mutual Funds</a></li>
-                                                        <li><a href="javascript:void(0)">IPO</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </li>
                                     <li class="sub-item">
                                         <a href="javascript:void(0)"><span class="icon-tools font-icons">
@@ -285,7 +270,7 @@
                        <!-- Nav tabs -->
                        <ul class="nav nav-tabs tab-structure tab-4" role="tablist">
                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3 gold-ar active">
-                               <a href="#nifty" data-toggle="tab">
+                               <a href="#gold" data-toggle="tab">
                                    <p class="title"><span class="icon-Gold">
                                     <span class="path1"></span><span class="path2"></span>
                                     </span> Gold <span class="month-time-tx">(April 27th, 4:30 AM)</span></p>
@@ -296,7 +281,7 @@
                                </a>
                            </li>
                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3 silver-ar">
-                               <a href="#sensex" data-toggle="tab">
+                               <a href="#silver" data-toggle="tab">
                                    <p class="title"><span class="icon-Silver">
                     <span class="path1"></span><span class="path2"></span>
                     </span> Silver <span class="month-time-tx">(April 27th, 4:30 AM)</span></p>
@@ -307,7 +292,7 @@
                                </a>
                            </li>
                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3 crude-ar">
-                               <a href="#sensex" data-toggle="tab">
+                               <a href="#crudeOil" data-toggle="tab">
                                    <p class="title"><span class="icon-Crude-Oil"></span> Crude Oil <span class="month-time-tx">(April 27th, 4:30 AM)</span></p>
                                    <p class="sunsex-count">
                                        <span class="price-value">28,734.63</span>
@@ -316,8 +301,8 @@
                                </a>
                            </li>
                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3 visible-lg add-index">
-                               <div class="dropdown-toggle add-index-drop" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                   <a href="#messages" data-toggle="tab" class="dropdown-frst">
+                               <div class="dropdown-toggle add-index-drop" id="dropMenu1" data-toggle="dropdown" aria-haspopup="true">
+                                   <a href="#addCommodity" data-toggle="tab" class="dropdown-frst">
                                        <span class="plus-icon">+</span>
                                        <span class="add-tx">Add Commodity</span>
                                        <span class="down-arrow"><span class="up-angle"></span></span>
@@ -335,7 +320,7 @@
                                        </a>
                                    </div>
                                </div>
-                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropMenu1">
                                    <div class="search-drop">
                                        <input type="text" class="input-ip">
                                        <a href="javascript:void(0)" class="search-bt"><span class="icon-ic_search"></span></a>
@@ -366,17 +351,20 @@
 
                        <!-- Tab panes -->
                        <div class="tab-content chart-content-tab hidden-xs">
-                           <div role="tabpanel" class="tab-pane active" id="nifty">
+                           <div role="tabpanel" class="tab-pane active" id="gold">
                                <div class="chart-content-ar">
                                    <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                                </div>
                            </div>
-                           <div role="tabpanel" class="tab-pane" id="sensex">
+                           <div role="tabpanel" class="tab-pane" id="silver">
                                <div class="chart-content-ar">
                                    <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                                </div>
                            </div>
-                           <div role="tabpanel" class="tab-pane" id="messages">
+                           <div role="tabpanel" class="tab-pane" id="crudeOil">
+                               <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
+                           </div>
+                           <div role="tabpanel" class="tab-pane" id="addCommodity">
                                <img src="assets/images/markets_equity_graph.jpg" alt="" title="" class="img-responsive">
                            </div>
                        </div>

@@ -164,6 +164,90 @@
   margin-left: -1.3466796875em;
   color: rgb(68, 68, 68);
 }
+.icon-MF_Screener .path1:before {
+  content: "\ecc6";
+  color: rgb(218, 234, 243);
+}
+.icon-MF_Screener .path2:before {
+  content: "\ecc7";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path3:before {
+  content: "\ecc8";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 255, 255);
+}
+.icon-MF_Screener .path4:before {
+  content: "\ecc9";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path5:before {
+  content: "\ecca";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-MF_Screener .path6:before {
+  content: "\eccb";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path7:before {
+  content: "\eccc";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path8:before {
+  content: "\eccd";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path9:before {
+  content: "\ecce";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path10:before {
+  content: "\eccf";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path11:before {
+  content: "\ecd0";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path12:before {
+  content: "\ecd1";
+  margin-left: -1.3759765625em;
+  color: rgb(255, 242, 0);
+}
+.icon-MF_Screener .path13:before {
+  content: "\ecd2";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path14:before {
+  content: "\ecd3";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path15:before {
+  content: "\ecd4";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path16:before {
+  content: "\ecd5";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
+.icon-MF_Screener .path17:before {
+  content: "\ecd6";
+  margin-left: -1.3759765625em;
+  color: rgb(68, 68, 68);
+}
 .icon-Star_Rating .path1:before {
   content: "\ec6c";
   color: rgb(218, 234, 243);
@@ -4763,4 +4847,3 @@
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-

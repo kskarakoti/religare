@@ -57,17 +57,13 @@ $(function () {
 
 
 	//for addclass on page load
-	$("ul.menu-list li a, ul.menu-list-dt li a").each(function() {
+	$(".menu-list li a, .menu-list-dt li a").each(function() {
 		if (this.href == window.location) {
-			$(this).parent().addClass("active");
+			$(this).parent('li').addClass("active");
 		};
 	});
-
 	$("ul.sub-menu-list li").each(function() {
 		$('ul.sub-menu-list li.active').parents().find('.sub-menu-ar').parent().addClass('active').next().removeClass('active');
-	});
-	$("ul.sub-menu-dt-list li").each(function() {
-		$('ul.sub-menu-dt-list li.active').parents().find('.sub-menu-dt-ar').parent().addClass('active').next().removeClass('active');
 	});
 
 	//menu black background show function
@@ -174,7 +170,6 @@ $(function () {
 			}
 		}
 	});
-
 
 
 	//(Custom) - Hamburger fucntion on the left top side menu
@@ -437,11 +432,18 @@ function eligheight() {
 }
 function contheight() {
 	var maxHeight = -1;
-	$('.grid-overlay-wrap .content-wrap p').each(function() {
+	var maxHeights = -1;
+	$('.grid-overlay-wrap .content-wrap').each(function() {
 		maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
 	});
-	$('.grid-overlay-wrap .content-wrap p').each(function() {
+	$('.grid-overlay-wrap .content-wrap').each(function() {
 		$(this).height(maxHeight);
+	});
+	$('.grid-overlay-wrap .content-wrap p').each(function() {
+		maxHeights = maxHeights > $(this).height() ? maxHeights : $(this).height();
+	});
+	$('.grid-overlay-wrap .content-wrap p').each(function() {
+		$(this).height(maxHeights);
 	});
 }
 
