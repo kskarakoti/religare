@@ -2010,11 +2010,15 @@ header {
         vertical-align: middle;
         .heading-bx {
           text-align:left;
-          margin-bottom: 27px;
+          margin-bottom: 4px;
           h2 {
             &:after {
               margin: initial;
+              bottom: -15px;
             }
+          }
+          @media screen and (max-width:767px) {
+            margin-bottom: 27px;
           }
         }
 
@@ -2336,10 +2340,11 @@ header {
      > a {
         border: none;
         border-top: 4px solid #f8fbf4;
-        padding: 8px 15px 8px 15px;
+        padding: 8px 14px 8px 14px;
         min-height: 80px;
         border-radius: 0;
         margin-right: 0;
+       display: block;
 
         &:hover {
           background: $white;
@@ -2350,6 +2355,9 @@ header {
           font-family: $font-family-ubuntumedium;
         }
 
+       @media screen and (max-width: 1024px) {
+         padding: 10px;
+       }
         @media screen and (max-width: 410px) {
           padding: 15px;
         }
@@ -2357,7 +2365,7 @@ header {
 
       .title {
         color: #222222;
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase;
 
         .month-time-tx {
@@ -2405,6 +2413,12 @@ header {
               outline: none;
             }
           }
+          @media screen and (max-width: 1024px) {
+            display: block;
+          }
+          @media screen and (max-width: 767px) {
+            display: inline-block;
+          }
         }
       }
 
@@ -2443,6 +2457,9 @@ header {
           font-size: 20px;
         }
       }
+      @media screen and (max-width: 767px) {
+        min-height: auto;
+      }
     }
   }
 }
@@ -2458,15 +2475,17 @@ header {
       .tab-list {
         .tab-structure {
           li {
-            p {
+            .title {
               .month-time-tx {
                 position: relative;
                 display: inline-block;
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 1024px) {
                   display: block;
+                  width: 170px;
                 }
                 @media screen and (max-width: 767px) {
                   display: inline-block;
+
                 }
                 &.datePickerTab {
                   input {
@@ -2476,16 +2495,36 @@ header {
                     float:none;
                     box-shadow:none;
                     height: auto;
-                    padding: 4px;
-                    display:initial;
+                    padding: 0 4px;
+                    display:inline-block;
+                    vertical-align: top;
                   }
                   .input-group-addon {
-                    display: inline-table;
-                    float: right;
+                    display: inline-block;
                     border:none;
                     background:transparent;
                     padding-left: 0;
-                    padding-right:0;                  }
+                    padding-right:0;
+                    vertical-align: top;
+                    line-height: 7px;
+                  }
+                }
+
+                &:after {
+                  content: '';
+                  display: inline-block;
+                  height: 9px;
+                  content: '';
+                  width: 9px;
+                  background: transparent;
+                  border: 2px solid #8d8d8d;
+                  transform: rotate(-45deg);
+                  top: 4px;
+                  position: absolute;
+                  border-top: 0;
+                  border-right: 0;
+                  right: 11px;
+                  margin: auto;
                 }
               }
             }
@@ -2496,7 +2535,7 @@ header {
                     padding: 9px 15px;
                   }
                 }
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 1024px) {
                  height: 95px;
                 }
               }
@@ -2574,6 +2613,9 @@ header {
             @media screen and (max-width: 767px) {
               margin: 0;
               min-width: 100%;
+            }
+            @media screen and (max-width: 480px) {
+              padding-right: 10px;
             }
           }
           @media screen and (max-width: 767px) {
@@ -2764,7 +2806,7 @@ header {
              .dropdown-scd {
                display: none;
                text-align: left;
-               padding: 12px 15px;
+               padding: 10px 15px;
                position: relative;
 
                .edit-icons {
@@ -2777,7 +2819,7 @@ header {
                }
                p {
                  margin-bottom: 0;
-                 line-height: 22px;
+                 line-height: 20px;
 
                  &.title {
                    color: #ffba00;
@@ -2795,6 +2837,9 @@ header {
                    }
                  }
 
+               }
+               @media screen and (max-width: 1024px) {
+                 padding: 10px;
                }
              }
 
@@ -3193,17 +3238,15 @@ header {
       }
     }
   }
-@media screen and (max-width:480px) {
-  .table.shate-data-tbl.text-right th.text-left:nth-child(1) {
-    width:111px !important;
-}
-}
+  @media screen and (max-width:480px) {
+    .table.shate-data-tbl.text-right th.text-left:nth-child(1) {
+      width:111px !important;
+    }
+  }
   .share-content-tab {
     padding: 25px 15px;
     background: #fff;
-     @media screen and (max-width: 767px) {
-      padding: 25px 0;
-     }
+
     .share-mkt-ar {
       .top-gainers-heading {
 
@@ -3218,6 +3261,9 @@ header {
           }
         }
       }
+    }
+    @media screen and (max-width: 480px) {
+      padding: 25px 0;
     }
   }
 }
@@ -3321,6 +3367,7 @@ header {
       .date-tx {
         font-size: 12px;
         display: inline-block;
+
       }
       a {
         color: #222222;
@@ -3337,6 +3384,9 @@ header {
       @media screen and (max-width: 600px) {
         font-size: 12px;
         padding: 10px;
+      }
+      @media screen and (max-width: 767px) {
+        white-space: nowrap;
       }
     }
 
@@ -4623,17 +4673,23 @@ header {
                 margin:0;
                 padding-left:10px;
                 font-size: 18px;
-                @media screen and (max-width: 991px) {
-                  font-size: 16px;
+                @media screen and (max-width: 1024px) {
+                  font-size: 14px;
                 }
                 @media screen and (max-width: 767px) {
-                  padding:0 8px;
-                  font-size: 14px;
+                  padding:0 5px;
+                  font-size: 13px;
                 }
               }
               @media screen and (max-width: 767px) {
                 text-align: center;
               }
+            }
+            @media screen and (max-width: 991px) {
+              padding-left: 20px;
+            }
+            @media screen and (max-width: 767px) {
+              padding-left: 0px;
             }
           }
         }
@@ -4664,8 +4720,11 @@ header {
             color:$mine-shaft;
             font-size: 13px;
             @media screen and (max-width: 991px) {
-              font-size: 13px;
+              font-size: 12px;
             }
+          }
+          @media screen and (max-width: 1024px) {
+            padding: 8px 14px;
           }
         }
       }
@@ -4719,6 +4778,9 @@ header {
         background: #fff;
       }
     }
+    .btn-radio-toggle {
+      background: #FFF;
+    }
   }
   .chart-tab-wrap {
     border-radius: 0;
@@ -4737,7 +4799,7 @@ header {
   .block-deal-pd0 {
     padding: 0 15px 15px 15px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       padding: 0 0px 20px 0px;
     }
   }
@@ -5241,7 +5303,8 @@ header {
         @media screen and (max-width: 991px) {
           cursor: pointer;
           border-top: 1px solid #545859;
-          padding-top: 9px;
+          padding: 9px 0;
+          margin: 0;
         }
 
         &:after {
@@ -5303,6 +5366,7 @@ header {
 
       @media screen and (max-width: 991px) {
         display: none;
+        margin-bottom: 10px;
       }
     }
     @media screen and (max-width: 991px) {
@@ -5745,8 +5809,14 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     &.h2font28 {
       font-size: 28px;
       font-family: $font-family-ubuntumedium;
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 1024px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 1024px) {
         font-size: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 18px;
       }
     }
 
@@ -5801,8 +5871,8 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .inbetween-padding {
   padding:30px 0;
-  @media screen and (max-width: 480px) {
-    padding:18px 0;
+  @media screen and (max-width: 767px) {
+    padding:22px 0;
   }
 }
 
@@ -6135,6 +6205,7 @@ span {
     &.panel-title {
       font-size: 18px;
       a {
+        padding-right: 14px;
         &.collapsed {
           color: #40474e;
           &:before {
@@ -6144,12 +6215,23 @@ span {
         display: block;
         i {
           &.more-less {
-            float: right;
+            /*float: right;*/
             font-size: 11px;
             padding:5px 0;
             color:#40474e;
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            font-family: $font-family-ubunturegular;
+            font-size: 22px;
           }
         }
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
       }
     }
   }
@@ -6168,6 +6250,8 @@ span {
         margin:0;
         text-align: center;
         border-bottom:1px solid #ddd;
+        display: table;
+
         &.active {
           border-bottom-color: #fff;
           a {
@@ -6190,7 +6274,9 @@ span {
           margin-right: 0;
           @include border-radius(0);
           border:0;
-          padding:14px 15px;
+          padding:5px;
+          display: table-cell;
+          vertical-align: middle;
           font-size: $font-size-large;
           color: $dove-gray;
           border-top:4px solid #f8fbf4;
@@ -6200,13 +6286,6 @@ span {
             padding: 12px 11px;
           }
         }
-        /*&:hover {
-          border:0;
-          a {
-            background: $white;
-            border-right:1px solid #dfdfdf;
-          }
-        }*/
       }
     }
   }
@@ -6251,6 +6330,12 @@ span {
           right:15px;
           font-size: 40px;
         }
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
       }
     }
   }

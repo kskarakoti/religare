@@ -337,7 +337,7 @@ $(function () {
 	}).on('changeDate', function(e) {
 		$('.datepicker').hide();
 	});
-	$('.month-time-tx').on('click', function(e){
+	$('.derivatives-bann .month-time-tx').on('click', function(e){
 		e.stopPropagation();
 		return false;
 	});
@@ -387,6 +387,7 @@ $(function () {
             targets:   -1
         } ]
     } );
+
 
 	
 });

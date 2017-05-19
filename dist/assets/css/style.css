@@ -12310,9 +12310,13 @@ header {
     vertical-align: middle; }
     .sec-block .block .heading-bx {
       text-align: left;
-      margin-bottom: 27px; }
+      margin-bottom: 4px; }
       .sec-block .block .heading-bx h2:after {
-        margin: initial; }
+        margin: initial;
+        bottom: -15px; }
+      @media screen and (max-width: 767px) {
+        .sec-block .block .heading-bx {
+          margin-bottom: 27px; } }
     .sec-block .block .desc {
       font-size: 14px;
       color: #666666; }
@@ -12529,21 +12533,25 @@ header {
     .tab-structure.nav-tabs > li > a {
       border: none;
       border-top: 4px solid #f8fbf4;
-      padding: 8px 15px 8px 15px;
+      padding: 8px 14px 8px 14px;
       min-height: 80px;
       border-radius: 0;
-      margin-right: 0; }
+      margin-right: 0;
+      display: block; }
       .tab-structure.nav-tabs > li > a:hover {
         background: #ffffff; }
       .tab-structure.nav-tabs > li > a p {
         margin: 0;
         font-family: "ubuntumedium", sans-serif; }
+      @media screen and (max-width: 1024px) {
+        .tab-structure.nav-tabs > li > a {
+          padding: 10px; } }
       @media screen and (max-width: 410px) {
         .tab-structure.nav-tabs > li > a {
           padding: 15px; } }
     .tab-structure.nav-tabs > li .title {
       color: #222222;
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase; }
       .tab-structure.nav-tabs > li .title .month-time-tx {
         font-size: 14px;
@@ -12580,6 +12588,12 @@ header {
             top: 0; }
           .tab-structure.nav-tabs > li .title .month-time-tx .datepick-ip:focus {
             outline: none; }
+        @media screen and (max-width: 1024px) {
+          .tab-structure.nav-tabs > li .title .month-time-tx {
+            display: block; } }
+        @media screen and (max-width: 767px) {
+          .tab-structure.nav-tabs > li .title .month-time-tx {
+            display: inline-block; } }
     .tab-structure.nav-tabs > li .sunsex-count {
       font-family: "ubunturegular", sans-serif;
       font-size: 22px;
@@ -12607,6 +12621,9 @@ header {
       @media screen and (max-width: 1170px) {
         .tab-structure.nav-tabs > li .sunsex-count {
           font-size: 20px; } }
+    @media screen and (max-width: 767px) {
+      .tab-structure.nav-tabs > li {
+        min-height: auto; } }
 
 .banner-chart {
   background: url("../../assets/images/markets_equity_cropped.jpg") no-repeat;
@@ -12614,35 +12631,53 @@ header {
   .banner-chart.derivatives-bann {
     background: url("../../assets/images/markets_equity_cropped.jpg") no-repeat;
     background-size: cover; }
-    .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
+    .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx {
       position: relative;
       display: inline-block; }
-      @media screen and (max-width: 991px) {
-        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
-          display: block; } }
+      @media screen and (max-width: 1024px) {
+        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx {
+          display: block;
+          width: 170px; } }
       @media screen and (max-width: 767px) {
-        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx {
+        .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx {
           display: inline-block; } }
-      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx.datePickerTab input {
+      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx.datePickerTab input {
         background: transparent;
         border: none;
         width: 62px;
         float: none;
         box-shadow: none;
         height: auto;
-        padding: 4px;
-        display: initial; }
-      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li p .month-time-tx.datePickerTab .input-group-addon {
-        display: inline-table;
-        float: right;
+        padding: 0 4px;
+        display: inline-block;
+        vertical-align: top; }
+      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx.datePickerTab .input-group-addon {
+        display: inline-block;
         border: none;
         background: transparent;
         padding-left: 0;
-        padding-right: 0; }
+        padding-right: 0;
+        vertical-align: top;
+        line-height: 7px; }
+      .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li .title .month-time-tx:after {
+        content: '';
+        display: inline-block;
+        height: 9px;
+        content: '';
+        width: 9px;
+        background: transparent;
+        border: 2px solid #8d8d8d;
+        transform: rotate(-45deg);
+        top: 4px;
+        position: absolute;
+        border-top: 0;
+        border-right: 0;
+        right: 11px;
+        margin: auto; }
     @media screen and (max-width: 991px) {
       .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li.add-index .add-index-drop .dropdown-scd {
         padding: 9px 15px; } }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1024px) {
       .banner-chart.derivatives-bann .chart-tab-wrap .tab-list .tab-structure li.add-index .add-index-drop {
         height: 95px; } }
     @media screen and (max-width: 767px) {
@@ -12680,6 +12715,9 @@ header {
       .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
         margin: 0;
         min-width: 100%; } }
+    @media screen and (max-width: 480px) {
+      .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
+        padding-right: 10px; } }
     @media screen and (max-width: 767px) {
       .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt {
         float: left;
@@ -12762,7 +12800,7 @@ header {
       .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd {
         display: none;
         text-align: left;
-        padding: 12px 15px;
+        padding: 10px 15px;
         position: relative; }
         .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd .edit-icons {
           position: absolute;
@@ -12773,7 +12811,7 @@ header {
           line-height: 20px; }
         .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd p {
           margin-bottom: 0;
-          line-height: 22px; }
+          line-height: 20px; }
           .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd p.title {
             color: #ffba00; }
             .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd p.title span {
@@ -12781,6 +12819,9 @@ header {
               vertical-align: inherit; }
               .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd p.title span.icon-Top-gainers1 .path1:before {
                 color: #ffba00; }
+        @media screen and (max-width: 1024px) {
+          .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop .dropdown-scd {
+            padding: 10px; } }
       @media screen and (max-width: 767px) {
         .banner-chart .chart-tab-wrap .tab-list .nav-tabs > li.add-index > .add-index-drop {
           display: none; } }
@@ -13064,9 +13105,6 @@ header {
 .tranding-tab .share-content-tab {
   padding: 25px 15px;
   background: #fff; }
-  @media screen and (max-width: 767px) {
-    .tranding-tab .share-content-tab {
-      padding: 25px 0; } }
   .tranding-tab .share-content-tab .share-mkt-ar .top-gainers-heading .share-mkt-data {
     margin: 15px 0 0 0; }
     .tranding-tab .share-content-tab .share-mkt-ar .top-gainers-heading .share-mkt-data .view-all-btn {
@@ -13074,6 +13112,9 @@ header {
     @media screen and (max-width: 991px) {
       .tranding-tab .share-content-tab .share-mkt-ar .top-gainers-heading .share-mkt-data {
         margin-bottom: 50px; } }
+  @media screen and (max-width: 480px) {
+    .tranding-tab .share-content-tab {
+      padding: 25px 0; } }
 
 .dataTables_info {
   display: none !important; }
@@ -13151,6 +13192,9 @@ header {
       .table.shate-data-tbl th, .table.shate-data-tbl td {
         font-size: 12px;
         padding: 10px; } }
+    @media screen and (max-width: 767px) {
+      .table.shate-data-tbl th, .table.shate-data-tbl td {
+        white-space: nowrap; } }
   .table.shate-data-tbl td {
     vertical-align: middle; }
     .table.shate-data-tbl td.green-col {
@@ -14061,16 +14105,22 @@ header {
               margin: 0;
               padding-left: 10px;
               font-size: 18px; }
-              @media screen and (max-width: 991px) {
+              @media screen and (max-width: 1024px) {
                 .prod-services-wrap .pro-ser-wrap .block a .innner-block .media .media-body p {
-                  font-size: 16px; } }
+                  font-size: 14px; } }
               @media screen and (max-width: 767px) {
                 .prod-services-wrap .pro-ser-wrap .block a .innner-block .media .media-body p {
-                  padding: 0 8px;
-                  font-size: 14px; } }
+                  padding: 0 5px;
+                  font-size: 13px; } }
             @media screen and (max-width: 767px) {
               .prod-services-wrap .pro-ser-wrap .block a .innner-block .media .media-body {
                 text-align: center; } }
+            @media screen and (max-width: 991px) {
+              .prod-services-wrap .pro-ser-wrap .block a .innner-block .media {
+                padding-left: 20px; } }
+            @media screen and (max-width: 767px) {
+              .prod-services-wrap .pro-ser-wrap .block a .innner-block .media {
+                padding-left: 0px; } }
         .prod-services-wrap .pro-ser-wrap .block a:hover .overlay {
           display: block; }
         @media screen and (max-width: 767px) {
@@ -14092,7 +14142,10 @@ header {
             font-size: 13px; }
             @media screen and (max-width: 991px) {
               .prod-services-wrap .pro-ser-wrap .block a .overlay p {
-                font-size: 13px; } }
+                font-size: 12px; } }
+          @media screen and (max-width: 1024px) {
+            .prod-services-wrap .pro-ser-wrap .block a .overlay {
+              padding: 8px 14px; } }
   @media screen and (max-width: 991px) {
     .prod-services-wrap .common-tabs ul.nav-tabs li a {
       padding: 25px 11px;
@@ -14117,6 +14170,8 @@ header {
       float: right; }
     .chart-opt-tab .chart-opt-sec .input-date .datePicker {
       background: #fff; }
+    .chart-opt-tab .chart-opt-sec .btn-radio-toggle {
+      background: #FFF; }
   .chart-opt-tab .chart-tab-wrap {
     border-radius: 0; }
 
@@ -14127,7 +14182,7 @@ header {
   background: #ffffff; }
   .block-panel .block-deal-pd0 {
     padding: 0 15px 15px 15px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       .block-panel .block-deal-pd0 {
         padding: 0 0px 20px 0px; } }
 
@@ -14465,7 +14520,8 @@ header {
       .footer-links .footer-page-link h4.ft-link-title {
         cursor: pointer;
         border-top: 1px solid #545859;
-        padding-top: 9px; } }
+        padding: 9px 0;
+        margin: 0; } }
     @media screen and (max-width: 991px) {
       .footer-links .footer-page-link h4.ft-link-title:after {
         content: '+';
@@ -14502,7 +14558,8 @@ header {
             font-family: 'ubuntulight'; }
     @media screen and (max-width: 991px) {
       .footer-links .footer-page-link .footer-link-list {
-        display: none; } }
+        display: none;
+        margin-bottom: 10px; } }
   @media screen and (max-width: 991px) {
     .footer-links .footer-page-link {
       margin-bottom: 30px; } }
@@ -14843,9 +14900,15 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     .heading-bx h2.h2font28 {
       font-size: 28px;
       font-family: "ubuntumedium", sans-serif; }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 1024px) {
+        .heading-bx h2.h2font28 {
+          font-size: 24px; } }
+      @media screen and (max-width: 1024px) {
         .heading-bx h2.h2font28 {
           font-size: 20px; } }
+      @media screen and (max-width: 480px) {
+        .heading-bx h2.h2font28 {
+          font-size: 18px; } }
     .heading-bx h2:after {
       content: '';
       position: absolute;
@@ -14886,9 +14949,9 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .inbetween-padding {
   padding: 30px 0; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     .inbetween-padding {
-      padding: 18px 0; } }
+      padding: 22px 0; } }
 
 .border-none {
   border: none !important; }
@@ -15152,16 +15215,28 @@ span:focus {
   .common-accordion h4.panel-title {
     font-size: 18px; }
     .common-accordion h4.panel-title a {
+      padding-right: 14px;
       display: block; }
       .common-accordion h4.panel-title a.collapsed {
         color: #40474e; }
         .common-accordion h4.panel-title a.collapsed:before {
           background: transparent; }
       .common-accordion h4.panel-title a i.more-less {
-        float: right;
+        /*float: right;*/
         font-size: 11px;
         padding: 5px 0;
-        color: #40474e; }
+        color: #40474e;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        font-family: "ubunturegular", sans-serif;
+        font-size: 22px; }
+    @media screen and (max-width: 767px) {
+      .common-accordion h4.panel-title {
+        font-size: 16px; } }
+    @media screen and (max-width: 480px) {
+      .common-accordion h4.panel-title {
+        font-size: 14px; } }
 
 /*--- for tab----*/
 .common-tabs {
@@ -15174,13 +15249,7 @@ span:focus {
       margin: 0;
       text-align: center;
       border-bottom: 1px solid #ddd;
-      /*&:hover {
-          border:0;
-          a {
-            background: $white;
-            border-right:1px solid #dfdfdf;
-          }
-        }*/ }
+      display: table; }
       .common-tabs ul.nav-tabs li.active {
         border-bottom-color: #fff; }
         .common-tabs ul.nav-tabs li.active a {
@@ -15201,7 +15270,9 @@ span:focus {
         -ms-border-radius: 0;
         border-radius: 0;
         border: 0;
-        padding: 14px 15px;
+        padding: 5px;
+        display: table-cell;
+        vertical-align: middle;
         font-size: 18px;
         color: #666666;
         border-top: 4px solid #f8fbf4;
@@ -15246,6 +15317,12 @@ span:focus {
           content: '-';
           right: 15px;
           font-size: 40px; } }
+  @media screen and (max-width: 767px) and (max-width: 767px) {
+    .common-tabs .accordion-heading {
+      font-size: 16px; } }
+  @media screen and (max-width: 767px) and (max-width: 480px) {
+    .common-tabs .accordion-heading {
+      font-size: 14px; } }
 
 /*Paddings and Margins*/
 .padno {
