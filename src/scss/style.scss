@@ -4289,6 +4289,7 @@ header {
     }
 
     .events-months-date {
+      overflow: hidden;
       .events-date-list {
         width: 100%;
         white-space:nowrap;
