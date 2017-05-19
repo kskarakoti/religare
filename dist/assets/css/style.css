@@ -15172,16 +15172,27 @@ span:focus {
     .common-tabs ul.nav-tabs li {
       padding: 0;
       margin: 0;
-      text-align: center; }
-      .common-tabs ul.nav-tabs li.active a {
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      /*&:hover {
+          border:0;
+          a {
+            background: $white;
+            border-right:1px solid #dfdfdf;
+          }
+        }*/ }
+      .common-tabs ul.nav-tabs li.active {
+        border-bottom-color: #fff; }
+        .common-tabs ul.nav-tabs li.active a {
+          background: #ffffff;
+          border-top: 4px solid #79c117;
+          color: #212121;
+          border-bottom: none; }
+      .common-tabs ul.nav-tabs li:hover a {
         background: #ffffff;
         border-top: 4px solid #79c117;
-        padding: 14px 15px;
         color: #212121;
         border-bottom: none; }
-        @media screen and (max-width: 991px) {
-          .common-tabs ul.nav-tabs li.active a {
-            padding: 23px 11px; } }
       .common-tabs ul.nav-tabs li a {
         background: #f8fbf4;
         margin-right: 0;
@@ -15190,18 +15201,14 @@ span:focus {
         -ms-border-radius: 0;
         border-radius: 0;
         border: 0;
-        padding: 16px 15px;
+        padding: 14px 15px;
         font-size: 18px;
         color: #666666;
+        border-top: 4px solid #f8fbf4;
         border-right: 1px solid #dfdfdf; }
         @media screen and (max-width: 991px) {
           .common-tabs ul.nav-tabs li a {
-            padding: 16px 11px; } }
-      .common-tabs ul.nav-tabs li:hover {
-        border: 0; }
-        .common-tabs ul.nav-tabs li:hover a {
-          background: #ffffff;
-          border-right: 1px solid #dfdfdf; }
+            padding: 12px 11px; } }
   .common-tabs .tab-content {
     background: #ffffff; }
   .common-tabs .accordion-heading {

@@ -6161,23 +6161,28 @@ span {
   box-shadow:0px 3px 3px 1px #ddd;
   ul {
     border-top:1px solid #dfdfdf;
-    border-bottom:none;
+    border-bottom: none;
     &.nav-tabs {
       li {
         padding:0;
         margin:0;
         text-align: center;
+        border-bottom:1px solid #ddd;
         &.active {
+          border-bottom-color: #fff;
           a {
             background: $white;
-            border-top:4px solid #79c117;
-            padding:14px 15px;
+            border-top: 4px solid #79c117;
             color: $mine-shaft;
             border-bottom:none;
-
-            @media screen and (max-width: 991px) {
-              padding: 23px 11px;
-            }
+          }
+        }
+        &:hover {
+          a {
+            background: $white;
+            border-top: 4px solid #79c117;
+            color: $mine-shaft;
+            border-bottom:none;
           }
         }
         a {
@@ -6185,22 +6190,23 @@ span {
           margin-right: 0;
           @include border-radius(0);
           border:0;
-          padding:16px 15px;
+          padding:14px 15px;
           font-size: $font-size-large;
           color: $dove-gray;
+          border-top:4px solid #f8fbf4;
           border-right:1px solid #dfdfdf;
 
           @media screen and (max-width: 991px) {
-            padding: 16px 11px;
+            padding: 12px 11px;
           }
         }
-        &:hover {
+        /*&:hover {
           border:0;
           a {
             background: $white;
             border-right:1px solid #dfdfdf;
           }
-        }
+        }*/
       }
     }
   }
