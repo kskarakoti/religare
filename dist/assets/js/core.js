@@ -57,7 +57,7 @@ $(function () {
 
 
 	//for addclass on page load
-	$("ul.menu-list li a").each(function() {
+	$("ul.menu-list li a, ul.menu-list-dt li a").each(function() {
 		if (this.href == window.location) {
 			$(this).parent().addClass("active");
 		};
@@ -65,6 +65,9 @@ $(function () {
 
 	$("ul.sub-menu-list li").each(function() {
 		$('ul.sub-menu-list li.active').parents().find('.sub-menu-ar').parent().addClass('active').next().removeClass('active');
+	});
+	$("ul.sub-menu-dt-list li").each(function() {
+		$('ul.sub-menu-dt-list li.active').parents().find('.sub-menu-dt-ar').parent().addClass('active').next().removeClass('active');
 	});
 
 	//menu black background show function
@@ -107,7 +110,7 @@ $(function () {
 	$(".down-arrow .scrolls").on("click", function( e ) {
 		e.preventDefault();
 		$("body, html").animate({
-			scrollTop: $('#scroll-position').offset().top
+			scrollTop: $('#scroll-position').offset().top - 70
 		}, 600);
 	});
 
@@ -339,9 +342,14 @@ $(function () {
 	}).on('changeDate', function(e) {
 		$('.datepicker').hide();
 	});
-
+	$('.month-time-tx').on('click', function(e){
+		e.stopPropagation();
+		return false;
+	});
 	//for div height calculation
 	divheight();
+	eligheight();
+	contheight();
 	// footernav();
 
 	//select
@@ -366,15 +374,26 @@ $(function () {
 		$($.fn.dataTable.tables(true)).DataTable().columns.adjust().draw( false );
 	});
 	//for datatable
-	$('.data-table').DataTable({
-		responsive: true,
-		"bPaginate": false,
-		"ordering": false,
-		"searching": false,
-		rowReorder: {
-			selector: 'td:nth-child(2)'
-		}
-	});
+	$(".data-table thead tr").append("<th></th>");
+	$(".data-table tbody tr").append("<td></td>");
+	 $('.data-table').DataTable( {
+	 	"bPaginate": false,
+	 	"ordering": false,
+	 	"searching": false,
+        responsive: {
+            details: {
+                type: 'column',
+                target: -1
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   -1
+        } ]
+    } );
+
+	
 });
 
 
@@ -382,6 +401,8 @@ $(function () {
 //for div height calculation
 $(window).resize(function(){
 	divheight();
+	eligheight();
+	contheight();
 	// footernav();
 	var winwidth = $(window).width();
 	if(winwidth >= 768) {
@@ -404,6 +425,24 @@ function divheight() {
 	}else {
 		$('.sec-block .heading-bx').css('margin-top', 0);
 	}
+}
+function eligheight() {
+	var maxHeight = -1;
+	$('.eligibility-wrap .media-body').each(function() {
+		maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+	});
+	$('.eligibility-wrap .media-body').each(function() {
+		$(this).height(maxHeight);
+	});
+}
+function contheight() {
+	var maxHeight = -1;
+	$('.grid-overlay-wrap .content-wrap p').each(function() {
+		maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+	});
+	$('.grid-overlay-wrap .content-wrap p').each(function() {
+		$(this).height(maxHeight);
+	});
 }
 
 //for accordion icon

@@ -24,6 +24,82 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-full-rated-gold:before {
+  content: "\ebd6";
+  color: #e6b319;
+}
+.icon-full-rated-grey:before {
+  content: "\ebd7";
+  color: #dadada;
+}
+.icon-graph1:before {
+  content: "\ebd8";
+  color: #94c94c;
+}
+.icon-graph2:before {
+  content: "\ebd9";
+  color: #94c94c;
+}
+.icon-graph3:before {
+  content: "\ebda";
+  color: #94c94c;
+}
+.icon-graph4:before {
+  content: "\ebdb";
+  color: #94c94c;
+}
+.icon-growth:before {
+  content: "\ebdc";
+  color: #8dc63f;
+}
+.icon-half-rated-gold:before {
+  content: "\ebdd";
+  color: #e6b319;
+}
+.icon-half-rated-grey:before {
+  content: "\ebde";
+  color: #dadada;
+}
+.icon-Invest-lump-sum .path1:before {
+  content: "\ebdf";
+  color: rgb(121, 193, 23);
+}
+.icon-Invest-lump-sum .path2:before {
+  content: "\ebe0";
+  margin-left: -1.0107421875em;
+  color: rgb(255, 255, 255);
+}
+.icon-market-dropdown .path1:before {
+  content: "\ebe1";
+  color: rgb(141, 198, 63);
+}
+.icon-market-dropdown .path2:before {
+  content: "\ecc0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Start-SIP:before {
+  content: "\ecc1";
+  color: #79c117;
+}
+.icon-top-5-holdings .path1:before {
+  content: "\ecc2";
+  color: rgb(121, 193, 23);
+}
+.icon-top-5-holdings .path2:before {
+  content: "\ecc3";
+  margin-left: -1.0498046875em;
+  color: rgb(209, 209, 209);
+}
+.icon-top-5-sectors .path1:before {
+  content: "\ecc4";
+  color: rgb(121, 193, 23);
+}
+.icon-top-5-sectors .path2:before {
+  content: "\ecc5";
+  margin-left: -0.9462890625em;
+  color: rgb(209, 209, 209);
+}
 .icon-Smart_Charts .path1:before {
   content: "\ebe2";
   color: rgb(218, 234, 243);
@@ -86,65 +162,6 @@
 .icon-Smart_Charts .path13:before {
   content: "\ec6b";
   margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path1:before {
-  content: "\ebd6";
-  color: rgb(218, 234, 243);
-}
-.icon-MF_Screener .path2:before {
-  content: "\ebd7";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path3:before {
-  content: "\ebd8";
-  margin-left: -1.3759765625em;
-  color: rgb(255, 255, 255);
-}
-.icon-MF_Screener .path4:before {
-  content: "\ebd9";
-  margin-left: -1.3759765625em;
-  color: rgb(255, 242, 0);
-}
-.icon-MF_Screener .path5:before {
-  content: "\ebda";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path6:before {
-  content: "\ebdb";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path7:before {
-  content: "\ebdc";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path8:before {
-  content: "\ebdd";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path9:before {
-  content: "\ebde";
-  margin-left: -1.3759765625em;
-  color: rgb(255, 242, 0);
-}
-.icon-MF_Screener .path10:before {
-  content: "\ebdf";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path11:before {
-  content: "\ebe0";
-  margin-left: -1.3759765625em;
-  color: rgb(68, 68, 68);
-}
-.icon-MF_Screener .path12:before {
-  content: "\ebe1";
-  margin-left: -1.3759765625em;
   color: rgb(68, 68, 68);
 }
 .icon-Star_Rating .path1:before {
@@ -2201,12 +2218,15 @@
 }
 .icon-Category-dropdown:before {
   content: "\eb8b";
+  color: #8dc63f;
 }
 .icon-Crude-Oil:before {
   content: "\eb8c";
+  color: #7b4d0b;
 }
 .icon-date-dropdown:before {
   content: "\eb8d";
+  color: #8ec640;
 }
 .icon-Gold .path1:before {
   content: "\eb8e";
@@ -2228,6 +2248,7 @@
 }
 .icon-Type-dropdown:before {
   content: "\eb92";
+  color: #8dc63f;
 }
 .icon-about-religare .path1:before {
   content: "\ea41";
@@ -3121,15 +3142,19 @@
 }
 .icon-events-today:before {
   content: "\ea40";
+  color: #8dc63f;
 }
 .icon-pick-date:before {
   content: "\ea40";
+  color: #8dc63f;
 }
 .icon-global-indices-pointers1:before {
   content: "\e901";
+  color: #fff;
 }
 .icon-net-cash-graph1:before {
   content: "\e929";
+  color: #94c94c;
 }
 .icon-Select-Index1 .path1:before {
   content: "\e92a";
@@ -3177,6 +3202,7 @@
 }
 .icon-today-graph1:before {
   content: "\e9e2";
+  color: #94c94c;
 }
 .icon-Top-gainers1 .path1:before {
   content: "\e9ec";
@@ -3247,6 +3273,7 @@
 }
 .icon-clock1:before {
   content: "\e9de";
+  color: #1e723f;
 }
 .icon-germany-flag1 .path1:before {
   content: "\e9df";
@@ -3302,15 +3329,19 @@
 }
 .icon-LTP-down-arrow1:before {
   content: "\e9eb";
+  color: #fa4110;
 }
 .icon-nifty1:before {
   content: "\e9ed";
+  color: #755fbb;
 }
 .icon-NSE1:before {
   content: "\e9ee";
+  color: #8ec640;
 }
 .icon-sensex1:before {
   content: "\e9f0";
+  color: #51c4dd;
 }
 .icon-united-kingdom-flag1 .path1:before {
   content: "\e9f4";
@@ -3600,12 +3631,14 @@
 }
 .icon-ic_arrow:before {
   content: "\ea31";
+  color: #29b259;
 }
 .icon-ic_iOS:before {
   content: "\ea32";
 }
 .icon-ic_accordian_plus:before {
   content: "\e94a";
+  color: #fff;
 }
 .icon-ic_banner_fast .path1:before {
   content: "\e94d";
@@ -4283,6 +4316,7 @@
 }
 .icon-expiry:before {
   content: "\e902";
+  color: #8dc63f;
 }
 .icon-expand-arrow .path1:before {
   content: "\ea33";
@@ -4295,9 +4329,11 @@
 }
 .icon-add-to-watchlist:before {
   content: "\e900";
+  color: #79c117;
 }
 .icon-LTP-up-arrow:before {
   content: "\e903";
+  color: #20ab30;
 }
 .icon-recommendation .path1:before {
   content: "\e904";
@@ -4409,9 +4445,11 @@
 }
 .icon-set-alert:before {
   content: "\e91a";
+  color: #79c117;
 }
 .icon-share:before {
   content: "\e91b";
+  color: #79c117;
 }
 .icon-unselected-radio-button .path1:before {
   content: "\e91c";
@@ -4554,6 +4592,7 @@
 }
 .icon-call:before {
   content: "\e91e";
+  color: #8dc63f;
 }
 .icon-customer-focus .path1:before {
   content: "\e91f";
@@ -4596,9 +4635,11 @@
 }
 .icon-direction:before {
   content: "\e927";
+  color: #8dc63f;
 }
 .icon-email:before {
   content: "\e928";
+  color: #8dc63f;
 }
 .icon-strong-customer-service .path1:before {
   content: "\e930";
@@ -4661,9 +4702,11 @@
 }
 .icon-video-play:before {
   content: "\e93c";
+  color: #fff;
 }
 .icon-view-more-arrow:before {
   content: "\e93d";
+  color: #8dc63f;
 }
 .icon-ic_facebook .path1:before {
   content: "\e93e";

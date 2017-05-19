@@ -21,6 +21,8 @@
 	  3.9 Market Commodities Page Styles
 	  3.10 Market Derivatives Page Styles
 	  3.11 Market Currency Page Styles
+	  3.12 Market Mutual Fund Page Styles
+      3.13 Quotes Equities Page Styles
 
 
    04 Footer Section Styles
@@ -286,11 +288,17 @@ header {
                 > li {
                   display: block;
                   position: relative;
-
+                  &.active {
+                    a {
+                      color:#69ad0e;
+                    }
+                  }
                   &.sub-item {
                     &.active {
                       background: #f1f1f1;
-
+                      a {
+                        color:#69ad0e;
+                      }
                       &:after {
                         content: '-';
                         right: 23px;
@@ -352,6 +360,11 @@ header {
 
                           &:hover {
                             color: $hover-dark-green;
+                          }
+                        }
+                        &.active {
+                          a {
+                            color: #69ad0e;
                           }
                         }
                       }
@@ -947,18 +960,6 @@ header {
             bottom: 20px;
           }
         }
-
-        /*&:before {
-          background: $sushi;
-          width: 100%;
-          height: 590px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: '';
-        }*/
-
-
       }
 
       .close-btn {
@@ -1659,7 +1660,6 @@ header {
       }
     }
     .submit-btn {
-      //float: left;
       position: absolute;
       right: 0;
       display: block;
@@ -2036,7 +2036,6 @@ header {
 
 /* Clover */
 .clover-wrap {
-    /*padding:36px 0;*/
     background: #e3f8e4;
     .section-title {
         font-size: 18px;
@@ -2176,15 +2175,6 @@ header {
               address {
                 margin-bottom: 13px;
               }
-              /*&.address-wrapper {
-                background: transparent;
-              }
-              &.address-wrapper {
-                margin-top:24px;
-                @media screen and (max-width: 480px) {
-                  margin-top: 0;
-                }
-              }*/
             }
             .contact-detail {
               span {
@@ -2262,7 +2252,6 @@ header {
 .tab-structure {
   &.nav-tabs {
     background: #f8fbf4;
-    border-bottom: none;
 
     &.tab-4 {
       li {
@@ -2328,6 +2317,10 @@ header {
 
         > a {
           border-top: 4px solid #8dc63f;
+          &:focus {
+            border-left:none;
+            border-right:none;
+          }
         }
       }
 
@@ -2371,23 +2364,26 @@ header {
           color: #666666;
           font-family: $font-family-ubunturegular;
           text-transform: capitalize;
-
+          padding-right:25px;
+          cursor: pointer;
           &.time-arrow {
-            &:after {
-              display: inline-block;
-              content: '';
-              height: 9px;
-              content: '';
-              width: 9px;
-              background: transparent;
-              border: 2px solid #8d8d8d;
-              transform: rotate(-45deg);
-              top: 3px;
-              position: absolute;
-              border-top: 0;
-              border-right: 0;
-              right: -20px;
-              margin: auto;
+            .input-group-addon {
+              &:after {
+                display: inline-block;
+                content: '';
+                height: 9px;
+                content: '';
+                width: 9px;
+                background: transparent;
+                border: 2px solid #8d8d8d;
+                transform: rotate(-45deg);
+                top: 7px;
+                position: absolute;
+                border-top: 0;
+                border-right: 0;
+                right: 3px;
+                margin: auto;
+              }
             }
           }
 
@@ -2464,11 +2460,31 @@ header {
             p {
               .month-time-tx {
                 position: relative;
+                display: inline-block;
                 @media screen and (max-width: 991px) {
                   display: block;
                 }
                 @media screen and (max-width: 767px) {
                   display: inline-block;
+                }
+                &.datePickerTab {
+                  input {
+                    background: transparent;
+                    border:none;
+                    width:62px;
+                    float:none;
+                    box-shadow:none;
+                    height: auto;
+                    padding: 4px;
+                    display:initial;
+                  }
+                  .input-group-addon {
+                    display: inline-table;
+                    float: right;
+                    border:none;
+                    background:transparent;
+                    padding-left: 0;
+                    padding-right:0;                  }
                 }
               }
             }
@@ -2730,7 +2746,6 @@ header {
 
                  span {
                   display: inline-block;
-                  /*margin: 0 5px;*/
                   vertical-align: middle;
 
                   &.plus-icon {
@@ -2876,7 +2891,6 @@ header {
             }
           }
           @media screen and (max-width: 767px) {
-            /*border: none;*/
             float: none;
             display: block;
             margin-bottom: 0;
@@ -3035,6 +3049,7 @@ header {
         @media screen and (max-width: 480px) {
           padding: 20px 0;
         }
+        
       }
     }
 
@@ -3044,7 +3059,11 @@ header {
 
   }
 }
-
+@media screen and (max-width: 767px) {
+  .share-title {
+    padding:0 15px;
+  }
+}
 .tranding-opt-none {
   margin-bottom: 20px;
 }
@@ -3168,13 +3187,22 @@ header {
         display: table;
         height: 90px;
       }
+      @media screen and (max-width: 480px) {
+        height: 65px;
+      }
     }
   }
-
+@media screen and (max-width:480px) {
+  .table.shate-data-tbl.text-right th.text-left:nth-child(1) {
+    width:111px !important;
+}
+}
   .share-content-tab {
     padding: 25px 15px;
     background: #fff;
-
+     @media screen and (max-width: 767px) {
+      padding: 25px 0;
+     }
     .share-mkt-ar {
       .top-gainers-heading {
 
@@ -3301,8 +3329,12 @@ header {
         }
       }
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 767px) {
         font-size: 14px;
+        padding: 10px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
         padding: 10px;
       }
     }
@@ -3350,6 +3382,9 @@ header {
     font-size: 20px;
     font-family: $font-family-ubuntumedium;
     color: #666666;
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
   }
   .title-left {
     float: left;
@@ -3822,7 +3857,6 @@ header {
         width: 50%;
         margin-right: 0;
       }
-
       .mkt-icons {
         @media screen and (max-width: 767px) {
           display: none;
@@ -4241,18 +4275,6 @@ header {
             color: #40474e;
             font-size: 18px;
 
-            /*.bootstrap-datetimepicker-widget {
-              &.dropdown-menu {
-                left: auto !important;
-                right: -42px !important;
-                margin-top: 15px;
-
-                &:before, &:after {
-                  left: 50%;
-                }
-              }
-            }*/
-
             span {
               margin-right: 5px;
               color: #8dc63f;
@@ -4279,7 +4301,10 @@ header {
           width: 170px;
           vertical-align: top;
           min-height: 196px;
-
+          @media screen and (max-width: 480px) {
+            width: 89px;
+            padding: 10px;
+          }
           &.active, &:hover {
             p {
               color: #000;
@@ -4292,9 +4317,15 @@ header {
 
             &.scheduled-tx {
               white-space:pre-wrap;
+              @media screen and (max-width: 480px) {
+                font-size: 13px;
+              }
             }
             &.week-dt {
               font-size: 16px;
+              @media screen and (max-width: 480px) {
+                font-size: 13px;
+              }
             }
 
             &.date-months {
@@ -4304,6 +4335,14 @@ header {
               span {
                 font-size: 60px;
                 line-height: 60px;
+                @media screen and (max-width: 480px) {
+                  font-size: 40px;
+                  line-height: 45px;
+                  display: block;
+                }
+              }
+              @media screen and (max-width: 480px) {
+                font-size: 16px;
               }
             }
           }
@@ -4312,11 +4351,6 @@ header {
     }
   }
 }
-
-.bootstrap-datetimepicker-widget .datepicker-days {
- display: block;
-}
-
 
 /****************************************
    3.6 Support Page Styles
@@ -4349,10 +4383,6 @@ header {
             .map-overlay {
               .address-wrap {
                 background: #eff4e9;
-                /*padding: 22px 19px 30px 19px;
-                &.address-wrapper {
-                  margin-top:0;
-                }*/
               }
               .nr-u-wrap {
                 padding:0 19px;
@@ -4456,7 +4486,6 @@ header {
 
 .report-wrap {
   background: #eeeff1;
-  /*padding:40px 0;*/
   h3 {
     &.green-title {
       margin-bottom: 20px;
@@ -4826,9 +4855,6 @@ header {
     @media screen and (max-width: 991px) {
       padding: 20px 15px;
     }
-    /*@media screen and (max-width: 480px) {
-      padding: 20px 0px;
-    }*/
   }
 }
 
@@ -4901,7 +4927,11 @@ header {
           width: 50%;
           margin-right: 0;
         }
-
+         &.btn-mob-fwdth {
+          @media screen and (max-width: 480px) {
+            width: 100%;
+          }
+        }
         .btn-radio-toggle {
           @media screen and (max-width: 480px) {
             min-width: 100%;
@@ -4943,6 +4973,21 @@ header {
       @media screen and (max-width: 767px) {
         padding: 25px 0;
       }
+    }
+  }
+  .share-title {
+    .title-left {
+       @media screen and (max-width: 767px) {
+              float: left;
+              width: 50%;
+              button {
+                &.btn {
+                  &.btn-radio-toggle {
+                    min-width: 100%;
+                  }
+                }
+              }
+            }
     }
   }
 }
@@ -5022,6 +5067,139 @@ header {
         padding: 0 0 20px 0;
       }
     }
+  }
+}
+
+/****************************************
+   3.13 Quotes Equities Page Styles
+****************************************/
+.share-heading-ar {
+  margin-bottom: 2px;
+  h2 {
+    font-size: 26px;
+    color: #222222;
+    font-family: $font-family-ubuntumedium;
+    display: inline-block;
+  }
+
+  .share-list-link {
+    display: inline-block;
+    margin-left: 15px;
+
+    li {
+      display: inline-block;
+      border-right: 1px solid #40474e;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        color: #40474e;
+        display: block;
+        padding: 0px 10px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+.share-tab {
+  position: relative;
+
+  .share-recommend {
+    width: 250px;
+    height: 42px;
+    position: absolute;
+    top: -42px;
+    right: 0;
+    display: table;
+
+    &:before {
+      content: '';
+      width: 250px;
+      height: 42px;
+      border-bottom: 41px solid #40474e;
+      border-left: 10px solid transparent;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+
+      span {
+        color: #f5911a;
+      }
+    }
+  }
+}
+
+.share-tab-panel {
+  padding: 20px;
+  background: #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow: hidden;
+}
+
+.share-option-bx {
+  position: relative;
+
+  .share-action-bx {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+
+    .share-action-list {
+      display: inline-block;
+    }
+  }
+}
+
+
+.share-action-list {
+  li {
+    display: inline-block;
+    margin-right: 25px;
+
+    a {
+      color: #40474e;
+      display: block;
+      padding: 5px;
+
+      .fontsize {
+        font-size: 20px;
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.share-lt-title {
+  font-size: 12px;
+  color: #9e9fa0;
+}
+.trade-link {
+  background: #f5911a;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 2px;
+
+  &:hover {
+    background: #f38400;
+    color: #fff;
   }
 }
 /************************************************************************************
@@ -5320,140 +5498,7 @@ header {
 ************************************************************************************/
 
 /****************************************
-   5.1 Icons Styles
-****************************************/
-/*.icons {
-  background-image: url("../images/spirit-icon.png");
-  background-repeat: no-repeat;
-  display: block;
-  height: 25px;
-  width: 25px;
-  overflow: hidden;
-  margin: 0 auto;
-  text-align: center;
-  vertical-align: middle;
-
-  &.up-icon {
-    background-position: -7px -6px;
-  }
-
-  &.down-icon {
-    background-position: -7px -16px;
-  }
-
-  &.user-icon {
-    background-position: -3px -30px;
-  }
-
-  &.search-icon {
-    background-position: -28px -30px;
-  }
-
-  &.andriod-icon {
-    background-position: -28px -5px;
-  }
-
-  &.apple-icon {
-    background-position: -52px -5px;
-  }
-
-  &.andriod-big-icon {
-    background-position: -4px -79px;
-  }
-
-  &.apple-big-icon {
-    background-position: -40px -79px;
-  }
-
-  &.fb-icon {
-    background-position: -6px -220px;
-    width: 34px;
-    height: 34px;
-  }
-  &.tw-icon {
-    background-position: -47px -220px;
-    width: 34px;
-    height: 34px;
-  }
-  &.link-icon {
-    background-position: -89px -220px;
-    width: 34px;
-    height: 34px;
-  }
-  &.youtube-icon {
-    background-position: -131px -220px;
-    width: 34px;
-    height: 34px;
-  }
-  &.gplus-icon {
-    background-position: -173px -220px;
-    width: 34px;
-    height: 34px;
-  }
-  &.equity-icon {
-    background-position: -5px -267px;
-    width: 44px;
-    height: 34px;
-  }
-  &.derivatives-icon {
-    background-position: -60px -268px;
-    width: 44px;
-    height: 34px;
-  }
-  &.commodities-icon {
-    background-position: -113px -268px;
-    width: 44px;
-    height: 34px;
-  }
-  &.currency-icon {
-    background-position: -165px -268px;
-    width: 30px;
-    height: 34px;
-  }
-  &.mutual-fund-icon {
-    background-position: -202px -266px;
-    width: 44px;
-    height: 38px;
-  }
-  &.product-service-icon {
-    background-position: -253px -268px;
-    width: 37px;
-    height: 38px;
-  }
-  &.about-religare-icon {
-    background-position: -305px -268px;
-    width: 37px;
-    height: 38px;
-  }
-  &.market-overview-icon {
-    background-position: -5px -267px;
-    width: 44px;
-    height: 34px;
-  }
-  &.research-reports-icon {
-    background-position: -349px -266px;
-    width: 44px;
-    height: 38px;
-  }
-  &.tools-icon {
-    background-position: -397px -266px;
-    width: 44px;
-    height: 38px;
-  }
-  &.hamburg-menu-icon {
-    background-position: -80px -79px;
-    width: 25px;
-    height: 25px;
-  }
-  &.graph-icon {
-    background-position: -6px -320px;
-    width: 42px;
-    height: 36px;
-  }
-}*/
-
-/****************************************
-   5.2 Accordion Styles
+   5.1 Accordion Styles
 ****************************************/
 .attention-investor {
   border-bottom: 1px solid #545859;
@@ -5497,7 +5542,7 @@ header {
 
 
 /****************************************
-   5.3 Checkbox & Radio button Styles
+   5.2 Checkbox & Radio button Styles
 ****************************************/
 .custom-radiobutton {
   opacity:0;
@@ -5534,7 +5579,7 @@ header {
 
 
 /********************************************************
-	4.3 Custom checkbox and radio buttons
+	5.3 Custom checkbox and radio buttons
 ********************************************************/
 
 input[type=checkbox].css-checkbox, input[type=radio].css-radio {
@@ -5583,16 +5628,15 @@ input[type=checkbox].css-checkbox.css-checkbox:checked + .css-label:before, inpu
 }
 input[type=checkbox].css-checkbox.css-radio:checked + .css-label:before, input[type=radio].css-radio.css-radio:checked + .css-label:before {
   content: "";
-  //background-color: #fff;
-  //border-color: #589800;
-  //font-size: 24px;
-  //line-height: 10px;
-  //color: #8dc63f;
   background: url("../../assets/images/radio-active.png") no-repeat;
   width: 16px;
   height: 16px;
   border: none;
   top:-3px;
+  @media screen and (max-width: 767px) {
+    width: 0;
+    height: 0;
+  }
 }
 input[type=checkbox].css-checkbox.css-checkbox:disabled + .css-label:before, input[type=checkbox].css-checkbox.css-radio:disabled + .css-label:before, input[type=radio].css-radio.css-checkbox:disabled + .css-label:before, input[type=radio].css-radio.css-radio:disabled + .css-label:before {
   color: #80a5dc;
@@ -5607,6 +5651,11 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  @media screen and (max-width: 767px) {
+    width: 0;
+    height: 0;
+    border:none;
+  }
 }
 
 .filter-list input[type=radio].css-radio.css-radio:checked + .css-label:before {
@@ -5617,22 +5666,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
   width: 16px;
   height: 16px;
 }
-//
-//.same-addrs .css-checkbox[type="checkbox"]:checked + .css-label::before {
-//  background-color: #ffffff !important;
-//  border-color: #888888 !important;
-//  color: #075c98 !important;
-//  font-size: 16px !important;
-//  line-height: 15px !important;
-//}
-//.same-addrs label {
-//  font-weight: normal;
-//}
-//.same-addrs input[type=checkbox].css-checkbox[type="checkbox"] + .css-label::before {
-//  height: 17px;
-//  width: 17px;
-//  border-color: #bababa;
-//}
 
 
 /********************************************************
@@ -5657,22 +5690,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 .white-bg {
   background: $white;
 }
-
-
-/* Map */
-/*.svg-map g {
-  display: inline-block;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.svg-map g:hover {color:#fff;     -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);}*/
 
 /*********** Overlay Styles **************/
 .overlay-bg {
@@ -5709,10 +5726,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     margin: 10px 0;
   }
 
- /* &.mb-20 {
-    margin: 20px 0;
-  }
-*/
   &.mb-50 {
     margin: 0 0 50px 0;
   }
@@ -5779,10 +5792,6 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .content-pd-sm {
   padding: ($padding-base-5 * 6) $padding-none;
-
-  /*.heading-bx {
-    margin: $margin-none $margin-none ($margin-base-5 * 8) $margin-none;
-  }*/
 }
 
 .inbetween-padding {
@@ -5927,8 +5936,14 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 /*--- datatable override css ---*/
 table.dataTable.no-footer {width: 100% !important; border-color: #dcdede;}
-table.data-table.dataTable.dtr-inline.collapsed tbody td:first-child:before,
-table.data-table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
+table.dataTable.dtr-column tr.child ul li {
+  padding:15px 0;
+}
+table.dataTable.dtr-column tr.child ul li span {
+  text-align: left;
+}
+table.dataTable.dtr-column tbody td.control:before, 
+table.dataTable.dtr-column tbody th.control:before {
   top: 0;
   color: #444;
   border: 0;
@@ -5940,9 +5955,10 @@ table.data-table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
   bottom: 0;
   margin: auto;
   font-size: 23px;
+  left:0;
 }
-table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent td:first-child:before,
-table.data-table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:before {
+table.dataTable.dtr-column tbody tr.parent td.control:before, 
+table.dataTable.dtr-column tbody tr.parent th.control:before {
   content: '-';
   background-color: transparent;
   font-size: 41px;
@@ -5958,23 +5974,6 @@ table.dataTable.dtr-inline.collapsed tbody tr.child td.child{
 table.dataTable.dtr-inline.collapsed tbody td:first-child, table.dataTable.dtr-inline.collapsed tbody th:first-child {
   padding: 5px 5px 5px 24px;
 }
-/*table.dataTable.dtr-column tbody td.control::before, table.dataTable.dtr-column tbody th.control::before {
-  left: auto;
-  top:52%;
-  right: 10px;
-  background: none;
-  color: #000;
-  border: none;
-  box-shadow: none;
-  font-family: $font-family-ubunturegular;
-  font-size: 20px;
-}
-table.dataTable.dtr-column tbody tr.parent td.control::before, table.dataTable.dtr-column tbody tr.parent th.control::before {
-  background: none;
-}
-table.dataTable.dtr-column tbody td.control, table.dataTable.dtr-column tbody th.control {
-  padding-right: 35px;
-}*/
 table.dataTable tr.child ul {
   width: 100%;
   li {
@@ -6004,8 +6003,6 @@ table.dataTable tr.child ul {
     display: block;
   }
 }
-
-
 
 /* Select 2 style */
 span {
@@ -6080,8 +6077,6 @@ span {
     height: 35px;
   }
 }
-
-
 
 /*----- For Accordion ------*/
 .common-accordion {
@@ -6188,7 +6183,6 @@ span {
           padding:16px 15px;
           font-size: $font-size-large;
           color: $dove-gray;
-          /*border-bottom:1px solid #dfdfdf;*/
           border-right:1px solid #dfdfdf;
 
           @media screen and (max-width: 991px) {
@@ -6273,11 +6267,13 @@ span {
 .mt0{margin-top:0px !important;}
 .mt5{margin-top:5px !important;}
 .mt10{margin-top:10px !important;}
+.mt15{margin-top:15px !important;}
 .mt20{margin-top:20px !important;}
 .mt30{margin-top:30px !important;}
 .mt40{margin-top:40px !important;}
 .mt50{margin-top:50px !important;}
 .mb10{margin-bottom:10px !important;}
+.mb15{margin-bottom:15px !important;}
 .mb20{margin-bottom:20px !important;}
 .mb30{margin-bottom:30px !important;;}
 .ml20{margin-left:20px !important;;}
@@ -6314,16 +6310,24 @@ span {
 input[type="radio"] {
   display: none;
 }
-input[type="radio"] + label {
+input[type="radio"] + label.css-label {
   position: relative;
   cursor: pointer;
   padding-left: 25px;
-  color: #7a838c;
+  // color: #7a838c;
+  font-weight: normal;
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
 }
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + label.css-label {
   color: #40474e;
+  font-weight: bold;
+  @media screen and (max-width: 767px) {
+    font-weight: normal;
+  }
 }
-input[type="radio"] + label:before, input[type="radio"] + label:after {
+input[type="radio"] + label.css-label:before, input[type="radio"] + label.css-label:after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -6332,7 +6336,7 @@ input[type="radio"] + label:before, input[type="radio"] + label:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-input[type="radio"] + label:before {
+input[type="radio"] + label.css-label:before {
   top: 0;
   left: 0;
   width: 18px;
@@ -6342,24 +6346,10 @@ input[type="radio"] + label:before {
   -webkit-box-shadow: inset 0 0 0 18px $white;
   box-shadow: inset 0 0 0 18px $white;
 }
-input[type="radio"] + label:after {
-  top: 50%;
-  left: 8px;
-  width: 34px;
-  height: 34px;
-  opacity: 0;
-  background: rgba(141, 198, 63, 0.5);
-  @include transform(translate(-50%, -50%) scale(0));
-}
-input[type="radio"]:checked + label:before {
+input[type="radio"]:checked + label.css-label:before {
   @include box-shadow(inset 0 0 0 2px #589800);
 }
-input[type="radio"]:checked + label:after {
-  @include transform(translate(-50%, -50%) scale(1));
-  -moz-animation: ripple 1s none;
-  -webkit-animation: ripple 1s none;
-  animation: ripple 1s none;
-}
+
 /*------- Calender override css --------*/
 .datepicker table tr td.today,
 .datepicker table tr td.today:hover,
@@ -6474,7 +6464,7 @@ button {
       padding: 0 !important;
       margin-top: 0;
       left: 0;
-      min-width: 150px;
+      min-width: 100%;
       label {
         font-weight: normal;
       }
@@ -6511,6 +6501,11 @@ button {
 
       @media screen and (max-width: 767px) {
         text-indent: 15px;
+        border-radius:0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right:22px;
       }
     }
   }
@@ -6539,4 +6534,184 @@ button {
 }
 
 
-
+/*----------- form-wrap styling -----------*/
+.form-wrap {
+  background: $white;
+  padding:50px;
+  box-shadow:2px 2px 3px 0px #dedede;
+  .block {
+    padding:0 50px;
+  }
+  .frm-group {
+    position:relative;
+    margin-bottom:25px;
+    
+    input {
+      font-size: 18px;
+      padding:10px 5px;
+      display: block;
+      width: 100%;
+      border:none;
+      border-bottom:1px solid #b3b3b3;
+      color:$dove-gray;
+      &:focus, &:valid  {
+        ~ label {
+          top: -10px;
+          font-size: 14px;
+          color: #81b737;
+        }
+      }
+      &:focus {
+        ~ .bar {
+          -webkit-animation:inputHighlighter 0.3s ease;
+          -moz-animation:inputHighlighter 0.3s ease;
+          -ms-animation:inputHighlighter 0.3s ease;
+          animation:inputHighlighter 0.3s ease;
+        }
+        ~ .bar:before, ~ .bar:after {
+          width: 50%;
+        }
+      }
+    }
+    label {
+      color:$dove-gray; 
+      font-size:18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:0;
+      top:10px;
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+      &.control-label {
+        position: relative;
+      }
+    }
+    .bar {
+      position:relative;
+      display: block;
+      width:100%;
+      &:before, &:after {
+         content:'';
+         height:1px; 
+         width:0;
+         bottom:1px; 
+         position:absolute;
+         background:#81b737; 
+         transition:0.2s ease all; 
+         -moz-transition:0.2s ease all; 
+         -webkit-transition:0.2s ease all;
+      }
+      &:before {
+        left: 50%;
+      }
+      &:after {
+        right: 50%;
+      }
+    }
+  }
+  .frms-group {
+    text-align: left;
+    label {
+      &.control-label {
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    input[type=checkbox].css-checkbox.css-checkbox + .css-label:before, 
+    input[type=checkbox].css-checkbox.css-radio + .css-label:before, 
+    input[type=radio].css-radio.css-checkbox + .css-label:before, 
+    input[type=radio].css-radio.css-radio + .css-label:before {
+        border: 2px solid #666666;
+    }
+    input[type=checkbox].css-checkbox.css-radio + .css-label:before, 
+    input[type=radio].css-radio.css-radio + .css-label:before {
+      width:15px;
+      height:15px;
+    }
+  }
+}
+ @-webkit-keyframes inputhighlighter {
+   from { background:#81b737; }
+   to  { width:0; background:transparent; }
+ }
+ @-moz-keyframes inputhighlighter {
+   from { background:#81b737; }
+   to  { width:0; background:transparent; }
+ }
+ @keyframes inputhighlighter {
+   from { background:#81b737; }
+   to  { width:0; background:transparent; }
+  }
+.offering-partner {
+  padding:10px 0 30px 0;
+  margin:40px 0;
+}
+.grid-overlay-wrap {
+  position:relative;
+  .block {
+    .content-wrap {
+      background:$white;
+      width: 100%;
+      position: relative;
+      top: -36px;
+      margin: 0 16px;
+      margin: auto;
+      width: 230px;
+      padding: 10px 15px 15px;
+      text-align: center;
+      h5 {
+        font-size: 20px;
+        color: $mine-shaft;
+        font-family:$font-family-ubuntumedium;
+      }
+      p {
+        color: $dove-gray;
+        font-size: 16px;
+      }
+      .link-wrap {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.eligibility-wrap {
+  ul {
+    margin:0 -1px;
+    li {
+      float: left;
+      width: 50%;
+      padding:0 1px;
+      span {
+        &.media {
+          display: block;
+          margin-bottom: 2px;
+          background:#e3f8e4;
+          padding:16px;
+          min-height: 120px;
+        }
+        &.media-left {
+          vertical-align: middle;
+          .icon-wrap {
+            width: 55px;
+            height: 55px;
+            background:$white;
+            line-height: 55px;
+            font-size: 26px;
+            @include border-radius(50%);
+            display: block;
+            text-align: center;
+          }
+        }
+        &.media-body {
+          font-size: $font-size-medium;
+          color:$mine-shaft;
+        }
+      }
+    }
+  }
+}

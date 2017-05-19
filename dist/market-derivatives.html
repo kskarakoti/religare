@@ -241,7 +241,10 @@
                            <a href="#nifty" data-toggle="tab">
                                <p class="title"><span class="icon-Top-gainers1">
                                 <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-                                </span> NIFTY <span class="month-time-tx time-arrow">&#40; <input type="text" class="datepick-ip datePickerTab" placeholder="April 27" />, 4:30 AM&#41;</span></p>
+                                </span> NIFTY <span class="input-group input-append date month-time-tx time-arrow datePickerTab">
+                                    &#40;<input type="text" class="form-control" name="date" placeholder="April 27"/>
+                                    <span class="input-group-addon add-on">, 4:30 AM&#41;</span>
+                                </span></p>
                                <p class="sunsex-count">
                                    <span class="price-value">8,966.20</span>
                                    <span class="price-percentage gain"><span class="icon-LTP-up-arrow"></span> 40.15(0.45%)</span>
@@ -252,7 +255,10 @@
                            <a href="#sensex" data-toggle="tab">
                                <p class="title"><span class="icon-Top-gainers1">
                                 <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-                                </span> BANKNIFTY <span class="month-time-tx time-arrow">&#40; <input type="text" class="datepick-ip datePickerTab" placeholder="April 27"/>, 5:30PM&#41;</span></p>
+                                </span> BANKNIFTY <span class="input-group input-append date month-time-tx time-arrow datePickerTab">
+                                    &#40;<input type="text" class="form-control" name="date" placeholder="April 27"/>
+                                    <span class="input-group-addon add-on">, 5:30 AM&#41;</span>
+                                </span></p>
                                <p class="sunsex-count">
                                    <span class="price-value">28,734.63</span>
                                    <span class="price-percentage loss"><span class="icon-LTP-down-arrow1"></span> 128.31 (0.44%)</span>
@@ -270,7 +276,10 @@
                                    <a href="#messages" data-toggle="tab">
                                        <p class="title"><span class="icon-Top-gainers1">
                                             <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-                                            </span> <span class="title-val">SENSEX</span> <span class="month-time-tx">(April 27th, 4:30 AM)</span></p>
+                                            </span> <span class="title-val">SENSEX</span> <span class="input-group input-append date month-time-tx time-arrow datePickerTab">
+                                    &#40;<input type="text" class="form-control" name="date" placeholder="April 27"/>
+                                    <span class="input-group-addon add-on">, 4:30 AM&#41;</span>
+                                </span></p>
                                        <p class="sunsex-count">
                                            <span class="price-value">28,734.63</span>
                                            <span class="price-percentage loss"><span class="icon-LTP-down-arrow1"></span> 128.31 (0.44%)</span>
@@ -336,7 +345,7 @@
 
            <!--arrow down-->
            <div class="down-arrow">
-               <a href="javascript:void(0)" class="scrolls">
+               <a href="#scroll-position" class="scrolls">
                  <span class="icon">
                     <span class="arrow bounce">
                        <span class="up-angle"></span>
@@ -346,7 +355,7 @@
            </div>
        </div>
     </div>
-
+    <div id="scroll-position">
     <!--Recommendations Ads-->
     <div class="recommendations-help-ads content-pd-sm mt30">
         <div class="container">
@@ -374,7 +383,7 @@
 
 
     <!--Tranding Now-->
-    <div class="tranding-now-area content-pd-sm">
+    <div  class="tranding-now-area content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx mb-20">
@@ -388,7 +397,9 @@
                         <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                         <select class="select">
                             <option value="nse">Index Future</option>
-                            <option value="nse">BSE</option>
+                            <option value="nse">Index Option</option>
+                            <option value="nse">Stock Future</option>
+                            <option value="nse">Future Option</option>
                         </select>
                     </div>
                     <div class="tranding-select-opt">
@@ -684,7 +695,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <!--Option Chain-->
     <div class="option-chain-ar content-pd-sm">
         <div class="container">
@@ -710,7 +721,7 @@
                 <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span>
                 </span></span>
                             <select class="select">
-                                <option value="nse">Select Sqecific Index</option>
+                                <option value="nse">Select Specific Index</option>
                                 <option value="nse">BSE</option>
                             </select>
                         </div>
@@ -746,7 +757,9 @@
                         <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                         <select class="select">
                             <option value="nse">Index Future</option>
-                            <option value="nse">BSE</option>
+                            <option value="nse">Index Option</option>
+                            <option value="nse">Stock Future</option>
+                            <option value="nse">Future Option</option>
                         </select>
                     </div>
                     <div class="tranding-select-opt">
@@ -838,8 +851,10 @@
                                 <div class="tranding-select-opt">
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
-                                        <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                       <option value="nse">Index Future</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -904,7 +919,9 @@
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
                                         <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -969,7 +986,9 @@
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
                                         <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -1034,7 +1053,9 @@
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
                                         <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -1113,7 +1134,9 @@
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
                                         <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -1178,7 +1201,9 @@
                                     <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                                     <select class="select">
                                         <option value="nse">Index Future</option>
-                                        <option value="nse">BSE</option>
+                                        <option value="nse">Index Option</option>
+                                        <option value="nse">Stock Future</option>
+                                        <option value="nse">Future Option</option>
                                     </select>
                                 </div>
                                 <div class="tranding-select-opt">
@@ -1344,7 +1369,9 @@
                         <span class="mkt-icons"><span class="icon-NSE1"></span></span>
                         <select class="select">
                             <option value="nse">Index Future</option>
-                            <option value="nse">BSE</option>
+                            <option value="nse">Index Option</option>
+                            <option value="nse">Stock Future</option>
+                            <option value="nse">Future Option</option>
                         </select>
                     </div>
                 </div>
