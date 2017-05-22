@@ -13176,7 +13176,10 @@ header {
   .table.shate-data-tbl th, .table.shate-data-tbl td {
     border: none;
     padding: 15px;
-    font-size: 16px; }
+    font-size: 16px;
+    /*@media screen and (max-width: 767px) {
+        white-space: nowrap;
+      }*/ }
     .table.shate-data-tbl th .date-tx, .table.shate-data-tbl td .date-tx {
       font-size: 12px;
       display: inline-block; }
@@ -13192,9 +13195,6 @@ header {
       .table.shate-data-tbl th, .table.shate-data-tbl td {
         font-size: 12px;
         padding: 10px; } }
-    @media screen and (max-width: 767px) {
-      .table.shate-data-tbl th, .table.shate-data-tbl td {
-        white-space: nowrap; } }
   .table.shate-data-tbl td {
     vertical-align: middle; }
     .table.shate-data-tbl td.green-col {
