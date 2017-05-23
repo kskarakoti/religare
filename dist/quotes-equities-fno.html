@@ -709,107 +709,342 @@
         </div>
     </div>
 
-
-    <!--Fundamentals-->
-    <div class="fundamentals-open-mob tranding-now-area content-pd-sm">
+    <!--Support and Resistance Levels-->
+    <div class="support-resistance-ar content-pd-sm">
         <div class="container">
             <!--heading-->
             <div class="heading-bx">
-                <h2>Fundamentals</h2>
+                <h2>Support and Resistance Levels</h2>
             </div>
 
-            <div class="tranding-tab">
-                <div class="tranding-opt clearfix">
-                    <div class="input-date">
-                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                        <span class="mkt-arrow-icons"></span>
-                    </div>
-                </div>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tab-structure table-cell" role="tablist">
-                    <li class="active col-xs-6"><a href="#standalone" data-toggle="tab">Standalone</a></li>
-                    <li class="col-xs-6"><a href="#consolidated" data-toggle="tab">Consolidated</a></li>
+            <div class="count-list-wrap">
+                <ul class="level-list">
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Support Level -1 <span>15,68,300.62</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Support Level -2 <span>15,68,300.62</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Support Level -1 <span>15,68,300.62</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">Support Level -2 <span>15,68,300.62</span></span>
+                        </div>
+                    </li>
                 </ul>
+                <p class="note clearfix"><span>Note - Support and resistance values are calculated on weekly basis.</span></p>
+            </div>
+        </div>
+    </div>
 
-                <!-- Tab panes -->
-                <div class="tab-content share-content-tab">
-                    <div role="tabpanel" class="tab-pane active" id="standalone">
-                        <div class="financial-dt row">
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">EPS</span></span>
+
+    <!--Support and Resistance Levels-->
+    <div class="support-resistance-ar content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx">
+                <h2>Moving Average</h2>
+            </div>
+
+            <div class="count-list-wrap">
+                <ul class="level-list">
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">10 Days <span>2,303.54</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">20 Days <span>2,123.58</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">50 Days <span>2,303.54</span></span>
+                        </div>
+                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="count-dt clearfix">
+                            <span class="level-title">100 Days <span>2,303.54</span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Open Interest Analysis-->
+    <div class="quotes-interest-anlys-mob tranding-now-area content-pd-sm">
+        <div class="container">
+            <!--heading-->
+            <div class="heading-bx">
+                <h2>Open Interest Analysis</h2>
+            </div>
+
+            <div class="tranding-content-area">
+                <div class="tranding-tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tab-structure table-cell" role="tablist">
+                        <li class="active col-xs-4"><a href="#futureOiAr" data-toggle="tab">Future OI</a></li>
+                        <li class="col-xs-4"><a href="#optionOiAr" data-toggle="tab">Option OI</a></li>
+                        <li class="col-xs-4"><a href="#pcrAr" data-toggle="tab">PCR</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content share-content-tab">
+                        <div role="tabpanel" class="tab-pane active" id="futureOiAr">
+                            <div class="chart-opt-sec mb20 clearfix">
+                                <div class="tranding-select-opt relative-div">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Type</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Type :</span>
+                                       <span class="radio-list">
+                                           <input type="radio" id="nseOpen" name="channel4" class="css-radio" checked>
+                                            <label class="css-label" for="nseOpen">NSE</label>
+                                       </span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="mcxOpen" name="channel4" class="css-radio">
+                                            <label class="css-label" for="mcxOpen">MCX</label>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="tranding-select-opt">
+                                    <div class="input-date">
+                                        <input  type="text" placeholder="Expiry" class="datePicker" >
+                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                        <span class="mkt-arrow-icons"></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,123.58 <span class="light-tx">Total De</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">Operating Margin</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">Gross Profit Margin</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">28.45 <span class="light-tx">Divident Payout Ratio</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">29.04 <span class="light-tx">Earning Retention Ratio</span></span>
+                            <div class="share-mkt-ar">
+                                <div class="share-mkt-data">
+                                    <table class="shate-data-tbl table data-table text-right table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-left">Names</th>
+                                            <th>Current Price</th>
+                                            <th>Previous Close</th>
+                                            <th>Change Price</th>
+                                            <th>OI</th>
+                                            <th>Change %</th>
+                                            <th>OI Change (%)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">USDINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">EURINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">GBPINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">JPYINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="view-all-btn"><a href="javascript:void(0)" class="link">View More</a> </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="consolidated">
-                        <div class="financial-dt row">
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">EPS</span></span>
+                        <div role="tabpanel" class="tab-pane" id="optionOiAr">
+                            <div class="chart-opt-sec mb20 clearfix">
+                                <div class="tranding-select-opt relative-div">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Type</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Type :</span>
+                                       <span class="radio-list">
+                                           <input type="radio" id="nseOpen21" name="channe21" class="css-radio" checked>
+                                            <label class="css-label" for="nseOpen21">NSE</label>
+                                       </span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="mcxOpen21" name="channe21" class="css-radio">
+                                            <label class="css-label" for="mcxOpen21">MCX</label>
+                                       </span>
+                                    </div>
+                                </div>
+                                <div class="tranding-select-opt">
+                                    <div class="input-date">
+                                        <input  type="text" placeholder="Expiry" class="datePicker" >
+                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                        <span class="mkt-arrow-icons"></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,123.58 <span class="light-tx">Total De</span></span>
+                            <div class="share-mkt-ar">
+                                <div class="share-mkt-data">
+                                    <table class="shate-data-tbl table data-table text-right table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-left">Names</th>
+                                            <th>Current Price</th>
+                                            <th>Previous Close</th>
+                                            <th>Change Price</th>
+                                            <th>OI</th>
+                                            <th>Change %</th>
+                                            <th>OI Change (%)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">USDINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">EURINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">GBPINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">JPYINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="view-all-btn"><a href="javascript:void(0)" class="link">View More</a> </p>
                                 </div>
                             </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">Operating Margin</span></span>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="pcrAr">
+                            <div class="chart-opt-sec mb20 clearfix">
+                                <div class="tranding-select-opt relative-div btn-mob-fwdth">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Type</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Type :</span>
+                                       <span class="radio-list">
+                                           <input type="radio" id="nseOpen6" name="channel34" class="css-radio" checked>
+                                            <label class="css-label" for="nseOpen6">NSE</label>
+                                       </span>
+                                       <span class="radio-list">
+                                            <input type="radio" id="mcxOpen6" name="channel34" class="css-radio">
+                                            <label class="css-label" for="mcxOpen6">MCX</label>
+                                       </span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">2,303.54 <span class="light-tx">Gross Profit Margin</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">28.45 <span class="light-tx">Divident Payout Ratio</span></span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 financial-list">
-                                <div class="count-dt clearfix">
-                                    <span class="icon-net-cash-graph1"></span>
-                                    <span class="level-title">29.04 <span class="light-tx">Earning Retention Ratio</span></span>
+                            <div class="share-mkt-ar">
+                                <div class="share-mkt-data">
+                                    <table class="shate-data-tbl table data-table text-right table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-left">Names</th>
+                                            <th>Current Price</th>
+                                            <th>Previous Close</th>
+                                            <th>Change Price</th>
+                                            <th>OI</th>
+                                            <th>Change %</th>
+                                            <th>OI Change (%)</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">USDINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">EURINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">GBPINR</a></td>
+                                            <td>287.25</td>
+                                            <td>287.25</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left"><a href="javascript:void(0)">JPYINR</a></td>
+                                            <td>287.25</td>
+                                            <td>1,558.10</td>
+                                            <td>-0.060</td>
+                                            <td>287.25</td>
+                                            <td class="green-col">5.67</td>
+                                            <td>6.78</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="view-all-btn"><a href="javascript:void(0)" class="link">View More</a> </p>
                                 </div>
                             </div>
                         </div>
@@ -898,253 +1133,6 @@
             </div>
         </div>
     </div>
-
-
-    <!--Financials-->
-    <div class="financials-block content-pd-sm">
-        <div class="container">
-            <!--heading-->
-            <div class="heading-bx">
-                <h2>Financials</h2>
-            </div>
-
-            <div class="block-white-pd">
-                <div class="block-d">
-                    <div class="input-date">
-                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                        <span class="mkt-arrow-icons"></span>
-                    </div>
-                </div>
-
-                <div class="financial-dt row">
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">Gross Profit</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,123.58 <span class="light-tx">Net Profit</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">Other Income</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">Other Expenses</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">28.45 <span class="light-tx">Sales</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">29.04 <span class="light-tx">Net Sales</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">Equity Capital</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">M CAP</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">2,303.54 <span class="light-tx">PE</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">28.45 % <span class="light-tx">PB</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">29.04 <span class="light-tx">Dividend Yield</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">28.45 <span class="light-tx">EBITDA</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">28.45 % <span class="light-tx">EPS</span></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 financial-list">
-                        <div class="count-dt clearfix">
-                            <span class="icon-net-cash-graph1"></span>
-                            <span class="level-title">Axis Bank Limited <span class="light-tx">Company</span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Peer Comparison -->
-    <div class="peer-comparison-ar content-pd-sm">
-        <div class="container">
-            <!--heading-->
-            <div class="heading-bx">
-                <h2>Peer Comparison</h2>
-            </div>
-
-            <div class="block-panel">
-                <div class="tranding-opt tranding-white-bg clearfix">
-                    <div class="tranding-select-opt">
-                        <span class="mkt-icons"><span class="icon-Rupee-dropdown"> <span class="path1"></span><span class="path2"></span> </span></span>
-                        <select class="select">
-                            <option value="nse">Market Cap</option>
-                            <option value="nse">BSE</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="block-deal-pd0">
-                    <table class="shate-data-tbl table data-table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Company Name</th>
-                            <th>LTP</th>
-                            <th>PE Ratio</th>
-                            <th>PB Ratio</th>
-                            <th>Market Cap</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><a href="javascript:void(0)">HDFC Bank Limited</a></td>
-                            <td>287.25 <span class="gain-col"><span class="icon-LTP-up-arrow"></span> 16.70 (6.17%)</span></td>
-                            <td>260.45</td>
-                            <td>241.32</td>
-                            <td>1,123,456</td>
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">IDBI Bank</a></td>
-                            <td>287.25 <span class="gain-col"><span class="icon-LTP-up-arrow"></span> 16.70 (6.17%)</span></td>
-                            <td>123.20</td>
-                            <td>109.30</td>
-                            <td>1,123,456</td>
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">ICICI LTD</a></td>
-                            <td>287.25 <span class="gain-col"><span class="icon-LTP-up-arrow"></span> 16.70 (6.17%)</span></td>
-                            <td>5701.36</td>
-                            <td>5200.66</td>
-                            <td>1,123,456</td>
-                        </tr>
-                        <tr>
-                            <td><a href="javascript:void(0)">Kotak Mahindra LTD</a></td>
-                            <td>287.25 <span class="loss-col"><span class="icon-LTP-down-arrow1"></span> 16.70 (6.17%)</span></td>
-                            <td>314.20</td>
-                            <td>289.21</td>
-                            <td>1,123,456</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <p class="view-all-btn"><a href="javascript:void(0)" class="link">View More</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Support and Resistance Levels-->
-    <div class="support-resistance-ar content-pd-sm">
-        <div class="container">
-            <!--heading-->
-            <div class="heading-bx">
-                <h2>Support and Resistance Levels</h2>
-            </div>
-
-            <div class="count-list-wrap">
-                <ul class="level-list">
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">Support Level -1 <span>15,68,300.62</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">Support Level -2 <span>15,68,300.62</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">Support Level -1 <span>15,68,300.62</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">Support Level -2 <span>15,68,300.62</span></span>
-                        </div>
-                    </li>
-                </ul>
-                <p class="note clearfix"><span>Note - Support and resistance values are calculated on weekly basis.</span></p>
-            </div>
-        </div>
-    </div>
-
-
-    <!--Support and Resistance Levels-->
-    <div class="support-resistance-ar content-pd-sm">
-        <div class="container">
-            <!--heading-->
-            <div class="heading-bx">
-                <h2>Moving Average</h2>
-            </div>
-
-            <div class="count-list-wrap">
-                <ul class="level-list">
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">10 Days <span>2,303.54</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">20 Days <span>2,123.58</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">50 Days <span>2,303.54</span></span>
-                        </div>
-                    </li>
-                    <li class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="count-dt clearfix">
-                            <span class="level-title">100 Days <span>2,303.54</span></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
 
     <!--Company Details-->
     <div class="company-details-wrap content-pd-sm center-title">

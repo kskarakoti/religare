@@ -258,6 +258,13 @@ $(function () {
 		$(this).parent().siblings().removeClass("active");
 	});
 
+	//Qoutes down arrow toggle action
+	$(".high-low-sec .down-arrow a").click(function (e) {
+		$(this).parents('.high-low-sec').children('.high-low-area').toggleClass("active");
+		$(this).parents('.down-arrow').toggleClass("up-arrow");
+		// e.stopPropagation();
+	});
+
 	//list item to replace on select box in mobile
 	if ($(window).width() < 767){
 		$('.btn-wrap button.btn-toggle').on('click',function(e){
@@ -315,6 +322,33 @@ $(function () {
 	} else {
 		$('.toggle-radio').show();
 	}
+
+	//for header search 
+	$('.search-links i.icon-ic_search, .close-icon a').on('click',function(){
+		$('.header-search-wrap').slideToggle('slow');
+		$('input.search-nput').focus();
+		$('.overlay-bg').toggle();
+	});
+	$('.search-input').keyup(function () {
+		var valThis = this.value.toLowerCase(),
+			lenght  = this.value.length;
+
+		$('.search-list-wrap .recent-list>li div.name').each(function () {
+			var text  = $(this).text(),
+				textL = text.toLowerCase(),
+				htmlR = '<b>' + text.substr(0, lenght) + '</b>' + text.substr(lenght);
+			(textL.indexOf(valThis) == 0) ? $(this).html(htmlR).parent().show() : $(this).parent().hide();
+		});
+		$('.search-list-wrap').show();
+		$('.recent-search-wrap').hide();
+	});
+	$('.search-list-wrap .recent-list>li div.name').on('click',function(){
+		var content= $(this).text();
+		$('.search-input').val(content);
+	});
+
+	//star rating
+	$('.input-star').rating({displayOnly: true, step: 0.5});
 
 	//datepickers
 	$('#datePicker').datepicker({
