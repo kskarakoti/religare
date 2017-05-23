@@ -11562,6 +11562,10 @@ header {
   z-index: 999;
   background: #FFF;
   width: 100%; }
+  .header-search-wrap .serach-block {
+    box-shadow: 1px 1px 1px 1px #dedede; }
+    .header-search-wrap .serach-block .container {
+      position: relative; }
   .header-search-wrap .close-icon {
     position: absolute;
     right: 19px;
@@ -11582,9 +11586,7 @@ header {
     width: 100%;
     height: 70px;
     border: none;
-    box-shadow: 1px 1px 1px 1px #dedede;
-    padding-right: 20px;
-    text-indent: 15px; }
+    padding-right: 20px; }
     @media screen and (max-width: 767px) {
       .header-search-wrap .input-wrap input.search-input {
         height: 50px; } }
@@ -14257,6 +14259,13 @@ header {
           width: 100%;
           border-bottom: 1px solid #cccccc; }
 
+.support-wrap ul.link-list li {
+  padding-bottom: 10px; }
+  .support-wrap ul.link-list li a {
+    color: #444444; }
+    .support-wrap ul.link-list li a:hover {
+      color: #000000; }
+
 /****************************************
    3.7 Reseach Page Styles
 ****************************************/
@@ -16396,12 +16405,12 @@ button.btn.btn-radio-toggle {
       .grid-overlay-wrap .block .content-wrap {
         height: 100% !important; } }
     .grid-overlay-wrap .block .content-wrap h5 {
-      font-size: 20px;
+      font-size: 18px;
       color: #212121;
       font-family: "ubuntumedium", sans-serif; }
     .grid-overlay-wrap .block .content-wrap p {
       color: #666666;
-      font-size: 16px; }
+      font-size: 14px; }
     .grid-overlay-wrap .block .content-wrap .link-wrap a span {
       font-size: 14px; }
 
@@ -16432,7 +16441,7 @@ button.btn.btn-radio-toggle {
         display: block;
         text-align: center; }
     .eligibility-wrap ul li span.media-body {
-      font-size: 16px;
+      font-size: 14px;
       color: #212121; }
 
 @media screen and (max-width: 991px) {
