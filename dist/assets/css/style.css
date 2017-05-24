@@ -13471,6 +13471,9 @@ header {
       display: inline-block; }
     .table.shate-data-tbl th a, .table.shate-data-tbl td a {
       color: #222222; }
+      @media screen and (max-width: 480px) {
+        .table.shate-data-tbl th a, .table.shate-data-tbl td a {
+          white-space: initial; } }
       .table.shate-data-tbl th a:hover, .table.shate-data-tbl td a:hover {
         color: #69ad0e; }
     .table.shate-data-tbl th.control, .table.shate-data-tbl td.control {
@@ -13500,6 +13503,22 @@ header {
         color: #20ab30; }
       .table.shate-data-tbl td > span.loss-col {
         color: #fa4110; }
+  @media screen and (max-width: 480px) {
+    .table.shate-data-tbl tr td:nth-child(1) {
+      white-space: nowrap;
+      min-width: 150px;
+      display: block !important; } }
+  @media screen and (max-width: 480px) {
+    .table.shate-data-tbl tr td:nth-child(2) {
+      white-space: nowrap;
+      min-width: 150px; } }
+  .table.shate-data-tbl tr td.control {
+    width: 3%; }
+  .table.shate-data-tbl tr.child td.child {
+    background: #ffffff; }
+    @media screen and (max-width: 480px) {
+      .table.shate-data-tbl tr.child td.child {
+        width: 100%; } }
 
 .share-title h3 {
   margin: 0;
@@ -14871,6 +14890,9 @@ header {
   .share-tab .chart-box {
     padding: 0px 20px 20px 20px;
     margin-top: 10px; }
+    .share-tab .chart-box .block-area {
+      padding: 0;
+      margin-bottom: 10px; }
   @media screen and (max-width: 991px) {
     .share-tab {
       margin-top: 60px; } }
@@ -14991,7 +15013,8 @@ header {
       border: none; } }
 
 .high-low-sec .down-arrow {
-  top: -28px; }
+  top: -14px;
+  margin: 0 auto; }
   .high-low-sec .down-arrow.up-arrow .icon .arrow .up-angle {
     top: 12px;
     transform: rotate(-225deg); }
@@ -15202,6 +15225,9 @@ header {
   .quotes-recommend-ar .share-info-area .share-tab .share-related-sec {
     padding: 20px 0; } }
 
+.quotes-recommend-ar .share-info-area .share-tab .share-panel-cont {
+  padding: 0 0 20px 0; }
+
 .share-related-sec {
   padding: 20px; }
   .share-related-sec .share-action-bx {
@@ -15229,6 +15255,9 @@ header {
         @media screen and (max-width: 767px) {
           .share-related-sec .share-action-bx .select2-container .select2-selection--single {
             border-radius: 0; } }
+  @media screen and (max-width: 480px) {
+    .share-related-sec {
+      padding: 20px 0; } }
 
 .mkt-icons {
   position: absolute;
@@ -15250,6 +15279,46 @@ header {
 
 .bg-white {
   background: #ffffff; }
+
+/****************************************
+   3.14 Quotes Mutual Funds Page Styles
+****************************************/
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx.left {
+    float: none;
+    margin-right: 0; }
+    .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx.left .select2-container {
+      width: 100% !important; }
+      .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx.left .select2-container .select2-selection--single {
+        background: #ffffff; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx.right {
+    float: none;
+    text-align: center;
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx .share-action-list li a {
+    width: auto;
+    height: auto;
+    overflow: inherit; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-panel-cont {
+    padding-bottom: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .returns-open .block-panel .block-deal-pd, .peer-comparison-ar .block-panel .block-deal-pd, .we-recommend-ar .block-panel .block-deal-pd {
+    padding: 20px 0; } }
+
+@media screen and (max-width: 480px) {
+  .top-sector-open .block-panel .block-deal-pd {
+    padding: 20px 0; } }
+
+@media screen and (max-width: 640px) {
+  .top-sector-open .block-panel .block-deal-pd .top-sectors-ar .top-title {
+    margin: 15px 20px; } }
 
 /************************************************************************************
 

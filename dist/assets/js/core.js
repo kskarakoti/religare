@@ -158,13 +158,14 @@ $(function () {
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
-		var p = $(e.target).closest('.header-left, .dropdown-menu ').length;
+		var p = $(e.target).closest('.header-left, .dropdown-menu, .icon-ic_search').length;
 		if (!p) {
 			$(".menu-lt-ar").removeClass('active');
 			$(".overlay-bg").removeClass('active');
 			$("body").removeClass('overflownone');
 			$(".hamburger li").removeClass();
 			$(".menue").removeClass('active');
+			$(".header-search-wrap").hide();
 		}
 
 		if ($(window).width() > 767) {
@@ -334,7 +335,7 @@ $(function () {
 	$('.search-links i.icon-ic_search, .close-icon a').on('click',function(){
 		$('.header-search-wrap').slideToggle('slow');
 		$('input.search-nput').focus();
-		$('.overlay-bg').toggle();
+		$('.overlay-bg').addClass('active');
 	});
 	$('.search-input').keyup(function () {
 		var valThis = this.value.toLowerCase(),

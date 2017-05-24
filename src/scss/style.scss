@@ -3553,6 +3553,10 @@ header {
       a {
         color: #222222;
 
+        @media screen and (max-width:480px) {
+          white-space: initial;
+        }
+
         &:hover{
           color: $hover-dark-green;
         }
@@ -3605,6 +3609,37 @@ header {
         }
       }
 
+    }
+
+    tr {
+      td {
+        &:nth-child(1) {
+          @media screen and (max-width: 480px) {
+            white-space:nowrap;
+            min-width:150px;
+            display: block !important;
+          }
+        }
+        &:nth-child(2) {
+          @media screen and (max-width: 480px) {
+            white-space:nowrap;
+            min-width:150px;
+          }
+        }
+        &.control {
+          width: 3%;
+        }
+      }
+      &.child {
+        td {
+          &.child {
+            background: $white;
+            @media screen and (max-width: 480px) {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -5584,6 +5619,11 @@ header {
   .chart-box {
     padding: 0px 20px 20px 20px;
     margin-top: 10px;
+
+    .block-area {
+      padding: 0;
+      margin-bottom: 10px;
+    }
   }
   @media screen and (max-width: 991px) {
     margin-top: 60px;
@@ -5743,7 +5783,8 @@ header {
     }
   }
   .down-arrow {
-    top: -28px;
+    top: -14px;
+    margin: 0 auto;
 
     &.up-arrow {
       .icon {
@@ -6047,9 +6088,14 @@ header {
           padding: 20px 0;
         }
       }
+
+      .share-panel-cont {
+        padding: 0 0 20px 0;
+      }
     }
   }
 }
+
 .share-related-sec {
   padding: 20px;
 
@@ -6094,6 +6140,9 @@ header {
       }
     }
   }
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+  }
 }
 
 
@@ -6127,6 +6176,87 @@ header {
 .bg-white {
   background: $white;
 }
+
+
+/****************************************
+   3.14 Quotes Mutual Funds Page Styles
+****************************************/
+.quotes-mutual-funds {
+  .share-tab {
+    .share-related-sec {
+      .share-action-bx {
+        &.left {
+          @media screen and (max-width: 640px) {
+            float: none;
+            margin-right: 0;
+
+            .select2-container {
+              width: 100% !important;
+
+              .select2-selection--single {
+                background: $white;
+              }
+            }
+          }
+        }
+        &.right {
+          @media screen and (max-width: 640px) {
+            float: none;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+
+        .share-action-list {
+          li {
+            a {
+              @media screen and (max-width: 640px) {
+                width: auto;
+                height: auto;
+                overflow: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .share-panel-cont {
+      @media screen and (max-width: 640px) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.returns-open, .peer-comparison-ar, .we-recommend-ar {
+  .block-panel {
+    .block-deal-pd {
+      @media screen and (max-width: 480px) {
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+.top-sector-open {
+  .block-panel {
+    .block-deal-pd {
+      @media screen and (max-width: 480px) {
+        padding: 20px 0;
+      }
+
+      .top-sectors-ar {
+        .top-title {
+          @media screen and (max-width: 640px) {
+            margin: 15px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
 /************************************************************************************
 
 =========================== 04 Footer Styles ============================

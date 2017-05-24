@@ -347,7 +347,7 @@
 <!--section-->
 <section class="content-block gray-bg-content">
     <!--Share Recommend-->
-    <div class="share-recommend-bx content-pd-sm">
+    <div class="share-recommend-bx quotes-mutual-funds content-pd-sm">
         <div class="container">
             <div class="share-info-area">
                 <!--share heading-->
@@ -366,18 +366,18 @@
                     </div>
 
                     <div class="share-related-sec clearfix">
+                        <div class="share-action-bx right">
+                            <ul class="share-action-list mt5 clearfix">
+                                <li><a href="javascript:void(0)"><span class="icon-Start-SIP fontsize"></span> Start SIP</a></li>
+                                <li><a href="javascript:void(0)"><span class="icon-Invest-lump-sum fontsize"><span class="path1"></span><span class="path2"></span></span> Invest Lump sum</a></li>
+                            </ul>
+                        </div>
                         <div class="share-action-bx left">
                             <span class="mkt-icons"><span class="icon-Type-dropdown"></span></span>
                             <select class="select">
                                 <option value="nse">Growth</option>
                                 <option value="nse">Spot</option>
                             </select>
-                        </div>
-                        <div class="share-action-bx right">
-                            <ul class="share-action-list mt5 clearfix">
-                                <li><a href="javascript:void(0)"><span class="icon-Start-SIP"></span> Start SIP</a></li>
-                                <li><a href="javascript:void(0)"><span class="icon-Invest-lump-sum"><span class="path1"></span><span class="path2"></span></span> Invest Lump sum</a></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -388,7 +388,7 @@
                         <div class="high-low-sec">
                             <div class="high-low-area clearfix">
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 high-low-mob">
-                                    <div class="high-low-val">
+                                    <div class="high-low-val first-col">
                                         <p class="value-num">
                                             <span class="price-value">8,966.20</span>
                                             <span class="price-percentage gain"><span class="icon-LTP-up-arrow fontsize"></span> 0.09 (0.11%)</span>
@@ -481,15 +481,17 @@
                             </div>
                         </div>
 
-                        <div class="block-area pt10 clearfix">
-                            <div class="tranding-select-opt relative-div">
-                                <div class="btn-wrap visible-xs">
-                                    <button class="btn btn-radio-toggle">
-                                        <span class="radio-list">Index</span>
-                                    </button>
-                                </div>
-                                <div class="sector-opt toggle-radio">
-                                    <span class="hidden-xs">Compare with: </span>
+                        <!-- chart box -->
+                        <div class="chart-box mt0">
+                            <div class="block-area clearfix">
+                                <div class="tranding-select-opt relative-div">
+                                    <div class="btn-wrap visible-xs">
+                                        <button class="btn btn-radio-toggle">
+                                            <span class="radio-list">Index</span>
+                                        </button>
+                                    </div>
+                                    <div class="sector-opt toggle-radio">
+                                        <span class="hidden-xs">Compare with: </span>
                                     <span class="radio-list">
                                         <input type="radio" id="nifty22" name="nifty50" class="css-radio" checked>
                                         <label class="css-label" for="nifty22">Nifty 50</label>
@@ -502,31 +504,29 @@
                                         <input type="radio" id="nse22" name="nifty50" class="css-radio">
                                         <label class="css-label" for="nse22">NSE</label>
                                     </span>
-                                </div>
-                            </div>
-
-                            <div class="tranding-select-opt right">
-                                <div class="mobile-drop">
-                                    <div class="btn-wrap visible-xs">
-                                        <button class="btn btn-toggle">
-                                            <span class="text">Today</span>
-                                            <span class="icon"></span>
-                                        </button>
                                     </div>
+                                </div>
 
-                                    <ul class="share-dt-sort toggle-list">
-                                        <li class="active"><a href="javascript:void(0)">1 Mon</a></li>
-                                        <li><a href="javascript:void(0)">3 Mon</a></li>
-                                        <li><a href="javascript:void(0)">6 Mon</a></li>
-                                        <li><a href="javascript:void(0)">1 Yr</a></li>
-                                        <li><a href="javascript:void(0)">5 Yr</a></li>
-                                    </ul>
+                                <div class="tranding-select-opt right">
+                                    <div class="mobile-drop">
+                                        <div class="btn-wrap visible-xs">
+                                            <button class="btn btn-toggle">
+                                                <span class="text">Today</span>
+                                                <span class="icon"></span>
+                                            </button>
+                                        </div>
+
+                                        <ul class="share-dt-sort toggle-list">
+                                            <li class="active"><a href="javascript:void(0)">1 Mon</a></li>
+                                            <li><a href="javascript:void(0)">3 Mon</a></li>
+                                            <li><a href="javascript:void(0)">6 Mon</a></li>
+                                            <li><a href="javascript:void(0)">1 Yr</a></li>
+                                            <li><a href="javascript:void(0)">5 Yr</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- chart box -->
-                        <div class="chart-box">
                             <img src="assets/images/quotes-charts.jpg" alt="" title="" class="img-responsive">
                         </div>
                     </div>
