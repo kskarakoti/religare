@@ -110,6 +110,13 @@ $(function () {
 		}, 600);
 	});
 
+	//smooth scroll_______________________________________________
+	$(".smoothscroll").click(function(e) {
+		e.preventDefault();
+		$("body, html").animate({
+			scrollTop: $( $(this).attr('href')).offset().top - 85+ "px"
+		}, 600);
+	});
 
 	if ($(window).width() < 767) {
 		$('.banner-action').click(function () {

@@ -113,10 +113,11 @@ h1, h2, h3, h4, h5 {
   font-family: $font-family-ubunturegular;
 }
 h2 {
+  font-size: ($font-size-large * 2) - 4;
   line-height: 30px;
 }
 h3 {
-  font-size: $font-size-large + 6;
+  font-size: $font-size-large + 2;
   line-height: 23px;
 }
 h4 {
@@ -928,6 +929,10 @@ header {
               font-size: 16px;
               margin-bottom: 7px;
               color:$tundora;
+
+              a {
+                color:$tundora;
+              }
               @media screen and (max-width: 480px) {
                 font-size: 14px;
                 margin-bottom: 2px;
@@ -972,6 +977,14 @@ header {
           b {
             color: #f7941c;
             font-weight:600;
+          }
+          &:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: '';
+            clear:both;
+            height: 0;
           }
         }
       }
@@ -1942,34 +1955,33 @@ header {
       }
     }
   }
-  p {
-    &.note {
-      margin-top:12px;
-      margin-bottom:0;
+}
 
-      span {
-        @media screen and (max-width: 640px) {
-          display: block;
-        }
-      }
+.note {
+  margin-top:12px;
+  margin-bottom:0;
 
-      a {
-        color: #444444;
-        text-decoration: underline;
+  span {
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+  }
 
-        &.pull-right {
-          @media screen and (max-width: 640px) {
-            float: none !important;
-            display: inline-block;
-            margin-top: 10px;
-          }
-        }
-      }
+  a {
+    color: #444444;
+    text-decoration: underline;
 
+    &.pull-right {
       @media screen and (max-width: 640px) {
-        text-align: center;
+        float: none !important;
+        display: inline-block;
+        margin-top: 10px;
       }
     }
+  }
+
+  @media screen and (max-width: 640px) {
+    text-align: center;
   }
 }
 .news-wrap {
@@ -3544,6 +3556,10 @@ header {
         &:hover{
           color: $hover-dark-green;
         }
+      }
+
+      &.control {
+        padding: 10px 12px;
       }
 
       @media screen and (max-width: 767px) {
@@ -5433,22 +5449,16 @@ header {
         @media screen and (max-width: 480px) {
           padding: 20px 0;
         }
-
-        .chart-box {
-          @media screen and (max-width: 767px) {
-            display: none;
-          }
-        }
       }
       .share-option-bx {
         .share-action-bx {
           .trade-link {
-            @media screen and (max-width: 767px) {
+            /*@media screen and (max-width: 640px) {
               display: block;
               width: 150px;
               margin: 15px auto;
               text-align: center;
-            }
+            }*/
           }
           @media screen and (max-width: 991px) {
             position: relative;
@@ -5458,8 +5468,16 @@ header {
           }
         }
       }
-
+      @media screen and (max-width: 480px) {
+        margin-top: 45px;
+      }
     }
+  }
+}
+
+.chart-box {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 .share-heading-ar {
@@ -5472,6 +5490,8 @@ header {
 
     @media screen and (max-width: 767px) {
       display: block;
+      font-size: 20px;
+      margin: 0 0 0px 0;
     }
   }
 
@@ -5482,6 +5502,7 @@ header {
     li {
       display: inline-block;
       border-right: 1px solid #40474e;
+      padding: 0px 10px;
 
       &:last-child {
         border-right: none;
@@ -5490,7 +5511,6 @@ header {
       a {
         color: #40474e;
         display: block;
-        padding: 0px 10px;
         line-height: 14px;
 
         @media screen and (max-width: 480px) {
@@ -5533,6 +5553,11 @@ header {
       left: 0;
       top: 0;
       z-index: 0;
+
+      @media screen and (max-width: 767px) {
+        border-bottom: 30px solid #40474e;
+        height: 28px;
+      }
     }
 
     p {
@@ -5547,10 +5572,14 @@ header {
         color: #f5911a;
       }
     }
+    @media screen and (max-width: 767px) {
+      top:-30px;
+      height: 28px;
+    }
   }
 
   .block-area {
-    padding: 20px 30px;
+    padding: 10px 30px 5px 30px;
   }
   .chart-box {
     padding: 0px 20px 20px 20px;
@@ -5600,13 +5629,24 @@ header {
         display: inline-block;
         margin-right: 5px;
       }
+
+      &:hover {
+        color: $hover-dark-green;
+      }
+      @media screen and (max-width: 480px) {
+        width: 40px;
+        height: 28px;
+        overflow: hidden;
+      }
     }
     @media screen and (max-width: 640px) {
-      margin-right: 10px;
+      margin-right:0px;
     }
   }
-  @media screen and (max-width: 767px) {
-    display: block;
+  @media screen and (max-width: 640px) {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
   }
 }
 .share-lt-title {
@@ -5629,15 +5669,14 @@ header {
 .high-low-sec {
   .high-low-area {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
     overflow: hidden;
-    height: 85px;
+    height: 84px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     position: relative;
-    padding: 0 20px;
+    padding: 10px 20px;
 
     &.active {
       height: auto;
@@ -5654,9 +5693,13 @@ header {
     }
 
     .high-low-val {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       min-height: 60px;
       vertical-align: bottom;
+
+      &.first-col {
+        min-height: 60px;
+      }
 
       .value-num {
         font-size: 18px;
@@ -5679,21 +5722,28 @@ header {
           }
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           font-size: 16px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
         }
       }
       .status-tx {
         font-size: 14px;
         color: #9da2a4;
       }
+      @media screen and (max-width: 480px) {
+        min-height: 80px;
+      }
     }
     @media screen and (max-width: 767px) {
       height: 150px;
+      border: none;
     }
   }
   .down-arrow {
-    margin: -33px auto 0 auto;
+    top: -28px;
 
     &.up-arrow {
       .icon {
@@ -5704,6 +5754,10 @@ header {
           }
         }
       }
+    }
+    @media screen and (max-width: 767px) {
+      top: 0;
+      margin: 0 auto;
     }
   }
 }
@@ -5739,7 +5793,7 @@ header {
 /* News & Feeds */
 .news-feeds-ar {
   background: $white;
-  padding: 40px 10px 20px 10px;
+  padding: 40px 20px 20px 20px;
 
   .news-feed-sec {
     .news-fd-blk {
@@ -5748,6 +5802,13 @@ header {
         color: #40474e;
         font-family: $font-family-ubuntumedium;
         margin: 0 0 20px 0;
+        @media screen and (max-width: 640px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 20px;
+          margin: 0 20px;
+        }
       }
 
       .news-feeds-list {
@@ -5772,6 +5833,11 @@ header {
             display: table;
             width: 100%;
             height: 64px;
+
+            a {
+              display: table-cell;
+              vertical-align: middle;
+            }
           }
           .news-feeds-name {
             width: 50px;
@@ -5799,26 +5865,41 @@ header {
               padding: 8px 0px;
               top: 19px;
             }
+            @media screen and (max-width: 480px) {
+              width: 40px;
+              height: 40px;
+              padding: 8px 0px;
+              top: 15px;
+              left: 10px;
+              font-size: 16px;
+            }
           }
 
           p {
             font-size: 16px;
             color: #40474e;
             margin-bottom: 0;
-            display: table-cell;
-            vertical-align: middle;
 
             @media screen and (max-width: 991px) {
               font-size: 14px;
             }
           }
-
+          @media screen and (max-width: 480px) {
+            padding-left: 70px;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          border-left: none;
+          border-right: none;
         }
       }
       @media screen and (max-width: 767px) {
         margin-bottom: 40px;
       }
     }
+  }
+  @media screen and (max-width: 480px) {
+    padding: 20px 0px 20px 0px;
   }
 }
 
@@ -5890,14 +5971,85 @@ header {
 
 .fundamentals-open-mob {
   .tranding-tab {
+    /*.tranding-opt {
+      .tranding-select-opt {
+
+      }
+    }*/
     .share-content-tab {
       padding: 10px 0 0 0;
     }
   }
 }
+
+.financials-block {
+  .block-white-pd {
+    .block-d {
+      @media screen and (max-width: 480px) {
+        padding: 20px 0;
+      }
+      .input-date {
+        @media screen and (max-width: 480px) {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.peer-comparison-ar {
+  .tranding-opt {
+    .tranding-select-opt {
+      .mkt-icons {
+        top: 10px;
+        span {
+          font-size: 21px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
 /****************************************
    3.14 Quotes Commodities Page Styles
 ****************************************/
+.quotes-recommend-ar {
+  .share-info-area {
+    .share-tab {
+      .share-related-sec {
+        .share-action-bx {
+          &.left {
+            .btn-radio-toggle {
+              background: $white;
+              @media screen and (max-width: 640px) {
+                min-width: 100%;
+              }
+            }
+            @media screen and (max-width: 640px) {
+              margin-right: 0;
+              width: 50%;
+            }
+          }
+          &.right {
+            @media screen and (max-width: 991px) {
+              float: none;
+              margin-bottom: 15px;
+              text-align: center;
+            }
+          }
+        }
+        @media screen and (max-width: 640px) {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
 .share-related-sec {
   padding: 20px;
 
@@ -6550,7 +6702,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
     }
 
     @media screen and (max-width: 480px) {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -6570,10 +6722,18 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .content-pd {
   padding: ($padding-base-5 * 12) $padding-none;
+
+  @media screen and (max-width: 480px) {
+    padding: ($padding-base-5 * 6) $padding-none;
+  }
 }
 
 .content-pd-sm {
   padding: ($padding-base-5 * 6) $padding-none;
+
+  @media screen and (max-width: 480px) {
+    padding: ($padding-base-5 * 3) $padding-none;
+  }
 }
 
 .inbetween-padding {
@@ -7075,6 +7235,7 @@ span {
 .mt30{margin-top:30px !important;}
 .mt40{margin-top:40px !important;}
 .mt50{margin-top:50px !important;}
+.mb0{margin-bottom:0px !important;}
 .mb10{margin-bottom:10px !important;}
 .mb15{margin-bottom:15px !important;}
 .mb20{margin-bottom:20px !important;}

@@ -11112,10 +11112,11 @@ h1, h2, h3, h4, h5 {
   font-family: "ubunturegular", sans-serif; }
 
 h2 {
+  font-size: 32px;
   line-height: 30px; }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 23px; }
 
 h4 {
@@ -11645,6 +11646,8 @@ header {
           font-size: 16px;
           margin-bottom: 7px;
           color: #444444; }
+          .header-search-wrap .search-container ul.recent-list li .name a {
+            color: #444444; }
           @media screen and (max-width: 480px) {
             .header-search-wrap .search-container ul.recent-list li .name {
               font-size: 14px;
@@ -11676,6 +11679,13 @@ header {
     .header-search-wrap .search-list-wrap ul.recent-list li b {
       color: #f7941c;
       font-weight: 600; }
+    .header-search-wrap .search-list-wrap ul.recent-list li:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: '';
+      clear: both;
+      height: 0; }
 
 /*--------- Header Search style -----------*/
 /************************************************************************************
@@ -12412,22 +12422,22 @@ header {
     .count-list-wrap .level-list li:last-of-type {
       border-right: 0; }
 
-.count-list-wrap p.note {
+.note {
   margin-top: 12px;
   margin-bottom: 0; }
   @media screen and (max-width: 640px) {
-    .count-list-wrap p.note span {
+    .note span {
       display: block; } }
-  .count-list-wrap p.note a {
+  .note a {
     color: #444444;
     text-decoration: underline; }
     @media screen and (max-width: 640px) {
-      .count-list-wrap p.note a.pull-right {
+      .note a.pull-right {
         float: none !important;
         display: inline-block;
         margin-top: 10px; } }
   @media screen and (max-width: 640px) {
-    .count-list-wrap p.note {
+    .note {
       text-align: center; } }
 
 .news-wrap {
@@ -13463,6 +13473,8 @@ header {
       color: #222222; }
       .table.shate-data-tbl th a:hover, .table.shate-data-tbl td a:hover {
         color: #69ad0e; }
+    .table.shate-data-tbl th.control, .table.shate-data-tbl td.control {
+      padding: 10px 12px; }
     @media screen and (max-width: 767px) {
       .table.shate-data-tbl th, .table.shate-data-tbl td {
         font-size: 14px;
@@ -14758,21 +14770,26 @@ header {
   @media screen and (max-width: 480px) {
     .share-recommend-bx .share-info-area .share-tab .share-tab-panel {
       padding: 20px 0; } }
-  @media screen and (max-width: 767px) {
-    .share-recommend-bx .share-info-area .share-tab .share-tab-panel .chart-box {
-      display: none; } }
-  @media screen and (max-width: 767px) {
-    .share-recommend-bx .share-info-area .share-tab .share-option-bx .share-action-bx .trade-link {
-      display: block;
-      width: 150px;
-      margin: 15px auto;
-      text-align: center; } }
+  .share-recommend-bx .share-info-area .share-tab .share-option-bx .share-action-bx .trade-link {
+    /*@media screen and (max-width: 640px) {
+              display: block;
+              width: 150px;
+              margin: 15px auto;
+              text-align: center;
+            }*/ }
   @media screen and (max-width: 991px) {
     .share-recommend-bx .share-info-area .share-tab .share-option-bx .share-action-bx {
       position: relative; } }
   @media screen and (max-width: 991px) {
     .share-recommend-bx .share-info-area .share-tab .share-option-bx .share-action-bx {
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .share-recommend-bx .share-info-area .share-tab {
+      margin-top: 45px; } }
+
+@media screen and (max-width: 767px) {
+  .chart-box {
+    display: none; } }
 
 .share-heading-ar {
   margin-bottom: 2px; }
@@ -14783,19 +14800,21 @@ header {
     display: inline-block; }
     @media screen and (max-width: 767px) {
       .share-heading-ar h2 {
-        display: block; } }
+        display: block;
+        font-size: 20px;
+        margin: 0 0 0px 0; } }
   .share-heading-ar .share-list-link {
     display: inline-block;
     margin-left: 15px; }
     .share-heading-ar .share-list-link li {
       display: inline-block;
-      border-right: 1px solid #40474e; }
+      border-right: 1px solid #40474e;
+      padding: 0px 10px; }
       .share-heading-ar .share-list-link li:last-child {
         border-right: none; }
       .share-heading-ar .share-list-link li a {
         color: #40474e;
         display: block;
-        padding: 0px 10px;
         line-height: 14px; }
         @media screen and (max-width: 480px) {
           .share-heading-ar .share-list-link li a {
@@ -14830,6 +14849,10 @@ header {
       left: 0;
       top: 0;
       z-index: 0; }
+      @media screen and (max-width: 767px) {
+        .share-tab .share-recommend:before {
+          border-bottom: 30px solid #40474e;
+          height: 28px; } }
     .share-tab .share-recommend p {
       color: #fff;
       text-align: center;
@@ -14839,8 +14862,12 @@ header {
       position: relative; }
       .share-tab .share-recommend p span {
         color: #f5911a; }
+    @media screen and (max-width: 767px) {
+      .share-tab .share-recommend {
+        top: -30px;
+        height: 28px; } }
   .share-tab .block-area {
-    padding: 20px 30px; }
+    padding: 10px 30px 5px 30px; }
   .share-tab .chart-box {
     padding: 0px 20px 20px 20px;
     margin-top: 10px; }
@@ -14878,12 +14905,21 @@ header {
         vertical-align: top;
         display: inline-block;
         margin-right: 5px; }
+      .share-action-list li a:hover {
+        color: #69ad0e; }
+      @media screen and (max-width: 480px) {
+        .share-action-list li a {
+          width: 40px;
+          height: 28px;
+          overflow: hidden; } }
     @media screen and (max-width: 640px) {
       .share-action-list li {
-        margin-right: 10px; } }
-  @media screen and (max-width: 767px) {
+        margin-right: 0px; } }
+  @media screen and (max-width: 640px) {
     .share-action-list {
-      display: block; } }
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; } }
 
 .share-lt-title {
   font-size: 12px;
@@ -14901,15 +14937,14 @@ header {
 
 .high-low-sec .high-low-area {
   border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
   overflow: hidden;
-  height: 85px;
+  height: 84px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   position: relative;
-  padding: 0 20px; }
+  padding: 10px 20px; }
   .high-low-sec .high-low-area.active {
     height: auto;
     overflow: inherit; }
@@ -14919,9 +14954,11 @@ header {
     .high-low-sec .high-low-area .high-low-mob {
       padding: 0 10px; } }
   .high-low-sec .high-low-area .high-low-val {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     min-height: 60px;
     vertical-align: bottom; }
+    .high-low-sec .high-low-area .high-low-val.first-col {
+      min-height: 60px; }
     .high-low-sec .high-low-area .high-low-val .value-num {
       font-size: 18px;
       color: #4e585c;
@@ -14936,21 +14973,32 @@ header {
         color: #20ab30; }
         .high-low-sec .high-low-area .high-low-val .value-num .price-percentage .fontsize {
           font-size: 15px; }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 991px) {
         .high-low-sec .high-low-area .high-low-val .value-num {
           font-size: 16px; } }
+      @media screen and (max-width: 480px) {
+        .high-low-sec .high-low-area .high-low-val .value-num {
+          font-size: 14px; } }
     .high-low-sec .high-low-area .high-low-val .status-tx {
       font-size: 14px;
       color: #9da2a4; }
+    @media screen and (max-width: 480px) {
+      .high-low-sec .high-low-area .high-low-val {
+        min-height: 80px; } }
   @media screen and (max-width: 767px) {
     .high-low-sec .high-low-area {
-      height: 150px; } }
+      height: 150px;
+      border: none; } }
 
 .high-low-sec .down-arrow {
-  margin: -33px auto 0 auto; }
+  top: -28px; }
   .high-low-sec .down-arrow.up-arrow .icon .arrow .up-angle {
     top: 12px;
     transform: rotate(-225deg); }
+  @media screen and (max-width: 767px) {
+    .high-low-sec .down-arrow {
+      top: 0;
+      margin: 0 auto; } }
 
 /* Open Interest Analysis */
 @media screen and (max-width: 480px) {
@@ -14974,12 +15022,19 @@ header {
 /* News & Feeds */
 .news-feeds-ar {
   background: #ffffff;
-  padding: 40px 10px 20px 10px; }
+  padding: 40px 20px 20px 20px; }
   .news-feeds-ar .news-feed-sec .news-fd-blk .news-feed-title {
     font-size: 26px;
     color: #40474e;
     font-family: "ubuntumedium", sans-serif;
     margin: 0 0 20px 0; }
+    @media screen and (max-width: 640px) {
+      .news-feeds-ar .news-feed-sec .news-fd-blk .news-feed-title {
+        font-size: 22px; } }
+    @media screen and (max-width: 480px) {
+      .news-feeds-ar .news-feed-sec .news-fd-blk .news-feed-title {
+        font-size: 20px;
+        margin: 0 20px; } }
   .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list {
     border: 1px solid #ccc;
     margin: 15px 0; }
@@ -14996,6 +15051,9 @@ header {
         display: table;
         width: 100%;
         height: 64px; }
+        .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li .feed-dt a {
+          display: table-cell;
+          vertical-align: middle; }
       .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li .news-feeds-name {
         width: 50px;
         height: 50px;
@@ -15017,18 +15075,34 @@ header {
             height: 45px;
             padding: 8px 0px;
             top: 19px; } }
+        @media screen and (max-width: 480px) {
+          .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li .news-feeds-name {
+            width: 40px;
+            height: 40px;
+            padding: 8px 0px;
+            top: 15px;
+            left: 10px;
+            font-size: 16px; } }
       .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li p {
         font-size: 16px;
         color: #40474e;
-        margin-bottom: 0;
-        display: table-cell;
-        vertical-align: middle; }
+        margin-bottom: 0; }
         @media screen and (max-width: 991px) {
           .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li p {
             font-size: 14px; } }
+      @media screen and (max-width: 480px) {
+        .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list li {
+          padding-left: 70px; } }
+    @media screen and (max-width: 480px) {
+      .news-feeds-ar .news-feed-sec .news-fd-blk .news-feeds-list {
+        border-left: none;
+        border-right: none; } }
   @media screen and (max-width: 767px) {
     .news-feeds-ar .news-feed-sec .news-fd-blk {
       margin-bottom: 40px; } }
+  @media screen and (max-width: 480px) {
+    .news-feeds-ar {
+      padding: 20px 0px 20px 0px; } }
 
 .top-sectors-ar .top-title {
   margin: 15px 0 20px 0; }
@@ -15077,12 +15151,57 @@ header {
       font-family: "ubunturegular", sans-serif;
       font-size: 14px; }
 
-.fundamentals-open-mob .tranding-tab .share-content-tab {
-  padding: 10px 0 0 0; }
+.fundamentals-open-mob .tranding-tab {
+  /*.tranding-opt {
+      .tranding-select-opt {
+
+      }
+    }*/ }
+  .fundamentals-open-mob .tranding-tab .share-content-tab {
+    padding: 10px 0 0 0; }
+
+@media screen and (max-width: 480px) {
+  .financials-block .block-white-pd .block-d {
+    padding: 20px 0; } }
+
+@media screen and (max-width: 480px) {
+  .financials-block .block-white-pd .block-d .input-date {
+    max-width: 100%;
+    width: 100%; } }
+
+.peer-comparison-ar .tranding-opt .tranding-select-opt .mkt-icons {
+  top: 10px; }
+  .peer-comparison-ar .tranding-opt .tranding-select-opt .mkt-icons span {
+    font-size: 21px; }
+
+@media screen and (max-width: 480px) {
+  .peer-comparison-ar .tranding-opt .tranding-select-opt {
+    width: 100%; } }
 
 /****************************************
    3.14 Quotes Commodities Page Styles
 ****************************************/
+.quotes-recommend-ar .share-info-area .share-tab .share-related-sec .share-action-bx.left .btn-radio-toggle {
+  background: #ffffff; }
+  @media screen and (max-width: 640px) {
+    .quotes-recommend-ar .share-info-area .share-tab .share-related-sec .share-action-bx.left .btn-radio-toggle {
+      min-width: 100%; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-recommend-ar .share-info-area .share-tab .share-related-sec .share-action-bx.left {
+    margin-right: 0;
+    width: 50%; } }
+
+@media screen and (max-width: 991px) {
+  .quotes-recommend-ar .share-info-area .share-tab .share-related-sec .share-action-bx.right {
+    float: none;
+    margin-bottom: 15px;
+    text-align: center; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-recommend-ar .share-info-area .share-tab .share-related-sec {
+    padding: 20px 0; } }
+
 .share-related-sec {
   padding: 20px; }
   .share-related-sec .share-action-bx {
@@ -15564,7 +15683,7 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
         font-size: 26px; } }
     @media screen and (max-width: 480px) {
       .heading-bx h2 {
-        font-size: 22px; } }
+        font-size: 20px; } }
   @media screen and (max-width: 767px) {
     .heading-bx {
       margin: 20px 0px 40px 0px;
@@ -15579,9 +15698,15 @@ input[type=checkbox].css-checkbox.css-radio + .css-label:before, input[type=radi
 
 .content-pd {
   padding: 60px 0px; }
+  @media screen and (max-width: 480px) {
+    .content-pd {
+      padding: 30px 0px; } }
 
 .content-pd-sm {
   padding: 30px 0px; }
+  @media screen and (max-width: 480px) {
+    .content-pd-sm {
+      padding: 15px 0px; } }
 
 .inbetween-padding {
   padding: 30px 0; }
@@ -16035,6 +16160,9 @@ span:focus {
 
 .mt50 {
   margin-top: 50px !important; }
+
+.mb0 {
+  margin-bottom: 0px !important; }
 
 .mb10 {
   margin-bottom: 10px !important; }
