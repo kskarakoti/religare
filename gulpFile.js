@@ -24,6 +24,7 @@ gulp.task('sass', function(){
 var vendorJSFiles =
     ["./bower_components/jquery/dist/jquery.js",
         "./bower_components/bootstrap/dist/js/bootstrap.js",
+        "./src/script/modernizr.js",
         "./src/script/bootstrap-datepicker/moment-with-locales.js",
         "./src/script/bootstrap-datepicker/bootstrap-datepicker.min.js",
         "./src/script/bootstrap-stars/star-rating.js",

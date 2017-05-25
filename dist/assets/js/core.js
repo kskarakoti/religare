@@ -118,7 +118,7 @@ $(function () {
 		}, 600);
 	});
 
-	if ($(window).width() < 767) {
+	if ($(window).width() <= 767) {
 		$('.banner-action').click(function () {
 			$(this).parents('li').addClass('active');
 			$(this).parents('li').siblings().removeClass('active');

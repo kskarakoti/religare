@@ -14638,32 +14638,43 @@ header {
   .currency-interest-mob .share-content-tab {
     padding: 25px 0; } }
 
-@media screen and (max-width: 767px) {
-  .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-left .btn-radio-toggle {
-    min-width: 100%;
-    margin: 0; } }
-
-@media screen and (max-width: 767px) {
-  .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-left {
-    width: 33.3%;
-    margin: 0; } }
-
-@media screen and (max-width: 767px) {
-  .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-right {
-    float: left;
-    width: 33.3%;
-    margin: 0; } }
-
-@media screen and (max-width: 767px) {
-  .performance-open-mob .tranding-content-area .share-content-tab {
-    padding: 25px 0; } }
-
-@media screen and (max-width: 767px) {
-  .performance-open-mob .share-title .title-left {
-    float: left;
-    width: 50%; }
-    .performance-open-mob .share-title .title-left button.btn.btn-radio-toggle {
-      min-width: 100%; } }
+.performance-open-mob {
+  /*.tranding-tab {
+    .share-content-tab {
+      .share-title {
+        .title-right {
+          @media screen and (max-width: 480px) {
+            float: none;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          padding: 0;
+        }
+      }
+    }
+  }*/ }
+  @media screen and (max-width: 767px) {
+    .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-left .btn-radio-toggle {
+      min-width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 767px) {
+    .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-left {
+      width: 33.3%;
+      margin: 0; } }
+  @media screen and (max-width: 767px) {
+    .performance-open-mob .tranding-content-area .share-content-tab .share-title .title-right {
+      float: left;
+      width: 33.3%;
+      margin: 0; } }
+  @media screen and (max-width: 767px) {
+    .performance-open-mob .tranding-content-area .share-content-tab {
+      padding: 25px 0; } }
+  @media screen and (max-width: 767px) {
+    .performance-open-mob .share-title .title-left {
+      float: left;
+      width: 50%; }
+      .performance-open-mob .share-title .title-left button.btn.btn-radio-toggle {
+        min-width: 100%; } }
 
 /****************************************
  3.12 Market Mutual Fund Page Styles

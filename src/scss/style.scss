@@ -5248,6 +5248,20 @@ header {
 }
 
 .performance-open-mob {
+  /*.tranding-tab {
+    .share-content-tab {
+      .share-title {
+        .title-right {
+          @media screen and (max-width: 480px) {
+            float: none;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          padding: 0;
+        }
+      }
+    }
+  }*/
   .tranding-content-area {
     .share-content-tab {
       .share-title {
@@ -5279,16 +5293,16 @@ header {
   .share-title {
     .title-left {
        @media screen and (max-width: 767px) {
-              float: left;
-              width: 50%;
-              button {
-                &.btn {
-                  &.btn-radio-toggle {
-                    min-width: 100%;
-                  }
-                }
+          float: left;
+          width: 50%;
+          button {
+            &.btn {
+              &.btn-radio-toggle {
+                min-width: 100%;
               }
             }
+          }
+        }
     }
   }
 }
