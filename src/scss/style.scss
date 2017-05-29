@@ -3723,6 +3723,13 @@ header {
   }
   .title-left {
     float: left;
+
+    > span {
+      font-size: 24px;
+      vertical-align: top;
+      display: inline-block;
+      margin-right: 5px;
+    }
     @media screen and (max-width: 767px) {
       margin-top: 4px;
     }

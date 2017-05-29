@@ -1549,6 +1549,39 @@ img.fnone {
   margin-left: -1.5830078125em;
   color: #444444; }
 
+.icon-ic-value .path1:before {
+  content: "\ecd7";
+  color: #f7941e; }
+
+.icon-ic-value .path2:before {
+  content: "\ecd8";
+  margin-left: -1em;
+  color: white; }
+
+.icon-ic-volume .path1:before {
+  content: "\ecd9";
+  color: #4e585c; }
+
+.icon-ic-volume .path2:before {
+  content: "\ecda";
+  margin-left: -1em;
+  color: white; }
+
+.icon-ic-volume .path3:before {
+  content: "\ecdb";
+  margin-left: -1em;
+  color: white; }
+
+.icon-ic-volume .path4:before {
+  content: "\ecdc";
+  margin-left: -1em;
+  color: white; }
+
+.icon-ic-volume .path5:before {
+  content: "\ecdd";
+  margin-left: -1em;
+  color: white; }
+
 .icon-Rupee-dropdown .path1:before {
   content: "\ec46";
   color: #8dc63f; }
@@ -13578,6 +13611,11 @@ header {
 
 .share-title .title-left {
   float: left; }
+  .share-title .title-left > span {
+    font-size: 24px;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px; }
   @media screen and (max-width: 767px) {
     .share-title .title-left {
       margin-top: 4px; } }

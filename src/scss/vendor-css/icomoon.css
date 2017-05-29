@@ -524,6 +524,39 @@
   margin-left: -1.5830078125em;
   color: rgb(68, 68, 68);
 }
+.icon-ic-value .path1:before {
+  content: "\ecd7";
+  color: rgb(247, 148, 30);
+}
+.icon-ic-value .path2:before {
+  content: "\ecd8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ic-volume .path1:before {
+  content: "\ecd9";
+  color: rgb(78, 88, 92);
+}
+.icon-ic-volume .path2:before {
+  content: "\ecda";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ic-volume .path3:before {
+  content: "\ecdb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ic-volume .path4:before {
+  content: "\ecdc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ic-volume .path5:before {
+  content: "\ecdd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .icon-Rupee-dropdown .path1:before {
   content: "\ec46";
   color: rgb(141, 198, 63);
