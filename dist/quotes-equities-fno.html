@@ -40,8 +40,8 @@
     <div class="header-top">
         <div class="main-container">
             <ul class="share-mkt-highlight">
-                <li><a href="javascript:void(0)"> NIFTY <span class="highlight-tx">8417.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">19.00<span class="mb-hide">(0.23%)</span></span></a></li>
-                <li><a href="javascript:void(0)">SENSEX <span class="highlight-tx">27257.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">21.98<span class="mb-hide">(0.08%)</span></span></a></li>
+                <li>NIFTY <span class="highlight-tx">8417.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">19.00<span class="mb-hide">(0.23%)</span></span></li>
+                <li>SENSEX <span class="highlight-tx">27257.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">21.98<span class="mb-hide">(0.08%)</span></span></li>
             </ul>
         </div>
     </div>
@@ -360,7 +360,7 @@
                 </div>
 
                 <!--share Content-->
-                <div class="tranding-tab share-tab">
+                <div class="tranding-tab share-tab content-bg">
                     <div class="share-recommend">
                         <p>We Recommend : <span>Buy Short Term</span></p>
                     </div>
@@ -774,7 +774,7 @@
             </div>
 
             <div class="count-list-wrap">
-                <ul class="level-list">
+                <ul class="level-list clearfix content-bg">
                     <li class="col-xs-12 col-sm-6 col-md-3">
                         <div class="count-dt clearfix">
                             <span class="level-title">Support Level -1 <span>15,68,300.62</span></span>
@@ -811,7 +811,7 @@
             </div>
 
             <div class="count-list-wrap">
-                <ul class="level-list">
+                <ul class="level-list clearfix content-bg">
                     <li class="col-xs-12 col-sm-6 col-md-3">
                         <div class="count-dt clearfix">
                             <span class="level-title">10 Days <span>2,303.54</span></span>
@@ -845,7 +845,7 @@
                 <h2>Open Interest Analysis</h2>
             </div>
 
-            <div class="tranding-content-area">
+            <div class="tranding-content-area content-bg">
                 <div class="tranding-tab">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs tab-structure table-cell" role="tablist">
@@ -877,11 +877,12 @@
                                     </div>
                                 </div>
                                 <div class="tranding-select-opt">
-                                    <div class="input-date">
-                                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                                        <span class="mkt-arrow-icons"></span>
-                                    </div>
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="share-mkt-ar">
@@ -962,11 +963,12 @@
                                     </div>
                                 </div>
                                 <div class="tranding-select-opt">
-                                    <div class="input-date">
-                                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                                        <span class="mkt-arrow-icons"></span>
-                                    </div>
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="share-mkt-ar">
@@ -1046,6 +1048,14 @@
                                        </span>
                                     </div>
                                 </div>
+                                <div class="tranding-select-opt">
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="share-mkt-ar">
                                 <div class="share-mkt-data">
@@ -1119,7 +1129,7 @@
                 <h2>News & Feeds</h2>
             </div>
 
-            <div class="news-feeds-ar">
+            <div class="news-feeds-ar content-bg">
                 <div class="news-feed-sec row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="news-fd-blk">
@@ -1213,7 +1223,7 @@
             <div class="heading-bx mb-20">
                 <h2>Company Details</h2>
             </div>
-            <div class="panel-group common-accordion" id="faqs-accordion">
+            <div class="panel-group common-accordion content-bg" id="faqs-accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading active">
                         <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#faqs-accordion" href="#vr-report"> Company Background <i class="more-less glyphicon glyphicon-minus"></i> </a> </h4>
@@ -1357,7 +1367,7 @@
                                     <option value='in' data-image="assets/images/blank.gif" data-imagecss="flag in" data-title="India" selected>+91</option>
                                 </select>
                             </div>
-                            <input type="text" class="profile-ip" value="">
+                            <input type="text" class="profile-ip" value="" placeholder="Mobile number">
                             <a href="javascript:void(0)" class="submit-btn">Submit</a>
                         </div>
                     </div>

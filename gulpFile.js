@@ -22,12 +22,13 @@ gulp.task('sass', function(){
 
 // src variable
 var vendorJSFiles =
-    ["./bower_components/jquery/dist/jquery.js",
+    ["./dist/assets/js/jquery-1.11.2.min.js",
         "./bower_components/bootstrap/dist/js/bootstrap.js",
-        "./src/script/modernizr.js",
         "./src/script/bootstrap-datepicker/moment-with-locales.js",
         "./src/script/bootstrap-datepicker/bootstrap-datepicker.min.js",
         "./src/script/bootstrap-stars/star-rating.js",
+        "./src/script/modernizr.js",
+        "./src/script/jquery.isotope.min.js",
         "./src/script/select/jquery.dd.js",
         "./src/script/datatable/jquery.dataTables.min.js",
         "./src/script/datatable/dataTables.responsive.js",

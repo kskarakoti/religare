@@ -40,8 +40,8 @@
     <div class="header-top">
         <div class="main-container">
             <ul class="share-mkt-highlight">
-                <li><a href="javascript:void(0)"> NIFTY <span class="highlight-tx">8417.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">19.00<span class="mb-hide">(0.23%)</span></span></a></li>
-                <li><a href="javascript:void(0)">SENSEX <span class="highlight-tx">27257.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">21.98<span class="mb-hide">(0.08%)</span></span></a></li>
+                <li>NIFTY <span class="highlight-tx">8417.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">19.00<span class="mb-hide">(0.23%)</span></span></li>
+                <li>SENSEX <span class="highlight-tx">27257.00</span> <i class="icon-ic_arrow"></i> <span class="col-green">21.98<span class="mb-hide">(0.08%)</span></span></li>
             </ul>
         </div>
     </div>
@@ -353,7 +353,7 @@
                 <h2>Market Today - Currency</h2>
             </div>
 
-            <div class="chart-opt-tab">
+            <div class="chart-opt-tab content-ltGreen-bg">
                 <div class="chart-opt-sec clearfix">
                     <div class="tranding-select-opt relative-div">
                         <div class="btn-wrap visible-xs">
@@ -463,7 +463,7 @@
 
                         <!--View all-->
                         <!--<div class="view-detail">
-                            <p class="view-all-btn"><a href="javascript:void(0)" class="link">View All Value</a> </p>
+                            <p class="view-all-btn"><a href="javascript:void(0)" class="link">View All</a> </p>
                         </div>-->
                     </div>
                 </div>
@@ -515,7 +515,7 @@
                 <h2>Performance</h2>
             </div>
 
-            <div class="tranding-tab">
+            <div class="tranding-tab content-bg">
                 <div class="share-title block-panel tranding-opt clearfix">
                         <div class="title-left relative-div">
                             <div class="btn-wrap visible-xs">
@@ -701,7 +701,7 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <p class="view-all-btn"><a href="javascript:void(0)"  class="link">View All Value</a> </p>
+                                            <p class="view-all-btn"><a href="javascript:void(0)"  class="link">View All</a> </p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -765,7 +765,7 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <p class="view-all-btn"><a href="javascript:void(0)" class="link">View All Volume</a> </p>
+                                            <p class="view-all-btn"><a href="javascript:void(0)" class="link">View All</a> </p>
                                         </div>
 
                                     </div>
@@ -786,13 +786,32 @@
                 <h2>Put Call Ratio</h2>
             </div>
 
-            <div class="block-panel">
-                <div class="tranding-opt tranding-white-bg clearfix">
+            <div class="block-panel content-bg">
+                <div class="tranding-opt clearfix tranding-white-bg">
+                    <div class="tranding-select-opt relative-div">
+                        <div class="btn-wrap visible-xs">
+                            <button class="btn btn-radio-toggle">
+                                <span class="radio-list">Exchange</span>
+                            </button>
+                        </div>
+                        <div class="sector-opt toggle-radio">
+                            <span class="hidden-xs">Exchange :</span>
+                            <span class="radio-list">
+                                <input type="radio" id="mcx9" name="channel8" class="css-radio" checked="">
+                                <label class="css-label" for="mcx9">NSE</label>
+                            </span>
+                            <span class="radio-list">
+                                <input type="radio" id="ncdex9" name="channel8" class="css-radio">
+                                <label class="css-label" for="ncdex9">MCX</label>
+                            </span>
+                        </div>
+                    </div>
                     <div class="tranding-select-opt">
-                        <span class="mkt-icons"><span class="icon-NSE1"></span></span>
+                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
                         <select class="select">
-                            <option value="nse">NSE</option>
-                            <option value="nse">MCX</option>
+                            <option value="nifty50">3 Years</option>
+                            <option value="nifty100">1 Year</option>
+                            <option value="nifty500">6 Months</option>
                         </select>
                     </div>
                 </div>
@@ -871,7 +890,7 @@
                 <h2>Open Interest Analysis</h2>
             </div>
 
-            <div class="tranding-content-area">
+            <div class="tranding-content-area content-bg">
                 <div class="tranding-tab">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs tab-structure table-cell" role="tablist">
@@ -903,11 +922,12 @@
                                    </div>
                                 </div>
                                 <div class="tranding-select-opt">
-                                    <div class="input-date">
-                                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                                        <span class="mkt-arrow-icons"></span>
-                                    </div>
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="share-mkt-ar">
@@ -987,12 +1007,13 @@
                                        </span>
                                     </div>
                                 </div>
-                                <div class="tranding-select-opt">
-                                    <div class="input-date">
-                                        <input  type="text" placeholder="Expiry" class="datePicker" >
-                                        <span class="mkt-icons"><span class="icon-expiry"></span></span>
-                                        <span class="mkt-arrow-icons"></span>
-                                    </div>
+                                 <div class="tranding-select-opt">
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="share-mkt-ar">
@@ -1072,6 +1093,14 @@
                                        </span>
                                     </div>
                                 </div>
+                                <div class="tranding-select-opt">
+                                    <span class="mkt-icons"><span class="icon-expiry"></span></span>
+                                    <select class="select">
+                                        <option value="nifty50">3 Years</option>
+                                        <option value="nifty100">1 Year</option>
+                                        <option value="nifty500">6 Months</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="share-mkt-ar">
                                 <div class="share-mkt-data">
@@ -1143,55 +1172,67 @@
             <div class="heading-bx mb-20">
                 <h2>In the News</h2>
             </div>
-            <div class="news-blocks">
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
-                    <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+            <div class="news-blocks row">
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
+                        <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
-                    <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt, energy firms renew concerns</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency, and oil and natural-gas companies are casting clouds over Pruitt’s newly minted leadership of the agency tasked with protecting the nation’s air and water.</p>
+                        <p class="desc">The emails, which cover a period when Pruitt was attorney general of Oklahoma.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block wow fadeInUp" data-wow-duration="1.5s">
-                    <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
-                    <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
-                    <div class="date-time-wrap">
-                        <span class="icon-clock1"></span>
-                        <span class="date-stamp">March 8, 17 4:30 AM</span>
+                <div class="col-width col-xs-6 col-sm-6 col-md-4 blocks">
+                    <div class="block wow fadeInUp" data-wow-duration="1.5s">
+                        <h3 class="news-title">Emails between EPA chief Scott Pruitt</h3>
+                        <p class="desc">Thousands of newly released emails showing close contact between Scott Pruitt, the new chief of the Environmental Protection Agency.</p>
+                        <div class="date-time-wrap">
+                            <span class="icon-clock1"></span>
+                            <span class="date-stamp">March 8, 17 4:30 AM</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1305,7 +1346,7 @@
                                     <option value='in' data-image="assets/images/blank.gif" data-imagecss="flag in" data-title="India" selected>+91</option>
                                 </select>
                             </div>
-                            <input type="text" class="profile-ip" value="">
+                            <input type="text" class="profile-ip" value="" placeholder="Mobile number">
                             <a href="javascript:void(0)" class="submit-btn">Submit</a>
                         </div>
                     </div>

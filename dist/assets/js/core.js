@@ -84,7 +84,7 @@ $(function () {
 			$(this).parents('li').siblings().removeClass('active');
 			var tab = $(this).attr("href");
 			$(".tabcontent").not(tab).css("display", "none");
-			$(tab).fadeIn();
+			$(tab).slideDown(500);
 
 			$("body, html").animate({
 				scrollTop: $( $(this).attr('href')).offset().top - 200+ "px"
@@ -96,7 +96,7 @@ $(function () {
 
 		$('.close-btn').click(function () {
 			$(this).parents('li').removeClass('active');
-			$(".tabcontent").fadeOut();
+			$(".tabcontent").slideUp(500);
 			return false;
 		});
 
@@ -158,7 +158,7 @@ $(function () {
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
-		var p = $(e.target).closest('.header-left, .dropdown-menu, .icon-ic_search').length;
+		var p = $(e.target).closest('.header-left, .dropdown-frst,.edit-icons, .icon-ic_search').length;
 		if (!p) {
 			$(".menu-lt-ar").removeClass('active');
 			$(".overlay-bg").removeClass('active');
@@ -166,6 +166,7 @@ $(function () {
 			$(".hamburger li").removeClass();
 			$(".menue").removeClass('active');
 			$(".header-search-wrap").hide();
+			$('.dropdown-menu-right').hide();
 		}
 
 		if ($(window).width() > 767) {
@@ -205,11 +206,11 @@ $(function () {
 	});
 
 	//hamburgar menu
-	if ($(window).width() < 991) {
+	if ($(window).width() <= 1023) {
 		$('.sub-menu-dt-ar').hide();
 	}
 	$('.menu-list-dt > li > a').click(function () {
-		if ($(window).width() < 991) {
+		if ($(window).width() <= 1023) {
 			$('.menu-list-dt > li > a').parent().removeClass('active');
 			$('.sub-menu-dt-ar').slideUp('normal');
 			if ($(this).next().is(':hidden') == true) {
@@ -222,7 +223,7 @@ $(function () {
 	});
 
 	$(window).resize(function(){
-		if ($(window).width() < 991) {
+		if ($(window).width() <= 1023) {
 			$('.sub-menu-dt-ar').hide();
 		}else {
 			$('.sub-menu-dt-ar').show();
@@ -242,8 +243,9 @@ $(function () {
 	$('.tab-content .tab-pane:eq(0)').show();
 
 	//equity toggle menu
-	$(".dropdown-toggle a").click(function () {
+	$(".dropdown-frst, span.edit-icons").click(function () {
 		$('.overlay-bg').addClass("active");
+		$('.dropdown-menu-right').toggle();
 	});
 	$(".search-dp-list ul li a").click(function () {
 		$('.dropdown-frst').hide();
@@ -394,9 +396,11 @@ $(function () {
 		$(".country-select").msDropdown({roundedBorder:false});
 	}
 
-	$(".select").select2({
-		minimumResultsForSearch: -1
-	});
+	// var parentElement = $(".select-wrap");
+    $(".select").select2({
+    	minimumResultsForSearch: -1,
+        // dropdownParent: parentElement,
+    });
 
 	// Malihu Scroll
 	$(".horizontalScroll").mCustomScrollbar({
@@ -415,7 +419,7 @@ $(function () {
 	$(".data-table tbody tr").append("<td></td>");
 	 $('.data-table').DataTable( {
 	 	"bPaginate": false,
-	 	"ordering": false,
+	 	"ordering": true,
 	 	"searching": false,
         responsive: {
             details: {
@@ -430,7 +434,12 @@ $(function () {
         } ]
     } );
 
-
+  	/* activate jquery isotope */
+     $('.news-blocks').imagesLoaded( function(){
+         $('.news-blocks').isotope({
+           itemSelector : '.blocks'
+         });
+     });
 	
 });
 
@@ -501,3 +510,23 @@ function toggleIcon(e) {
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
+
+// for Placehoder in IE
+$(document).ready(function(){
+	if (!Modernizr.input.placeholder){ 
+	    $("input[type=text]").each( function() { 
+	       $(this).val($(this).attr('placeholder')); 
+	    })
+	}
+});
+
+//for header sticky on scroll 
+$(window).on('scroll', function(){
+	var winheight = $(window).scrollTop();
+	if(winheight > 80) {
+		$('body').addClass('sticky');
+	} else {
+		$('body').removeClass('sticky');
+	}
+
+});
