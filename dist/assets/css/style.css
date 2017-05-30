@@ -11624,6 +11624,9 @@ header {
                 @media screen and (max-width: 640px) {
                   header .header-main .header-area .header-right .header-rt-sec .search-links li a {
                     padding: 2px 13px; } }
+            @media screen and (max-width: 767px) {
+              header .header-main .header-area .header-right .header-rt-sec .search-links {
+                margin-top: 0px; } }
 
 /*--------- Header Search style -----------*/
 .header-search-wrap {
@@ -13109,6 +13112,11 @@ header {
   .banner-chart.currency-bann {
     background: url("../../assets/images/market-currency.jpg") no-repeat;
     background-size: cover; }
+    .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt.right .select2-container .select2-selection--single {
+      background: #ffffff; }
+    @media screen and (max-width: 767px) {
+      .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt.right .select2-container {
+        width: 100% !important; } }
     @media screen and (max-width: 767px) {
       .banner-chart.currency-bann .chart-opt-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
         margin: 0;
@@ -13582,7 +13590,8 @@ header {
     font-size: 16px; }
     .table.shate-data-tbl th .date-tx, .table.shate-data-tbl td .date-tx {
       font-size: 12px;
-      display: inline-block; }
+      display: inline-block;
+      color: #666666; }
     .table.shate-data-tbl th a, .table.shate-data-tbl td a {
       color: #222222; }
       @media screen and (max-width: 480px) {
@@ -13844,7 +13853,8 @@ header {
   .sector-performance-ar .sector-perf-cont .share-title {
     margin-bottom: 10px; }
     .sector-performance-ar .sector-perf-cont .share-title .sector-opt label {
-      margin: 0 15px 0 5px; }
+      margin: 0 15px 0 5px;
+      color: #666; }
       @media screen and (max-width: 767px) {
         .sector-performance-ar .sector-perf-cont .share-title .sector-opt label {
           margin: 0 5px 0 5px; } }
@@ -15750,6 +15760,9 @@ header {
   /* Firefox 18- */
   color: #a2a2a2; }
 
+input[placeholder] {
+  color: #a2a2a2; }
+
 /****************************************
    5.2 Checkbox & Radio button Styles
 ****************************************/
@@ -16087,8 +16100,27 @@ a.link {
   color: #444444;
   font-size: 14px;
   display: inline-block; }
-  .link:hover:before {
-    height: 0; }
+  .link:hover {
+    color: #69ad0e !important;
+    text-decoration: none !important;
+    /*&:before {
+      height:0;
+    }*/ }
+    .link:hover:after {
+      width: 101%; }
+  .link:after {
+    height: 1px;
+    width: 0;
+    background: #74c309;
+    bottom: 0px;
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .link:before {
     height: 1px;
     width: 0;
@@ -16167,7 +16199,7 @@ table.dataTable thead .sorting_desc {
   padding-right: 30px; }
 
 table.dataTable thead .sorting {
-  background-images: none; }
+  background-image: none; }
 
 .tabcontent {
   display: none; }
@@ -16515,8 +16547,8 @@ input[type="radio"] + label.css-label {
       padding-left: 0; } }
 
 input[type="radio"]:checked + label.css-label {
-  color: #40474e;
-  font-weight: bold; }
+  color: #000 !important;
+  font-weight: 500; }
   @media screen and (max-width: 767px) {
     input[type="radio"]:checked + label.css-label {
       font-weight: normal; } }

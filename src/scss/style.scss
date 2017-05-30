@@ -859,6 +859,9 @@ header {
                 }
               }
             }
+            @media screen and (max-width: 767px) {
+              margin-top: 0px;
+            }
           }
 
         }
@@ -2895,6 +2898,17 @@ header {
     .chart-opt-tab {
       .chart-opt-sec {
         .tranding-select-opt {
+          &.right {
+            .select2-container {
+              .select2-selection--single {
+                background: $white;
+              }
+
+              @media screen and (max-width: 767px) {
+                width: 100% !important;
+              }
+            }
+          }
           .btn-radio-toggle {
             @media screen and (max-width: 767px) {
               margin: 0;
@@ -3661,7 +3675,7 @@ header {
       .date-tx {
         font-size: 12px;
         display: inline-block;
-
+        color: #666666;
       }
       a {
         color: #222222;
@@ -4079,6 +4093,7 @@ header {
       .sector-opt {
         label {
           margin: 0 15px 0 5px;
+          color: #666;
 
           @media screen and (max-width: 767px) {
             margin: 0 5px 0 5px;
@@ -6803,6 +6818,9 @@ header {
 :-moz-placeholder { /* Firefox 18- */
   color: #a2a2a2;
 }
+input[placeholder]  {
+  color: #a2a2a2;
+}
 
 /****************************************
    5.2 Checkbox & Radio button Styles
@@ -7207,26 +7225,29 @@ a {
   display: inline-block;
  
   &:hover {
-    // color:$hover-dark-green !important;
-    // text-decoration:none !important;
-    &:before {
+     color:$hover-dark-green !important;
+     text-decoration:none !important;
+    /*&:before {
       height:0;
+    }*/
+    &:after {
+      width: 101%;
     }
   }
-  // &:after {
-  //   height:1px;
-  //   width:0;
-  //   background:#74c309;
-  //   bottom:0px;
-  //   content: "";
-  //   transition:0.5s all ease;
-  //   -webkit-backface-visibility:hidden;
-  //   backface-visibility:hidden;
-  //   position:absolute;
-  //   left:50%;
-  //   -webkit-transform:translateX(-50%);
-  //   transform:translateX(-50%);
-  // }
+   &:after {
+     height:1px;
+     width:0;
+     background:#74c309;
+     bottom:0px;
+     content: "";
+     transition:0.5s all ease;
+     -webkit-backface-visibility:hidden;
+     backface-visibility:hidden;
+     position:absolute;
+     left:50%;
+     -webkit-transform:translateX(-50%);
+     transform:translateX(-50%);
+   }
   &:before{
     height:1px;
     width:0;
@@ -7309,7 +7330,7 @@ table.dataTable thead .sorting_desc {
   padding-right:30px;
 }
 table.dataTable thead .sorting {
-  background-images: none;
+  background-image: none;
 }
 .tabcontent {
   display: none;
@@ -7658,8 +7679,8 @@ input[type="radio"] + label.css-label {
   }
 }
 input[type="radio"]:checked + label.css-label {
-  color: #40474e;
-  font-weight: bold;
+  color: #000 !important;
+  font-weight: 500;
   @media screen and (max-width: 767px) {
     font-weight: normal;
   }
