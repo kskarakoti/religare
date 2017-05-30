@@ -1261,30 +1261,39 @@ header {
                 font-size: 28px;
 
                 @media screen and (max-width: 991px) {
-                  font-size: 28px;
+                  font-size: 26px;
+                }
+                @media screen and (max-width: 767px) {
+                  font-size: 24px;
                 }
                 @media screen and (max-width: 640px) {
-                  font-size: 22px;
+                  font-size: 18px;
                 }
               }
               &.icon-ic_banner_high_returns {
                 font-size: 28px;
 
                 @media screen and (max-width: 991px) {
-                  font-size: 28px;
+                  font-size: 26px;
+                }
+                @media screen and (max-width: 767px) {
+                  font-size: 24px;
                 }
                 @media screen and (max-width: 640px) {
-                  font-size: 22px;
+                  font-size: 18px;
                 }
               }
               &.icon-ic_banner_tools {
                 font-size: 28px;
 
                 @media screen and (max-width: 991px) {
-                  font-size: 28px;
+                  font-size: 26px;
+                }
+                @media screen and (max-width: 767px) {
+                  font-size: 24px;
                 }
                 @media screen and (max-width: 640px) {
-                  font-size: 19px;
+                  font-size: 18px;
                 }
               }
             }
@@ -2731,28 +2740,30 @@ header {
                   display: inline-block;
 
                 }
-                &.datePickerTab {
-                  input {
-                    background: transparent;
-                    border:none;
-                    width:62px;
-                    float:none;
-                    box-shadow:none;
-                    height: auto;
-                    padding: 0 4px;
-                    display:inline-block;
-                    vertical-align: top;
-                  }
-                  .input-group-addon {
-                    display: inline-block;
-                    border:none;
-                    background:transparent;
-                    padding-left: 0;
-                    padding-right:0;
-                    vertical-align: top;
-                    line-height: 7px;
+                input {
+                  background: transparent;
+                  border:none;
+                  width:62px;
+                  float:none;
+                  box-shadow:none;
+                  height: auto;
+                  padding: 0 4px;
+                  display:inline-block;
+                  vertical-align: top;
+
+                  &.datePickerTab {
+                    .input-group-addon {
+                      display: inline-block;
+                      border:none;
+                      background:transparent;
+                      padding-left: 0;
+                      padding-right:0;
+                      vertical-align: top;
+                      line-height: 7px;
+                    }
                   }
                 }
+
 
                 &:after {
                   content: '';
@@ -3247,10 +3258,10 @@ header {
               margin-bottom: 15px;
             }
           }
-          @media screen and (max-width: 767px) {
+          /*@media screen and (max-width: 767px) {
             text-align: center;
             margin: 10px 0;
-          }
+          }*/
           @media screen and (max-width: 410px) {
             display: block;
           }
@@ -4950,6 +4961,8 @@ header {
           min-height: 105px;
           @media screen and (max-width: 767px) {
             min-height: 108px;
+            display: block;
+            width: 100%;
           }
           .media {
             display: table-cell;
@@ -4958,12 +4971,23 @@ header {
             height:105px;
             @media screen and (max-width: 767px) {
               padding-left: 0;
+              display: block;
+              width: 100%;
             }
             .media-left {
+              display: inline-block;
+              position: absolute;
+              top: 24px;
               span {
-                display: inherit;
+                /*display: inherit;*/
+
+               /* @media screen and (max-width: 767px) {
+                  display: initial;
+                }*/
+
                 &.fontsize {
                   font-size: 58px;
+
                   @media screen and (max-width: 480px) {
                     font-size: 45px;
                   }
@@ -4972,18 +4996,22 @@ header {
               @media screen and (max-width: 767px) {
                 display: block;
                 text-align: center;
+                position: relative;
+                top: 0;
                 padding-right:0;
                 padding-bottom:10px;
-              }
-              @media screen and (max-width: 767px) {
-                padding-bottom:5px;
-                img {
+                /*img {
                   width: 50px;
                   padding-top:5px;
-                }
+                }*/
               }
             }
             .media-body {
+              vertical-align: middle;
+              width: auto;
+              float: none;
+              padding-left: 61px;
+
               p {
                 margin:0;
                 padding-left:10px;
@@ -4998,13 +5026,16 @@ header {
               }
               @media screen and (max-width: 767px) {
                 text-align: center;
+                padding-left: 0;
+                display: block;
               }
             }
             @media screen and (max-width: 991px) {
               padding-left: 20px;
             }
             @media screen and (max-width: 767px) {
-              padding-left: 0px;
+              padding: 10px;
+              height: auto;
             }
           }
         }
@@ -5891,6 +5922,7 @@ header {
           .up-angle {
             top: 12px;
             transform: rotate(-225deg);
+            left: -2px;
           }
         }
       }
@@ -6075,6 +6107,11 @@ header {
         color: #4e585c;
         margin-bottom: 5px;
       }
+    }
+
+    @media screen and (max-width: 640px) {
+      float: none;
+      width: 100%;
     }
   }
 }
