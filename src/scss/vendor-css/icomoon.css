@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Religare-logo:before {
+  content: "\ecde";
+  color: #1c713f;
+}
 .icon-full-rated-gold:before {
   content: "\ebd6";
   color: #e6b319;

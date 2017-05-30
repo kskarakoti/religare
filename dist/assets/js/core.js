@@ -158,7 +158,7 @@ $(function () {
 
 	//Section Close on other side click Script_______________________________________________
 	$(document).on("click", function (e) {
-		var p = $(e.target).closest('.header-left, .dropdown-frst,.edit-icons, .icon-ic_search').length;
+		var p = $(e.target).closest('.header-left, .dropdown-frst,.edit-icons, .icon-ic_search, .header-search-wrap').length;
 		if (!p) {
 			$(".menu-lt-ar").removeClass('active');
 			$(".overlay-bg").removeClass('active');
@@ -339,6 +339,10 @@ $(function () {
 		$('input.search-nput').focus();
 		$('.overlay-bg').addClass('active');
 	});
+
+	$('.close-icon a').on('click',function(){
+		$('.overlay-bg').removeClass('active');
+	});
 	$('.search-input').keyup(function () {
 		var valThis = this.value.toLowerCase(),
 			lenght  = this.value.length;
@@ -434,12 +438,10 @@ $(function () {
         } ]
     } );
 
-  	/* activate jquery isotope */
-     $('.news-blocks').imagesLoaded( function(){
-         $('.news-blocks').isotope({
-           itemSelector : '.blocks'
-         });
-     });
+	/ activate jquery masonry /
+	$('.news-blocks').masonry({
+		itemSelector: '.blocks'
+	});
 	
 });
 

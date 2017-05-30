@@ -108,6 +108,10 @@ body {
 
     .header-top {
       margin-top:-30px;
+      transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -ms-transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
     }
     .header-main {
       z-index: 99;
@@ -234,7 +238,10 @@ header {
   .header-top {
     background: $porcelain;
     padding: $padding-base-5 ($padding-base-5 * 3);
-     -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
      // display: block;
     .share-mkt-highlight {
       li {
@@ -284,7 +291,7 @@ header {
     // -webkit-transition: all 0.15s ease-in-out;
     height: 65px;
     .header-area {
-      padding: ($padding-base-5 * 3) $padding-none $padding-none $padding-none;
+      padding: ($padding-base-5 * 2) $padding-none;
       @media screen and (max-width: 1023px) {
         padding: ($padding-base-5 * 3) $padding-none;
       }
@@ -299,12 +306,11 @@ header {
             .logo-ar {
               display: inline-block;
               margin-top: 1px;
+              font-size: 30px;
 
-                img {
-                  @media screen and (max-width: 480px) {
-                    width: 170px;
-                  }
-                }
+              @media screen and (max-width: 480px) {
+                font-size: 24px;
+              }
             }
 
             .hamburg-menu-btn {
@@ -321,6 +327,7 @@ header {
           .menu-lt-ar {
             float: left;
             margin-left: $margin-base-5 * 5;
+
             .mobile-menu {
               display: none;
 
@@ -500,15 +507,15 @@ header {
 
                 > a {
                   display: block;
-                  padding: ($padding-base-5 + 3) ($padding-base-5 * 3) ($padding-base-5 * 5) - 1 ($padding-base-5 * 3);
+                  padding: ($padding-base-5 * 3) - 2 ($padding-base-5 * 3) ($padding-base-5 * 5) - 1 ($padding-base-5 * 3);
                   font-size: $font-size-small + 1;
                   color: $tundora;
                   text-transform: uppercase;
                   font-family: $font-family-ubuntumedium;
 
-                  @media screen and (max-width: 1170px) {
+                  /*@media screen and (max-width: 1170px) {
                     padding: ($padding-base-5 + 3) ($padding-base-5 * 2) ($padding-base-5 * 5) - 1 ($padding-base-5 * 2);
-                  }
+                  }*/
                 }
 
                 &.sub-item{
@@ -530,17 +537,6 @@ header {
                   width: 100%;
                   left: 0;
                   top: 93px;
-
-                  //mobile menu
-                  @media screen and (max-width: 1023px) {
-                    position: relative;
-                    top:0;
-                    left: 0;
-
-                    &.active {
-                      display: block;
-                    }
-                  }
 
                   .container {
                     .row {
@@ -709,7 +705,16 @@ header {
                       min-height: auto;
                     }
                   }
+                  //mobile menu
+                  @media screen and (max-width: 1023px) {
+                    position: relative;
+                    top:0;
+                    left: 0;
 
+                    &.active {
+                      display: block;
+                    }
+                  }
                 }
                 //mobile menu
                 @media screen and (max-width: 1023px) {
@@ -760,99 +765,102 @@ header {
 
       .header-right {
         float: right;
-
-        .header-links {
-          display: inline-block;
-          vertical-align: middle;
-
-          li {
+        .header-rt-sec {
+          margin-top: 6px;
+          .header-links {
             display: inline-block;
-            border-right: 1px dotted $silver;
+            vertical-align: middle;
 
-            &:last-child {
-              border-right: none;
-            }
+            li {
+              display: inline-block;
+              border-right: 1px dotted $silver;
 
-            &.build-wealth {
-              a {
-                color: $tree-poppy;
+              &:last-child {
+                border-right: none;
+              }
 
-                &:hover {
-                  color: #666666;
+              &.build-wealth {
+                a {
+                  color: $tree-poppy;
+
+                  &:hover {
+                    color: #666666;
+                  }
                 }
+              }
+
+              &.active-trade {
+                a {
+                  color: $green-pea;
+
+                  &:hover {
+                    color: #666666;
+                  }
+                }
+              }
+
+              a {
+                display: block;
+                padding: $padding-base-5 ($padding-base-5 * 2);
+                text-transform: uppercase;
               }
             }
 
-            &.active-trade {
-              a {
-                color: $green-pea;
-
-                &:hover {
-                  color: #666666;
-                }
-              }
-            }
-
-            a {
-              display: block;
-              padding: $padding-base-5 ($padding-base-5 * 2);
-              text-transform: uppercase;
+            @media screen and (max-width: 1023px) {
+              display: none;
             }
           }
 
-          @media screen and (max-width: 1023px) {
-            display: none;
-          }
-        }
-
-        .account-links {
-          display: inline-block;
-          vertical-align: middle;
-          margin: $margin-none ($margin-base-5 * 3);
-          padding: ($padding-base-5 - 3) ($padding-base-5 * 2);
-          background: $atlantis-lt;
-          color: $white;
-          border-radius: $base-border-radius;
-          line-height: 23px;
-
-          &:hover {
-            background: $hover-dark-green;
-          }
-
-          @media screen and (max-width: 1170px) {
-            margin: $margin-none ($margin-base-5 * 2);
-          }
-          @media screen and (max-width: 1023px) {
-            display: none;
-          }
-        }
-
-        .search-links {
-          display: inline-block;
-          vertical-align: middle;
-          margin-top: 4px;
-
-          li {
+          .account-links {
             display: inline-block;
+            vertical-align: middle;
+            margin: $margin-none ($margin-base-5 * 3);
+            padding: ($padding-base-5 - 3) ($padding-base-5 * 2);
+            background: $atlantis-lt;
+            color: $white;
+            border-radius: $base-border-radius;
+            line-height: 23px;
 
-            a {
-              display: block;
-              padding: ($padding-base-5 - 3) ($padding-base-5 + 3);
+            &:hover {
+              background: $hover-dark-green;
+            }
 
-              i {
-                font-size: 17px;
-                color: $tundora;
+            @media screen and (max-width: 1170px) {
+              margin: $margin-none ($margin-base-5 * 2);
+            }
+            @media screen and (max-width: 1023px) {
+              display: none;
+            }
+          }
 
-                &:hover {
-                  color: #807f7f;
+          .search-links {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 4px;
+
+            li {
+              display: inline-block;
+
+              a {
+                display: block;
+                padding: ($padding-base-5 - 3) ($padding-base-5 + 3);
+
+                i {
+                  font-size: 17px;
+                  color: $tundora;
+
+                  &:hover {
+                    color: #807f7f;
+                  }
                 }
-              }
 
-              @media screen and (max-width: 640px) {
-                padding: ($padding-base-5 - 3) ($padding-base-5 * 2) + 3;
+                @media screen and (max-width: 640px) {
+                  padding: ($padding-base-5 - 3) ($padding-base-5 * 2) + 3;
+                }
               }
             }
           }
+
         }
       }
     }
@@ -934,15 +942,28 @@ header {
             padding-bottom:20px;
             margin-bottom:10px;
             display: block;
-            span {
-              &.block {
-                display: block;
-                &.repot-title {
-                  color:$tundora;
-                  font-size: 16px;
-                  margin-bottom: 7px;
+            a {
+              span {
+                &.block {
+                  display: block;
+                  &.repot-title {
+                    color:$tundora;
+                    font-size: 16px;
+                    margin-bottom: 7px;
+                  }
                 }
               }
+              &:hover {
+                span {
+                  &.block {
+                    &.repot-title {
+                      color:#8dc63f;
+                    }
+                  }
+                }
+              }
+            }
+            span {
               &.datetime-stamp {
                 font-size: 13px;
                 font-style: italic;
@@ -974,6 +995,10 @@ header {
 
               a {
                 color:$tundora;
+
+                &:hover {
+                  color:#8dc63f;
+                }
               }
               @media screen and (max-width: 480px) {
                 font-size: 14px;
@@ -1369,7 +1394,7 @@ header {
             .plus-ico {
               background: $sushi;
               color: $white;
-              padding: 1px;
+              /*padding: 1px;*/
               width: 30px;
               height: 30px;
               @include border-radius(50px);
@@ -2043,9 +2068,11 @@ header {
   .news-blocks {
     margin-left:0;
     margin-right:0;
+    .blocks {
+      margin-bottom: 30px;
+    }
     .block {
       background: $white;
-      margin-bottom: 30px;
       @include border-radius(3px);
       border-right:1px solid $iron;
       padding:($padding-base-5 * 6) ($padding-base-5 * 6) ($padding-base-5 * 4) ($padding-base-5 * 6);
@@ -2244,6 +2271,10 @@ header {
   .img-wrap {
     display: table-cell;
     vertical-align: middle;
+
+    img {
+      width: 100%;
+    }
   }
     
     .block {
@@ -3239,9 +3270,9 @@ header {
                   }
                 }
               }
-              @media screen and (max-width: 767px) {
+              /*@media screen and (max-width: 767px) {
                 line-height: 10px;
-              }
+              }*/
 
               @media screen and (max-width: 410px) {
                 border-right: none;
@@ -3255,13 +3286,13 @@ header {
             }
             @media screen and (max-width: 410px) {
               border-right: none;
-              margin-bottom: 15px;
+              margin-bottom: 5px;
             }
           }
-          /*@media screen and (max-width: 767px) {
+          @media screen and (max-width: 767px) {
             text-align: center;
             margin: 10px 0;
-          }*/
+          }
           @media screen and (max-width: 410px) {
             display: block;
           }
@@ -3466,6 +3497,7 @@ header {
         border-right: none;
         border-left: none;
         padding: 10px 15px;
+        vertical-align: middle;
 
         &:hover {
           background: $white;
@@ -3581,6 +3613,9 @@ header {
       @media screen and (max-width: 767px) {
         border-radius: 0;
       }
+    }
+    @media screen and (max-width: 480px) {
+      width: 100% !important;
     }
   }
 
@@ -4809,6 +4844,9 @@ header {
         input {
           text-indent: 5px;
           width: 250px;
+          @media screen and (max-width:480px) {
+            width:230px;
+          }
         }
         span {
           &.input-wrap {
@@ -4870,15 +4908,12 @@ header {
   .block {
     background: $white;
     padding:30px 30px 25px 30px;
-    box-shadow: 0px 2px 4px 2px #ddd;
-    -webkit-box-shadow: 0px 2px 4px 2px #ddd;
-    -moz-box-shadow: 0px 2px 4px 2px #ddd;
-    -ms-box-shadow: 0px 2px 4px 2px #ddd;
+    @include box-shadow(0px 2px 4px 2px #ddd);
     min-height: 420px;
     cursor: pointer;
-    @media screen and (max-width: 991px) {
-      margin-bottom:20px;
-      min-height: 100%;
+
+    &:hover {
+      @include box-shadow(0px 2px 4px 2px #bdbdbd);
     }
     p {
       &.desc {
@@ -4906,6 +4941,10 @@ header {
           color: #888888;
         }
       }
+    }
+    @media screen and (max-width: 991px) {
+      margin-bottom:20px;
+      min-height: 100%;
     }
   }
   .view-link {
@@ -4960,7 +4999,7 @@ header {
           display: table;
           min-height: 105px;
           @media screen and (max-width: 767px) {
-            min-height: 108px;
+            min-height: 118px;
             display: block;
             width: 100%;
           }
@@ -4987,6 +5026,10 @@ header {
 
                 &.fontsize {
                   font-size: 58px;
+
+                  @media screen and (max-width: 768px) {
+                    font-size: 50px;
+                  }
 
                   @media screen and (max-width: 480px) {
                     font-size: 45px;
@@ -5323,9 +5366,14 @@ header {
   .block-panel {
     .tranding-opt {
       .tranding-select-opt {
-        @media screen and (max-width: 480px) {
-          width: 100%;
+        .btn-radio-toggle {
+          @media screen and (max-width: 480px) {
+            width: 100%;
+          }
         }
+        /*@media screen and (max-width: 480px) {
+          width: 100%;
+        }*/
       }
     }
     .block-deal-pd0 {
@@ -6099,13 +6147,20 @@ header {
   margin: 0px 0 10px 0;
   .financial-list {
     border-bottom: 1px solid #ccc;
+    display: table;
+    min-height: 90px;
     .count-dt {
-      min-height: 78px;
-      padding: 15px 20px 10px 20px;
+      height: 100%;
+      padding: 15px 15px 10px 15px;
+      display: table-cell;
+      vertical-align: middle;
 
       .level-title {
         color: #4e585c;
         margin-bottom: 5px;
+      }
+      @media screen and (max-width: 1024px) {
+        padding: 10px;
       }
     }
 
@@ -6148,11 +6203,6 @@ header {
 
 .fundamentals-open-mob {
   .tranding-tab {
-    /*.tranding-opt {
-      .tranding-select-opt {
-
-      }
-    }*/
     .share-content-tab {
       padding: 10px 0 0 0;
     }
@@ -6738,6 +6788,22 @@ header {
 }
 
 
+
+
+/* placeholder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #a2a2a2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #a2a2a2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #a2a2a2;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #a2a2a2;
+}
+
 /****************************************
    5.2 Checkbox & Radio button Styles
 ****************************************/
@@ -7182,6 +7248,7 @@ table.dataTable.dtr-column tr.child ul li {
 }
 table.dataTable.dtr-column tr.child ul li span {
   text-align: left;
+  vertical-align: top;
 }
 table.dataTable.dtr-column tbody td.control:before, 
 table.dataTable.dtr-column tbody th.control:before {
@@ -7240,6 +7307,9 @@ table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
   padding-right:30px;
+}
+table.dataTable thead .sorting {
+  background-images: none;
 }
 .tabcontent {
   display: none;
@@ -7905,6 +7975,9 @@ button {
       vertical-align: middle;
     }
   }
+  @media screen and (max-width:991px) {
+    padding:30px 15px;
+  }
 }
  @-webkit-keyframes inputhighlighter {
    from { background:#81b737; }
@@ -7984,6 +8057,10 @@ button {
           background:#e3f8e4;
           padding:16px;
           min-height: 120px;
+
+          @media screen and (max-width: 480px) {
+            min-height: 100%;
+          }
         }
         &.media-left {
           vertical-align: middle;
@@ -7996,12 +8073,29 @@ button {
             @include border-radius(50%);
             display: block;
             text-align: center;
+
+            @media screen and (max-width: 480px) {
+              margin:0 auto;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            display: inline-block;
+            width: 100%;
           }
         }
         &.media-body {
           font-size: ($font-size-medium - 2);
           color:$mine-shaft;
+
+          @media screen and (max-width: 480px) {
+            display: inline-block;
+            width: 100%;
+            height: 100% !important;
+          }
         }
+      }
+      @media screen and (max-width: 480px) {
+        width:100%;
       }
     }
   }
@@ -8014,8 +8108,8 @@ button {
     }
   }
 }
-@media screen and (max-width: 590px) {
-    .col-width {
+.col-width {
+  @media screen and (max-width: 590px) {
       width: 100%;
     }
 }
