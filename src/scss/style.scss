@@ -308,6 +308,10 @@ header {
               margin-top: 1px;
               font-size: 30px;
 
+              @media screen and (max-width: 1024px) {
+                font-size: 28px;
+              }
+
               @media screen and (max-width: 480px) {
                 font-size: 24px;
               }
@@ -2107,6 +2111,9 @@ header {
           }
         }
       }
+      @media screen and (max-width: 480px) {
+        padding:($padding-base-5 * 6) ($padding-base-5 * 3) ($padding-base-5 * 4) ($padding-base-5 * 3);
+      }
     }
   }
 }
@@ -2242,6 +2249,7 @@ header {
       }
         &.icon {
             line-height: 22px;
+          font-size: 20px;
         }
       &.text {
 
@@ -2484,7 +2492,7 @@ header {
                         vertical-align: middle;
                         line-height: 24px;
                         &.fontsize {
-                          font-size: 15px;
+                          font-size: 16px;
                           color: #8dc63f;
                         }
                       }
@@ -2954,6 +2962,7 @@ header {
     background: $white;
     border-radius: 4px;
     overflow: hidden;
+    @include box-shadow(0px 2px 6px 0px #525252);
 
     .tab-list {
       .nav-tabs {
@@ -3312,6 +3321,10 @@ header {
           }
         }
       }
+    }
+
+    @media screen and (max-width: 767px) {
+      @include box-shadow(0px 2px 6px 0px #c6c6c6);
     }
   }
   @media screen and (max-width: 767px) {
@@ -5670,11 +5683,14 @@ header {
               margin-right: 0;
             }
           }
+          @media screen and (max-width: 767px) {
+            padding: 10px 20px 5px 20px;
+          }
           @media screen and (max-width: 480px) {
             padding: 0;
           }
         }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
           padding: 20px 0;
         }
       }
@@ -5695,6 +5711,9 @@ header {
             text-align: center;
           }
         }
+      }
+      @media screen and (max-width: 1024px) {
+        margin-top: 50px;
       }
       @media screen and (max-width: 480px) {
         margin-top: 45px;
@@ -5973,6 +5992,7 @@ header {
     @media screen and (max-width: 767px) {
       height: 150px;
       border: none;
+      padding: 10px;
     }
   }
   .down-arrow {
@@ -6272,6 +6292,7 @@ header {
                 min-width: 100%;
               }
             }
+
             @media screen and (max-width: 640px) {
               margin-right: 0;
               width: 50%;
@@ -6282,6 +6303,20 @@ header {
               float: none;
               margin-bottom: 15px;
               text-align: center;
+            }
+          }
+        }
+
+        .tranding-select-opt {
+          &.left {
+            @media screen and (max-width: 640px) {
+              width: 50%;
+              margin-right: 0;
+            }
+          }
+          .select2-container {
+            @media screen and (max-width: 640px) {
+              width: 100% !important;
             }
           }
         }
@@ -6426,9 +6461,19 @@ header {
     }
 
     .share-panel-cont {
-      @media screen and (max-width: 640px) {
-        padding-bottom: 20px;
+      .high-low-sec {
+        .high-low-area {
+          @media screen and (max-width: 640px) {
+            padding: 0;
+          }
+        }
       }
+      @media screen and (max-width: 640px) {
+        padding: 10px 10px 20px 10px;
+      }
+      /*@media screen and (max-width: 640px) {
+        padding-bottom: 20px;
+      }*/
     }
   }
 }
@@ -7327,7 +7372,7 @@ table.dataTable tr.child ul {
 table.dataTable thead .sorting,
 table.dataTable thead .sorting_asc,
 table.dataTable thead .sorting_desc {
-  padding-right:30px;
+  padding-right:20px;
 }
 table.dataTable thead .sorting {
   background-image: none;
@@ -7672,7 +7717,7 @@ input[type="radio"] + label.css-label {
   position: relative;
   cursor: pointer;
   padding-left: 25px;
-  // color: #7a838c;
+   color: #7a838c;
   font-weight: normal;
   @media screen and (max-width: 767px) {
     padding-left: 0;

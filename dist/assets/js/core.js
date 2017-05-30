@@ -275,6 +275,14 @@ $(function () {
 		// e.stopPropagation();
 	});
 
+	//(Custom) - This function identify the target and after clicking show the bootstrap tab on the same page
+	var url = document.location.toString();
+	if (url.match('#')) {
+		console.log(url);
+		$('.tab-structure li a[href=#'+url.split('#')[1]+']').tab('show');
+	}
+
+
 	//list item to replace on select box in mobile
 	if ($(window).width() < 767){
 		$('.btn-wrap button.btn-toggle').on('click',function(e){
