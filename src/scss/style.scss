@@ -2641,7 +2641,11 @@ header {
         min-height: 80px;
         border-radius: 0;
         margin-right: 0;
-       display: block;
+        display: block;
+
+       &:focus {
+         background-color: transparent;
+       }
 
         &:hover {
           background: $white;
@@ -3484,12 +3488,12 @@ header {
         }
       }
 
-      @media screen and (max-width: 991px) {
+      /*@media screen and (max-width: 991px) {
         width: 144px !important;
       }
       @media screen and (max-width: 640px) {
         width: 120px !important;
-      }
+      }*/
       @media screen and (max-width: 520px) {
         width: 100% !important;
       }
@@ -3753,19 +3757,19 @@ header {
 
     }
 
-    tr {
+    tr.odd, tr.even {
       td {
         &:nth-child(1) {
           @media screen and (max-width: 480px) {
             white-space:nowrap;
-            min-width:150px;
+            min-width:100px;
             display: block !important;
           }
         }
         &:nth-child(2) {
           @media screen and (max-width: 480px) {
             white-space:nowrap;
-            min-width:150px;
+            min-width:100px;
           }
         }
         &.control {
@@ -3776,6 +3780,13 @@ header {
         td {
           &.child {
             background: $white;
+            &:nth-child(1) {
+              @media screen and (max-width: 480px) {
+                white-space:nowrap;
+                min-width:80px;
+                display: block !important;
+              }
+            }
             @media screen and (max-width: 480px) {
               width: 100%;
             }
@@ -5424,7 +5435,7 @@ header {
         }
          &.btn-mob-fwdth {
           @media screen and (max-width: 480px) {
-            width: 100%;
+            width: 50%;
           }
         }
         .btn-radio-toggle {
@@ -6030,7 +6041,7 @@ header {
         }
         &.btn-mob-fwdth {
           @media screen and (max-width: 480px) {
-            width: 100%;
+            width: 50%;
           }
         }
         .btn-radio-toggle {

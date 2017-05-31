@@ -433,6 +433,9 @@ $(function () {
 	 	"bPaginate": false,
 	 	"ordering": true,
 	 	"searching": false,
+		 rowReorder: {
+			 selector: 'td:nth-child(2)'
+		 },
         responsive: {
             details: {
                 type: 'column',
@@ -445,6 +448,7 @@ $(function () {
             targets:   -1
         } ]
     } );
+
 
 	/ activate jquery masonry /
 	$('.news-blocks').masonry({

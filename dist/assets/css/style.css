@@ -12947,6 +12947,8 @@ header {
       border-radius: 0;
       margin-right: 0;
       display: block; }
+      .tab-structure.nav-tabs > li > a:focus {
+        background-color: transparent; }
       .tab-structure.nav-tabs > li > a:hover {
         background: #ffffff; }
       .tab-structure.nav-tabs > li > a p {
@@ -13457,24 +13459,25 @@ header {
       width: 100%;
       margin-right: 0;
       float: none; } }
-  .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
-    background: #fff; }
-    @media screen and (max-width: 767px) {
-      .tranding-opt .tranding-select-opt .select2-container .select2-selection--single .select2-selection__rendered {
-        padding-left: 15px; } }
-    @media screen and (max-width: 480px) {
-      .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
-        border-right: 0;
-        border-radius: 0; } }
-  @media screen and (max-width: 991px) {
-    .tranding-opt .tranding-select-opt .select2-container {
-      width: 144px !important; } }
-  @media screen and (max-width: 640px) {
-    .tranding-opt .tranding-select-opt .select2-container {
-      width: 120px !important; } }
-  @media screen and (max-width: 520px) {
-    .tranding-opt .tranding-select-opt .select2-container {
-      width: 100% !important; } }
+  .tranding-opt .tranding-select-opt .select2-container {
+    /*@media screen and (max-width: 991px) {
+        width: 144px !important;
+      }
+      @media screen and (max-width: 640px) {
+        width: 120px !important;
+      }*/ }
+    .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
+      background: #fff; }
+      @media screen and (max-width: 767px) {
+        .tranding-opt .tranding-select-opt .select2-container .select2-selection--single .select2-selection__rendered {
+          padding-left: 15px; } }
+      @media screen and (max-width: 480px) {
+        .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
+          border-right: 0;
+          border-radius: 0; } }
+    @media screen and (max-width: 520px) {
+      .tranding-opt .tranding-select-opt .select2-container {
+        width: 100% !important; } }
   @media screen and (max-width: 520px) {
     .tranding-opt .tranding-select-opt {
       width: 50%;
@@ -13643,20 +13646,25 @@ header {
       .table.shate-data-tbl td > span.loss-col {
         color: #fa4110; }
   @media screen and (max-width: 480px) {
-    .table.shate-data-tbl tr td:nth-child(1) {
+    .table.shate-data-tbl tr.odd td:nth-child(1), .table.shate-data-tbl tr.even td:nth-child(1) {
       white-space: nowrap;
-      min-width: 150px;
+      min-width: 100px;
       display: block !important; } }
   @media screen and (max-width: 480px) {
-    .table.shate-data-tbl tr td:nth-child(2) {
+    .table.shate-data-tbl tr.odd td:nth-child(2), .table.shate-data-tbl tr.even td:nth-child(2) {
       white-space: nowrap;
-      min-width: 150px; } }
-  .table.shate-data-tbl tr td.control {
+      min-width: 100px; } }
+  .table.shate-data-tbl tr.odd td.control, .table.shate-data-tbl tr.even td.control {
     width: 3%; }
-  .table.shate-data-tbl tr.child td.child {
+  .table.shate-data-tbl tr.odd.child td.child, .table.shate-data-tbl tr.even.child td.child {
     background: #ffffff; }
     @media screen and (max-width: 480px) {
-      .table.shate-data-tbl tr.child td.child {
+      .table.shate-data-tbl tr.odd.child td.child:nth-child(1), .table.shate-data-tbl tr.even.child td.child:nth-child(1) {
+        white-space: nowrap;
+        min-width: 80px;
+        display: block !important; } }
+    @media screen and (max-width: 480px) {
+      .table.shate-data-tbl tr.odd.child td.child, .table.shate-data-tbl tr.even.child td.child {
         width: 100%; } }
 
 .share-title h3 {
@@ -14817,7 +14825,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .currency-interest-mob .share-content-tab .chart-opt-sec .tranding-select-opt.btn-mob-fwdth {
-    width: 100%; } }
+    width: 50%; } }
 
 @media screen and (max-width: 480px) {
   .currency-interest-mob .share-content-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
@@ -15240,7 +15248,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .quotes-interest-anlys-mob .share-content-tab .chart-opt-sec .tranding-select-opt.btn-mob-fwdth {
-    width: 100%; } }
+    width: 50%; } }
 
 @media screen and (max-width: 480px) {
   .quotes-interest-anlys-mob .share-content-tab .chart-opt-sec .tranding-select-opt .btn-radio-toggle {
