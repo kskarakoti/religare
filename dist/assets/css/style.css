@@ -1049,6 +1049,70 @@ img.fnone {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-Smart_Charts .path1:before {
+  content: "\ebf9";
+  color: #daeaf3; }
+
+.icon-Smart_Charts .path2:before {
+  content: "\ebfa";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path3:before {
+  content: "\ebfb";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path4:before {
+  content: "\ebfc";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path5:before {
+  content: "\ebfd";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path6:before {
+  content: "\ebfe";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path7:before {
+  content: "\ebff";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path8:before {
+  content: "\ec00";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path9:before {
+  content: "\ec01";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path10:before {
+  content: "\ec02";
+  margin-left: -1.3466796875em;
+  color: #fff200; }
+
+.icon-Smart_Charts .path11:before {
+  content: "\ec03";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path12:before {
+  content: "\ec04";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
+.icon-Smart_Charts .path13:before {
+  content: "\ec05";
+  margin-left: -1.3466796875em;
+  color: #444444; }
+
 .icon-Religare-logo:before {
   content: "\e900";
   color: #1c713f; }
@@ -4795,70 +4859,6 @@ img.fnone {
   content: "\ebf8";
   margin-left: -1.3759765625em;
   color: #444444; }
-
-.icon-Smart_Charts .path1:before {
-  content: "\ebf9";
-  color: #daeaf3; }
-
-.icon-Smart_Charts .path2:before {
-  content: "\ebfa";
-  margin-left: -1.3466796875em;
-  color: none; }
-
-.icon-Smart_Charts .path3:before {
-  content: "\ebfb";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path4:before {
-  content: "\ebfc";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path5:before {
-  content: "\ebfd";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path6:before {
-  content: "\ebfe";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path7:before {
-  content: "\ebff";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path8:before {
-  content: "\ec00";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path9:before {
-  content: "\ec01";
-  margin-left: -1.3466796875em;
-  color: #444444; }
-
-.icon-Smart_Charts .path10:before {
-  content: "\ec02";
-  margin-left: -1.3466796875em;
-  color: #fff200; }
-
-.icon-Smart_Charts .path11:before {
-  content: "\ec03";
-  margin-left: -1.3466796875em;
-  color: none; }
-
-.icon-Smart_Charts .path12:before {
-  content: "\ec04";
-  margin-left: -1.3466796875em;
-  color: none; }
-
-.icon-Smart_Charts .path13:before {
-  content: "\ec05";
-  margin-left: -1.3466796875em;
-  color: none; }
 
 .icon-Star_Rating .path1:before {
   content: "\ec06";
@@ -11327,7 +11327,9 @@ header {
                 color: #444444;
                 font-family: "ubuntumedium", sans-serif;
                 font-size: 13px;
-                line-height: 38px; }
+                line-height: 38px;
+                position: relative;
+                z-index: 1; }
                 header .header-main .header-area .header-left .header-lt-sec .menu-lt-ar .mobile-menu .menu-list-dt > li > a .font-icons {
                   top: 14px;
                   position: absolute;

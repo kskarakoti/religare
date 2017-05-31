@@ -24,6 +24,70 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Smart_Charts .path1:before {
+  content: "\ebf9";
+  color: rgb(218, 234, 243);
+}
+.icon-Smart_Charts .path2:before {
+  content: "\ebfa";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path3:before {
+  content: "\ebfb";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path4:before {
+  content: "\ebfc";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path5:before {
+  content: "\ebfd";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path6:before {
+  content: "\ebfe";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path7:before {
+  content: "\ebff";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path8:before {
+  content: "\ec00";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path9:before {
+  content: "\ec01";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path10:before {
+  content: "\ec02";
+  margin-left: -1.3466796875em;
+  color: rgb(255, 242, 0);
+}
+.icon-Smart_Charts .path11:before {
+  content: "\ec03";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path12:before {
+  content: "\ec04";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
+.icon-Smart_Charts .path13:before {
+  content: "\ec05";
+  margin-left: -1.3466796875em;
+  color: rgb(68, 68, 68);
+}
 .icon-Religare-logo:before {
   content: "\e900";
   color: #1c713f;
@@ -3770,70 +3834,6 @@
   content: "\ebf8";
   margin-left: -1.3759765625em;
   color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path1:before {
-  content: "\ebf9";
-  color: rgb(218, 234, 243);
-}
-.icon-Smart_Charts .path2:before {
-  content: "\ebfa";
-  margin-left: -1.3466796875em;
-  color: none;
-}
-.icon-Smart_Charts .path3:before {
-  content: "\ebfb";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path4:before {
-  content: "\ebfc";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path5:before {
-  content: "\ebfd";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path6:before {
-  content: "\ebfe";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path7:before {
-  content: "\ebff";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path8:before {
-  content: "\ec00";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path9:before {
-  content: "\ec01";
-  margin-left: -1.3466796875em;
-  color: rgb(68, 68, 68);
-}
-.icon-Smart_Charts .path10:before {
-  content: "\ec02";
-  margin-left: -1.3466796875em;
-  color: rgb(255, 242, 0);
-}
-.icon-Smart_Charts .path11:before {
-  content: "\ec03";
-  margin-left: -1.3466796875em;
-  color: none;
-}
-.icon-Smart_Charts .path12:before {
-  content: "\ec04";
-  margin-left: -1.3466796875em;
-  color: none;
-}
-.icon-Smart_Charts .path13:before {
-  content: "\ec05";
-  margin-left: -1.3466796875em;
-  color: none;
 }
 .icon-Star_Rating .path1:before {
   content: "\ec06";

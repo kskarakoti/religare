@@ -372,6 +372,8 @@ header {
                     font-family: $font-family-ubuntumedium;
                     font-size: $font-size-small + 1;
                     line-height: 38px;
+                    position: relative;
+                    z-index: 1;
 
                     .font-icons {
                       top: 14px;
