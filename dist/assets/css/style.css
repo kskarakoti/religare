@@ -13112,6 +13112,9 @@ header {
         margin-right: 0;
         width: 33.33%; } }
     @media screen and (max-width: 767px) {
+      .banner-chart.commodities-bann .chart-opt-tab .chart-opt-sec .select2-container {
+        width: 100% !important; } }
+    @media screen and (max-width: 767px) {
       .banner-chart.commodities-bann .chart-opt-tab .chart-opt-sec {
         padding: 15px 0; } }
     @media screen and (max-width: 991px) {
@@ -14754,16 +14757,21 @@ header {
   .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-toggle {
     background: #fff; } }
 
-.market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-radio-toggle {
-  margin: 0;
-  min-width: 100%; }
-  @media screen and (max-width: 767px) {
-    .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-radio-toggle {
-      background: #fff; } }
+@media screen and (max-width: 767px) {
+  .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-radio-toggle {
+    width: 100%;
+    margin: 0;
+    min-width: 100px;
+    background: #fff; } }
 
 @media screen and (max-width: 767px) {
   .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .select2-container {
-    width: 100% !important; } }
+    width: 100% !important;
+    min-width: 144px; } }
+
+@media screen and (max-width: 480px) {
+  .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .select2-container {
+    min-width: 100%; } }
 
 @media screen and (max-width: 640px) {
   .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt {
@@ -15602,16 +15610,13 @@ header {
     height: auto;
     overflow: inherit; } }
 
-.quotes-mutual-funds .share-tab .share-panel-cont {
-  /*@media screen and (max-width: 640px) {
-        padding-bottom: 20px;
-      }*/ }
-  @media screen and (max-width: 640px) {
-    .quotes-mutual-funds .share-tab .share-panel-cont .high-low-sec .high-low-area {
-      padding: 0; } }
-  @media screen and (max-width: 640px) {
-    .quotes-mutual-funds .share-tab .share-panel-cont {
-      padding: 10px 10px 20px 10px; } }
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-panel-cont .high-low-sec .high-low-area {
+    padding: 0; } }
+
+@media screen and (max-width: 640px) {
+  .quotes-mutual-funds .share-tab .share-panel-cont {
+    padding: 10px 10px 20px 10px; } }
 
 @media screen and (max-width: 480px) {
   .returns-open .block-panel .block-deal-pd, .peer-comparison-ar .block-panel .block-deal-pd, .we-recommend-ar .block-panel .block-deal-pd {

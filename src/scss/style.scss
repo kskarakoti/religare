@@ -2878,6 +2878,12 @@ header {
             width: 33.33%;
           }
         }
+
+        .select2-container {
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
         @media screen and (max-width: 767px) {
           padding: 15px 0;
         }
@@ -5330,9 +5336,10 @@ header {
           }
         }
         .btn-radio-toggle {
-          margin: 0;
-          min-width: 100%;
           @media screen and (max-width: 767px) {
+            width: 100%;
+            margin: 0;
+            min-width: 100px;
             background: #fff;
           }
         }
@@ -5340,6 +5347,10 @@ header {
         .select2-container {
           @media screen and (max-width: 767px) {
             width: 100% !important;
+            min-width: 144px;
+          }
+          @media screen and (max-width: 480px) {
+            min-width: 100%;
           }
         }
         @media screen and (max-width: 640px) {
@@ -6069,7 +6080,7 @@ header {
         .select2-container {
           width:100% !important;
           max-width: 200px;
-          
+
           .select2-selection--single {
             border:none;
             background:transparent;
@@ -6584,9 +6595,6 @@ header {
       @media screen and (max-width: 640px) {
         padding: 10px 10px 20px 10px;
       }
-      /*@media screen and (max-width: 640px) {
-        padding-bottom: 20px;
-      }*/
     }
   }
 }
