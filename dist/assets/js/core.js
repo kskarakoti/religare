@@ -55,6 +55,20 @@ $(function () {
 		}
 	});
 
+	// Month Toggle
+	$('.share-dt-sort li a.more').on('click',function(e){
+		e.preventDefault();
+		var $list = $(this).next('.drop-month');
+		$list.slideToggle();
+		$('.drop-month').not($list).slideUp();
+	});
+	$('.drop-month li a').on('click', function(e){
+		e.preventDefault();
+		$('.drop-month').prev().text($(this).text());
+		if($('.drop-month').is(':visible')) {
+			$('.drop-month').hide();
+		}
+	});
 
 	//for addclass on page load
 	$(".menu-list li a, .menu-list-dt li a").each(function() {

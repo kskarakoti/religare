@@ -23,6 +23,8 @@
 	  3.11 Market Currency Page Styles
 	  3.12 Market Mutual Fund Page Styles
       3.13 Quotes Equities Page Styles
+      3.14 Quotes Commodities Page Styles
+      3.15 Quotes Mutual Funds Page Styles
 
 
    04 Footer Section Styles
@@ -2155,6 +2157,7 @@ header {
 .banner-inner-area {
   .video-wrap {
     position: relative;
+
     .img-wrap {
       img {
         @media screen and (max-width: 480px) {
@@ -2645,6 +2648,8 @@ header {
 
        &:focus {
          background-color: transparent;
+         border: none;
+         border-top: 4px solid #8dc63f;
        }
 
         &:hover {
@@ -3488,10 +3493,10 @@ header {
         }
       }
 
-      /*@media screen and (max-width: 991px) {
+      @media screen and (max-width: 991px) {
         width: 144px !important;
       }
-      @media screen and (max-width: 640px) {
+      /*@media screen and (max-width: 640px) {
         width: 120px !important;
       }*/
       @media screen and (max-width: 520px) {
@@ -3599,6 +3604,10 @@ header {
 
   &.right {
     float: right;
+
+    &.mr-no {
+      margin-right: 0;
+    }
   }
 
   &.float-none {
@@ -3660,6 +3669,23 @@ header {
 }
 
 /* table common style*/
+.green-col {
+  color: #20ab30;
+
+  a {
+    color: #20ab30;
+  }
+}
+
+.red-col {
+  color: #fa4110;
+
+  a {
+    color: #fa4110;
+  }
+}
+
+
 .table{
   &.shate-data-tbl {
     border: 1px solid #dcdede;
@@ -3838,6 +3864,28 @@ header {
         color: #444444;
         border-bottom: 2px solid #8dc63f;
       }
+
+      ul{
+        &.drop-month {
+          li {
+            margin:0;
+            text-align: center;
+            @media screen and (max-width: 767px) {
+              text-align: left;
+            }
+            &:hover {
+              background: #5897fb;
+              a {
+                color: #FFFFFF;
+              }
+            }
+            a {
+              border: none;
+              padding:5px;
+            }
+          }
+        }
+      }
     }
 
     a {
@@ -3845,6 +3893,26 @@ header {
       font-size: 12px;
       color: #a1a1a1;
       padding:2px 0px;
+    }
+  }
+
+  ul{
+    &.drop-month {
+      position: absolute;
+      background: #FFF;
+      border:1px solid #dedede;
+      z-index: 9;
+      display: none;
+      li {
+        float: none;
+        display: block;
+      }
+      @media screen and (max-width: 767px) {
+        position: relative;
+        display: block !important;
+        box-shadow:none;
+        border:none;
+      }
     }
   }
 }
@@ -5257,14 +5325,14 @@ header {
           }
         }
         .btn-toggle {
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 767px) {
             background: #fff;
           }
         }
         .btn-radio-toggle {
           margin: 0;
           min-width: 100%;
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 767px) {
             background: #fff;
           }
         }
@@ -5364,8 +5432,9 @@ header {
     .tranding-opt-none {
       .tranding-select-opt {
         .select2-container {
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 520px) {
             width: 100% !important;
+            min-width: 130px !important;
           }
         }
         @media screen and (max-width: 480px) {
@@ -5959,11 +6028,11 @@ header {
 
     .high-low-val {
       margin-bottom: 15px;
-      min-height: 60px;
+      min-height: 75px;
       vertical-align: bottom;
 
       &.first-col {
-        min-height: 60px;
+        min-height: 75px;
       }
 
       .value-num {
@@ -5997,6 +6066,37 @@ header {
       .status-tx {
         font-size: 14px;
         color: #9da2a4;
+        .select2-container {
+          width:100% !important;
+          max-width: 200px;
+          
+          .select2-selection--single {
+            border:none;
+            background:transparent;
+          }
+        }
+        .select2-container--default {
+          .select2-selection--single {
+            .select2-selection__rendered {
+              color:#9da2a4;
+              font-size: 14px;
+              padding-left:0;
+              line-height: 24px;
+
+            }
+            .select2-selection__arrow {
+              height: 24px;
+              right: 0;
+
+              b {
+                width: 8px;
+                height: 8px;
+                left: auto;
+                right: 22%;
+              }
+            }
+          }
+        }
       }
       @media screen and (max-width: 480px) {
         min-height: 80px;
@@ -6431,7 +6531,7 @@ header {
 
 
 /****************************************
-   3.14 Quotes Mutual Funds Page Styles
+   3.15 Quotes Mutual Funds Page Styles
 ****************************************/
 .quotes-mutual-funds {
   .share-tab {
@@ -6516,6 +6616,57 @@ header {
         }
       }
     }
+  }
+}
+
+
+/****************************************
+   3.16 View more Page Styles
+****************************************/
+
+.search-wrap {
+  position: relative;
+
+  .search-ip {
+    height: 40px;
+    padding: 5px 5px 5px 45px;
+    background: #f8fbf4;
+    border: 1px solid #dcdede;
+  }
+  .search-btn {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    padding: 9px;
+
+    span {
+      color: #20ab30;
+    }
+  }
+}
+.view-data-sec {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .chart-opt-sec {
+    margin-bottom: 20px;
+  }
+}
+
+/* Indices tab style */
+.country-flag {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px 5px 0 0;
+}
+.view-more-data {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

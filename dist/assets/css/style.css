@@ -23,6 +23,8 @@
 	  3.11 Market Currency Page Styles
 	  3.12 Market Mutual Fund Page Styles
       3.13 Quotes Equities Page Styles
+      3.14 Quotes Commodities Page Styles
+      3.15 Quotes Mutual Funds Page Styles
 
 
    04 Footer Section Styles
@@ -12948,7 +12950,9 @@ header {
       margin-right: 0;
       display: block; }
       .tab-structure.nav-tabs > li > a:focus {
-        background-color: transparent; }
+        background-color: transparent;
+        border: none;
+        border-top: 4px solid #8dc63f; }
       .tab-structure.nav-tabs > li > a:hover {
         background: #ffffff; }
       .tab-structure.nav-tabs > li > a p {
@@ -13460,10 +13464,7 @@ header {
       margin-right: 0;
       float: none; } }
   .tranding-opt .tranding-select-opt .select2-container {
-    /*@media screen and (max-width: 991px) {
-        width: 144px !important;
-      }
-      @media screen and (max-width: 640px) {
+    /*@media screen and (max-width: 640px) {
         width: 120px !important;
       }*/ }
     .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
@@ -13475,6 +13476,9 @@ header {
         .tranding-opt .tranding-select-opt .select2-container .select2-selection--single {
           border-right: 0;
           border-radius: 0; } }
+    @media screen and (max-width: 991px) {
+      .tranding-opt .tranding-select-opt .select2-container {
+        width: 144px !important; } }
     @media screen and (max-width: 520px) {
       .tranding-opt .tranding-select-opt .select2-container {
         width: 100% !important; } }
@@ -13550,6 +13554,8 @@ header {
   position: relative; }
   .tranding-select-opt.right {
     float: right; }
+    .tranding-select-opt.right.mr-no {
+      margin-right: 0; }
   .tranding-select-opt.float-none {
     float: none; }
   .tranding-select-opt .sector-opt {
@@ -13588,6 +13594,16 @@ header {
     background: #f8fbf4; }
 
 /* table common style*/
+.green-col {
+  color: #20ab30; }
+  .green-col a {
+    color: #20ab30; }
+
+.red-col {
+  color: #fa4110; }
+  .red-col a {
+    color: #fa4110; }
+
 .table.shate-data-tbl {
   border: 1px solid #dcdede;
   margin-bottom: 10px; }
@@ -13699,11 +13715,39 @@ header {
     .share-dt-sort li.active a, .share-dt-sort li:hover a {
       color: #444444;
       border-bottom: 2px solid #8dc63f; }
+    .share-dt-sort li.active ul.drop-month li, .share-dt-sort li:hover ul.drop-month li {
+      margin: 0;
+      text-align: center; }
+      @media screen and (max-width: 767px) {
+        .share-dt-sort li.active ul.drop-month li, .share-dt-sort li:hover ul.drop-month li {
+          text-align: left; } }
+      .share-dt-sort li.active ul.drop-month li:hover, .share-dt-sort li:hover ul.drop-month li:hover {
+        background: #5897fb; }
+        .share-dt-sort li.active ul.drop-month li:hover a, .share-dt-sort li:hover ul.drop-month li:hover a {
+          color: #FFFFFF; }
+      .share-dt-sort li.active ul.drop-month li a, .share-dt-sort li:hover ul.drop-month li a {
+        border: none;
+        padding: 5px; }
     .share-dt-sort li a {
       display: block;
       font-size: 12px;
       color: #a1a1a1;
       padding: 2px 0px; }
+  .share-dt-sort ul.drop-month {
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #dedede;
+    z-index: 9;
+    display: none; }
+    .share-dt-sort ul.drop-month li {
+      float: none;
+      display: block; }
+    @media screen and (max-width: 767px) {
+      .share-dt-sort ul.drop-month {
+        position: relative;
+        display: block !important;
+        box-shadow: none;
+        border: none; } }
 
 /* share dt mobile */
 @media screen and (max-width: 767px) {
@@ -14706,14 +14750,14 @@ header {
   .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .datePicker {
     background: #fff; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-toggle {
     background: #fff; } }
 
 .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-radio-toggle {
   margin: 0;
   min-width: 100%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     .market-analysis-ar .tranding-content-area .tranding-opt .tranding-select-opt .btn-radio-toggle {
       background: #fff; } }
 
@@ -14782,9 +14826,10 @@ header {
     .option-chain-ar .option-chain-bx {
       padding: 20px 15px; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .open-interest-analysis-mob .share-content-tab .tranding-opt-none .tranding-select-opt .select2-container {
-    width: 100% !important; } }
+    width: 100% !important;
+    min-width: 130px !important; } }
 
 @media screen and (max-width: 480px) {
   .open-interest-analysis-mob .share-content-tab .tranding-opt-none .tranding-select-opt {
@@ -15192,10 +15237,10 @@ header {
       padding: 0 10px; } }
   .high-low-sec .high-low-area .high-low-val {
     margin-bottom: 15px;
-    min-height: 60px;
+    min-height: 75px;
     vertical-align: bottom; }
     .high-low-sec .high-low-area .high-low-val.first-col {
-      min-height: 60px; }
+      min-height: 75px; }
     .high-low-sec .high-low-area .high-low-val .value-num {
       font-size: 18px;
       color: #4e585c;
@@ -15219,6 +15264,25 @@ header {
     .high-low-sec .high-low-area .high-low-val .status-tx {
       font-size: 14px;
       color: #9da2a4; }
+      .high-low-sec .high-low-area .high-low-val .status-tx .select2-container {
+        width: 100% !important;
+        max-width: 200px; }
+        .high-low-sec .high-low-area .high-low-val .status-tx .select2-container .select2-selection--single {
+          border: none;
+          background: transparent; }
+      .high-low-sec .high-low-area .high-low-val .status-tx .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #9da2a4;
+        font-size: 14px;
+        padding-left: 0;
+        line-height: 24px; }
+      .high-low-sec .high-low-area .high-low-val .status-tx .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 24px;
+        right: 0; }
+        .high-low-sec .high-low-area .high-low-val .status-tx .select2-container--default .select2-selection--single .select2-selection__arrow b {
+          width: 8px;
+          height: 8px;
+          left: auto;
+          right: 22%; }
     @media screen and (max-width: 480px) {
       .high-low-sec .high-low-area .high-low-val {
         min-height: 80px; } }
@@ -15515,7 +15579,7 @@ header {
   background: #FFF; }
 
 /****************************************
-   3.14 Quotes Mutual Funds Page Styles
+   3.15 Quotes Mutual Funds Page Styles
 ****************************************/
 @media screen and (max-width: 640px) {
   .quotes-mutual-funds .share-tab .share-related-sec .share-action-bx.left {
@@ -15560,6 +15624,42 @@ header {
 @media screen and (max-width: 640px) {
   .top-sector-open .block-panel .block-deal-pd .top-sectors-ar .top-title {
     margin: 15px 20px; } }
+
+/****************************************
+   3.16 View more Page Styles
+****************************************/
+.search-wrap {
+  position: relative; }
+  .search-wrap .search-ip {
+    height: 40px;
+    padding: 5px 5px 5px 45px;
+    background: #f8fbf4;
+    border: 1px solid #dcdede; }
+  .search-wrap .search-btn {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    padding: 9px; }
+    .search-wrap .search-btn span {
+      color: #20ab30; }
+
+.view-data-sec {
+  margin-bottom: 40px; }
+  .view-data-sec:last-child {
+    margin-bottom: 0; }
+  .view-data-sec .chart-opt-sec {
+    margin-bottom: 20px; }
+
+/* Indices tab style */
+.country-flag {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px 5px 0 0; }
+
+.view-more-data {
+  margin-bottom: 50px; }
+  .view-more-data:last-child {
+    margin-bottom: 0; }
 
 /************************************************************************************
 
