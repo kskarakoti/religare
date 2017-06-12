@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-speaker:before {
+  content: "\ece0";
+  color: #79c117;
+}
+.icon-location:before {
+  content: "\ecdf";
+  color: #79c117;
+}
 .icon-Smart_Charts .path1:before {
   content: "\ebf9";
   color: rgb(218, 234, 243);

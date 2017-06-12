@@ -124,6 +124,7 @@ $(function () {
 		}, 600);
 	});
 
+
 	//smooth scroll_______________________________________________
 	$(".smoothscroll").click(function(e) {
 		e.preventDefault();
@@ -287,6 +288,7 @@ $(function () {
 		$(this).parents('.high-low-sec').children('.high-low-area').toggleClass("active");
 		$(this).parents('.down-arrow').toggleClass("up-arrow");
 		// e.stopPropagation();
+
 	});
 
 	//(Custom) - This function identify the target and after clicking show the bootstrap tab on the same page
@@ -298,7 +300,7 @@ $(function () {
 
 
 	//list item to replace on select box in mobile
-	if ($(window).width() < 767){
+	if ($(window).width() <= 767){
 		$('.btn-wrap button.btn-toggle').on('click',function(e){
 			e.preventDefault();
 			var $list = $(this).parent().next('.share-dt-sort');
@@ -333,6 +335,7 @@ $(function () {
 			}
 		}
 	});
+	
 
 	//radio button covert in select box
 	var winwidth = $(window).width();
@@ -354,6 +357,9 @@ $(function () {
 	} else {
 		$('.toggle-radio').show();
 	}
+
+
+
 
 	//for header search 
 	$('.search-links i.icon-ic_search, .close-icon a').on('click',function(){
@@ -463,15 +469,49 @@ $(function () {
         } ]
     } );
 
+	// dataable with pagination
+	$(".paging-table thead tr").append("<th></th>");
+	$(".paging-table tbody tr").append("<td></td>"); 
+	$('.paging-table').DataTable({
+	    "searching": false,
+	    "lengthChange": false,
+	    "sPagingType": "simple",
+	    "iDisplayLength": 5,
+	     language: {
+		    paginate: {
+		      next: '&#10095;', 
+		      previous: '&#10094;' 
+		    }
+		  },
+		 rowReorder: {
+			 selector: 'td:nth-child(2)'
+		 },
+        responsive: {
+            details: {
+                type: 'column',
+                target: -1
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   -1
+        } ],
+        "fnDrawCallback": function(oSettings) {                 
+	        if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+	          $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+	        }
+	    }
+	}); 
+	$.fn.dataTable.ext.pager.numbers_length = 5;
+	var table = $('.paging-table').DataTable();
 
-	/ activate jquery masonry /
+	// activate jquery masonry 
 	$('.news-blocks').masonry({
 		itemSelector: '.blocks'
 	});
 	
 });
-
-
 
 //for div height calculation
 $(window).resize(function(){
@@ -480,7 +520,7 @@ $(window).resize(function(){
 	contheight();
 	// footernav();
 	var winwidth = $(window).width();
-	if(winwidth >= 768) {
+	if(winwidth >= 767) {
 		$('.toggle-radio,ul.toggle-list').show();
 	} else {
 		$('.toggle-radio,ul.toggle-list').hide();
@@ -557,4 +597,20 @@ $(window).on('scroll', function(){
 		$('body').removeClass('sticky');
 	}
 
+});
+
+//for smooth scroll to targeted url
+$(document).ready(function() {
+    $('html, body').hide();
+    if (window.location.hash) {
+        setTimeout(function() {
+            $('html, body').scrollTop(0).show();
+            $('html, body').animate({
+                scrollTop: $(window.location.hash).offset().top - 100
+                }, 1200)
+        }, 0);
+    }
+    else {
+        $('html, body').show();
+    }
 });
